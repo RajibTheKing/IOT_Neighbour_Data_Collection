@@ -1,0 +1,29 @@
+  
+
+
+# Compiled source #
+###################
+*.out
+*.class
+*.DS_Store
+*.hi
+*.o
+*.com
+*.class
+*.dll
+*.exe
+*.so
+*.classpath
+*.py~
+*.pyc
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
