@@ -36,7 +36,7 @@ obj_sky/master-routing.o: ../../../os/net/master-routing/master-routing.c \
  ../../../os/sys/node-id.h ../../../os/net/master-net/master-net.h \
  ../../../os/sys/log.h ../../../os/sys/log-conf.h \
  ../../../os/net/master-routing/scheduling_tx_macros.h \
- ../../../os/net/master-routing/../../../Master/Schedules/test_sched2.c
+ ../../../os/net/master-routing/../../../Master/Python/test_schedule1.c
 ../../../os/net/master-routing/master-routing.c :
  ../../../os/net/master-net/module-macros.h :
  ../../../os/services/simple-energest/module-macros.h :
@@ -75,4 +75,4 @@ obj_sky/master-routing.o: ../../../os/net/master-routing/master-routing.c \
  ../../../os/sys/node-id.h ../../../os/net/master-net/master-net.h :
  ../../../os/sys/log.h ../../../os/sys/log-conf.h :
  ../../../os/net/master-routing/scheduling_tx_macros.h :
- ../../../os/net/master-routing/../../../Master/Schedules/test_sched2.c :
+ ../../../os/net/master-routing/../../../Master/Python/test_schedule1.c :

@@ -16,6 +16,7 @@
 *.classpath
 *.py~
 *.pyc
+*.d
 
 # Packages #
 ############

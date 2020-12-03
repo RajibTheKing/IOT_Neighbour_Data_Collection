@@ -8,7 +8,7 @@
 #define TESTBED TESTBED_COOJA // default: TESTBED_COOJA OR TESTBED_KIEL
 
 #undef MASTER_CONF_SCHEDULE
-#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/test_sched2.c"
+#define MASTER_CONF_SCHEDULE "../../../Master/Python/test_schedule1.c"
 
 #define NUM_COOJA_NODES 5
 
