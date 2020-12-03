@@ -9,5 +9,10 @@ typedef struct {
   int seq;
 } Beacon;
 
+typedef struct {
+  int nodeId;
+  float strengthToMaster; 
+} Advertisement;
+
 
 #endif
