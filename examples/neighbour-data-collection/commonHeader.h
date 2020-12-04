@@ -11,6 +11,7 @@ typedef struct {
 
 typedef struct {
   int nodeId;
+  int seq;
   float strengthToMaster; 
 } Advertisement;
 

@@ -15,7 +15,7 @@
 #include "strength-vector.c"
 
 /* Configuration */
-#define SEND_INTERVAL (5 * CLOCK_SECOND)
+#define SEND_INTERVAL (10 * CLOCK_SECOND)
 #define ADVERTISEMENT_INTERVAL (60 * CLOCK_SECOND)
 
 int sequence_number = 0;
@@ -27,6 +27,13 @@ static Advertisement received_advertisementData;
 static int counter = 0;
 static float maxMasterStrength = -1;
 static int bestNode = -1;
+static int maxSeqforStrength = -1;
+
+static int mainStrengthSeq = 1;
+
+
+static Advertisement history;
+
 
 /*---------------------------------------------------------------------------*/
 PROCESS(nullnet_example_process, "NullNet broadcast example");
@@ -47,27 +54,51 @@ void input_callback(const void *data, uint16_t len,
   }
   if (len == sizeof(Advertisement)){
     memcpy(&received_advertisementData, data, len);
-    printf("received adv from %d strength ",received_advertisementData.nodeId);
+    printf("received adv from %d, seq : %d, currentlyMyBestNode: %d\n",received_advertisementData.nodeId, received_advertisementData.seq, bestNode);
     printFLoat(received_advertisementData.strengthToMaster);
     printf("\n");
 
     float currentStrength = MIN(received_advertisementData.strengthToMaster, getStrengthByNodeID(received_advertisementData.nodeId));
+    int currentSeq = received_advertisementData.seq;
+
+    if(maxSeqforStrength < currentSeq)
+    {
+      maxSeqforStrength = currentSeq;
+
+      if(bestNode == received_advertisementData.nodeId){
+        maxMasterStrength = currentStrength;
+      }
+    }
     
-    if(maxMasterStrength < currentStrength){
+    if(currentSeq >= maxSeqforStrength && maxMasterStrength < currentStrength){
       maxMasterStrength = currentStrength;
       bestNode = received_advertisementData.nodeId;
+    }
 
+    
+    nullnet_buf = (uint8_t *)&advertisementData;
+    advertisementData.nodeId = node_id;
+    advertisementData.strengthToMaster = maxMasterStrength;
+    advertisementData.seq = maxSeqforStrength;
 
-      nullnet_buf = (uint8_t *)&advertisementData;
-      advertisementData.nodeId = node_id;
-      advertisementData.strengthToMaster = maxMasterStrength;
+    if(history.nodeId == advertisementData.nodeId && history.strengthToMaster == advertisementData.strengthToMaster ){
+      //skip
+    }else{
+
       memcpy(nullnet_buf, &advertisementData, sizeof(Advertisement));
       nullnet_len = sizeof(Advertisement);
       NETSTACK_NETWORK.output(NULL);
+      history = advertisementData;
       printf("TheKing--> BroadCast advertisement (node) = (%d)\n", advertisementData.nodeId);
 
-      printf("Selected BestNode = %d\n", bestNode);
+      printf("Seq: %d, Selected BestNode = %d, Because: His Strength: ", currentSeq, bestNode);
+      printFLoat(received_advertisementData.strengthToMaster);
+      printf(", And MyLink Strength With Him --> ");
+      printFLoat(getStrengthByNodeID(received_advertisementData.nodeId));
+      printf("\n");
+
     }
+    
   }
   
 
@@ -98,13 +129,14 @@ PROCESS_THREAD(nullnet_example_process, ev, data)
 
     NETSTACK_NETWORK.output(NULL);
     counter++;
-    if(counter % 12 == 0 && node_id == 1){
+    if(counter % 5 == 0 && node_id == 1){
       maxMasterStrength = 100.0;
       bestNode = 1;
       //now send Advertisement
       nullnet_buf = (uint8_t *)&advertisementData;
       advertisementData.nodeId = node_id;
       advertisementData.strengthToMaster = 100.0;
+      advertisementData.seq = mainStrengthSeq++;
       memcpy(nullnet_buf, &advertisementData, sizeof(Advertisement));
       nullnet_len = sizeof(Advertisement);
       NETSTACK_NETWORK.output(NULL);
