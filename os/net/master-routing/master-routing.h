@@ -72,11 +72,16 @@ int master_routing_sendto(const void *data, uint16_t datalen, uint8_t flow);
 int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, uint8_t best_node);
 
 
-//int master_routing_send_actual_data(uint8_t sending_data[MASTER_MSG_LENGTH], uint8_t dataLen);
+int master_routing_send_actual_data(uint8_t sending_data[MASTER_MSG_LENGTH], uint8_t dataLen);
 
 
 
 void init_master_routing(void);
+
+void modify_schedule();
+
+void unicast_send();
+linkaddr_t getAddressByNodeID(int givenNodeID);
 
 #endif /* MASTER_ROUTING_H */
 

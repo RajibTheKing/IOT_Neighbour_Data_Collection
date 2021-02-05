@@ -2,13 +2,13 @@
 #define PROJECT_CONF_H_
 
 #undef MASTER_MSG_LENGTH
-#define MASTER_MSG_LENGTH 64
+#define MASTER_MSG_LENGTH 50
 
 #undef  TESTBED
 #define TESTBED TESTBED_COOJA // default: TESTBED_COOJA OR TESTBED_KIEL
 
 #undef MASTER_CONF_SCHEDULE
-#define MASTER_CONF_SCHEDULE "../../../Master/Python/test_schedule1.c"
+#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/test_sched5.c"
 
 #define NUM_COOJA_NODES 5
 

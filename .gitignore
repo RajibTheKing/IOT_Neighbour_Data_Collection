@@ -17,6 +17,11 @@
 *.py~
 *.pyc
 *.d
+*.a
+*.cooja
+*.sky
+*.map
+master-routing.
 
 # Packages #
 ############
