@@ -149,8 +149,11 @@ static master_routing_input_callback current_callback = NULL;
 
 static uint16_t max_advertisement_seq = 0;
 static uint8_t bestNode = 0;
+static struct tsch_link *best_tsch_shedule_link = NULL;
 static float max_master_strength = 0;
 static master_routing_packet_t history;
+
+static uint8_t flag_to_stop_ad = 0;
 
 
 /*-------------------------- Routing configuration --------------------------*/
@@ -253,12 +256,12 @@ install_discovery_schedule(){
     tsch_schedule_remove_slotframe(sf[2]);
   }
   sf[2] = tsch_schedule_add_slotframe(2, 1);
-// our own
-    /*sf[3] = tsch_schedule_get_slotframe_by_handle(3);
+  //our own
+  sf[3] = tsch_schedule_get_slotframe_by_handle(3);
     if (sf[3]){
      tsch_schedule_remove_slotframe(sf[3]);
-    }
-    sf[3] = tsch_schedule_add_slotframe(3, 5);*/
+  }
+  sf[3] = tsch_schedule_add_slotframe(3, num_discovery_sending_slots);
 
   tsch_schedule_add_link(sf[2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 0, 0);
   if (tx_slot < num_discovery_sending_slots){
@@ -376,8 +379,13 @@ void on_received_advertisement(master_routing_packet_t mrp, const linkaddr_t *sr
     
     if(currentSeq >= max_advertisement_seq && max_master_strength < currentStrength){
       max_master_strength = currentStrength;
-      bestNode = mrp.flow_number;
+
+      if(bestNode != mrp.flow_number){
+        bestNode = mrp.flow_number;
+        add_link_to_best_node();
+      }
       // memcpy(&bestLink, src, sizeof(linkaddr_t));
+      
       
     }
 
@@ -450,6 +458,7 @@ void send_data_to_master(uint8_t sending_data[], uint8_t datalen)
 void on_received_actual_data(master_routing_packet_t mrp)
 {
   uint8_t actualData[50];
+  flag_to_stop_ad = 1;
   if (node_id == 1)
   {
     //numberofnodes --> n1..n2..n -> datalen--> data
@@ -538,7 +547,7 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     {
       //nothing
     }
-    else if (type == PACKET_TYPE_ADVERTISEMENT)
+    else if (type == PACKET_TYPE_ADVERTISEMENT && !flag_to_stop_ad)
     {
       LOG_INFO("Received advertisement %u;%u;%u;", mrp.packet_type, mrp.flow_number, mrp.advertisement_seq);
       printFLoat(mrp.strengthToMaster);
@@ -684,6 +693,26 @@ int neighbor_discovery_send(const void *data, uint16_t datalen)
   }
 }
 
+void add_link_to_best_node() {
+  printf("Now Changing best schedule Link\n");
+  if (best_tsch_shedule_link != NULL)
+  {
+    tsch_schedule_remove_link(sf[3], best_tsch_shedule_link);
+    best_tsch_shedule_link = NULL;
+  }
+
+  linkaddr_t addr = getAddressByNodeID(bestNode);
+  uint8_t link_options;
+  uint16_t slot_offset = deployment_node_count - node_id;  // keeping slot offset as our own Node ID
+  uint16_t channel_offset = deployment_node_count - node_id; 
+  link_options = LINK_OPTION_TX;
+  best_tsch_shedule_link = tsch_schedule_add_link(sf[3],
+                            link_options,
+                            LINK_TYPE_NORMAL, &addr,
+                            slot_offset, channel_offset);
+
+}
+
 
 /*---------------------------------------------------------------------------*/
 int
@@ -807,14 +836,21 @@ int master_routing_sendto(const void *data, uint16_t datalen, uint8_t receiver)
 }
 
 /*---------------------------------------------------------------------------*/
+
+
 int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, uint8_t best_node)
 {
+
   max_advertisement_seq = adv_seq;
   bestNode = best_node;
   max_master_strength = strength;
   //modify_schedule();
 
-  return master_routing_send_advertisement(strength, adv_seq, bestNode);
+  if(!flag_to_stop_ad){
+    return master_routing_send_advertisement(strength, adv_seq, bestNode);
+  }else{
+    return 0;
+  }
 }
 
 int master_routing_send_actual_data(uint8_t sending_data[50], uint8_t dataLen)
@@ -844,38 +880,48 @@ void init_master_routing(void)
     masternet_set_config_callback(master_routing_sent_configuration);
 
     tsch_schedule_remove_all_slotframes();
-    sf[0] = tsch_schedule_add_slotframe(0, 1+5);
+    sf[0] = tsch_schedule_add_slotframe(0, 1);
     tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
 
     //sf[3] = tsch_schedule_add_slotframe(3, 5);
     //tsch_schedule_add_link(sf[3], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
 
-    started = 1;
-    LOG_INFO("started\n");
-    int i;
-    for (i = 0; i < 5; ++i)
-    {
-      uint8_t link_options;
-      linkaddr_t addr;
-      uint16_t remote_id = i + 1;
+    // started = 1;
+    // LOG_INFO("started\n");
+    // int i;
+    // for (i = 0; i < 5; ++i)
+    // {
+    //   uint8_t link_options;
+    //   linkaddr_t addr;
+    //   uint16_t remote_id = i + 1;
 
-      addr = getAddressByNodeID(remote_id);
+    //   addr = getAddressByNodeID(remote_id);
 
 
-      /* Add a unicast cell for each potential neighbor (in Cooja) */
-      /* Use the same slot offset; the right link will be dynamically selected at runtime based on queue sizes */
-        uint16_t slot_offset = i;
-        uint16_t channel_offset = i;
-      /* Warning: LINK_OPTION_SHARED cannot be configured, as with this schedule
-     * backoff windows will not be reset correctly! */
-      link_options = remote_id == node_id ? LINK_OPTION_RX : LINK_OPTION_TX;
+    //   /* Add a unicast cell for each potential neighbor (in Cooja) */
+    //   /* Use the same slot offset; the right link will be dynamically selected at runtime based on queue sizes */
+    //     uint16_t slot_offset = i;
+    //     uint16_t channel_offset = i;
+    //   /* Warning: LINK_OPTION_SHARED cannot be configured, as with this schedule
+    //  * backoff windows will not be reset correctly! */
+    //   link_options = remote_id == node_id ? LINK_OPTION_RX : LINK_OPTION_TX;
 
-      tsch_schedule_add_link(sf[0],
-                             link_options,
-                             LINK_TYPE_NORMAL, &addr,
-                             slot_offset, channel_offset);
+    //   tsch_schedule_add_link(sf[0],
+    //                          link_options,
+    //                          LINK_TYPE_NORMAL, &addr,
+    //                          slot_offset, channel_offset);
 
-    }
+    // }
+
+    linkaddr_t addr = getAddressByNodeID(node_id);
+    uint8_t link_options;
+    uint16_t slot_offset =  deployment_node_count - node_id;  // keeping slot offset as our own Node ID
+    uint16_t channel_offset = deployment_node_count - node_id;
+    link_options = LINK_OPTION_RX;
+    tsch_schedule_add_link(sf[3],
+                              link_options,
+                              LINK_TYPE_NORMAL, &addr,
+                              slot_offset, channel_offset);
 
   /* wait for end of TSCH initialization phase, timed with MASTER_INIT_PERIOD */
   ctimer_set(&install_schedule_timer, MASTER_INIT_PERIOD, master_install_schedule, NULL);

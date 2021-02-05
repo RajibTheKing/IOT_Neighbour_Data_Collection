@@ -70,7 +70,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
         master_routing_send_advertisement_sendto(100, ++adv_counter, node_id);
       }
 
-      if(counter % 20 == 0 && node_id != 1){
+      if(counter % 60 == 0 && node_id != 1){
 
         uint8_t numberofNodes = 1;
         //myData[0] = 1;

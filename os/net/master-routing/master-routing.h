@@ -83,6 +83,8 @@ void modify_schedule();
 void unicast_send();
 linkaddr_t getAddressByNodeID(int givenNodeID);
 
+void add_link_to_best_node();
+
 #endif /* MASTER_ROUTING_H */
 
 /** @} */
