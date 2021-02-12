@@ -547,7 +547,7 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     {
       //nothing
     }
-    else if (type == PACKET_TYPE_ADVERTISEMENT && !flag_to_stop_ad)
+    else if (type == PACKET_TYPE_ADVERTISEMENT /*&& !flag_to_stop_ad*/)
     {
       LOG_INFO("Received advertisement %u;%u;%u;", mrp.packet_type, mrp.flow_number, mrp.advertisement_seq);
       printFLoat(mrp.strengthToMaster);
@@ -568,7 +568,7 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     receivedBeacon.nodeID = mrp.flow_number;
     receivedBeacon.seq = mrp.packet_number;
     receivedBeacon.packet_type = PACKET_TYPE_BEACON;
-    onReceivedNewBeacon(receivedBeacon);
+    onReceivedNewBeacon(node_id, receivedBeacon);
 #else //normal operation
     uint16_t received_asn = packetbuf_attr(PACKETBUF_ATTR_RECEIVED_ASN);
 
@@ -846,11 +846,13 @@ int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, u
   max_master_strength = strength;
   //modify_schedule();
 
+  return master_routing_send_advertisement(strength, adv_seq, bestNode);
+  /*
   if(!flag_to_stop_ad){
     return master_routing_send_advertisement(strength, adv_seq, bestNode);
   }else{
     return 0;
-  }
+  }*/
 }
 
 int master_routing_send_actual_data(uint8_t sending_data[50], uint8_t dataLen)
@@ -925,6 +927,8 @@ void init_master_routing(void)
 
   /* wait for end of TSCH initialization phase, timed with MASTER_INIT_PERIOD */
   ctimer_set(&install_schedule_timer, MASTER_INIT_PERIOD, master_install_schedule, NULL);
+
+  set_own_node_id_as_highest(node_id);
   }
 #else
   LOG_ERR("can't init master-routing: master-net not configured\n");

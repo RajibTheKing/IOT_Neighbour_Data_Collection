@@ -41,6 +41,7 @@ def main():
   parser.add_argument('-p_prr', '--print_prr', help='Print PRR table', action='store_true')
   parser.add_argument('-p_rssi', '--print_rssi', help='Print RSSI table', action='store_true')
   parser.add_argument('-p_sched', '--print_schedule', help='Print Schedule', action='store_true')
+  parser.add_argument('-sv', '--print_strength_vector', help='Use already calculated strength vector to generate ETX/PRR', action='store_true')
   args = parser.parse_args()
 
   folder = args.folder
@@ -191,7 +192,7 @@ def main():
 
   # Parse neighbor discovery file(s)
   neighbor_parser = Parser(node_ids, folder, filename, max_etx)
-  neighbor_parser.parse_neighbor_data(args.print_etx, args.print_prr, args.print_rssi)
+  neighbor_parser.parse_neighbor_data(args.print_etx, args.print_prr, args.print_rssi, args.print_strength_vector)
   neighbor_parser.create_DGRM_configuration()
 
   if communications == []:

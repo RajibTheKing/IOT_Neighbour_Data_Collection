@@ -1,0 +1,2333 @@
+00:00.500	ID:2	[INFO: Main      ] Starting Contiki-NG-4964c5a-dirty
+00:00.502	ID:2	[INFO: Main      ]  Net: masternet
+00:00.504	ID:2	[INFO: Main      ]  MAC: TSCH
+00:00.510	ID:2	tsch_queue_update_time_source
+00:00.511	ID:2	!tsch_is_locked()
+00:00.516	ID:2	[INFO: MASTER-N  ] init
+00:00.521	ID:2	[INFO: Main      ] Link-layer address 0200.0000.0000.0000
+00:00.524	ID:2	[INFO: Sky       ] Node id: 2
+00:00.527	ID:2	[INFO: Sky       ] TSCH, rf channel 26
+00:00.646	ID:1	[INFO: Main      ] Starting Contiki-NG-4964c5a-dirty
+00:00.648	ID:1	[INFO: Main      ]  Net: masternet
+00:00.651	ID:1	[INFO: Main      ]  MAC: TSCH
+00:00.656	ID:1	tsch_queue_update_time_source
+00:00.657	ID:1	!tsch_is_locked()
+00:00.662	ID:1	[INFO: MASTER-N  ] init
+00:00.668	ID:1	[INFO: Main      ] Link-layer address 0100.0000.0000.0000
+00:00.670	ID:1	[INFO: Sky       ] Node id: 1
+00:00.673	ID:1	[INFO: Sky       ] TSCH, rf channel 26
+00:00.988	ID:2	tsch_queue_update_time_source
+00:00.989	ID:2	!tsch_is_locked()
+00:01.163	ID:3	[INFO: Main      ] Starting Contiki-NG-4964c5a-dirty
+00:01.166	ID:3	[INFO: Main      ]  Net: masternet
+00:01.168	ID:3	[INFO: Main      ]  MAC: TSCH
+00:01.173	ID:3	tsch_queue_update_time_source
+00:01.174	ID:3	!tsch_is_locked()
+00:01.180	ID:3	[INFO: MASTER-N  ] init
+00:01.185	ID:3	[INFO: Main      ] Link-layer address 0300.0000.0000.0000
+00:01.187	ID:3	[INFO: Sky       ] Node id: 3
+00:01.190	ID:3	[INFO: Sky       ] TSCH, rf channel 26
+00:01.214	ID:3	tsch_queue_update_time_source
+00:01.215	ID:3	!tsch_is_locked()
+00:05.526	ID:2	[INFO: MASTER-R  ] install schedule
+00:05.535	ID:2	[INFO: MASTER-R  ] install discovery schedule
+00:05.671	ID:1	[INFO: MASTER-R  ] install schedule
+00:05.676	ID:1	[INFO: MASTER-R  ] install discovery schedule
+00:06.189	ID:3	[INFO: MASTER-R  ] install schedule
+00:06.193	ID:3	[INFO: MASTER-R  ] install discovery schedule
+00:07.531	ID:2	[INFO: MASTER-R  ] sent;2;1
+00:07.612	ID:1	Got Some Data len = 62, type = 1
+00:07.612	ID:3	Got Some Data len = 62, type = 1
+00:07.615	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;1;-78
+00:07.616	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;1;-86
+00:07.673	ID:1	[INFO: MASTER-R  ] sent;1;1
+00:07.738	ID:2	Got Some Data len = 62, type = 1
+00:07.738	ID:3	Got Some Data len = 62, type = 1
+00:07.741	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;1;-78
+00:07.741	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;1;-83
+00:08.190	ID:3	[INFO: MASTER-R  ] sent;3;1
+00:08.237	ID:1	Got Some Data len = 62, type = 1
+00:08.237	ID:2	Got Some Data len = 62, type = 1
+00:08.240	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;1;-83
+00:08.240	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;1;-86
+00:08.531	ID:2	[INFO: MASTER-R  ] sent;2;2
+00:08.587	ID:1	Got Some Data len = 62, type = 1
+00:08.587	ID:3	Got Some Data len = 62, type = 1
+00:08.590	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;2;-78
+00:08.590	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;2;-86
+00:08.673	ID:1	[INFO: MASTER-R  ] sent;1;2
+00:08.713	ID:3	Got Some Data len = 62, type = 1
+00:08.713	ID:2	Got Some Data len = 62, type = 1
+00:08.716	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;2;-83
+00:08.716	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;2;-78
+00:09.190	ID:3	[INFO: MASTER-R  ] sent;3;2
+00:09.287	ID:1	Got Some Data len = 62, type = 1
+00:09.287	ID:2	Got Some Data len = 62, type = 1
+00:09.290	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;2;-83
+00:09.290	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;2;-86
+00:09.531	ID:2	[INFO: MASTER-R  ] sent;2;3
+00:09.562	ID:1	Got Some Data len = 62, type = 1
+00:09.563	ID:3	Got Some Data len = 62, type = 1
+00:09.565	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;3;-78
+00:09.566	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;3;-86
+00:09.673	ID:1	[INFO: MASTER-R  ] sent;1;3
+00:09.688	ID:2	Got Some Data len = 62, type = 1
+00:09.689	ID:3	Got Some Data len = 62, type = 1
+00:09.691	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;3;-78
+00:09.692	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;3;-83
+00:10.190	ID:3	[INFO: MASTER-R  ] sent;3;3
+00:10.261	ID:1	Got Some Data len = 62, type = 1
+00:10.262	ID:2	Got Some Data len = 62, type = 1
+00:10.265	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;3;-83
+00:10.265	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;3;-86
+00:10.531	ID:2	[INFO: MASTER-R  ] sent;2;4
+00:10.611	ID:1	Got Some Data len = 62, type = 1
+00:10.612	ID:3	Got Some Data len = 62, type = 1
+00:10.615	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;4;-78
+00:10.616	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;4;-86
+00:10.673	ID:1	[INFO: MASTER-R  ] sent;1;4
+00:10.737	ID:2	Got Some Data len = 62, type = 1
+00:10.738	ID:3	Got Some Data len = 62, type = 1
+00:10.741	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;4;-78
+00:10.742	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;4;-83
+00:11.190	ID:3	[INFO: MASTER-R  ] sent;3;4
+00:11.236	ID:1	Got Some Data len = 62, type = 1
+00:11.236	ID:2	Got Some Data len = 62, type = 1
+00:11.240	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;4;-86
+00:11.240	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;4;-83
+00:11.531	ID:2	[INFO: MASTER-R  ] sent;2;5
+00:11.586	ID:1	Got Some Data len = 62, type = 1
+00:11.587	ID:3	Got Some Data len = 62, type = 1
+00:11.589	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;5;-78
+00:11.591	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;5;-86
+00:11.673	ID:1	[INFO: MASTER-R  ] sent;1;5
+00:11.712	ID:2	Got Some Data len = 62, type = 1
+00:11.713	ID:3	Got Some Data len = 62, type = 1
+00:11.715	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;5;-78
+00:11.716	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;5;-83
+00:12.190	ID:3	[INFO: MASTER-R  ] sent;3;5
+00:12.211	ID:1	Got Some Data len = 62, type = 1
+00:12.211	ID:2	Got Some Data len = 62, type = 1
+00:12.214	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;5;-83
+00:12.214	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;5;-86
+00:12.531	ID:2	[INFO: MASTER-R  ] sent;2;6
+00:12.561	ID:1	Got Some Data len = 62, type = 1
+00:12.562	ID:3	Got Some Data len = 62, type = 1
+00:12.564	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;6;-78
+00:12.565	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;6;-86
+00:12.673	ID:1	[INFO: MASTER-R  ] sent;1;6
+00:12.687	ID:2	Got Some Data len = 62, type = 1
+00:12.688	ID:3	Got Some Data len = 62, type = 1
+00:12.690	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;6;-78
+00:12.691	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;6;-83
+00:13.190	ID:3	[INFO: MASTER-R  ] sent;3;6
+00:13.261	ID:1	Got Some Data len = 62, type = 1
+00:13.261	ID:2	Got Some Data len = 62, type = 1
+00:13.264	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;6;-83
+00:13.264	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;6;-86
+00:13.531	ID:2	[INFO: MASTER-R  ] sent;2;7
+00:13.673	ID:1	[INFO: MASTER-R  ] sent;1;7
+00:13.686	ID:1	Got Some Data len = 62, type = 1
+00:13.687	ID:3	Got Some Data len = 62, type = 1
+00:13.689	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;7;-78
+00:13.690	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;7;-86
+00:13.737	ID:2	Got Some Data len = 62, type = 1
+00:13.738	ID:3	Got Some Data len = 62, type = 1
+00:13.741	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;7;-78
+00:13.742	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;7;-83
+00:14.190	ID:3	[INFO: MASTER-R  ] sent;3;7
+00:14.235	ID:1	Got Some Data len = 62, type = 1
+00:14.235	ID:2	Got Some Data len = 62, type = 1
+00:14.239	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;7;-86
+00:14.239	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;7;-83
+00:14.531	ID:2	[INFO: MASTER-R  ] sent;2;8
+00:14.585	ID:1	Got Some Data len = 62, type = 1
+00:14.587	ID:3	Got Some Data len = 62, type = 1
+00:14.589	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;8;-78
+00:14.590	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;8;-86
+00:14.673	ID:1	[INFO: MASTER-R  ] sent;1;8
+00:14.786	ID:2	Got Some Data len = 62, type = 1
+00:14.787	ID:3	Got Some Data len = 62, type = 1
+00:14.790	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;8;-78
+00:14.791	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;8;-83
+00:15.190	ID:3	[INFO: MASTER-R  ] sent;3;8
+00:15.210	ID:1	Got Some Data len = 62, type = 1
+00:15.210	ID:2	Got Some Data len = 62, type = 1
+00:15.214	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;8;-83
+00:15.214	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;8;-86
+00:15.531	ID:2	[INFO: MASTER-R  ] sent;2;9
+00:15.560	ID:1	Got Some Data len = 62, type = 1
+00:15.561	ID:3	Got Some Data len = 62, type = 1
+00:15.564	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;9;-78
+00:15.565	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;9;-86
+00:15.674	ID:1	[INFO: MASTER-R  ] sent;1;9
+00:15.686	ID:2	Got Some Data len = 62, type = 1
+00:15.686	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;1;100.000
+00:15.687	ID:3	Got Some Data len = 62, type = 1
+00:15.689	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;9;-78
+00:15.690	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;9;-83
+00:15.761	ID:2	Got Some Data len = 62, type = 2
+00:15.762	ID:3	Got Some Data len = 62, type = 2
+00:15.766	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;1;100.000
+00:15.767	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;1;100.000
+00:15.769	ID:2	Now Changing best schedule Link
+00:15.770	ID:3	Now Changing best schedule Link
+00:15.782	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;1;100.000
+00:15.785	ID:1	Got Some Data len = 62, type = 2
+00:15.786	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;1;100.000
+00:15.791	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;1;100.000
+00:15.792	ID:2	advertisement Seq: 1, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:15.796	ID:3	advertisement Seq: 1, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:15.800	ID:3	Got Some Data len = 62, type = 2
+00:15.810	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;1;100.000
+00:15.818	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;1;100.000
+00:15.833	ID:3	advertisement Seq: 1, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:15.885	ID:1	Got Some Data len = 62, type = 2
+00:15.885	ID:2	Got Some Data len = 62, type = 2
+00:15.890	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;1;100.000
+00:15.891	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;1;100.000
+00:15.899	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;1;100.000
+00:15.914	ID:2	advertisement Seq: 1, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 88.888
+00:15.935	ID:1	Got Some Data len = 62, type = 2
+00:15.936	ID:3	Got Some Data len = 62, type = 2
+00:15.940	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;1;100.000
+00:15.942	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;1;100.000
+00:15.960	ID:1	Got Some Data len = 62, type = 2
+00:15.960	ID:2	Got Some Data len = 62, type = 2
+00:15.966	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;1;100.000
+00:15.966	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;1;100.000
+00:16.190	ID:3	[INFO: MASTER-R  ] sent;3;9
+00:16.260	ID:1	Got Some Data len = 62, type = 1
+00:16.260	ID:2	Got Some Data len = 62, type = 1
+00:16.263	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;9;-83
+00:16.263	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;9;-86
+00:16.531	ID:2	[INFO: MASTER-R  ] sent;2;10
+00:16.610	ID:1	Got Some Data len = 62, type = 1
+00:16.611	ID:3	Got Some Data len = 62, type = 1
+00:16.613	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;10;-78
+00:16.614	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;10;-86
+00:16.674	ID:1	[INFO: MASTER-R  ] sent;1;10
+00:16.736	ID:2	Got Some Data len = 62, type = 1
+00:16.737	ID:3	Got Some Data len = 62, type = 1
+00:16.739	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;10;-78
+00:16.740	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;10;-83
+00:17.190	ID:3	[INFO: MASTER-R  ] sent;3;10
+00:17.235	ID:1	Got Some Data len = 62, type = 1
+00:17.235	ID:2	Got Some Data len = 62, type = 1
+00:17.238	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;10;-83
+00:17.238	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;10;-86
+00:17.531	ID:2	[INFO: MASTER-R  ] sent;2;11
+00:17.585	ID:1	Got Some Data len = 62, type = 1
+00:17.586	ID:3	Got Some Data len = 62, type = 1
+00:17.588	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;11;-78
+00:17.589	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;11;-86
+00:17.674	ID:1	[INFO: MASTER-R  ] sent;1;11
+00:17.711	ID:2	Got Some Data len = 62, type = 1
+00:17.712	ID:3	Got Some Data len = 62, type = 1
+00:17.714	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;11;-78
+00:17.715	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;11;-83
+00:18.190	ID:3	[INFO: MASTER-R  ] sent;3;11
+00:18.209	ID:1	Got Some Data len = 62, type = 1
+00:18.210	ID:2	Got Some Data len = 62, type = 1
+00:18.213	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;11;-83
+00:18.213	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;11;-86
+00:18.531	ID:2	[INFO: MASTER-R  ] sent;2;12
+00:18.634	ID:1	Got Some Data len = 62, type = 1
+00:18.635	ID:3	Got Some Data len = 62, type = 1
+00:18.638	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;12;-78
+00:18.639	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;12;-86
+00:18.674	ID:1	[INFO: MASTER-R  ] sent;1;12
+00:18.686	ID:2	Got Some Data len = 62, type = 1
+00:18.687	ID:3	Got Some Data len = 62, type = 1
+00:18.690	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;12;-78
+00:18.691	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;12;-83
+00:19.190	ID:3	[INFO: MASTER-R  ] sent;3;12
+00:19.259	ID:1	Got Some Data len = 62, type = 1
+00:19.259	ID:2	Got Some Data len = 62, type = 1
+00:19.263	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;12;-86
+00:19.263	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;12;-83
+00:19.531	ID:2	[INFO: MASTER-R  ] sent;2;13
+00:19.609	ID:1	Got Some Data len = 62, type = 1
+00:19.610	ID:3	Got Some Data len = 62, type = 1
+00:19.613	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;13;-78
+00:19.614	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;13;-86
+00:19.674	ID:1	[INFO: MASTER-R  ] sent;1;13
+00:19.735	ID:2	Got Some Data len = 62, type = 1
+00:19.736	ID:3	Got Some Data len = 62, type = 1
+00:19.739	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;13;-78
+00:19.740	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;13;-83
+00:20.190	ID:3	[INFO: MASTER-R  ] sent;3;13
+00:20.234	ID:1	Got Some Data len = 62, type = 1
+00:20.234	ID:2	Got Some Data len = 62, type = 1
+00:20.237	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;13;-83
+00:20.238	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;13;-86
+00:20.531	ID:2	[INFO: MASTER-R  ] sent;2;14
+00:20.584	ID:1	Got Some Data len = 62, type = 1
+00:20.585	ID:3	Got Some Data len = 62, type = 1
+00:20.587	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;14;-78
+00:20.588	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;14;-86
+00:20.674	ID:1	[INFO: MASTER-R  ] sent;1;14
+00:20.710	ID:2	Got Some Data len = 62, type = 1
+00:20.711	ID:3	Got Some Data len = 62, type = 1
+00:20.713	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;14;-78
+00:20.714	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;14;-83
+00:21.190	ID:3	[INFO: MASTER-R  ] sent;3;14
+00:21.209	ID:1	Got Some Data len = 62, type = 1
+00:21.209	ID:2	Got Some Data len = 62, type = 1
+00:21.212	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;14;-83
+00:21.212	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;14;-86
+00:21.531	ID:2	[INFO: MASTER-R  ] sent;2;15
+00:21.559	ID:1	Got Some Data len = 62, type = 1
+00:21.560	ID:3	Got Some Data len = 62, type = 1
+00:21.562	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;15;-78
+00:21.563	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;15;-86
+00:21.674	ID:1	[INFO: MASTER-R  ] sent;1;15
+00:21.685	ID:2	Got Some Data len = 62, type = 1
+00:21.686	ID:3	Got Some Data len = 62, type = 1
+00:21.688	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;15;-78
+00:21.689	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;15;-83
+00:21.698	ID:3	TheKing--> strength_vector(15): (1 - 100.000), (2 - 100.000), 
+00:22.190	ID:3	[INFO: MASTER-R  ] sent;3;15
+00:22.259	ID:2	Got Some Data len = 62, type = 1
+00:22.259	ID:1	Got Some Data len = 62, type = 1
+00:22.262	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;15;-86
+00:22.262	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;15;-83
+00:22.273	ID:2	TheKing--> strength_vector(15): (1 - 100.000), (2 - .000), (3 - 100.000), 
+00:22.273	ID:1	TheKing--> strength_vector(15): (1 - .000), (2 - 100.000), (3 - 100.000), 
+00:22.531	ID:2	[INFO: MASTER-R  ] sent;2;16
+00:22.608	ID:1	Got Some Data len = 62, type = 1
+00:22.610	ID:3	Got Some Data len = 62, type = 1
+00:22.612	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;16;-78
+00:22.613	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;16;-86
+00:22.677	ID:1	[INFO: MASTER-R  ] sent;1;16
+00:22.735	ID:2	Got Some Data len = 62, type = 1
+00:22.736	ID:3	Got Some Data len = 62, type = 1
+00:22.739	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;16;-78
+00:22.740	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;16;-83
+00:23.190	ID:3	[INFO: MASTER-R  ] sent;3;16
+00:23.308	ID:1	Got Some Data len = 62, type = 1
+00:23.308	ID:2	Got Some Data len = 62, type = 1
+00:23.312	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;16;-83
+00:23.312	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;16;-86
+00:23.531	ID:2	[INFO: MASTER-R  ] sent;2;17
+00:23.583	ID:1	Got Some Data len = 62, type = 1
+00:23.585	ID:3	Got Some Data len = 62, type = 1
+00:23.587	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;17;-78
+00:23.588	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;17;-86
+00:23.677	ID:1	[INFO: MASTER-R  ] sent;1;17
+00:23.709	ID:2	Got Some Data len = 62, type = 1
+00:23.710	ID:3	Got Some Data len = 62, type = 1
+00:23.713	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;17;-78
+00:23.714	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;17;-83
+00:24.190	ID:3	[INFO: MASTER-R  ] sent;3;17
+00:24.208	ID:2	Got Some Data len = 62, type = 1
+00:24.208	ID:1	Got Some Data len = 62, type = 1
+00:24.212	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;17;-86
+00:24.212	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;17;-83
+00:24.531	ID:2	[INFO: MASTER-R  ] sent;2;18
+00:24.558	ID:1	Got Some Data len = 62, type = 1
+00:24.559	ID:3	Got Some Data len = 62, type = 1
+00:24.562	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;18;-78
+00:24.563	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;18;-86
+00:24.677	ID:1	[INFO: MASTER-R  ] sent;1;18
+00:24.759	ID:2	Got Some Data len = 62, type = 1
+00:24.760	ID:3	Got Some Data len = 62, type = 1
+00:24.762	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;18;-78
+00:24.764	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;18;-83
+00:25.190	ID:3	[INFO: MASTER-R  ] sent;3;18
+00:25.258	ID:1	Got Some Data len = 62, type = 1
+00:25.258	ID:2	Got Some Data len = 62, type = 1
+00:25.261	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;18;-83
+00:25.261	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;18;-86
+00:25.531	ID:2	[INFO: MASTER-R  ] sent;2;19
+00:25.608	ID:1	Got Some Data len = 62, type = 1
+00:25.609	ID:3	Got Some Data len = 62, type = 1
+00:25.611	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;19;-78
+00:25.612	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;19;-86
+00:25.677	ID:1	[INFO: MASTER-R  ] sent;1;19
+00:25.685	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;2;100.000
+00:25.734	ID:2	Got Some Data len = 62, type = 1
+00:25.735	ID:3	Got Some Data len = 62, type = 1
+00:25.737	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;19;-78
+00:25.738	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;19;-83
+00:25.809	ID:2	Got Some Data len = 62, type = 2
+00:25.810	ID:3	Got Some Data len = 62, type = 2
+00:25.814	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:25.815	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:25.823	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;100.000
+00:25.832	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;100.000
+00:25.833	ID:1	Got Some Data len = 62, type = 2
+00:25.838	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:25.838	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;2;100.000
+00:25.842	ID:3	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:25.846	ID:3	Got Some Data len = 62, type = 2
+00:25.857	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;2;100.000
+00:25.858	ID:1	Got Some Data len = 62, type = 2
+00:25.858	ID:2	Got Some Data len = 62, type = 2
+00:25.863	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;2;100.000
+00:25.863	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;2;100.000
+00:25.866	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;100.000
+00:25.872	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;100.000
+00:25.881	ID:3	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:25.886	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 94.736
+00:25.908	ID:1	Got Some Data len = 62, type = 2
+00:25.909	ID:3	Got Some Data len = 62, type = 2
+00:25.913	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;2;100.000
+00:25.914	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;2;100.000
+00:25.933	ID:1	Got Some Data len = 62, type = 2
+00:25.933	ID:2	Got Some Data len = 62, type = 2
+00:25.938	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;2;100.000
+00:25.938	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;2;100.000
+00:26.190	ID:3	[INFO: MASTER-R  ] sent;3;19
+00:26.233	ID:1	Got Some Data len = 62, type = 1
+00:26.233	ID:2	Got Some Data len = 62, type = 1
+00:26.236	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;19;-83
+00:26.236	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;19;-86
+00:26.530	ID:2	[INFO: MASTER-R  ] sent;2;20
+00:26.582	ID:1	Got Some Data len = 62, type = 1
+00:26.584	ID:3	Got Some Data len = 62, type = 1
+00:26.586	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;20;-78
+00:26.587	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;20;-86
+00:26.677	ID:1	[INFO: MASTER-R  ] sent;1;20
+00:26.708	ID:2	Got Some Data len = 62, type = 1
+00:26.710	ID:3	Got Some Data len = 62, type = 1
+00:26.712	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;20;-78
+00:26.713	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;20;-83
+00:27.190	ID:3	[INFO: MASTER-R  ] sent;3;20
+00:27.207	ID:2	Got Some Data len = 62, type = 1
+00:27.207	ID:1	Got Some Data len = 62, type = 1
+00:27.211	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;20;-83
+00:27.211	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;20;-86
+00:27.531	ID:2	[INFO: MASTER-R  ] sent;2;21
+00:27.557	ID:1	Got Some Data len = 62, type = 1
+00:27.559	ID:3	Got Some Data len = 62, type = 1
+00:27.561	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;21;-78
+00:27.562	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;21;-86
+00:27.677	ID:1	[INFO: MASTER-R  ] sent;1;21
+00:27.759	ID:2	Got Some Data len = 62, type = 1
+00:27.760	ID:3	Got Some Data len = 62, type = 1
+00:27.762	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;21;-78
+00:27.763	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;21;-83
+00:28.190	ID:3	[INFO: MASTER-R  ] sent;3;21
+00:28.257	ID:1	Got Some Data len = 62, type = 1
+00:28.257	ID:2	Got Some Data len = 62, type = 1
+00:28.261	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;21;-83
+00:28.261	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;21;-86
+00:28.531	ID:2	[INFO: MASTER-R  ] sent;2;22
+00:28.607	ID:1	Got Some Data len = 62, type = 1
+00:28.608	ID:3	Got Some Data len = 62, type = 1
+00:28.610	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;22;-78
+00:28.612	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;22;-86
+00:28.677	ID:1	[INFO: MASTER-R  ] sent;1;22
+00:28.808	ID:2	Got Some Data len = 62, type = 1
+00:28.809	ID:3	Got Some Data len = 62, type = 1
+00:28.811	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;22;-78
+00:28.812	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;22;-83
+00:29.190	ID:3	[INFO: MASTER-R  ] sent;3;22
+00:29.232	ID:1	Got Some Data len = 62, type = 1
+00:29.232	ID:2	Got Some Data len = 62, type = 1
+00:29.235	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;22;-83
+00:29.235	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;22;-86
+00:29.530	ID:2	[INFO: MASTER-R  ] sent;2;23
+00:29.582	ID:1	Got Some Data len = 62, type = 1
+00:29.583	ID:3	Got Some Data len = 62, type = 1
+00:29.585	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;23;-78
+00:29.586	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;23;-86
+00:29.677	ID:1	[INFO: MASTER-R  ] sent;1;23
+00:29.708	ID:2	Got Some Data len = 62, type = 1
+00:29.709	ID:3	Got Some Data len = 62, type = 1
+00:29.711	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;23;-78
+00:29.712	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;23;-83
+00:30.190	ID:3	[INFO: MASTER-R  ] sent;3;23
+00:30.207	ID:1	Got Some Data len = 62, type = 1
+00:30.207	ID:2	Got Some Data len = 62, type = 1
+00:30.210	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;23;-83
+00:30.210	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;23;-86
+00:30.530	ID:2	[INFO: MASTER-R  ] sent;2;24
+00:30.556	ID:1	Got Some Data len = 62, type = 1
+00:30.558	ID:3	Got Some Data len = 62, type = 1
+00:30.560	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;24;-78
+00:30.561	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;24;-86
+00:30.677	ID:1	[INFO: MASTER-R  ] sent;1;24
+00:30.757	ID:2	Got Some Data len = 62, type = 1
+00:30.758	ID:3	Got Some Data len = 62, type = 1
+00:30.761	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;24;-78
+00:30.762	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;24;-83
+00:31.190	ID:3	[INFO: MASTER-R  ] sent;3;24
+00:31.256	ID:1	Got Some Data len = 62, type = 1
+00:31.256	ID:2	Got Some Data len = 62, type = 1
+00:31.260	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;24;-83
+00:31.260	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;24;-86
+00:31.530	ID:2	[INFO: MASTER-R  ] sent;2;25
+00:31.606	ID:1	Got Some Data len = 62, type = 1
+00:31.607	ID:3	Got Some Data len = 62, type = 1
+00:31.610	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;25;-78
+00:31.611	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;25;-86
+00:31.677	ID:1	[INFO: MASTER-R  ] sent;1;25
+00:31.732	ID:2	Got Some Data len = 62, type = 1
+00:31.733	ID:3	Got Some Data len = 62, type = 1
+00:31.736	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;25;-78
+00:31.737	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;25;-83
+00:32.190	ID:3	[INFO: MASTER-R  ] sent;3;25
+00:32.231	ID:1	Got Some Data len = 62, type = 1
+00:32.231	ID:2	Got Some Data len = 62, type = 1
+00:32.235	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;25;-83
+00:32.235	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;25;-86
+00:32.530	ID:2	[INFO: MASTER-R  ] sent;2;26
+00:32.656	ID:1	Got Some Data len = 62, type = 1
+00:32.657	ID:3	Got Some Data len = 62, type = 1
+00:32.659	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;26;-78
+00:32.661	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;26;-86
+00:32.677	ID:1	[INFO: MASTER-R  ] sent;1;26
+00:32.708	ID:2	Got Some Data len = 62, type = 1
+00:32.709	ID:3	Got Some Data len = 62, type = 1
+00:32.711	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;26;-78
+00:32.712	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;26;-83
+00:33.190	ID:3	[INFO: MASTER-R  ] sent;3;26
+00:33.206	ID:1	Got Some Data len = 62, type = 1
+00:33.206	ID:2	Got Some Data len = 62, type = 1
+00:33.209	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;26;-83
+00:33.209	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;26;-86
+00:33.530	ID:2	[INFO: MASTER-R  ] sent;2;27
+00:33.556	ID:1	Got Some Data len = 62, type = 1
+00:33.557	ID:3	Got Some Data len = 62, type = 1
+00:33.559	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;27;-78
+00:33.561	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;27;-86
+00:33.678	ID:1	[INFO: MASTER-R  ] sent;1;27
+00:33.757	ID:2	Got Some Data len = 62, type = 1
+00:33.758	ID:3	Got Some Data len = 62, type = 1
+00:33.760	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;27;-78
+00:33.761	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;27;-83
+00:34.190	ID:3	[INFO: MASTER-R  ] sent;3;27
+00:34.256	ID:1	Got Some Data len = 62, type = 1
+00:34.256	ID:2	Got Some Data len = 62, type = 1
+00:34.259	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;27;-83
+00:34.259	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;27;-86
+00:34.529	ID:2	[INFO: MASTER-R  ] sent;2;28
+00:34.606	ID:1	Got Some Data len = 62, type = 1
+00:34.607	ID:3	Got Some Data len = 62, type = 1
+00:34.609	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;28;-78
+00:34.610	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;28;-86
+00:34.677	ID:1	[INFO: MASTER-R  ] sent;1;28
+00:34.731	ID:2	Got Some Data len = 62, type = 1
+00:34.733	ID:3	Got Some Data len = 62, type = 1
+00:34.735	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;28;-78
+00:34.736	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;28;-83
+00:35.190	ID:3	[INFO: MASTER-R  ] sent;3;28
+00:35.230	ID:1	Got Some Data len = 62, type = 1
+00:35.230	ID:2	Got Some Data len = 62, type = 1
+00:35.234	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;28;-83
+00:35.234	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;28;-86
+00:35.529	ID:2	[INFO: MASTER-R  ] sent;2;29
+00:35.580	ID:1	Got Some Data len = 62, type = 1
+00:35.582	ID:3	Got Some Data len = 62, type = 1
+00:35.584	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;29;-78
+00:35.585	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;29;-86
+00:35.677	ID:1	[INFO: MASTER-R  ] sent;1;29
+00:35.685	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;3;100.000
+00:35.706	ID:2	Got Some Data len = 62, type = 1
+00:35.707	ID:3	Got Some Data len = 62, type = 1
+00:35.710	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;29;-78
+00:35.711	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;29;-83
+00:35.781	ID:2	Got Some Data len = 62, type = 2
+00:35.782	ID:3	Got Some Data len = 62, type = 2
+00:35.787	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;3;100.000
+00:35.788	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;3;100.000
+00:35.796	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;3;100.000
+00:35.805	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;3;100.000
+00:35.805	ID:1	Got Some Data len = 62, type = 2
+00:35.810	ID:2	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:35.811	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;3;100.000
+00:35.815	ID:3	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:35.819	ID:3	Got Some Data len = 62, type = 2
+00:35.830	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;3;100.000
+00:35.830	ID:1	Got Some Data len = 62, type = 2
+00:35.830	ID:2	Got Some Data len = 62, type = 2
+00:35.836	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;3;100.000
+00:35.836	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;3;100.000
+00:35.838	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;3;100.000
+00:35.845	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;3;100.000
+00:35.854	ID:3	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:35.859	ID:2	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 96.551
+00:35.905	ID:1	Got Some Data len = 62, type = 2
+00:35.905	ID:2	Got Some Data len = 62, type = 2
+00:35.911	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;3;100.000
+00:35.911	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;3;100.000
+00:35.955	ID:1	Got Some Data len = 62, type = 2
+00:35.956	ID:3	Got Some Data len = 62, type = 2
+00:35.961	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;3;100.000
+00:35.962	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;3;100.000
+00:36.190	ID:3	[INFO: MASTER-R  ] sent;3;29
+00:36.205	ID:1	Got Some Data len = 62, type = 1
+00:36.205	ID:2	Got Some Data len = 62, type = 1
+00:36.209	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;29;-86
+00:36.209	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;29;-83
+00:36.529	ID:2	[INFO: MASTER-R  ] sent;2;30
+00:36.555	ID:1	Got Some Data len = 62, type = 1
+00:36.556	ID:3	Got Some Data len = 62, type = 1
+00:36.559	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;30;-78
+00:36.560	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;30;-86
+00:36.677	ID:1	[INFO: MASTER-R  ] sent;1;30
+00:36.757	ID:2	Got Some Data len = 62, type = 1
+00:36.758	ID:3	Got Some Data len = 62, type = 1
+00:36.760	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;30;-78
+00:36.761	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;30;-83
+00:36.775	ID:3	TheKing--> strength_vector(30): (1 - 100.000), (2 - 100.000), 
+00:37.190	ID:3	[INFO: MASTER-R  ] sent;3;30
+00:37.330	ID:1	Got Some Data len = 62, type = 1
+00:37.330	ID:2	Got Some Data len = 62, type = 1
+00:37.333	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;30;-86
+00:37.333	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;30;-83
+00:37.344	ID:2	TheKing--> strength_vector(30): (1 - 100.000), (2 - .000), (3 - 100.000), 
+00:37.345	ID:1	TheKing--> strength_vector(30): (1 - .000), (2 - 100.000), (3 - 100.000), 
+00:37.529	ID:2	[INFO: MASTER-R  ] sent;2;31
+00:37.605	ID:1	Got Some Data len = 62, type = 1
+00:37.606	ID:3	Got Some Data len = 62, type = 1
+00:37.608	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;31;-78
+00:37.609	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;31;-86
+00:37.677	ID:1	[INFO: MASTER-R  ] sent;1;31
+00:37.731	ID:2	Got Some Data len = 62, type = 1
+00:37.732	ID:3	Got Some Data len = 62, type = 1
+00:37.734	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;31;-78
+00:37.735	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;31;-83
+00:38.190	ID:3	[INFO: MASTER-R  ] sent;3;31
+00:38.230	ID:1	Got Some Data len = 62, type = 1
+00:38.230	ID:2	Got Some Data len = 62, type = 1
+00:38.233	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;31;-83
+00:38.233	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;31;-86
+00:38.528	ID:2	[INFO: MASTER-R  ] sent;2;32
+00:38.580	ID:1	Got Some Data len = 62, type = 1
+00:38.581	ID:3	Got Some Data len = 62, type = 1
+00:38.583	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;32;-78
+00:38.584	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;32;-86
+00:38.677	ID:1	[INFO: MASTER-R  ] sent;1;32
+00:38.705	ID:2	Got Some Data len = 62, type = 1
+00:38.706	ID:3	Got Some Data len = 62, type = 1
+00:38.709	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;32;-78
+00:38.710	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;32;-83
+00:39.190	ID:3	[INFO: MASTER-R  ] sent;3;32
+00:39.204	ID:1	Got Some Data len = 62, type = 1
+00:39.204	ID:2	Got Some Data len = 62, type = 1
+00:39.208	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;32;-86
+00:39.208	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;32;-83
+00:39.528	ID:2	[INFO: MASTER-R  ] sent;2;33
+00:39.554	ID:1	Got Some Data len = 62, type = 1
+00:39.555	ID:3	Got Some Data len = 62, type = 1
+00:39.558	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;33;-78
+00:39.559	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;33;-86
+00:39.677	ID:1	[INFO: MASTER-R  ] sent;1;33
+00:39.755	ID:2	Got Some Data len = 62, type = 1
+00:39.756	ID:3	Got Some Data len = 62, type = 1
+00:39.759	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;33;-78
+00:39.760	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;33;-83
+00:40.190	ID:3	[INFO: MASTER-R  ] sent;3;33
+00:40.254	ID:2	Got Some Data len = 62, type = 1
+00:40.254	ID:1	Got Some Data len = 62, type = 1
+00:40.258	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;33;-83
+00:40.258	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;33;-86
+00:40.528	ID:2	[INFO: MASTER-R  ] sent;2;34
+00:40.604	ID:1	Got Some Data len = 62, type = 1
+00:40.605	ID:3	Got Some Data len = 62, type = 1
+00:40.608	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;34;-78
+00:40.609	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;34;-86
+00:40.677	ID:1	[INFO: MASTER-R  ] sent;1;34
+00:40.730	ID:2	Got Some Data len = 62, type = 1
+00:40.731	ID:3	Got Some Data len = 62, type = 1
+00:40.733	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;34;-78
+00:40.734	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;34;-83
+00:41.190	ID:3	[INFO: MASTER-R  ] sent;3;34
+00:41.229	ID:1	Got Some Data len = 62, type = 1
+00:41.229	ID:2	Got Some Data len = 62, type = 1
+00:41.232	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;34;-83
+00:41.232	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;34;-86
+00:41.528	ID:2	[INFO: MASTER-R  ] sent;2;35
+00:41.579	ID:1	Got Some Data len = 62, type = 1
+00:41.580	ID:3	Got Some Data len = 62, type = 1
+00:41.582	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;35;-78
+00:41.583	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;35;-86
+00:41.677	ID:1	[INFO: MASTER-R  ] sent;1;35
+00:41.705	ID:2	Got Some Data len = 62, type = 1
+00:41.706	ID:3	Got Some Data len = 62, type = 1
+00:41.708	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;35;-78
+00:41.709	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;35;-83
+00:42.190	ID:3	[INFO: MASTER-R  ] sent;3;35
+00:42.279	ID:1	Got Some Data len = 62, type = 1
+00:42.279	ID:2	Got Some Data len = 62, type = 1
+00:42.282	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;35;-83
+00:42.282	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;35;-86
+00:42.527	ID:2	[INFO: MASTER-R  ] sent;2;36
+00:42.554	ID:1	Got Some Data len = 62, type = 1
+00:42.555	ID:3	Got Some Data len = 62, type = 1
+00:42.557	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;36;-78
+00:42.558	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;36;-86
+00:42.677	ID:1	[INFO: MASTER-R  ] sent;1;36
+00:42.829	ID:2	Got Some Data len = 62, type = 1
+00:42.830	ID:3	Got Some Data len = 62, type = 1
+00:42.833	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;36;-78
+00:42.834	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;36;-83
+00:43.190	ID:3	[INFO: MASTER-R  ] sent;3;36
+00:43.253	ID:1	Got Some Data len = 62, type = 1
+00:43.253	ID:2	Got Some Data len = 62, type = 1
+00:43.257	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;36;-83
+00:43.257	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;36;-86
+00:43.527	ID:2	[INFO: MASTER-R  ] sent;2;37
+00:43.603	ID:1	Got Some Data len = 62, type = 1
+00:43.604	ID:3	Got Some Data len = 62, type = 1
+00:43.607	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;37;-78
+00:43.608	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;37;-86
+00:43.677	ID:1	[INFO: MASTER-R  ] sent;1;37
+00:43.729	ID:2	Got Some Data len = 62, type = 1
+00:43.730	ID:3	Got Some Data len = 62, type = 1
+00:43.733	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;37;-78
+00:43.734	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;37;-83
+00:44.190	ID:3	[INFO: MASTER-R  ] sent;3;37
+00:44.228	ID:1	Got Some Data len = 62, type = 1
+00:44.228	ID:2	Got Some Data len = 62, type = 1
+00:44.232	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;37;-86
+00:44.232	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;37;-83
+00:44.527	ID:2	[INFO: MASTER-R  ] sent;2;38
+00:44.578	ID:1	Got Some Data len = 62, type = 1
+00:44.579	ID:3	Got Some Data len = 62, type = 1
+00:44.582	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;38;-78
+00:44.583	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;38;-86
+00:44.679	ID:1	[INFO: MASTER-R  ] sent;1;38
+00:44.704	ID:2	Got Some Data len = 62, type = 1
+00:44.705	ID:3	Got Some Data len = 62, type = 1
+00:44.707	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;38;-78
+00:44.708	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;38;-83
+00:45.190	ID:3	[INFO: MASTER-R  ] sent;3;38
+00:45.203	ID:1	Got Some Data len = 62, type = 1
+00:45.203	ID:2	Got Some Data len = 62, type = 1
+00:45.206	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;38;-83
+00:45.206	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;38;-86
+00:45.527	ID:2	[INFO: MASTER-R  ] sent;2;39
+00:45.553	ID:1	Got Some Data len = 62, type = 1
+00:45.554	ID:3	Got Some Data len = 62, type = 1
+00:45.556	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;39;-78
+00:45.557	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;39;-86
+00:45.677	ID:1	[INFO: MASTER-R  ] sent;1;39
+00:45.684	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;4;100.000
+00:45.755	ID:2	Got Some Data len = 62, type = 1
+00:45.756	ID:3	Got Some Data len = 62, type = 1
+00:45.759	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;39;-78
+00:45.760	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;39;-83
+00:45.829	ID:2	Got Some Data len = 62, type = 2
+00:45.830	ID:3	Got Some Data len = 62, type = 2
+00:45.834	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;4;100.000
+00:45.835	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;4;100.000
+00:45.843	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;4;100.000
+00:45.852	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;100.000
+00:45.853	ID:1	Got Some Data len = 62, type = 2
+00:45.858	ID:2	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:45.858	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;4;100.000
+00:45.862	ID:3	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:45.866	ID:3	Got Some Data len = 62, type = 2
+00:45.877	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;4;100.000
+00:45.878	ID:1	Got Some Data len = 62, type = 2
+00:45.878	ID:2	Got Some Data len = 62, type = 2
+00:45.883	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;4;100.000
+00:45.883	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;4;100.000
+00:45.886	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;100.000
+00:45.892	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;4;100.000
+00:45.901	ID:3	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:45.906	ID:2	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 97.435
+00:45.928	ID:1	Got Some Data len = 62, type = 2
+00:45.929	ID:3	Got Some Data len = 62, type = 2
+00:45.933	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;4;100.000
+00:45.934	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;4;100.000
+00:45.953	ID:1	Got Some Data len = 62, type = 2
+00:45.953	ID:2	Got Some Data len = 62, type = 2
+00:45.958	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;4;100.000
+00:45.958	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;4;100.000
+00:46.191	ID:3	[INFO: MASTER-R  ] sent;3;39
+00:46.253	ID:1	Got Some Data len = 62, type = 1
+00:46.253	ID:2	Got Some Data len = 62, type = 1
+00:46.256	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;39;-83
+00:46.256	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;39;-86
+00:46.527	ID:2	[INFO: MASTER-R  ] sent;2;40
+00:46.678	ID:1	Got Some Data len = 62, type = 1
+00:46.679	ID:3	Got Some Data len = 62, type = 1
+00:46.681	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;40;-78
+00:46.682	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;40;-86
+00:46.688	ID:1	[INFO: MASTER-R  ] sent;1;40
+00:46.728	ID:2	Got Some Data len = 62, type = 1
+00:46.730	ID:3	Got Some Data len = 62, type = 1
+00:46.732	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;40;-78
+00:46.733	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;40;-83
+00:47.191	ID:3	[INFO: MASTER-R  ] sent;3;40
+00:47.227	ID:1	Got Some Data len = 62, type = 1
+00:47.227	ID:2	Got Some Data len = 62, type = 1
+00:47.231	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;40;-86
+00:47.231	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;40;-83
+00:47.527	ID:2	[INFO: MASTER-R  ] sent;2;41
+00:47.577	ID:1	Got Some Data len = 62, type = 1
+00:47.579	ID:3	Got Some Data len = 62, type = 1
+00:47.581	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;41;-78
+00:47.582	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;41;-86
+00:47.676	ID:1	[INFO: MASTER-R  ] sent;1;41
+00:47.778	ID:2	Got Some Data len = 62, type = 1
+00:47.779	ID:3	Got Some Data len = 62, type = 1
+00:47.782	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;41;-78
+00:47.783	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;41;-83
+00:48.191	ID:3	[INFO: MASTER-R  ] sent;3;41
+00:48.202	ID:1	Got Some Data len = 62, type = 1
+00:48.202	ID:2	Got Some Data len = 62, type = 1
+00:48.206	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;41;-83
+00:48.206	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;41;-86
+00:48.529	ID:2	[INFO: MASTER-R  ] sent;2;42
+00:48.552	ID:1	Got Some Data len = 62, type = 1
+00:48.553	ID:3	Got Some Data len = 62, type = 1
+00:48.556	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;42;-78
+00:48.557	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;42;-86
+00:48.676	ID:1	[INFO: MASTER-R  ] sent;1;42
+00:48.753	ID:2	Got Some Data len = 62, type = 1
+00:48.754	ID:3	Got Some Data len = 62, type = 1
+00:48.756	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;42;-78
+00:48.758	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;42;-83
+00:49.191	ID:3	[INFO: MASTER-R  ] sent;3;42
+00:49.252	ID:1	Got Some Data len = 62, type = 1
+00:49.252	ID:2	Got Some Data len = 62, type = 1
+00:49.255	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;42;-86
+00:49.255	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;42;-83
+00:49.527	ID:2	[INFO: MASTER-R  ] sent;2;43
+00:49.602	ID:1	Got Some Data len = 62, type = 1
+00:49.603	ID:3	Got Some Data len = 62, type = 1
+00:49.605	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;43;-78
+00:49.607	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;43;-86
+00:49.676	ID:1	[INFO: MASTER-R  ] sent;1;43
+00:49.728	ID:2	Got Some Data len = 62, type = 1
+00:49.729	ID:3	Got Some Data len = 62, type = 1
+00:49.731	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;43;-78
+00:49.732	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;43;-83
+00:50.191	ID:3	[INFO: MASTER-R  ] sent;3;43
+00:50.227	ID:1	Got Some Data len = 62, type = 1
+00:50.227	ID:2	Got Some Data len = 62, type = 1
+00:50.230	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;43;-83
+00:50.230	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;43;-86
+00:50.527	ID:2	[INFO: MASTER-R  ] sent;2;44
+00:50.577	ID:1	Got Some Data len = 62, type = 1
+00:50.578	ID:3	Got Some Data len = 62, type = 1
+00:50.580	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;44;-78
+00:50.581	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;44;-86
+00:50.675	ID:1	[INFO: MASTER-R  ] sent;1;44
+00:50.704	ID:2	Got Some Data len = 62, type = 1
+00:50.705	ID:3	Got Some Data len = 62, type = 1
+00:50.707	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;44;-78
+00:50.708	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;44;-83
+00:51.191	ID:3	[INFO: MASTER-R  ] sent;3;44
+00:51.201	ID:1	Got Some Data len = 62, type = 1
+00:51.202	ID:2	Got Some Data len = 62, type = 1
+00:51.205	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;44;-83
+00:51.205	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;44;-86
+00:51.527	ID:2	[INFO: MASTER-R  ] sent;2;45
+00:51.626	ID:1	Got Some Data len = 62, type = 1
+00:51.627	ID:3	Got Some Data len = 62, type = 1
+00:51.630	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;45;-78
+00:51.631	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;45;-86
+00:51.675	ID:1	[INFO: MASTER-R  ] sent;1;45
+00:51.752	ID:2	Got Some Data len = 62, type = 1
+00:51.753	ID:3	Got Some Data len = 62, type = 1
+00:51.756	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;45;-78
+00:51.757	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;45;-83
+00:51.766	ID:3	TheKing--> strength_vector(45): (1 - 100.000), (2 - 100.000), 
+00:52.191	ID:3	[INFO: MASTER-R  ] sent;3;45
+00:52.251	ID:1	Got Some Data len = 62, type = 1
+00:52.251	ID:2	Got Some Data len = 62, type = 1
+00:52.255	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;45;-83
+00:52.255	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;45;-86
+00:52.266	ID:2	TheKing--> strength_vector(45): (1 - 100.000), (2 - .000), (3 - 100.000), 
+00:52.266	ID:1	TheKing--> strength_vector(45): (1 - .000), (2 - 100.000), (3 - 100.000), 
+00:52.527	ID:2	[INFO: MASTER-R  ] sent;2;46
+00:52.601	ID:1	Got Some Data len = 62, type = 1
+00:52.602	ID:3	Got Some Data len = 62, type = 1
+00:52.605	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;46;-78
+00:52.606	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;46;-86
+00:52.675	ID:1	[INFO: MASTER-R  ] sent;1;46
+00:52.727	ID:2	Got Some Data len = 62, type = 1
+00:52.728	ID:3	Got Some Data len = 62, type = 1
+00:52.730	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;46;-78
+00:52.731	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;46;-83
+00:53.191	ID:3	[INFO: MASTER-R  ] sent;3;46
+00:53.226	ID:1	Got Some Data len = 62, type = 1
+00:53.226	ID:2	Got Some Data len = 62, type = 1
+00:53.229	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;46;-83
+00:53.230	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;46;-86
+00:53.527	ID:2	[INFO: MASTER-R  ] sent;2;47
+00:53.576	ID:1	Got Some Data len = 62, type = 1
+00:53.577	ID:3	Got Some Data len = 62, type = 1
+00:53.579	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;47;-78
+00:53.580	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;47;-86
+00:53.675	ID:1	[INFO: MASTER-R  ] sent;1;47
+00:53.702	ID:2	Got Some Data len = 62, type = 1
+00:53.703	ID:3	Got Some Data len = 62, type = 1
+00:53.705	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;47;-78
+00:53.706	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;47;-83
+00:54.191	ID:3	[INFO: MASTER-R  ] sent;3;47
+00:54.201	ID:1	Got Some Data len = 62, type = 1
+00:54.201	ID:2	Got Some Data len = 62, type = 1
+00:54.204	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;47;-83
+00:54.204	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;47;-86
+00:54.527	ID:2	[INFO: MASTER-R  ] sent;2;48
+00:54.551	ID:1	Got Some Data len = 62, type = 1
+00:54.552	ID:3	Got Some Data len = 62, type = 1
+00:54.554	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;48;-78
+00:54.555	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;48;-86
+00:54.674	ID:1	[INFO: MASTER-R  ] sent;1;48
+00:54.753	ID:2	Got Some Data len = 62, type = 1
+00:54.754	ID:3	Got Some Data len = 62, type = 1
+00:54.756	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;48;-78
+00:54.758	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;48;-83
+00:55.196	ID:3	[INFO: MASTER-R  ] sent;3;48
+00:55.250	ID:1	Got Some Data len = 62, type = 1
+00:55.251	ID:2	Got Some Data len = 62, type = 1
+00:55.254	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;48;-83
+00:55.254	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;48;-86
+00:55.527	ID:2	[INFO: MASTER-R  ] sent;2;49
+00:55.600	ID:1	Got Some Data len = 62, type = 1
+00:55.602	ID:3	Got Some Data len = 62, type = 1
+00:55.604	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;49;-78
+00:55.605	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;49;-86
+00:55.675	ID:1	[INFO: MASTER-R  ] sent;1;49
+00:55.683	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;5;100.000
+00:55.726	ID:2	Got Some Data len = 62, type = 1
+00:55.728	ID:3	Got Some Data len = 62, type = 1
+00:55.730	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;49;-78
+00:55.731	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;49;-83
+00:55.801	ID:2	Got Some Data len = 62, type = 2
+00:55.803	ID:3	Got Some Data len = 62, type = 2
+00:55.807	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+00:55.808	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+00:55.816	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;5;100.000
+00:55.825	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;5;100.000
+00:55.825	ID:1	Got Some Data len = 62, type = 2
+00:55.830	ID:2	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:55.831	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;5;100.000
+00:55.835	ID:3	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:55.839	ID:3	Got Some Data len = 62, type = 2
+00:55.850	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;5;100.000
+00:55.850	ID:1	Got Some Data len = 62, type = 2
+00:55.850	ID:2	Got Some Data len = 62, type = 2
+00:55.856	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;5;100.000
+00:55.856	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;5;100.000
+00:55.858	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;5;100.000
+00:55.865	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;5;100.000
+00:55.874	ID:3	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+00:55.879	ID:2	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 97.959
+00:55.900	ID:1	Got Some Data len = 62, type = 2
+00:55.902	ID:3	Got Some Data len = 62, type = 2
+00:55.906	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;5;100.000
+00:55.907	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;5;100.000
+00:55.925	ID:1	Got Some Data len = 62, type = 2
+00:55.925	ID:2	Got Some Data len = 62, type = 2
+00:55.931	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;5;100.000
+00:55.931	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;5;100.000
+00:56.196	ID:3	[INFO: MASTER-R  ] sent;3;49
+00:56.300	ID:1	Got Some Data len = 62, type = 1
+00:56.300	ID:2	Got Some Data len = 62, type = 1
+00:56.304	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;49;-83
+00:56.304	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;49;-86
+00:56.527	ID:2	[INFO: MASTER-R  ] sent;2;50
+00:56.575	ID:1	Got Some Data len = 62, type = 1
+00:56.576	ID:3	Got Some Data len = 62, type = 1
+00:56.579	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;50;-78
+00:56.580	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;50;-86
+00:56.674	ID:1	[INFO: MASTER-R  ] sent;1;50
+00:56.701	ID:2	Got Some Data len = 62, type = 1
+00:56.702	ID:3	Got Some Data len = 62, type = 1
+00:56.705	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;50;-78
+00:56.706	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;50;-83
+00:57.196	ID:3	[INFO: MASTER-R  ] sent;3;50
+00:57.275	ID:1	Got Some Data len = 62, type = 1
+00:57.275	ID:2	Got Some Data len = 62, type = 1
+00:57.279	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;50;-83
+00:57.279	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;50;-86
+00:57.527	ID:2	[INFO: MASTER-R  ] sent;2;51
+00:57.550	ID:1	Got Some Data len = 62, type = 1
+00:57.551	ID:3	Got Some Data len = 62, type = 1
+00:57.553	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;51;-78
+00:57.555	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;51;-86
+00:57.674	ID:1	[INFO: MASTER-R  ] sent;1;51
+00:57.751	ID:2	Got Some Data len = 62, type = 1
+00:57.752	ID:3	Got Some Data len = 62, type = 1
+00:57.754	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;51;-78
+00:57.755	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;51;-83
+00:58.196	ID:3	[INFO: MASTER-R  ] sent;3;51
+00:58.250	ID:1	Got Some Data len = 62, type = 1
+00:58.250	ID:2	Got Some Data len = 62, type = 1
+00:58.253	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;51;-83
+00:58.253	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;51;-86
+00:58.527	ID:2	[INFO: MASTER-R  ] sent;2;52
+00:58.600	ID:1	Got Some Data len = 62, type = 1
+00:58.601	ID:3	Got Some Data len = 62, type = 1
+00:58.603	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;52;-78
+00:58.604	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;52;-86
+00:58.673	ID:1	[INFO: MASTER-R  ] sent;1;52
+00:58.726	ID:2	Got Some Data len = 62, type = 1
+00:58.727	ID:3	Got Some Data len = 62, type = 1
+00:58.729	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;52;-78
+00:58.730	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;52;-83
+00:59.196	ID:3	[INFO: MASTER-R  ] sent;3;52
+00:59.224	ID:1	Got Some Data len = 62, type = 1
+00:59.225	ID:2	Got Some Data len = 62, type = 1
+00:59.228	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;52;-83
+00:59.228	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;52;-86
+00:59.527	ID:2	[INFO: MASTER-R  ] sent;2;53
+00:59.574	ID:1	Got Some Data len = 62, type = 1
+00:59.575	ID:3	Got Some Data len = 62, type = 1
+00:59.578	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;53;-78
+00:59.579	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;53;-86
+00:59.673	ID:1	[INFO: MASTER-R  ] sent;1;53
+00:59.700	ID:2	Got Some Data len = 62, type = 1
+00:59.701	ID:3	Got Some Data len = 62, type = 1
+00:59.704	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;53;-78
+00:59.705	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;53;-83
+01:00.196	ID:3	[INFO: MASTER-R  ] sent;3;53
+01:00.274	ID:2	Got Some Data len = 62, type = 1
+01:00.274	ID:1	Got Some Data len = 62, type = 1
+01:00.278	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;53;-86
+01:00.278	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;53;-83
+01:00.527	ID:2	[INFO: MASTER-R  ] sent;2;54
+01:00.549	ID:1	Got Some Data len = 62, type = 1
+01:00.550	ID:3	Got Some Data len = 62, type = 1
+01:00.553	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;54;-78
+01:00.554	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;54;-86
+01:00.673	ID:1	[INFO: MASTER-R  ] sent;1;54
+01:00.750	ID:2	Got Some Data len = 62, type = 1
+01:00.751	ID:3	Got Some Data len = 62, type = 1
+01:00.754	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;54;-78
+01:00.754	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;54;-83
+01:01.195	ID:3	[INFO: MASTER-R  ] sent;3;54
+01:01.249	ID:1	Got Some Data len = 62, type = 1
+01:01.249	ID:2	Got Some Data len = 62, type = 1
+01:01.253	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;54;-83
+01:01.253	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;54;-86
+01:01.527	ID:2	[INFO: MASTER-R  ] sent;2;55
+01:01.599	ID:1	Got Some Data len = 62, type = 1
+01:01.600	ID:3	Got Some Data len = 62, type = 1
+01:01.602	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;55;-78
+01:01.603	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;55;-86
+01:01.673	ID:1	[INFO: MASTER-R  ] sent;1;55
+01:01.800	ID:2	Got Some Data len = 62, type = 1
+01:01.801	ID:3	Got Some Data len = 62, type = 1
+01:01.803	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;55;-78
+01:01.804	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;55;-83
+01:02.195	ID:3	[INFO: MASTER-R  ] sent;3;55
+01:02.224	ID:2	Got Some Data len = 62, type = 1
+01:02.224	ID:1	Got Some Data len = 62, type = 1
+01:02.227	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;55;-86
+01:02.227	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;55;-83
+01:02.527	ID:2	[INFO: MASTER-R  ] sent;2;56
+01:02.574	ID:1	Got Some Data len = 62, type = 1
+01:02.575	ID:3	Got Some Data len = 62, type = 1
+01:02.577	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;56;-78
+01:02.578	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;56;-86
+01:02.673	ID:1	[INFO: MASTER-R  ] sent;1;56
+01:02.700	ID:2	Got Some Data len = 62, type = 1
+01:02.701	ID:3	Got Some Data len = 62, type = 1
+01:02.703	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;56;-78
+01:02.704	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;56;-83
+01:03.196	ID:3	[INFO: MASTER-R  ] sent;3;56
+01:03.274	ID:1	Got Some Data len = 62, type = 1
+01:03.274	ID:2	Got Some Data len = 62, type = 1
+01:03.277	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;56;-83
+01:03.277	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;56;-86
+01:03.527	ID:2	[INFO: MASTER-R  ] sent;2;57
+01:03.548	ID:1	Got Some Data len = 62, type = 1
+01:03.549	ID:3	Got Some Data len = 62, type = 1
+01:03.552	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;57;-78
+01:03.553	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;57;-86
+01:03.673	ID:1	[INFO: MASTER-R  ] sent;1;57
+01:03.751	ID:2	Got Some Data len = 62, type = 1
+01:03.752	ID:3	Got Some Data len = 62, type = 1
+01:03.754	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;57;-78
+01:03.755	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;57;-83
+01:04.195	ID:3	[INFO: MASTER-R  ] sent;3;57
+01:04.248	ID:1	Got Some Data len = 62, type = 1
+01:04.248	ID:2	Got Some Data len = 62, type = 1
+01:04.252	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;57;-83
+01:04.252	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;57;-86
+01:04.527	ID:2	[INFO: MASTER-R  ] sent;2;58
+01:04.598	ID:1	Got Some Data len = 62, type = 1
+01:04.599	ID:3	Got Some Data len = 62, type = 1
+01:04.602	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;58;-78
+01:04.603	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;58;-86
+01:04.673	ID:1	[INFO: MASTER-R  ] sent;1;58
+01:04.724	ID:2	Got Some Data len = 62, type = 1
+01:04.725	ID:3	Got Some Data len = 62, type = 1
+01:04.728	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;58;-78
+01:04.728	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;58;-83
+01:05.195	ID:3	[INFO: MASTER-R  ] sent;3;58
+01:05.223	ID:1	Got Some Data len = 62, type = 1
+01:05.223	ID:2	Got Some Data len = 62, type = 1
+01:05.227	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;58;-83
+01:05.227	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;58;-86
+01:05.527	ID:2	[INFO: MASTER-R  ] sent;2;59
+01:05.529	ID:2	actual data in function: 1 2 
+01:05.532	ID:2	BestLink: 1 0 0 0 0 0 0 0 
+01:05.535	ID:2	sending actual data inside mrp: 1 2 
+01:05.648	ID:1	Got Some Data len = 62, type = 1
+01:05.649	ID:3	Got Some Data len = 62, type = 1
+01:05.651	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;59;-78
+01:05.653	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;59;-86
+01:05.673	ID:1	[INFO: MASTER-R  ] sent;1;59
+01:05.681	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;6;100.000
+01:05.699	ID:2	Got Some Data len = 62, type = 1
+01:05.700	ID:3	Got Some Data len = 62, type = 1
+01:05.702	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;59;-78
+01:05.703	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;59;-83
+01:05.730	ID:1	Got Some Data len = 64, type = 3
+01:05.733	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;2
+01:05.737	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:05.774	ID:2	Got Some Data len = 62, type = 2
+01:05.775	ID:3	Got Some Data len = 62, type = 2
+01:05.779	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;6;100.000
+01:05.780	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;6;100.000
+01:05.789	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;6;100.000
+01:05.797	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;6;100.000
+01:05.798	ID:1	Got Some Data len = 62, type = 2
+01:05.801	ID:1	[INFO: MASTER-R  ] PACKET_TYPE_UNKNOWN
+01:05.803	ID:2	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+01:05.804	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;59;-78
+01:05.807	ID:3	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+01:05.810	ID:3	Got Some Data len = 62, type = 2
+01:05.822	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;6;100.000
+01:05.823	ID:1	Got Some Data len = 62, type = 2
+01:05.823	ID:2	Got Some Data len = 62, type = 2
+01:05.826	ID:1	[INFO: MASTER-R  ] PACKET_TYPE_UNKNOWN
+01:05.828	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;6;100.000
+01:05.829	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;59;-83
+01:05.830	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;6;100.000
+01:05.837	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;6;100.000
+01:05.847	ID:3	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 100.000
+01:05.854	ID:2	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> 98.305
+01:05.873	ID:1	Got Some Data len = 62, type = 2
+01:05.874	ID:3	Got Some Data len = 62, type = 2
+01:05.876	ID:1	[INFO: MASTER-R  ] PACKET_TYPE_UNKNOWN
+01:05.879	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;59;-78
+01:05.879	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;6;100.000
+01:05.897	ID:1	TheKing--> strength_vector(59): (1 - .000), (2 - 103.389), (3 - 100.000), 
+01:05.898	ID:2	Got Some Data len = 62, type = 2
+01:05.900	ID:1	Got Some Data len = 62, type = 2
+01:05.903	ID:1	[INFO: MASTER-R  ] PACKET_TYPE_UNKNOWN
+01:05.903	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;6;100.000
+01:05.906	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;59;-83
+01:06.196	ID:3	[INFO: MASTER-R  ] sent;3;59
+01:06.198	ID:3	actual data in function: 1 3 
+01:06.201	ID:3	BestLink: 1 0 0 0 0 0 0 0 
+01:06.204	ID:3	sending actual data inside mrp: 1 3 
+01:06.273	ID:1	Got Some Data len = 62, type = 1
+01:06.273	ID:2	Got Some Data len = 62, type = 1
+01:06.276	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;59;-83
+01:06.276	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;59;-86
+01:06.352	ID:1	Got Some Data len = 64, type = 3
+01:06.356	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;2
+01:06.359	ID:1	Got Actual Data --> Route (Size: 2): 3 --> 1
+01:06.527	ID:2	[INFO: MASTER-R  ] sent;2;60
+01:06.548	ID:1	Got Some Data len = 62, type = 1
+01:06.549	ID:3	Got Some Data len = 62, type = 1
+01:06.551	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;60;-78
+01:06.552	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;60;-86
+01:06.673	ID:1	[INFO: MASTER-R  ] sent;1;60
+01:06.749	ID:2	Got Some Data len = 62, type = 1
+01:06.750	ID:3	Got Some Data len = 62, type = 1
+01:06.752	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;60;-78
+01:06.753	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;60;-83
+01:06.762	ID:3	TheKing--> strength_vector(60): (1 - 100.000), (2 - 100.000), 
+01:07.195	ID:3	[INFO: MASTER-R  ] sent;3;60
+01:07.248	ID:1	Got Some Data len = 62, type = 1
+01:07.248	ID:2	Got Some Data len = 62, type = 1
+01:07.251	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;60;-83
+01:07.251	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;60;-86
+01:07.262	ID:2	TheKing--> strength_vector(60): (1 - 100.000), (2 - .000), (3 - 100.000), 
+01:07.527	ID:2	[INFO: MASTER-R  ] sent;2;61
+01:07.597	ID:1	Got Some Data len = 62, type = 1
+01:07.598	ID:3	Got Some Data len = 62, type = 1
+01:07.601	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;61;-78
+01:07.602	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;61;-86
+01:07.673	ID:1	[INFO: MASTER-R  ] sent;1;61
+01:07.723	ID:2	Got Some Data len = 62, type = 1
+01:07.724	ID:3	Got Some Data len = 62, type = 1
+01:07.727	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;61;-78
+01:07.728	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;61;-83
+01:08.195	ID:3	[INFO: MASTER-R  ] sent;3;61
+01:08.222	ID:1	Got Some Data len = 62, type = 1
+01:08.222	ID:2	Got Some Data len = 62, type = 1
+01:08.226	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;61;-83
+01:08.226	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;61;-86
+01:08.527	ID:2	[INFO: MASTER-R  ] sent;2;62
+01:08.572	ID:1	Got Some Data len = 62, type = 1
+01:08.573	ID:3	Got Some Data len = 62, type = 1
+01:08.576	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;62;-78
+01:08.577	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;62;-86
+01:08.673	ID:1	[INFO: MASTER-R  ] sent;1;62
+01:08.700	ID:2	Got Some Data len = 62, type = 1
+01:08.701	ID:3	Got Some Data len = 62, type = 1
+01:08.703	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;62;-78
+01:08.704	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;62;-83
+01:09.195	ID:3	[INFO: MASTER-R  ] sent;3;62
+01:09.272	ID:1	Got Some Data len = 62, type = 1
+01:09.272	ID:2	Got Some Data len = 62, type = 1
+01:09.275	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;62;-83
+01:09.276	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;62;-86
+01:09.527	ID:2	[INFO: MASTER-R  ] sent;2;63
+01:09.547	ID:1	Got Some Data len = 62, type = 1
+01:09.548	ID:3	Got Some Data len = 62, type = 1
+01:09.550	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;63;-78
+01:09.551	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;63;-86
+01:09.673	ID:1	[INFO: MASTER-R  ] sent;1;63
+01:09.748	ID:2	Got Some Data len = 62, type = 1
+01:09.749	ID:3	Got Some Data len = 62, type = 1
+01:09.751	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;63;-78
+01:09.752	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;63;-83
+01:10.195	ID:3	[INFO: MASTER-R  ] sent;3;63
+01:10.322	ID:1	Got Some Data len = 62, type = 1
+01:10.322	ID:2	Got Some Data len = 62, type = 1
+01:10.325	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;63;-83
+01:10.325	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;63;-86
+01:10.527	ID:2	[INFO: MASTER-R  ] sent;2;64
+01:10.597	ID:1	Got Some Data len = 62, type = 1
+01:10.598	ID:3	Got Some Data len = 62, type = 1
+01:10.600	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;64;-78
+01:10.601	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;64;-86
+01:10.673	ID:1	[INFO: MASTER-R  ] sent;1;64
+01:10.723	ID:2	Got Some Data len = 62, type = 1
+01:10.724	ID:3	Got Some Data len = 62, type = 1
+01:10.726	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;64;-78
+01:10.727	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;64;-83
+01:11.195	ID:3	[INFO: MASTER-R  ] sent;3;64
+01:11.222	ID:1	Got Some Data len = 62, type = 1
+01:11.222	ID:2	Got Some Data len = 62, type = 1
+01:11.225	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;64;-83
+01:11.225	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;64;-86
+01:11.527	ID:2	[INFO: MASTER-R  ] sent;2;65
+01:11.571	ID:1	Got Some Data len = 62, type = 1
+01:11.573	ID:3	Got Some Data len = 62, type = 1
+01:11.575	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;65;-78
+01:11.576	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;65;-86
+01:11.673	ID:1	[INFO: MASTER-R  ] sent;1;65
+01:11.697	ID:2	Got Some Data len = 62, type = 1
+01:11.698	ID:3	Got Some Data len = 62, type = 1
+01:11.701	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;65;-78
+01:11.702	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;65;-83
+01:12.195	ID:3	[INFO: MASTER-R  ] sent;3;65
+01:12.271	ID:1	Got Some Data len = 62, type = 1
+01:12.271	ID:2	Got Some Data len = 62, type = 1
+01:12.275	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;65;-83
+01:12.275	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;65;-86
+01:12.527	ID:2	[INFO: MASTER-R  ] sent;2;66
+01:12.546	ID:1	Got Some Data len = 62, type = 1
+01:12.547	ID:3	Got Some Data len = 62, type = 1
+01:12.550	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;66;-78
+01:12.551	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;66;-86
+01:12.673	ID:1	[INFO: MASTER-R  ] sent;1;66
+01:12.749	ID:2	Got Some Data len = 62, type = 1
+01:12.750	ID:3	Got Some Data len = 62, type = 1
+01:12.752	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;66;-78
+01:12.753	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;66;-83
+01:13.195	ID:3	[INFO: MASTER-R  ] sent;3;66
+01:13.246	ID:1	Got Some Data len = 62, type = 1
+01:13.246	ID:2	Got Some Data len = 62, type = 1
+01:13.250	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;66;-83
+01:13.250	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;66;-86
+01:13.527	ID:2	[INFO: MASTER-R  ] sent;2;67
+01:13.596	ID:1	Got Some Data len = 62, type = 1
+01:13.597	ID:3	Got Some Data len = 62, type = 1
+01:13.599	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;67;-78
+01:13.601	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;67;-86
+01:13.673	ID:1	[INFO: MASTER-R  ] sent;1;67
+01:13.722	ID:2	Got Some Data len = 62, type = 1
+01:13.723	ID:3	Got Some Data len = 62, type = 1
+01:13.725	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;67;-78
+01:13.727	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;67;-83
+01:14.195	ID:3	[INFO: MASTER-R  ] sent;3;67
+01:14.221	ID:1	Got Some Data len = 62, type = 1
+01:14.221	ID:2	Got Some Data len = 62, type = 1
+01:14.224	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;67;-86
+01:14.224	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;67;-83
+01:14.527	ID:2	[INFO: MASTER-R  ] sent;2;68
+01:14.571	ID:1	Got Some Data len = 62, type = 1
+01:14.572	ID:3	Got Some Data len = 62, type = 1
+01:14.574	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;68;-78
+01:14.576	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;68;-86
+01:14.673	ID:1	[INFO: MASTER-R  ] sent;1;68
+01:14.697	ID:2	Got Some Data len = 62, type = 1
+01:14.698	ID:3	Got Some Data len = 62, type = 1
+01:14.700	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;68;-78
+01:14.701	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;68;-83
+01:15.195	ID:3	[INFO: MASTER-R  ] sent;3;68
+01:15.271	ID:2	Got Some Data len = 62, type = 1
+01:15.271	ID:1	Got Some Data len = 62, type = 1
+01:15.274	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;68;-86
+01:15.274	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;68;-83
+01:15.527	ID:2	[INFO: MASTER-R  ] sent;2;69
+01:15.546	ID:1	Got Some Data len = 62, type = 1
+01:15.547	ID:3	Got Some Data len = 62, type = 1
+01:15.549	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;69;-78
+01:15.550	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;69;-86
+01:15.673	ID:1	[INFO: MASTER-R  ] sent;1;69
+01:15.821	ID:2	Got Some Data len = 62, type = 1
+01:15.823	ID:3	Got Some Data len = 62, type = 1
+01:15.825	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;69;-78
+01:15.826	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;69;-83
+01:16.195	ID:3	[INFO: MASTER-R  ] sent;3;69
+01:16.245	ID:1	Got Some Data len = 62, type = 1
+01:16.245	ID:2	Got Some Data len = 62, type = 1
+01:16.249	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;69;-83
+01:16.249	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;69;-86
+01:16.527	ID:2	[INFO: MASTER-R  ] sent;2;70
+01:16.595	ID:1	Got Some Data len = 62, type = 1
+01:16.597	ID:3	Got Some Data len = 62, type = 1
+01:16.599	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;70;-78
+01:16.600	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;70;-86
+01:16.673	ID:1	[INFO: MASTER-R  ] sent;1;70
+01:16.721	ID:2	Got Some Data len = 62, type = 1
+01:16.722	ID:3	Got Some Data len = 62, type = 1
+01:16.725	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;70;-78
+01:16.726	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;70;-83
+01:17.195	ID:3	[INFO: MASTER-R  ] sent;3;70
+01:17.220	ID:1	Got Some Data len = 62, type = 1
+01:17.220	ID:2	Got Some Data len = 62, type = 1
+01:17.224	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;70;-86
+01:17.224	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;70;-83
+01:17.527	ID:2	[INFO: MASTER-R  ] sent;2;71
+01:17.570	ID:1	Got Some Data len = 62, type = 1
+01:17.571	ID:3	Got Some Data len = 62, type = 1
+01:17.573	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;71;-78
+01:17.575	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;71;-86
+01:17.673	ID:1	[INFO: MASTER-R  ] sent;1;71
+01:17.696	ID:2	Got Some Data len = 62, type = 1
+01:17.697	ID:3	Got Some Data len = 62, type = 1
+01:17.699	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;71;-78
+01:17.701	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;71;-83
+01:18.195	ID:3	[INFO: MASTER-R  ] sent;3;71
+01:18.270	ID:1	Got Some Data len = 62, type = 1
+01:18.270	ID:2	Got Some Data len = 62, type = 1
+01:18.273	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;71;-83
+01:18.273	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;71;-86
+01:18.527	ID:2	[INFO: MASTER-R  ] sent;2;72
+01:18.545	ID:1	Got Some Data len = 62, type = 1
+01:18.546	ID:3	Got Some Data len = 62, type = 1
+01:18.548	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;72;-78
+01:18.550	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;72;-86
+01:18.673	ID:1	[INFO: MASTER-R  ] sent;1;72
+01:18.746	ID:2	Got Some Data len = 62, type = 1
+01:18.747	ID:3	Got Some Data len = 62, type = 1
+01:18.749	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;72;-78
+01:18.750	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;72;-83
+01:19.195	ID:3	[INFO: MASTER-R  ] sent;3;72
+01:19.245	ID:1	Got Some Data len = 62, type = 1
+01:19.245	ID:2	Got Some Data len = 62, type = 1
+01:19.248	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;72;-83
+01:19.248	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;72;-86
+01:19.527	ID:2	[INFO: MASTER-R  ] sent;2;73
+01:19.669	ID:1	Got Some Data len = 62, type = 1
+01:19.671	ID:3	Got Some Data len = 62, type = 1
+01:19.673	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;73;-78
+01:19.674	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;73;-86
+01:19.680	ID:1	[INFO: MASTER-R  ] sent;1;73
+01:19.721	ID:2	Got Some Data len = 62, type = 1
+01:19.722	ID:3	Got Some Data len = 62, type = 1
+01:19.724	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;73;-78
+01:19.725	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;73;-83
+01:20.194	ID:3	[INFO: MASTER-R  ] sent;3;73
+01:20.219	ID:1	Got Some Data len = 62, type = 1
+01:20.219	ID:2	Got Some Data len = 62, type = 1
+01:20.223	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;73;-83
+01:20.223	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;73;-86
+01:20.239	ID:1	TheKing--> strength_vector(73): (1 - .000), (2 - 102.739), (3 - 102.739), 
+01:20.527	ID:2	[INFO: MASTER-R  ] sent;2;74
+01:20.569	ID:1	Got Some Data len = 62, type = 1
+01:20.571	ID:3	Got Some Data len = 62, type = 1
+01:20.573	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;74;-78
+01:20.574	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;74;-86
+01:20.673	ID:1	[INFO: MASTER-R  ] sent;1;74
+01:20.770	ID:2	Got Some Data len = 62, type = 1
+01:20.771	ID:3	Got Some Data len = 62, type = 1
+01:20.774	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;74;-78
+01:20.775	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;74;-83
+01:21.194	ID:3	[INFO: MASTER-R  ] sent;3;74
+01:21.269	ID:1	Got Some Data len = 62, type = 1
+01:21.269	ID:2	Got Some Data len = 62, type = 1
+01:21.273	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;74;-83
+01:21.273	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;74;-86
+01:21.527	ID:2	[INFO: MASTER-R  ] sent;2;75
+01:21.544	ID:1	Got Some Data len = 62, type = 1
+01:21.545	ID:3	Got Some Data len = 62, type = 1
+01:21.548	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;75;-78
+01:21.549	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;75;-86
+01:21.673	ID:1	[INFO: MASTER-R  ] sent;1;75
+01:21.746	ID:2	Got Some Data len = 62, type = 1
+01:21.748	ID:3	Got Some Data len = 62, type = 1
+01:21.750	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;75;-78
+01:21.751	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;75;-83
+01:21.765	ID:3	TheKing--> strength_vector(75): (1 - 100.000), (2 - 100.000), 
+01:22.194	ID:3	[INFO: MASTER-R  ] sent;3;75
+01:22.244	ID:1	Got Some Data len = 62, type = 1
+01:22.244	ID:2	Got Some Data len = 62, type = 1
+01:22.247	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;75;-86
+01:22.247	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;75;-83
+01:22.258	ID:2	TheKing--> strength_vector(75): (1 - 100.000), (2 - .000), (3 - 100.000), 
+01:22.527	ID:2	[INFO: MASTER-R  ] sent;2;76
+01:22.594	ID:1	Got Some Data len = 62, type = 1
+01:22.595	ID:3	Got Some Data len = 62, type = 1
+01:22.597	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;76;-78
+01:22.599	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;76;-86
+01:22.673	ID:1	[INFO: MASTER-R  ] sent;1;76
+01:22.720	ID:2	Got Some Data len = 62, type = 1
+01:22.721	ID:3	Got Some Data len = 62, type = 1
+01:22.723	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;76;-78
+01:22.724	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;76;-83
+01:23.194	ID:3	[INFO: MASTER-R  ] sent;3;76
+01:23.219	ID:1	Got Some Data len = 62, type = 1
+01:23.219	ID:2	Got Some Data len = 62, type = 1
+01:23.222	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;76;-83
+01:23.222	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;76;-86
+01:23.527	ID:2	[INFO: MASTER-R  ] sent;2;77
+01:23.568	ID:1	Got Some Data len = 62, type = 1
+01:23.570	ID:3	Got Some Data len = 62, type = 1
+01:23.572	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;77;-78
+01:23.573	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;77;-86
+01:23.673	ID:1	[INFO: MASTER-R  ] sent;1;77
+01:23.694	ID:2	Got Some Data len = 62, type = 1
+01:23.696	ID:3	Got Some Data len = 62, type = 1
+01:23.698	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;77;-78
+01:23.699	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;77;-83
+01:24.193	ID:3	[INFO: MASTER-R  ] sent;3;77
+01:24.343	ID:1	Got Some Data len = 62, type = 1
+01:24.343	ID:2	Got Some Data len = 62, type = 1
+01:24.347	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;77;-83
+01:24.347	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;77;-86
+01:24.527	ID:2	[INFO: MASTER-R  ] sent;2;78
+01:24.618	ID:1	Got Some Data len = 62, type = 1
+01:24.620	ID:3	Got Some Data len = 62, type = 1
+01:24.622	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;78;-78
+01:24.623	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;78;-86
+01:24.673	ID:1	[INFO: MASTER-R  ] sent;1;78
+01:24.744	ID:2	Got Some Data len = 62, type = 1
+01:24.745	ID:3	Got Some Data len = 62, type = 1
+01:24.748	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;78;-78
+01:24.749	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;78;-83
+01:25.193	ID:3	[INFO: MASTER-R  ] sent;3;78
+01:25.243	ID:1	Got Some Data len = 62, type = 1
+01:25.243	ID:2	Got Some Data len = 62, type = 1
+01:25.247	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;78;-83
+01:25.247	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;78;-86
+01:25.527	ID:2	[INFO: MASTER-R  ] sent;2;79
+01:25.593	ID:1	Got Some Data len = 62, type = 1
+01:25.594	ID:3	Got Some Data len = 62, type = 1
+01:25.597	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;79;-78
+01:25.598	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;79;-86
+01:25.673	ID:1	[INFO: MASTER-R  ] sent;1;79
+01:25.719	ID:2	Got Some Data len = 62, type = 1
+01:25.720	ID:3	Got Some Data len = 62, type = 1
+01:25.722	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;79;-78
+01:25.724	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;79;-83
+01:26.193	ID:3	[INFO: MASTER-R  ] sent;3;79
+01:26.218	ID:1	Got Some Data len = 62, type = 1
+01:26.218	ID:2	Got Some Data len = 62, type = 1
+01:26.221	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;79;-83
+01:26.221	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;79;-86
+01:26.527	ID:2	[INFO: MASTER-R  ] sent;2;80
+01:26.568	ID:1	Got Some Data len = 62, type = 1
+01:26.569	ID:3	Got Some Data len = 62, type = 1
+01:26.571	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;80;-78
+01:26.573	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;80;-86
+01:26.673	ID:1	[INFO: MASTER-R  ] sent;1;80
+01:26.695	ID:2	Got Some Data len = 62, type = 1
+01:26.696	ID:3	Got Some Data len = 62, type = 1
+01:26.699	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;80;-78
+01:26.700	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;80;-83
+01:27.193	ID:3	[INFO: MASTER-R  ] sent;3;80
+01:27.268	ID:1	Got Some Data len = 62, type = 1
+01:27.268	ID:2	Got Some Data len = 62, type = 1
+01:27.271	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;80;-86
+01:27.271	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;80;-83
+01:27.527	ID:2	[INFO: MASTER-R  ] sent;2;81
+01:27.543	ID:1	Got Some Data len = 62, type = 1
+01:27.544	ID:3	Got Some Data len = 62, type = 1
+01:27.546	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;81;-78
+01:27.547	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;81;-86
+01:27.673	ID:1	[INFO: MASTER-R  ] sent;1;81
+01:27.743	ID:2	Got Some Data len = 62, type = 1
+01:27.745	ID:3	Got Some Data len = 62, type = 1
+01:27.747	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;81;-78
+01:27.748	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;81;-83
+01:28.192	ID:3	[INFO: MASTER-R  ] sent;3;81
+01:28.242	ID:1	Got Some Data len = 62, type = 1
+01:28.242	ID:2	Got Some Data len = 62, type = 1
+01:28.246	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;81;-83
+01:28.246	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;81;-86
+01:28.527	ID:2	[INFO: MASTER-R  ] sent;2;82
+01:28.592	ID:1	Got Some Data len = 62, type = 1
+01:28.594	ID:3	Got Some Data len = 62, type = 1
+01:28.596	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;82;-78
+01:28.597	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;82;-86
+01:28.673	ID:1	[INFO: MASTER-R  ] sent;1;82
+01:28.718	ID:2	Got Some Data len = 62, type = 1
+01:28.719	ID:3	Got Some Data len = 62, type = 1
+01:28.722	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;82;-78
+01:28.723	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;82;-83
+01:29.192	ID:3	[INFO: MASTER-R  ] sent;3;82
+01:29.292	ID:1	Got Some Data len = 62, type = 1
+01:29.292	ID:2	Got Some Data len = 62, type = 1
+01:29.296	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;82;-83
+01:29.296	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;82;-86
+01:29.527	ID:2	[INFO: MASTER-R  ] sent;2;83
+01:29.567	ID:1	Got Some Data len = 62, type = 1
+01:29.568	ID:3	Got Some Data len = 62, type = 1
+01:29.571	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;83;-78
+01:29.572	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;83;-86
+01:29.673	ID:1	[INFO: MASTER-R  ] sent;1;83
+01:29.693	ID:2	Got Some Data len = 62, type = 1
+01:29.694	ID:3	Got Some Data len = 62, type = 1
+01:29.696	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;83;-78
+01:29.698	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;83;-83
+01:30.192	ID:3	[INFO: MASTER-R  ] sent;3;83
+01:30.267	ID:1	Got Some Data len = 62, type = 1
+01:30.267	ID:2	Got Some Data len = 62, type = 1
+01:30.270	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;83;-86
+01:30.270	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;83;-83
+01:30.527	ID:2	[INFO: MASTER-R  ] sent;2;84
+01:30.542	ID:1	Got Some Data len = 62, type = 1
+01:30.543	ID:3	Got Some Data len = 62, type = 1
+01:30.545	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;84;-78
+01:30.547	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;84;-86
+01:30.673	ID:1	[INFO: MASTER-R  ] sent;1;84
+01:30.744	ID:2	Got Some Data len = 62, type = 1
+01:30.745	ID:3	Got Some Data len = 62, type = 1
+01:30.748	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;84;-78
+01:30.749	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;84;-83
+01:31.191	ID:3	[INFO: MASTER-R  ] sent;3;84
+01:31.242	ID:1	Got Some Data len = 62, type = 1
+01:31.242	ID:2	Got Some Data len = 62, type = 1
+01:31.245	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;84;-83
+01:31.245	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;84;-86
+01:31.527	ID:2	[INFO: MASTER-R  ] sent;2;85
+01:31.592	ID:1	Got Some Data len = 62, type = 1
+01:31.593	ID:3	Got Some Data len = 62, type = 1
+01:31.595	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;85;-78
+01:31.596	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;85;-86
+01:31.673	ID:1	[INFO: MASTER-R  ] sent;1;85
+01:31.718	ID:2	Got Some Data len = 62, type = 1
+01:31.718	ID:3	Got Some Data len = 62, type = 1
+01:31.721	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;85;-78
+01:31.722	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;85;-83
+01:32.191	ID:3	[INFO: MASTER-R  ] sent;3;85
+01:32.216	ID:1	Got Some Data len = 62, type = 1
+01:32.217	ID:2	Got Some Data len = 62, type = 1
+01:32.220	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;85;-83
+01:32.220	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;85;-86
+01:32.527	ID:2	[INFO: MASTER-R  ] sent;2;86
+01:32.566	ID:1	Got Some Data len = 62, type = 1
+01:32.567	ID:3	Got Some Data len = 62, type = 1
+01:32.570	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;86;-78
+01:32.571	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;86;-86
+01:32.673	ID:1	[INFO: MASTER-R  ] sent;1;86
+01:32.692	ID:2	Got Some Data len = 62, type = 1
+01:32.693	ID:3	Got Some Data len = 62, type = 1
+01:32.696	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;86;-78
+01:32.697	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;86;-83
+01:33.191	ID:3	[INFO: MASTER-R  ] sent;3;86
+01:33.266	ID:1	Got Some Data len = 62, type = 1
+01:33.266	ID:2	Got Some Data len = 62, type = 1
+01:33.270	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;86;-83
+01:33.270	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;86;-86
+01:33.527	ID:2	[INFO: MASTER-R  ] sent;2;87
+01:33.541	ID:1	Got Some Data len = 62, type = 1
+01:33.542	ID:3	Got Some Data len = 62, type = 1
+01:33.545	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;87;-78
+01:33.546	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;87;-86
+01:33.673	ID:1	[INFO: MASTER-R  ] sent;1;87
+01:33.742	ID:2	Got Some Data len = 62, type = 1
+01:33.743	ID:3	Got Some Data len = 62, type = 1
+01:33.745	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;87;-78
+01:33.746	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;87;-83
+01:34.191	ID:3	[INFO: MASTER-R  ] sent;3;87
+01:34.241	ID:1	Got Some Data len = 62, type = 1
+01:34.241	ID:2	Got Some Data len = 62, type = 1
+01:34.244	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;87;-83
+01:34.245	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;87;-86
+01:34.527	ID:2	[INFO: MASTER-R  ] sent;2;88
+01:34.591	ID:1	Got Some Data len = 62, type = 1
+01:34.592	ID:3	Got Some Data len = 62, type = 1
+01:34.594	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;88;-78
+01:34.595	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;88;-86
+01:34.673	ID:1	[INFO: MASTER-R  ] sent;1;88
+01:34.793	ID:2	Got Some Data len = 62, type = 1
+01:34.794	ID:3	Got Some Data len = 62, type = 1
+01:34.797	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;88;-78
+01:34.798	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;88;-83
+01:35.191	ID:3	[INFO: MASTER-R  ] sent;3;88
+01:35.216	ID:1	Got Some Data len = 62, type = 1
+01:35.216	ID:2	Got Some Data len = 62, type = 1
+01:35.219	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;88;-83
+01:35.219	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;88;-86
+01:35.235	ID:1	TheKing--> strength_vector(88): (1 - .000), (2 - 102.272), (3 - 102.272), 
+01:35.527	ID:2	[INFO: MASTER-R  ] sent;2;89
+01:35.566	ID:1	Got Some Data len = 62, type = 1
+01:35.567	ID:3	Got Some Data len = 62, type = 1
+01:35.569	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;89;-78
+01:35.570	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;89;-86
+01:35.673	ID:1	[INFO: MASTER-R  ] sent;1;89
+01:35.691	ID:2	Got Some Data len = 62, type = 1
+01:35.693	ID:3	Got Some Data len = 62, type = 1
+01:35.695	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;89;-78
+01:35.696	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;89;-83
+01:36.190	ID:3	[INFO: MASTER-R  ] sent;3;89
+01:36.265	ID:1	Got Some Data len = 62, type = 1
+01:36.266	ID:2	Got Some Data len = 62, type = 1
+01:36.269	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;89;-83
+01:36.269	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;89;-86
+01:36.527	ID:2	[INFO: MASTER-R  ] sent;2;90
+01:36.540	ID:1	Got Some Data len = 62, type = 1
+01:36.542	ID:3	Got Some Data len = 62, type = 1
+01:36.544	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;90;-78
+01:36.545	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;90;-86
+01:36.673	ID:1	[INFO: MASTER-R  ] sent;1;90
+01:36.741	ID:2	Got Some Data len = 62, type = 1
+01:36.743	ID:3	Got Some Data len = 62, type = 1
+01:36.745	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;90;-78
+01:36.746	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;90;-83
+01:36.755	ID:3	TheKing--> strength_vector(90): (1 - 100.000), (2 - 100.000), 
+01:37.190	ID:3	[INFO: MASTER-R  ] sent;3;90
+01:37.240	ID:1	Got Some Data len = 62, type = 1
+01:37.240	ID:2	Got Some Data len = 62, type = 1
+01:37.244	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;90;-83
+01:37.244	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;90;-86
+01:37.255	ID:2	TheKing--> strength_vector(90): (1 - 100.000), (2 - .000), (3 - 100.000), 
+01:37.527	ID:2	[INFO: MASTER-R  ] sent;2;91
+01:37.590	ID:1	Got Some Data len = 62, type = 1
+01:37.591	ID:3	Got Some Data len = 62, type = 1
+01:37.594	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;91;-78
+01:37.595	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;91;-86
+01:37.673	ID:1	[INFO: MASTER-R  ] sent;1;91
+01:37.716	ID:2	Got Some Data len = 62, type = 1
+01:37.717	ID:3	Got Some Data len = 62, type = 1
+01:37.719	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;91;-78
+01:37.721	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;91;-83
+01:38.190	ID:3	[INFO: MASTER-R  ] sent;3;91
+01:38.215	ID:1	Got Some Data len = 62, type = 1
+01:38.215	ID:2	Got Some Data len = 62, type = 1
+01:38.219	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;91;-83
+01:38.219	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;91;-86
+01:38.527	ID:2	[INFO: MASTER-R  ] sent;2;92
+01:38.640	ID:1	Got Some Data len = 62, type = 1
+01:38.641	ID:3	Got Some Data len = 62, type = 1
+01:38.643	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;92;-78
+01:38.645	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;92;-86
+01:38.673	ID:1	[INFO: MASTER-R  ] sent;1;92
+01:38.691	ID:2	Got Some Data len = 62, type = 1
+01:38.692	ID:3	Got Some Data len = 62, type = 1
+01:38.694	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;92;-78
+01:38.695	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;92;-83
+01:39.190	ID:3	[INFO: MASTER-R  ] sent;3;92
+01:39.265	ID:1	Got Some Data len = 62, type = 1
+01:39.265	ID:2	Got Some Data len = 62, type = 1
+01:39.268	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;92;-83
+01:39.268	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;92;-86
+01:39.527	ID:2	[INFO: MASTER-R  ] sent;2;93
+01:39.540	ID:1	Got Some Data len = 62, type = 1
+01:39.541	ID:3	Got Some Data len = 62, type = 1
+01:39.543	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;93;-78
+01:39.544	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;93;-86
+01:39.673	ID:1	[INFO: MASTER-R  ] sent;1;93
+01:39.742	ID:2	Got Some Data len = 62, type = 1
+01:39.743	ID:3	Got Some Data len = 62, type = 1
+01:39.745	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;93;-78
+01:39.747	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;93;-83
+01:40.190	ID:3	[INFO: MASTER-R  ] sent;3;93
+01:40.240	ID:1	Got Some Data len = 62, type = 1
+01:40.240	ID:2	Got Some Data len = 62, type = 1
+01:40.243	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;93;-83
+01:40.243	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;93;-86
+01:40.528	ID:2	[INFO: MASTER-R  ] sent;2;94
+01:40.589	ID:1	Got Some Data len = 62, type = 1
+01:40.590	ID:3	Got Some Data len = 62, type = 1
+01:40.593	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;94;-78
+01:40.594	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;94;-86
+01:40.673	ID:1	[INFO: MASTER-R  ] sent;1;94
+01:40.715	ID:2	Got Some Data len = 62, type = 1
+01:40.716	ID:3	Got Some Data len = 62, type = 1
+01:40.719	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;94;-78
+01:40.720	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;94;-83
+01:41.190	ID:3	[INFO: MASTER-R  ] sent;3;94
+01:41.214	ID:1	Got Some Data len = 62, type = 1
+01:41.214	ID:2	Got Some Data len = 62, type = 1
+01:41.218	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;94;-83
+01:41.218	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;94;-86
+01:41.528	ID:2	[INFO: MASTER-R  ] sent;2;95
+01:41.564	ID:1	Got Some Data len = 62, type = 1
+01:41.565	ID:3	Got Some Data len = 62, type = 1
+01:41.568	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;95;-78
+01:41.569	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;95;-86
+01:41.673	ID:1	[INFO: MASTER-R  ] sent;1;95
+01:41.690	ID:2	Got Some Data len = 62, type = 1
+01:41.691	ID:3	Got Some Data len = 62, type = 1
+01:41.694	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;95;-78
+01:41.695	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;95;-83
+01:42.190	ID:3	[INFO: MASTER-R  ] sent;3;95
+01:42.264	ID:1	Got Some Data len = 62, type = 1
+01:42.264	ID:2	Got Some Data len = 62, type = 1
+01:42.267	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;95;-83
+01:42.268	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;95;-86
+01:42.528	ID:2	[INFO: MASTER-R  ] sent;2;96
+01:42.539	ID:1	Got Some Data len = 62, type = 1
+01:42.540	ID:3	Got Some Data len = 62, type = 1
+01:42.542	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;96;-78
+01:42.543	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;96;-86
+01:42.673	ID:1	[INFO: MASTER-R  ] sent;1;96
+01:42.740	ID:2	Got Some Data len = 62, type = 1
+01:42.741	ID:3	Got Some Data len = 62, type = 1
+01:42.743	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;96;-78
+01:42.744	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;96;-83
+01:43.190	ID:3	[INFO: MASTER-R  ] sent;3;96
+01:43.314	ID:1	Got Some Data len = 62, type = 1
+01:43.314	ID:2	Got Some Data len = 62, type = 1
+01:43.317	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;96;-86
+01:43.317	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;96;-83
+01:43.528	ID:2	[INFO: MASTER-R  ] sent;2;97
+01:43.589	ID:1	Got Some Data len = 62, type = 1
+01:43.590	ID:3	Got Some Data len = 62, type = 1
+01:43.592	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;97;-78
+01:43.593	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;97;-86
+01:43.673	ID:1	[INFO: MASTER-R  ] sent;1;97
+01:43.715	ID:2	Got Some Data len = 62, type = 1
+01:43.715	ID:3	Got Some Data len = 62, type = 1
+01:43.718	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;97;-78
+01:43.719	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;97;-83
+01:44.190	ID:3	[INFO: MASTER-R  ] sent;3;97
+01:44.214	ID:1	Got Some Data len = 62, type = 1
+01:44.214	ID:2	Got Some Data len = 62, type = 1
+01:44.217	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;97;-83
+01:44.217	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;97;-86
+01:44.528	ID:2	[INFO: MASTER-R  ] sent;2;98
+01:44.563	ID:1	Got Some Data len = 62, type = 1
+01:44.564	ID:3	Got Some Data len = 62, type = 1
+01:44.567	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;98;-78
+01:44.568	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;98;-86
+01:44.673	ID:1	[INFO: MASTER-R  ] sent;1;98
+01:44.691	ID:2	Got Some Data len = 62, type = 1
+01:44.692	ID:3	Got Some Data len = 62, type = 1
+01:44.694	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;98;-78
+01:44.695	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;98;-83
+01:45.190	ID:3	[INFO: MASTER-R  ] sent;3;98
+01:45.263	ID:1	Got Some Data len = 62, type = 1
+01:45.263	ID:2	Got Some Data len = 62, type = 1
+01:45.267	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;98;-83
+01:45.267	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;98;-86
+01:45.528	ID:2	[INFO: MASTER-R  ] sent;2;99
+01:45.538	ID:1	Got Some Data len = 62, type = 1
+01:45.539	ID:3	Got Some Data len = 62, type = 1
+01:45.542	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;99;-78
+01:45.543	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;99;-86
+01:45.673	ID:1	[INFO: MASTER-R  ] sent;1;99
+01:45.739	ID:2	Got Some Data len = 62, type = 1
+01:45.740	ID:3	Got Some Data len = 62, type = 1
+01:45.743	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;99;-78
+01:45.744	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;99;-83
+01:46.190	ID:3	[INFO: MASTER-R  ] sent;3;99
+01:46.238	ID:1	Got Some Data len = 62, type = 1
+01:46.238	ID:2	Got Some Data len = 62, type = 1
+01:46.242	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;99;-83
+01:46.242	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;99;-86
+01:46.528	ID:2	[INFO: MASTER-R  ] sent;2;100
+01:46.588	ID:1	Got Some Data len = 62, type = 1
+01:46.589	ID:3	Got Some Data len = 62, type = 1
+01:46.592	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;100;-78
+01:46.593	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;100;-86
+01:46.673	ID:1	[INFO: MASTER-R  ] sent;1;100
+01:46.714	ID:2	Got Some Data len = 62, type = 1
+01:46.715	ID:3	Got Some Data len = 62, type = 1
+01:46.717	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;100;-78
+01:46.718	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;100;-83
+01:47.190	ID:3	[INFO: MASTER-R  ] sent;3;100
+01:47.213	ID:1	Got Some Data len = 62, type = 1
+01:47.213	ID:2	Got Some Data len = 62, type = 1
+01:47.216	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;100;-86
+01:47.216	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;100;-83
+01:47.528	ID:2	[INFO: MASTER-R  ] sent;2;101
+01:47.563	ID:1	Got Some Data len = 62, type = 1
+01:47.564	ID:3	Got Some Data len = 62, type = 1
+01:47.566	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;101;-78
+01:47.567	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;101;-86
+01:47.673	ID:1	[INFO: MASTER-R  ] sent;1;101
+01:47.689	ID:2	Got Some Data len = 62, type = 1
+01:47.690	ID:3	Got Some Data len = 62, type = 1
+01:47.692	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;101;-78
+01:47.693	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;101;-83
+01:48.190	ID:3	[INFO: MASTER-R  ] sent;3;101
+01:48.263	ID:1	Got Some Data len = 62, type = 1
+01:48.263	ID:2	Got Some Data len = 62, type = 1
+01:48.266	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;101;-83
+01:48.266	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;101;-86
+01:48.528	ID:2	[INFO: MASTER-R  ] sent;2;102
+01:48.538	ID:1	Got Some Data len = 62, type = 1
+01:48.539	ID:3	Got Some Data len = 62, type = 1
+01:48.541	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;102;-78
+01:48.542	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;102;-86
+01:48.673	ID:1	[INFO: MASTER-R  ] sent;1;102
+01:48.815	ID:2	Got Some Data len = 62, type = 1
+01:48.816	ID:3	Got Some Data len = 62, type = 1
+01:48.818	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;102;-78
+01:48.819	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;102;-83
+01:49.190	ID:3	[INFO: MASTER-R  ] sent;3;102
+01:49.237	ID:1	Got Some Data len = 62, type = 1
+01:49.237	ID:2	Got Some Data len = 62, type = 1
+01:49.241	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;102;-83
+01:49.241	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;102;-86
+01:49.531	ID:2	[INFO: MASTER-R  ] sent;2;103
+01:49.587	ID:1	Got Some Data len = 62, type = 1
+01:49.588	ID:3	Got Some Data len = 62, type = 1
+01:49.591	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;103;-78
+01:49.592	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;103;-86
+01:49.673	ID:1	[INFO: MASTER-R  ] sent;1;103
+01:49.713	ID:2	Got Some Data len = 62, type = 1
+01:49.714	ID:3	Got Some Data len = 62, type = 1
+01:49.717	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;103;-78
+01:49.718	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;103;-83
+01:50.190	ID:3	[INFO: MASTER-R  ] sent;3;103
+01:50.212	ID:1	Got Some Data len = 62, type = 1
+01:50.212	ID:2	Got Some Data len = 62, type = 1
+01:50.216	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;103;-86
+01:50.216	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;103;-83
+01:50.232	ID:1	TheKing--> strength_vector(103): (1 - .000), (2 - 101.941), (3 - 101.941), 
+01:50.531	ID:2	[INFO: MASTER-R  ] sent;2;104
+01:50.562	ID:1	Got Some Data len = 62, type = 1
+01:50.563	ID:3	Got Some Data len = 62, type = 1
+01:50.566	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;104;-78
+01:50.567	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;104;-86
+01:50.673	ID:1	[INFO: MASTER-R  ] sent;1;104
+01:50.688	ID:2	Got Some Data len = 62, type = 1
+01:50.689	ID:3	Got Some Data len = 62, type = 1
+01:50.691	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;104;-78
+01:50.692	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;104;-83
+01:51.190	ID:3	[INFO: MASTER-R  ] sent;3;104
+01:51.262	ID:1	Got Some Data len = 62, type = 1
+01:51.262	ID:2	Got Some Data len = 62, type = 1
+01:51.265	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;104;-83
+01:51.266	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;104;-86
+01:51.531	ID:2	[INFO: MASTER-R  ] sent;2;105
+01:51.612	ID:1	Got Some Data len = 62, type = 1
+01:51.613	ID:3	Got Some Data len = 62, type = 1
+01:51.615	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;105;-78
+01:51.616	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;105;-86
+01:51.673	ID:1	[INFO: MASTER-R  ] sent;1;105
+01:51.738	ID:2	Got Some Data len = 62, type = 1
+01:51.739	ID:3	Got Some Data len = 62, type = 1
+01:51.741	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;105;-78
+01:51.742	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;105;-83
+01:51.751	ID:3	TheKing--> strength_vector(105): (1 - 100.000), (2 - 100.000), 
+01:52.190	ID:3	[INFO: MASTER-R  ] sent;3;105
+01:52.237	ID:1	Got Some Data len = 62, type = 1
+01:52.237	ID:2	Got Some Data len = 62, type = 1
+01:52.240	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;105;-83
+01:52.240	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;105;-86
+01:52.251	ID:2	TheKing--> strength_vector(105): (1 - 100.000), (2 - .000), (3 - 100.000), 
+01:52.531	ID:2	[INFO: MASTER-R  ] sent;2;106
+01:52.661	ID:1	Got Some Data len = 62, type = 1
+01:52.663	ID:3	Got Some Data len = 62, type = 1
+01:52.665	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;106;-78
+01:52.666	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;106;-86
+01:52.673	ID:1	[INFO: MASTER-R  ] sent;1;106
+01:52.712	ID:2	Got Some Data len = 62, type = 1
+01:52.713	ID:3	Got Some Data len = 62, type = 1
+01:52.716	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;106;-78
+01:52.717	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;106;-83
+01:53.190	ID:3	[INFO: MASTER-R  ] sent;3;106
+01:53.211	ID:1	Got Some Data len = 62, type = 1
+01:53.211	ID:2	Got Some Data len = 62, type = 1
+01:53.215	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;106;-83
+01:53.215	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;106;-86
+01:53.531	ID:2	[INFO: MASTER-R  ] sent;2;107
+01:53.561	ID:1	Got Some Data len = 62, type = 1
+01:53.562	ID:3	Got Some Data len = 62, type = 1
+01:53.565	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;107;-78
+01:53.566	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;107;-86
+01:53.673	ID:1	[INFO: MASTER-R  ] sent;1;107
+01:53.764	ID:2	Got Some Data len = 62, type = 1
+01:53.765	ID:3	Got Some Data len = 62, type = 1
+01:53.767	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;107;-78
+01:53.768	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;107;-83
+01:54.190	ID:3	[INFO: MASTER-R  ] sent;3;107
+01:54.261	ID:1	Got Some Data len = 62, type = 1
+01:54.261	ID:2	Got Some Data len = 62, type = 1
+01:54.265	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;107;-83
+01:54.265	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;107;-86
+01:54.531	ID:2	[INFO: MASTER-R  ] sent;2;108
+01:54.611	ID:1	Got Some Data len = 62, type = 1
+01:54.612	ID:3	Got Some Data len = 62, type = 1
+01:54.615	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;108;-78
+01:54.616	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;108;-86
+01:54.673	ID:1	[INFO: MASTER-R  ] sent;1;108
+01:54.737	ID:2	Got Some Data len = 62, type = 1
+01:54.738	ID:3	Got Some Data len = 62, type = 1
+01:54.740	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;108;-78
+01:54.742	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;108;-83
+01:55.190	ID:3	[INFO: MASTER-R  ] sent;3;108
+01:55.236	ID:1	Got Some Data len = 62, type = 1
+01:55.236	ID:2	Got Some Data len = 62, type = 1
+01:55.239	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;108;-86
+01:55.240	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;108;-83
+01:55.531	ID:2	[INFO: MASTER-R  ] sent;2;109
+01:55.586	ID:1	Got Some Data len = 62, type = 1
+01:55.587	ID:3	Got Some Data len = 62, type = 1
+01:55.589	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;109;-78
+01:55.590	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;109;-86
+01:55.673	ID:1	[INFO: MASTER-R  ] sent;1;109
+01:55.712	ID:2	Got Some Data len = 62, type = 1
+01:55.713	ID:3	Got Some Data len = 62, type = 1
+01:55.715	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;109;-78
+01:55.716	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;109;-83
+01:56.190	ID:3	[INFO: MASTER-R  ] sent;3;109
+01:56.211	ID:1	Got Some Data len = 62, type = 1
+01:56.211	ID:2	Got Some Data len = 62, type = 1
+01:56.214	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;109;-83
+01:56.214	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;109;-86
+01:56.531	ID:2	[INFO: MASTER-R  ] sent;2;110
+01:56.560	ID:1	Got Some Data len = 62, type = 1
+01:56.562	ID:3	Got Some Data len = 62, type = 1
+01:56.564	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;110;-78
+01:56.565	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;110;-86
+01:56.674	ID:1	[INFO: MASTER-R  ] sent;1;110
+01:56.686	ID:2	Got Some Data len = 62, type = 1
+01:56.687	ID:3	Got Some Data len = 62, type = 1
+01:56.690	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;110;-78
+01:56.691	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;110;-83
+01:57.190	ID:3	[INFO: MASTER-R  ] sent;3;110
+01:57.335	ID:1	Got Some Data len = 62, type = 1
+01:57.335	ID:2	Got Some Data len = 62, type = 1
+01:57.339	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;110;-83
+01:57.339	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;110;-86
+01:57.531	ID:2	[INFO: MASTER-R  ] sent;2;111
+01:57.610	ID:1	Got Some Data len = 62, type = 1
+01:57.611	ID:3	Got Some Data len = 62, type = 1
+01:57.614	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;111;-78
+01:57.615	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;111;-86
+01:57.674	ID:1	[INFO: MASTER-R  ] sent;1;111
+01:57.736	ID:2	Got Some Data len = 62, type = 1
+01:57.737	ID:3	Got Some Data len = 62, type = 1
+01:57.740	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;111;-78
+01:57.741	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;111;-83
+01:58.190	ID:3	[INFO: MASTER-R  ] sent;3;111
+01:58.235	ID:2	Got Some Data len = 62, type = 1
+01:58.235	ID:1	Got Some Data len = 62, type = 1
+01:58.239	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;111;-86
+01:58.239	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;111;-83
+01:58.531	ID:2	[INFO: MASTER-R  ] sent;2;112
+01:58.585	ID:1	Got Some Data len = 62, type = 1
+01:58.586	ID:3	Got Some Data len = 62, type = 1
+01:58.589	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;112;-78
+01:58.590	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;112;-86
+01:58.674	ID:1	[INFO: MASTER-R  ] sent;1;112
+01:58.711	ID:2	Got Some Data len = 62, type = 1
+01:58.712	ID:3	Got Some Data len = 62, type = 1
+01:58.715	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;112;-78
+01:58.716	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;112;-83
+01:59.190	ID:3	[INFO: MASTER-R  ] sent;3;112
+01:59.210	ID:1	Got Some Data len = 62, type = 1
+01:59.210	ID:2	Got Some Data len = 62, type = 1
+01:59.213	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;112;-83
+01:59.214	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;112;-86
+01:59.531	ID:2	[INFO: MASTER-R  ] sent;2;113
+01:59.560	ID:1	Got Some Data len = 62, type = 1
+01:59.561	ID:3	Got Some Data len = 62, type = 1
+01:59.563	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;113;-78
+01:59.565	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;113;-86
+01:59.674	ID:1	[INFO: MASTER-R  ] sent;1;113
+01:59.686	ID:2	Got Some Data len = 62, type = 1
+01:59.687	ID:3	Got Some Data len = 62, type = 1
+01:59.689	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;113;-78
+01:59.690	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;113;-83
+02:00.190	ID:3	[INFO: MASTER-R  ] sent;3;113
+02:00.260	ID:1	Got Some Data len = 62, type = 1
+02:00.260	ID:2	Got Some Data len = 62, type = 1
+02:00.263	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;113;-83
+02:00.263	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;113;-86
+02:00.531	ID:2	[INFO: MASTER-R  ] sent;2;114
+02:00.610	ID:1	Got Some Data len = 62, type = 1
+02:00.611	ID:3	Got Some Data len = 62, type = 1
+02:00.613	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;114;-78
+02:00.614	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;114;-86
+02:00.674	ID:1	[INFO: MASTER-R  ] sent;1;114
+02:00.735	ID:2	Got Some Data len = 62, type = 1
+02:00.737	ID:3	Got Some Data len = 62, type = 1
+02:00.739	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;114;-78
+02:00.740	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;114;-83
+02:01.190	ID:3	[INFO: MASTER-R  ] sent;3;114
+02:01.234	ID:1	Got Some Data len = 62, type = 1
+02:01.234	ID:2	Got Some Data len = 62, type = 1
+02:01.238	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;114;-83
+02:01.238	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;114;-86
+02:01.531	ID:2	[INFO: MASTER-R  ] sent;2;115
+02:01.585	ID:1	Got Some Data len = 62, type = 1
+02:01.586	ID:3	Got Some Data len = 62, type = 1
+02:01.588	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;115;-78
+02:01.589	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;115;-86
+02:01.674	ID:1	[INFO: MASTER-R  ] sent;1;115
+02:01.710	ID:2	Got Some Data len = 62, type = 1
+02:01.711	ID:3	Got Some Data len = 62, type = 1
+02:01.714	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;115;-78
+02:01.715	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;115;-83
+02:02.190	ID:3	[INFO: MASTER-R  ] sent;3;115
+02:02.284	ID:1	Got Some Data len = 62, type = 1
+02:02.284	ID:2	Got Some Data len = 62, type = 1
+02:02.288	ID:1	[INFO: MASTER-R  ] rcvd;1;3;25;115;-83
+02:02.288	ID:2	[INFO: MASTER-R  ] rcvd;2;3;25;115;-86
+02:02.531	ID:2	[INFO: MASTER-R  ] sent;2;116
+02:02.559	ID:1	Got Some Data len = 62, type = 1
+02:02.560	ID:3	Got Some Data len = 62, type = 1
+02:02.563	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;116;-78
+02:02.564	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;116;-86
+02:02.674	ID:1	[INFO: MASTER-R  ] sent;1;116
+02:02.686	ID:2	Got Some Data len = 62, type = 1
+02:02.686	ID:3	Got Some Data len = 62, type = 1
+02:02.690	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;116;-83
+02:02.690	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;116;-78
+02:03.190	ID:3	[INFO: MASTER-R  ] sent;3;116
+02:03.259	ID:1	Got Some Data len = 62, type = 1
+02:03.259	ID:2	Got Some Data len = 62, type = 1
+02:03.263	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;116;-83
+02:03.263	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;116;-86
+02:03.531	ID:2	[INFO: MASTER-R  ] sent;2;117
+02:03.609	ID:1	Got Some Data len = 62, type = 1
+02:03.609	ID:3	Got Some Data len = 62, type = 1
+02:03.612	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;117;-78
+02:03.612	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;117;-86
+02:03.674	ID:1	[INFO: MASTER-R  ] sent;1;117
+02:03.735	ID:2	Got Some Data len = 62, type = 1
+02:03.735	ID:3	Got Some Data len = 62, type = 1
+02:03.738	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;117;-78
+02:03.738	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;117;-83
+02:04.190	ID:3	[INFO: MASTER-R  ] sent;3;117
+02:04.234	ID:1	Got Some Data len = 62, type = 1
+02:04.234	ID:2	Got Some Data len = 62, type = 1
+02:04.237	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;117;-83
+02:04.237	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;117;-86
+02:04.531	ID:2	[INFO: MASTER-R  ] sent;2;118
+02:04.584	ID:1	Got Some Data len = 62, type = 1
+02:04.584	ID:3	Got Some Data len = 62, type = 1
+02:04.587	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;118;-78
+02:04.587	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;118;-86
+02:04.674	ID:1	[INFO: MASTER-R  ] sent;1;118
+02:04.709	ID:3	Got Some Data len = 62, type = 1
+02:04.709	ID:2	Got Some Data len = 62, type = 1
+02:04.713	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;118;-83
+02:04.713	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;118;-78
+02:05.190	ID:3	[INFO: MASTER-R  ] sent;3;118
+02:05.208	ID:1	Got Some Data len = 62, type = 1
+02:05.208	ID:2	Got Some Data len = 62, type = 1
+02:05.212	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;118;-83
+02:05.212	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;118;-86
+02:05.228	ID:1	TheKing--> strength_vector(118): (1 - .000), (2 - 101.694), (3 - 101.694), 
+02:05.531	ID:2	[INFO: MASTER-R  ] sent;2;119
+02:05.533	ID:2	actual data in function: 1 2 
+02:05.536	ID:2	BestLink: 1 0 0 0 0 0 0 0 
+02:05.539	ID:2	sending actual data inside mrp: 1 2 
+02:05.558	ID:1	Got Some Data len = 62, type = 1
+02:05.558	ID:3	Got Some Data len = 62, type = 1
+02:05.562	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;119;-78
+02:05.562	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;119;-86
+02:05.637	ID:1	Got Some Data len = 64, type = 3
+02:05.640	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;2
+02:05.644	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+02:05.677	ID:1	[INFO: MASTER-R  ] sent;1;119
+02:05.759	ID:3	Got Some Data len = 62, type = 1
+02:05.759	ID:2	Got Some Data len = 62, type = 1
+02:05.763	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;119;-83
+02:05.763	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;119;-78
+02:06.190	ID:3	[INFO: MASTER-R  ] sent;3;119
+02:06.193	ID:3	actual data in function: 1 3 
+02:06.196	ID:3	BestLink: 1 0 0 0 0 0 0 0 
+02:06.202	ID:3	sending actual data inside mrp: 1 3 
+02:06.258	ID:1	Got Some Data len = 62, type = 1
+02:06.258	ID:2	Got Some Data len = 62, type = 1
+02:06.262	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;119;-83
+02:06.262	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;119;-86
+02:06.411	ID:1	Got Some Data len = 64, type = 3
+02:06.415	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;2
+02:06.418	ID:1	Got Actual Data --> Route (Size: 2): 3 --> 1
+02:06.531	ID:2	[INFO: MASTER-R  ] sent;2;120
+02:06.680	ID:1	[INFO: MASTER-R  ] sent;1;120
+02:06.683	ID:3	Got Some Data len = 62, type = 1
+02:06.684	ID:1	Got Some Data len = 62, type = 1
+02:06.687	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;120;-86
+02:06.687	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;120;-78
+02:06.735	ID:3	Got Some Data len = 62, type = 1
+02:06.735	ID:2	Got Some Data len = 62, type = 1
+02:06.739	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;120;-83
+02:06.739	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;120;-78
+02:06.752	ID:3	TheKing--> strength_vector(120): (1 - 100.000), (2 - 100.000), 
+02:07.190	ID:3	[INFO: MASTER-R  ] sent;3;120
+02:07.233	ID:1	Got Some Data len = 62, type = 1
+02:07.233	ID:2	Got Some Data len = 62, type = 1
+02:07.236	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;120;-83
+02:07.237	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;120;-86
+02:07.248	ID:2	TheKing--> strength_vector(120): (1 - 100.000), (2 - .000), (3 - 100.000), 
+02:07.531	ID:2	[INFO: MASTER-R  ] sent;2;121
+02:07.583	ID:1	Got Some Data len = 62, type = 1
+02:07.583	ID:3	Got Some Data len = 62, type = 1
+02:07.586	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;121;-78
+02:07.587	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;121;-86
+02:07.677	ID:1	[INFO: MASTER-R  ] sent;1;121
+02:07.784	ID:3	Got Some Data len = 62, type = 1
+02:07.784	ID:2	Got Some Data len = 62, type = 1
+02:07.787	ID:2	[INFO: MASTER-R  ] rcvd;2;1;25;121;-78
+02:07.787	ID:3	[INFO: MASTER-R  ] rcvd;3;1;25;121;-83
+02:08.190	ID:3	[INFO: MASTER-R  ] sent;3;121
+02:08.208	ID:1	Got Some Data len = 62, type = 1
+02:08.208	ID:2	Got Some Data len = 62, type = 1
+02:08.211	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;121;-83
+02:08.211	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;121;-86
+02:08.531	ID:2	[INFO: MASTER-R  ] sent;2;122
+02:08.558	ID:1	Got Some Data len = 62, type = 1
+02:08.558	ID:3	Got Some Data len = 62, type = 1
+02:08.561	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;122;-78
+02:08.561	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;122;-86
+02:08.677	ID:1	[INFO: MASTER-R  ] sent;1;122
+02:08.758	ID:2	Got Some Data len = 62, type = 1
+02:08.758	ID:3	Got Some Data len = 62, type = 1
+02:08.762	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;122;-78
+02:08.762	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;122;-83
+02:09.190	ID:3	[INFO: MASTER-R  ] sent;3;122
+02:09.257	ID:1	Got Some Data len = 62, type = 1
+02:09.258	ID:2	Got Some Data len = 62, type = 1
+02:09.261	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;122;-83
+02:09.261	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;122;-86
+02:09.531	ID:2	[INFO: MASTER-R  ] sent;2;123
+02:09.607	ID:1	Got Some Data len = 62, type = 1
+02:09.607	ID:3	Got Some Data len = 62, type = 1
+02:09.611	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;123;-78
+02:09.611	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;123;-86
+02:09.677	ID:1	[INFO: MASTER-R  ] sent;1;123
+02:09.733	ID:2	Got Some Data len = 62, type = 1
+02:09.733	ID:3	Got Some Data len = 62, type = 1
+02:09.737	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;123;-78
+02:09.737	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;123;-83
+02:10.190	ID:3	[INFO: MASTER-R  ] sent;3;123
+02:10.232	ID:1	Got Some Data len = 62, type = 1
+02:10.232	ID:2	Got Some Data len = 62, type = 1
+02:10.236	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;123;-83
+02:10.236	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;123;-86
+02:10.531	ID:2	[INFO: MASTER-R  ] sent;2;124
+02:10.582	ID:1	Got Some Data len = 62, type = 1
+02:10.582	ID:3	Got Some Data len = 62, type = 1
+02:10.586	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;124;-78
+02:10.586	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;124;-86
+02:10.677	ID:1	[INFO: MASTER-R  ] sent;1;124
+02:10.708	ID:2	Got Some Data len = 62, type = 1
+02:10.708	ID:3	Got Some Data len = 62, type = 1
+02:10.712	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;124;-78
+02:10.712	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;124;-83
+02:11.190	ID:3	[INFO: MASTER-R  ] sent;3;124
+02:11.207	ID:1	Got Some Data len = 62, type = 1
+02:11.207	ID:2	Got Some Data len = 62, type = 1
+02:11.211	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;124;-83
+02:11.211	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;124;-86
+02:11.531	ID:2	[INFO: MASTER-R  ] sent;2;125
+02:11.632	ID:1	Got Some Data len = 62, type = 1
+02:11.632	ID:3	Got Some Data len = 62, type = 1
+02:11.635	ID:1	[INFO: MASTER-R  ] rcvd;1;2;20;125;-78
+02:11.636	ID:3	[INFO: MASTER-R  ] rcvd;3;2;20;125;-86
+02:11.677	ID:1	[INFO: MASTER-R  ] sent;1;125
+02:11.758	ID:2	Got Some Data len = 62, type = 1
+02:11.758	ID:3	Got Some Data len = 62, type = 1
+02:11.761	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;125;-78
+02:11.761	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;125;-83
+02:12.190	ID:3	[INFO: MASTER-R  ] sent;3;125
+02:12.257	ID:1	Got Some Data len = 62, type = 1
+02:12.257	ID:2	Got Some Data len = 62, type = 1
+02:12.260	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;125;-83
+02:12.260	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;125;-86
+02:12.531	ID:2	[INFO: MASTER-R  ] sent;2;126
+02:12.607	ID:1	Got Some Data len = 62, type = 1
+02:12.607	ID:3	Got Some Data len = 62, type = 1
+02:12.610	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;126;-78
+02:12.610	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;126;-86
+02:12.677	ID:1	[INFO: MASTER-R  ] sent;1;126
+02:12.732	ID:3	Got Some Data len = 62, type = 1
+02:12.732	ID:2	Got Some Data len = 62, type = 1
+02:12.736	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;126;-83
+02:12.736	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;126;-78
+02:13.190	ID:3	[INFO: MASTER-R  ] sent;3;126
+02:13.232	ID:1	Got Some Data len = 62, type = 1
+02:13.232	ID:2	Got Some Data len = 62, type = 1
+02:13.235	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;126;-83
+02:13.235	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;126;-86
+02:13.530	ID:2	[INFO: MASTER-R  ] sent;2;127
+02:13.581	ID:1	Got Some Data len = 62, type = 1
+02:13.581	ID:3	Got Some Data len = 62, type = 1
+02:13.585	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;127;-78
+02:13.585	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;127;-86
+02:13.677	ID:1	[INFO: MASTER-R  ] sent;1;127
+02:13.707	ID:2	Got Some Data len = 62, type = 1
+02:13.707	ID:3	Got Some Data len = 62, type = 1
+02:13.711	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;127;-83
+02:13.711	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;127;-78
+02:14.190	ID:3	[INFO: MASTER-R  ] sent;3;127
+02:14.206	ID:1	Got Some Data len = 62, type = 1
+02:14.206	ID:2	Got Some Data len = 62, type = 1
+02:14.210	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;127;-83
+02:14.210	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;127;-86
+02:14.530	ID:2	[INFO: MASTER-R  ] sent;2;128
+02:14.556	ID:1	Got Some Data len = 62, type = 1
+02:14.556	ID:3	Got Some Data len = 62, type = 1
+02:14.560	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;128;-78
+02:14.560	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;128;-86
+02:14.677	ID:1	[INFO: MASTER-R  ] sent;1;128
+02:14.757	ID:2	Got Some Data len = 62, type = 1
+02:14.757	ID:3	Got Some Data len = 62, type = 1
+02:14.761	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;128;-78
+02:14.761	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;128;-83
+02:15.190	ID:3	[INFO: MASTER-R  ] sent;3;128
+02:15.256	ID:1	Got Some Data len = 62, type = 1
+02:15.256	ID:2	Got Some Data len = 62, type = 1
+02:15.260	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;128;-83
+02:15.260	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;128;-86
+02:15.530	ID:2	[INFO: MASTER-R  ] sent;2;129
+02:15.606	ID:1	Got Some Data len = 62, type = 1
+02:15.606	ID:3	Got Some Data len = 62, type = 1
+02:15.609	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;129;-78
+02:15.610	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;129;-86
+02:15.677	ID:1	[INFO: MASTER-R  ] sent;1;129
+02:15.733	ID:2	Got Some Data len = 62, type = 1
+02:15.734	ID:3	Got Some Data len = 62, type = 1
+02:15.737	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;129;-78
+02:15.738	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;129;-83
+02:16.190	ID:3	[INFO: MASTER-R  ] sent;3;129
+02:16.306	ID:1	Got Some Data len = 62, type = 1
+02:16.306	ID:2	Got Some Data len = 62, type = 1
+02:16.309	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;129;-83
+02:16.309	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;129;-86
+02:16.530	ID:2	[INFO: MASTER-R  ] sent;2;130
+02:16.581	ID:1	Got Some Data len = 62, type = 1
+02:16.582	ID:3	Got Some Data len = 62, type = 1
+02:16.584	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;130;-78
+02:16.585	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;130;-86
+02:16.677	ID:1	[INFO: MASTER-R  ] sent;1;130
+02:16.706	ID:2	Got Some Data len = 62, type = 1
+02:16.707	ID:3	Got Some Data len = 62, type = 1
+02:16.710	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;130;-78
+02:16.711	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;130;-83
+02:17.190	ID:3	[INFO: MASTER-R  ] sent;3;130
+02:17.205	ID:1	Got Some Data len = 62, type = 1
+02:17.206	ID:2	Got Some Data len = 62, type = 1
+02:17.209	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;130;-83
+02:17.209	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;130;-86
+02:17.529	ID:2	[INFO: MASTER-R  ] sent;2;131
+02:17.555	ID:1	Got Some Data len = 62, type = 1
+02:17.556	ID:3	Got Some Data len = 62, type = 1
+02:17.559	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;131;-78
+02:17.560	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;131;-86
+02:17.677	ID:1	[INFO: MASTER-R  ] sent;1;131
+02:17.756	ID:2	Got Some Data len = 62, type = 1
+02:17.757	ID:3	Got Some Data len = 62, type = 1
+02:17.760	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;131;-78
+02:17.761	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;131;-83
+02:18.190	ID:3	[INFO: MASTER-R  ] sent;3;131
+02:18.255	ID:1	Got Some Data len = 62, type = 1
+02:18.255	ID:2	Got Some Data len = 62, type = 1
+02:18.259	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;131;-83
+02:18.259	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;131;-86
+02:18.529	ID:2	[INFO: MASTER-R  ] sent;2;132
+02:18.605	ID:1	Got Some Data len = 62, type = 1
+02:18.606	ID:3	Got Some Data len = 62, type = 1
+02:18.609	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;132;-78
+02:18.610	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;132;-86
+02:18.677	ID:1	[INFO: MASTER-R  ] sent;1;132
+02:18.731	ID:2	Got Some Data len = 62, type = 1
+02:18.732	ID:3	Got Some Data len = 62, type = 1
+02:18.735	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;132;-78
+02:18.736	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;132;-83
+02:19.190	ID:3	[INFO: MASTER-R  ] sent;3;132
+02:19.230	ID:1	Got Some Data len = 62, type = 1
+02:19.230	ID:2	Got Some Data len = 62, type = 1
+02:19.234	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;132;-83
+02:19.234	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;132;-86
+02:19.531	ID:2	[INFO: MASTER-R  ] sent;2;133
+02:19.580	ID:1	Got Some Data len = 62, type = 1
+02:19.581	ID:3	Got Some Data len = 62, type = 1
+02:19.584	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;133;-78
+02:19.585	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;133;-86
+02:19.677	ID:1	[INFO: MASTER-R  ] sent;1;133
+02:19.706	ID:2	Got Some Data len = 62, type = 1
+02:19.707	ID:3	Got Some Data len = 62, type = 1
+02:19.709	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;133;-78
+02:19.710	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;133;-83
+02:20.190	ID:3	[INFO: MASTER-R  ] sent;3;133
+02:20.205	ID:1	Got Some Data len = 62, type = 1
+02:20.205	ID:2	Got Some Data len = 62, type = 1
+02:20.208	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;133;-86
+02:20.208	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;133;-83
+02:20.224	ID:1	TheKing--> strength_vector(133): (1 - .000), (2 - 101.503), (3 - 101.503), 
+02:20.529	ID:2	[INFO: MASTER-R  ] sent;2;134
+02:20.555	ID:1	Got Some Data len = 62, type = 1
+02:20.556	ID:3	Got Some Data len = 62, type = 1
+02:20.558	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;134;-78
+02:20.560	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;134;-86
+02:20.677	ID:1	[INFO: MASTER-R  ] sent;1;134
+02:20.757	ID:2	Got Some Data len = 62, type = 1
+02:20.758	ID:3	Got Some Data len = 62, type = 1
+02:20.761	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;134;-78
+02:20.762	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;134;-83
+02:21.190	ID:3	[INFO: MASTER-R  ] sent;3;134
+02:21.254	ID:1	Got Some Data len = 62, type = 1
+02:21.255	ID:2	Got Some Data len = 62, type = 1
+02:21.258	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;134;-83
+02:21.258	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;134;-86
+02:21.528	ID:2	[INFO: MASTER-R  ] sent;2;135
+02:21.604	ID:1	Got Some Data len = 62, type = 1
+02:21.605	ID:3	Got Some Data len = 62, type = 1
+02:21.608	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;135;-78
+02:21.609	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;135;-86
+02:21.677	ID:1	[INFO: MASTER-R  ] sent;1;135
+02:21.805	ID:2	Got Some Data len = 62, type = 1
+02:21.806	ID:3	Got Some Data len = 62, type = 1
+02:21.809	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;135;-78
+02:21.810	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;135;-83
+02:21.819	ID:3	TheKing--> strength_vector(135): (1 - 100.000), (2 - 100.000), 
+02:22.190	ID:3	[INFO: MASTER-R  ] sent;3;135
+02:22.229	ID:1	Got Some Data len = 62, type = 1
+02:22.229	ID:2	Got Some Data len = 62, type = 1
+02:22.233	ID:1	[INFO: MASTER-R  ] rcvd;1;3;20;135;-83
+02:22.233	ID:2	[INFO: MASTER-R  ] rcvd;2;3;20;135;-86
+02:22.244	ID:2	TheKing--> strength_vector(135): (1 - 100.000), (2 - .000), (3 - 100.000), 
+02:22.528	ID:2	[INFO: MASTER-R  ] sent;2;136
+02:22.579	ID:1	Got Some Data len = 62, type = 1
+02:22.580	ID:3	Got Some Data len = 62, type = 1
+02:22.583	ID:1	[INFO: MASTER-R  ] rcvd;1;2;25;136;-78
+02:22.584	ID:3	[INFO: MASTER-R  ] rcvd;3;2;25;136;-86
+02:22.677	ID:1	[INFO: MASTER-R  ] sent;1;136
+02:22.705	ID:2	Got Some Data len = 62, type = 1
+02:22.706	ID:3	Got Some Data len = 62, type = 1
+02:22.709	ID:2	[INFO: MASTER-R  ] rcvd;2;1;26;136;-78
+02:22.710	ID:3	[INFO: MASTER-R  ] rcvd;3;1;26;136;-83
+02:23.190	ID:3	[INFO: MASTER-R  ] sent;3;136
+02:23.204	ID:1	Got Some Data len = 62, type = 1
+02:23.204	ID:2	Got Some Data len = 62, type = 1
+02:23.208	ID:1	[INFO: MASTER-R  ] rcvd;1;3;26;136;-83
+02:23.208	ID:2	[INFO: MASTER-R  ] rcvd;2;3;26;136;-86
+02:23.528	ID:2	[INFO: MASTER-R  ] sent;2;137
+02:23.554	ID:1	Got Some Data len = 62, type = 1
+02:23.555	ID:3	Got Some Data len = 62, type = 1
+02:23.558	ID:1	[INFO: MASTER-R  ] rcvd;1;2;15;137;-78
+02:23.559	ID:3	[INFO: MASTER-R  ] rcvd;3;2;15;137;-86
+02:23.677	ID:1	[INFO: MASTER-R  ] sent;1;137
+02:23.755	ID:2	Got Some Data len = 62, type = 1
+02:23.756	ID:3	Got Some Data len = 62, type = 1
+02:23.758	ID:2	[INFO: MASTER-R  ] rcvd;2;1;15;137;-78
+02:23.759	ID:3	[INFO: MASTER-R  ] rcvd;3;1;15;137;-83
+02:24.190	ID:3	[INFO: MASTER-R  ] sent;3;137
+02:24.254	ID:1	Got Some Data len = 62, type = 1
+02:24.254	ID:2	Got Some Data len = 62, type = 1
+02:24.257	ID:1	[INFO: MASTER-R  ] rcvd;1;3;15;137;-83
+02:24.257	ID:2	[INFO: MASTER-R  ] rcvd;2;3;15;137;-86
+02:24.528	ID:2	[INFO: MASTER-R  ] sent;2;138
+02:24.604	ID:1	Got Some Data len = 62, type = 1
+02:24.605	ID:3	Got Some Data len = 62, type = 1
+02:24.607	ID:1	[INFO: MASTER-R  ] rcvd;1;2;26;138;-78
+02:24.608	ID:3	[INFO: MASTER-R  ] rcvd;3;2;26;138;-86
+02:24.677	ID:1	[INFO: MASTER-R  ] sent;1;138
+02:24.730	ID:2	Got Some Data len = 62, type = 1
+02:24.730	ID:3	Got Some Data len = 62, type = 1
+02:24.733	ID:2	[INFO: MASTER-R  ] rcvd;2;1;20;138;-78
+02:24.734	ID:3	[INFO: MASTER-R  ] rcvd;3;1;20;138;-83

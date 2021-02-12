@@ -8,6 +8,8 @@ class Data_table(Enum):
   etx = 0
   prr = 1
   rssi = 2
+  strength_vector_prr = 3
+  strength_vector_etx = 4
 
 class Parser(object):
 
@@ -21,6 +23,8 @@ class Parser(object):
     self.max_etx_bound = max_etx_bound
     self.min_rssi_bound = min_rssi_bound
     self.parse_graphs = []
+    self.strength_vector_prr = {}
+    self.strength_vector_etx = {}
 
   def add_to_parse_graph(self, number, sender, receiver=0, rssi=0):
     if sender not in self.parse_graphs[-1]:
@@ -56,12 +60,42 @@ class Parser(object):
           self.add_to_parse_graph(packet_number, sender)
 
 
+  def match_strength_vector(self, line):
+    #strength_vector(60): (1 - .633), (2 - .500), (3 - .850), (4 - .516), (5 - .000), 
+    #regex = 'strength_vector\(\d+\):( \(\d+ \- (\d+)*\.\d+\),)*'
+    # match = re_search(r'strength_vector\(\d+\):( \(\d+ \- (\d+)*\.\d+\),)*', line) 
+    match = line if ('strength_vector' in line) else None 
+    if match:
+      #print('match', match)
+      space_split_data = match.split(' ')
+      rcv_node_id = int (space_split_data[1])
+      strength_data = space_split_data[2].split(',')
+
+      for x in strength_data:
+        y = x.split('-')
+        if len(y) > 1 and rcv_node_id != int (y[0]):
+          if (int(y[0]) in self.strength_vector_prr.keys()) and (int(y[0]) in self.strength_vector_etx.keys()): 
+            pass
+          else:
+            self.strength_vector_prr[int (y[0])] = {}
+            self.strength_vector_etx[int (y[0])] = {}
+
+          self.strength_vector_prr[int (y[0])][rcv_node_id] = float (y[1])
+          self.strength_vector_etx[int (y[0])][rcv_node_id]  = 1 /float (y[1])
+
+
+
   def parse_file(self, filepath):
     print(filepath)
     with open(filepath, encoding="utf8", errors='ignore') as f:
       self.parse_graphs.append({})
       for line in f:
         self.match_neighbor_data(line)
+        self.match_strength_vector(line)
+      #print('strength_vector_prr\n',self.strength_vector_prr)
+      #self.print_parsed_data_table(Data_table.strength_vector_prr)
+      #elf.print_parsed_data_table(Data_table.strength_vector_etx)
+
 
   def combine_parse_graphs(self):
     self.graph_etx = {}
@@ -151,6 +185,14 @@ class Parser(object):
       output = 'RSSI'
       graph = self.graph_rssi
       entry_format_string = '{:8.1f}'
+    elif table_type == Data_table.strength_vector_prr:
+      output = 'Strength Vector PRR'
+      graph = self.strength_vector_prr
+      entry_format_string = '{:8.3f}'
+    elif table_type == Data_table.strength_vector_etx:
+      output = 'Strength Vector ETX'
+      graph = self.strength_vector_etx
+      entry_format_string = '{:8.3f}'
 
     output += ' table:\n^^^^^^^^^^\nr\\f'
     for sender in self.valid_node_ids:
@@ -169,7 +211,7 @@ class Parser(object):
     print(output)
 
 
-  def parse_neighbor_data(self, print_etx=False, print_prr=False, print_rssi=False):
+  def parse_neighbor_data(self, print_etx=False, print_prr=False, print_rssi=False, print_strength_vector=False):
     if self.filename:
       self.parse_file(self.folder + self.filename)
     else:
@@ -182,6 +224,11 @@ class Parser(object):
       self.print_parsed_data_table(Data_table.etx)
     if print_rssi:
       self.print_parsed_data_table(Data_table.rssi)
+    if print_strength_vector:
+      self.print_parsed_data_table(Data_table.strength_vector_prr)
+      self.print_parsed_data_table(Data_table.strength_vector_etx)
+      self.graph_prr = self.strength_vector_prr
+      self.graph_etx = self.strength_vector_etx
 
   def create_DGRM_configuration(self):
     dgrm_conf = open(str(dirname(dirname(abspath(__file__)))) + "/DGRM_configurations/dgrm.conf", 'w')

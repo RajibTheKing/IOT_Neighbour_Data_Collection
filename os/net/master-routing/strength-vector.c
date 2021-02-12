@@ -1,6 +1,6 @@
 #include "strength-vector.h"
 #include <stdio.h>
-void onReceivedNewBeacon(Beacon receivedBeacon)
+void onReceivedNewBeacon(int own_node_id, Beacon receivedBeacon)
 {
     int i;
     int currentSequence = receivedBeacon.seq;
@@ -20,20 +20,24 @@ void onReceivedNewBeacon(Beacon receivedBeacon)
 
     for(i = 1; i<=highestNodeID; i++)
     {
-        strength_vector[i] = 100.0 * (receivedCounter[i] * 1.0) / (highestSequence * 1.0);
+        strength_vector[i] = (receivedCounter[i] * 1.0) / (highestSequence * 1.0);
     }
 
     debug_purpose++;
     if(debug_purpose  % 30 == 0){
-        printf("TheKing--> strength_vector(%d): ", highestSequence);
+        printf("strength_vector(%d): %d ", highestSequence, own_node_id);
         
         for(i = 1; i<= highestNodeID; i++){
-            printf("(%d - ", i);
+            printf("%d-", i);
             printFLoat(strength_vector[i]);
-            printf("), ");
+            printf(",");
         }
         printf("\n");
     }
+}
+
+void set_own_node_id_as_highest(int id){
+    highestNodeID = id;
 }
 
 void printFLoat(float value){
