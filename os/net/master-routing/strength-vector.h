@@ -3,7 +3,8 @@
 #define STRENGTH_VECTOR
 
 #include "commonHeader.h"
-
+#include "contiki.h"
+#include "string.h"
 
 
 
@@ -24,4 +25,5 @@ int intToStr(int x, char str[], int d);
 int myPow(int x, int p);
 
 float getStrengthByNodeID( int nodeID);
+uint8_t prepareStrengthVectorToSend(uint8_t data[]);
 #endif

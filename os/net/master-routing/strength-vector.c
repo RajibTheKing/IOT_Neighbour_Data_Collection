@@ -121,3 +121,20 @@ float getStrengthByNodeID(int nodeID)
 {
     return strength_vector[nodeID];
 }
+
+uint8_t prepareStrengthVectorToSend(uint8_t data[])
+{
+    int i;
+    int index = 0;
+    data[0] = (uint8_t) highestNodeID;
+    index +=1;
+    for(i=1; i<=highestNodeID; i++){
+        uint8_t nodeId = i;
+        uint16_t value = strength_vector[i] * 10000;
+        memcpy(data + index, &nodeId, sizeof(uint8_t));
+        memcpy(data + index + sizeof(uint8_t), &value, sizeof(uint16_t));
+        index += 3;
+    }
+
+    return index;
+}
