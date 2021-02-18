@@ -23,17 +23,18 @@ void onReceivedNewBeacon(int own_node_id, Beacon receivedBeacon)
         strength_vector[i] = (receivedCounter[i] * 1.0) / (highestSequence * 1.0);
     }
 
-    debug_purpose++;
-    if(debug_purpose  % 30 == 0){
-        printf("strength_vector(%d): %d ", highestSequence, own_node_id);
-        
+    /*debug_purpose++;
+    if(debug_purpose  % 30 == 0 && own_node_id == 1){
+        //printf("strength_vector(%d): %d ", highestSequence, own_node_id);
+        printf("strength_vector: %d ", own_node_id);
+
         for(i = 1; i<= highestNodeID; i++){
             printf("%d-", i);
             printFLoat(strength_vector[i]);
             printf(",");
         }
         printf("\n");
-    }
+    }*/
 }
 
 void set_own_node_id_as_highest(int id){

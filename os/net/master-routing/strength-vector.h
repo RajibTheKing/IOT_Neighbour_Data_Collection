@@ -26,4 +26,5 @@ int myPow(int x, int p);
 
 float getStrengthByNodeID( int nodeID);
 uint8_t prepareStrengthVectorToSend(uint8_t data[]);
+
 #endif
