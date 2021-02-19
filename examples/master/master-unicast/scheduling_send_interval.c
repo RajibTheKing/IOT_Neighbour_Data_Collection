@@ -1,13 +1,17 @@
 #ifdef CONTIKI_TARGET_SKY
-  if (node_id == 1) {
-    etimer_set(&periodic_timer, (26 * CLOCK_SECOND) / 40);
-  } else if (node_id == 2) {
-    etimer_set(&periodic_timer, (22 * CLOCK_SECOND) / 40);
+  if (node_id == 3) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 40);
+  } else if (node_id == 5) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 40);
+  } else if (node_id == 7) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 40);
   }
 #else
-  if (node_id == 1) {
-    etimer_set(&periodic_timer, (26 * CLOCK_SECOND) / 100);
-  } else if (node_id == 2) {
-    etimer_set(&periodic_timer, (22 * CLOCK_SECOND) / 100);
+  if (node_id == 3) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 100);
+  } else if (node_id == 5) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 100);
+  } else if (node_id == 7) {
+    etimer_set(&periodic_timer, (40 * CLOCK_SECOND) / 100);
   }
 #endif

@@ -295,8 +295,8 @@ tsch_queue_add_packet(const linkaddr_t *addr, uint8_t max_transmissions,
       }
     }
   }
-  LOG_ERR("! add packet failed: %u %p %d %p %p\n", tsch_is_locked(), n, put_index, p, p ? p->qb : NULL);
-  printf("! add packet failed: %u %p %d %p %p\n", tsch_is_locked(), n, put_index, p, p ? p->qb : NULL);
+  LOG_ERR("! add packet failed: %u %p %d %p %p %d\n", tsch_is_locked(), n, put_index, p, p ? p->qb : NULL, TSCH_QUEUE_NUM_PER_NEIGHBOR);
+  printf("! add packet failed: %u %p %d %p %p %d\n", tsch_is_locked(), n, put_index, p, p ? p->qb : NULL, TSCH_QUEUE_NUM_PER_NEIGHBOR);
   //leds_off(LEDS_YELLOW);
   return 0;
 }

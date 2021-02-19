@@ -80,8 +80,12 @@ class Parser(object):
             self.strength_vector_prr[int (y[0])] = {}
             self.strength_vector_etx[int (y[0])] = {}
 
-          self.strength_vector_prr[int (y[0])][rcv_node_id] = float (y[1])
-          self.strength_vector_etx[int (y[0])][rcv_node_id]  = 1 /float (y[1])
+          if float(y[1]) > 0.09:
+            self.strength_vector_prr[int (y[0])][rcv_node_id] = float (y[1])
+            if float(y[1]) > 0:
+              self.strength_vector_etx[int (y[0])][rcv_node_id]  = 1 /float (y[1])
+            else:
+              self.strength_vector_etx[int (y[0])][rcv_node_id]  = 0
 
 
 

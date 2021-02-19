@@ -150,7 +150,7 @@ static struct tsch_link *best_tsch_shedule_link = NULL;
 static float max_master_strength = 0;
 //static master_routing_packet_t history;
 
-static uint8_t history_ad_seq_array[NUM_COOJA_NODES];
+static uint8_t history_ad_seq_array[NUM_COOJA_NODES + 1];
 
 static uint8_t flag_to_stop_ad = 0;
 
@@ -372,6 +372,9 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
     masternet_len = minimal_routing_packet_size;
     //history = mrp;
     history_ad_seq_array[mrp.flow_number] = mrp.advertisement_seq;
+
+    clock_wait(node_id * 3);
+
     success = NETSTACK_NETWORK.output(NULL);
     LOG_INFO("master advertisement sent;%u;%u;%u;", mrp.flow_number, mrp.packet_type, mrp.advertisement_seq); //sent;<from>;<number>
     printFLoat(mrp.strengthToMaster);

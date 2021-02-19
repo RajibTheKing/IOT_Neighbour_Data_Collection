@@ -68,7 +68,7 @@
 
 #if !TSCH_CONF_TTL_BASED_RETRANSMISSIONS
 #ifndef MAX_NUMBER_TRANSMISSIONS
-#define MAX_NUMBER_TRANSMISSIONS   8    //maximum number transmissions possible for sender -> assuming sender of only one flow!
+#define MAX_NUMBER_TRANSMISSIONS   10    //maximum number transmissions possible for sender -> assuming sender of only one flow!
 #endif
 #endif /* !TSCH_CONF_TTL_BASED_RETRANSMISSIONS */
 

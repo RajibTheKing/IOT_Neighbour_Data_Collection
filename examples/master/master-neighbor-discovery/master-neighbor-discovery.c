@@ -36,6 +36,7 @@ AUTOSTART_PROCESSES(&master_neighbor_discovery_process);
 /*---------------------------------------------------------------------------*/
 
 static uint16_t adv_counter = 0;
+static uint8_t actual_data_sending_interval = 0;
 
 PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
 {
@@ -57,27 +58,26 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
 
 
   if (node_is_sender()){
+    actual_data_sending_interval = 60 + (node_id * 2);
+
     while(1){
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
+      counter += 1;
       //success =
-      master_routing_sendto(NULL, 0, 0);
+
+      if(counter % 2 == 0)
+      {
+        master_routing_sendto(NULL, 0, 0);
+      }
       
       //LOG_INFO("Success: %u", success);
-      counter += 1;
+      
 
-      if(counter % 10 ==0 && node_id == 1){
-        master_routing_send_advertisement_sendto(100, ++adv_counter, node_id);
+      if(counter % 15 ==0 && node_id == 1 && counter% actual_data_sending_interval != 0){
+        master_routing_send_advertisement_sendto( 100, ++adv_counter, node_id);
       }
 
-      if(counter % 60 == 0 && node_id != 1){
-
-        //uint8_t numberofNodes = 1;
-        //myData[0] = 1;
-        //myData[1] = node_id;
-        //memcpy(myData, &numberofNodes, sizeof(uint8_t));
-        //memcpy(myData + sizeof(uint8_t), &node_id, sizeof(uint8_t));
-        //uint8_t dataLen = 2;
-
+      if(counter % actual_data_sending_interval == 0 && node_id != 1){
         master_routing_send_actual_data();
       }
       etimer_reset(&periodic_timer);
