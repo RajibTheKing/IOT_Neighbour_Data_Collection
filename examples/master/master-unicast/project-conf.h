@@ -8,9 +8,9 @@
 #define TESTBED TESTBED_COOJA // default: TESTBED_COOJA OR TESTBED_KIEL
 
 #undef MASTER_CONF_SCHEDULE
-#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/test_sched5.c"
+#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/loglistener_03.03.2021.c"
 
-#define NUM_COOJA_NODES 5
+#define NUM_COOJA_NODES 10
 
 #undef NBR_TABLE_CONF_MAX_NEIGHBORS
 #define NBR_TABLE_CONF_MAX_NEIGHBORS 10
@@ -36,6 +36,8 @@
 #include "scheduling_macros.h"
 #include "net/master-routing/master-project-conf.h"
 
-// #define LOG_CONF_LEVEL_MAC LOG_LEVEL_DBG // default: LOG_LEVEL_INFO
+//#define LOG_CONF_LEVEL_MAC LOG_LEVEL_DBG // default: LOG_LEVEL_INFO
 // #define LOG_CONF_LEVEL_FRAMER LOG_LEVEL_INFO
+
+
 #endif /* PROJECT_CONF_H_ */

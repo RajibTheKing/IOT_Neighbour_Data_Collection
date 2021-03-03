@@ -39,7 +39,7 @@ obj_sky/master-routing.o: ../../../os/net/master-routing/master-routing.c \
  ../../../os/net/master-routing/strength-vector.h ../../../os/sys/log.h \
  ../../../os/sys/log-conf.h \
  ../../../os/net/master-routing/scheduling_tx_macros.h \
- ../../../os/net/master-routing/../../../Master/Schedules/test_sched5.c
+ ../../../os/net/master-routing/../../../Master/Schedules/loglistener_03.03.2021.c
 ../../../os/net/master-routing/master-routing.c :
  ../../../os/net/master-net/module-macros.h :
  ../../../os/services/simple-energest/module-macros.h :
@@ -81,4 +81,4 @@ obj_sky/master-routing.o: ../../../os/net/master-routing/master-routing.c \
  ../../../os/net/master-routing/strength-vector.h ../../../os/sys/log.h :
  ../../../os/sys/log-conf.h :
  ../../../os/net/master-routing/scheduling_tx_macros.h :
- ../../../os/net/master-routing/../../../Master/Schedules/test_sched5.c :
+ ../../../os/net/master-routing/../../../Master/Schedules/loglistener_03.03.2021.c :

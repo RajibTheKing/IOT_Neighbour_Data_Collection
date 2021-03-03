@@ -8,6 +8,7 @@
 #define PACKET_TYPE_BEACON 1
 #define PACKET_TYPE_ADVERTISEMENT 2
 #define PACKET_TYPE_ACTUAL_DATA 3
+#define PACKET_TYPE_UNICAST 4
 
 typedef struct {
   int packet_type;

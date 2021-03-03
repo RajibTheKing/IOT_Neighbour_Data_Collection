@@ -152,6 +152,8 @@ class Contiki_schedule(object):
     if with_timesource:
       str_set_timesource              = '  destination.u8[NODE_ID_INDEX] = {};\n' + \
                                         '  tsch_queue_update_time_source(&destination);\n'
+    str_max_slot_frame_used           = 'max_slot_frame_used = {};\n'
+                          
 
     self.node_schedule = self.schedule.get_node_schedule(*self.node_ids)
 
@@ -337,6 +339,8 @@ class Contiki_schedule(object):
 
     if add_beacon_slot:
       output_file.write( str_beacon_link.format(slotframe_length - 1) ) # last slot
+      
+    output_file.write( str_max_slot_frame_used.format(len(self.schedule.flows)))
 
     output_file.close()
 

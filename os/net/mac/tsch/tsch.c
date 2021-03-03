@@ -1101,13 +1101,23 @@ send_packet(mac_callback_t sent, void *ptr) // HERE called by nullnet/me
   } else {
     struct tsch_packet *p;
 #   if TSCH_WITH_CENTRAL_SCHEDULING && TSCH_FLOW_BASED_QUEUES
-    if (addr != &tsch_broadcast_address){
+    
+    //if (addr != &tsch_broadcast_address){
       /* Enqueue packet */
+      /*uint8_t currentData[100];
+      memcpy(currentData, ptr, 50);
+
+      int i = 0;
+      printf("ptr sent: ");
+      for(i = 0; i<50; i++){
+       printf("%02X ", currentData[i]);
+      }
+      printf("\n");*/
       p = tsch_queue_add_packet(&flow_addr, max_transmissions, sent, ptr);
-    } else {
-      /* Enqueue packet */
-      p = tsch_queue_add_packet(addr, max_transmissions, sent, ptr);
-    }
+    // } else {
+    //   /* Enqueue packet */
+    //   p = tsch_queue_add_packet(addr, max_transmissions, sent, ptr);
+    // }
 #   else 
     /* Enqueue packet */
     p = tsch_queue_add_packet(addr, max_transmissions, sent, ptr);

@@ -37,8 +37,13 @@
 #undef TSCH_CONF_DEFAULT_HOPPING_SEQUENCE
 #define TSCH_CONF_DEFAULT_HOPPING_SEQUENCE TSCH_HOPPING_SEQUENCE_4_4
 
-//#define LOG_CONF_LEVEL_MAC LOG_LEVEL_INFO
+#define LOG_CONF_LEVEL_MAC LOG_LEVEL_INFO
 
 #include "net/master-routing/master-project-conf.h"
+
+
+// #undef MASTER_CONF_SCHEDULE
+// #define MASTER_CONF_SCHEDULE "../../../Master/Schedules/loglistener_24.02.2021.c"
+// #define TSCH_SCHEDULE_CONF_MAX_SLOTFRAMES 3
 
 #endif /* PROJECT_CONF_H_ */

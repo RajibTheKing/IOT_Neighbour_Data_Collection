@@ -193,8 +193,7 @@ def main():
   # Parse neighbor discovery file(s)
   neighbor_parser = Parser(node_ids, folder, filename, max_etx)
   neighbor_parser.parse_neighbor_data(args.print_etx, args.print_prr, args.print_rssi, args.print_strength_vector)
-  neighbor_parser.create_DGRM_configuration()
-
+  ##neighbor_parser.create_DGRM_configuration()
   if communications == []:
     raise ValueError("error@master_scheduler.py: one or more flow(s) missing!")
 
@@ -297,7 +296,6 @@ def main():
     shortest_repeating_cycle = int(shortest_repeating_cycle * communications[index_idx][2] / gcd(shortest_repeating_cycle, communications[index_idx][2]))
   if shortest_repeating_cycle <= THRESHOLD_HYPER_PERIOD:
     print("warning@master_scheduler.py: the hyper period (recommend: > {:4d}, but computed: {:4d}) is maybe too small to work probably for a simulated network!\n".format(THRESHOLD_HYPER_PERIOD, shortest_repeating_cycle))
-
   flows = []
 
   flow_id = 1

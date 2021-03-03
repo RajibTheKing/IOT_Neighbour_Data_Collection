@@ -72,20 +72,19 @@
 /** Master's routing packet with "header" */
 typedef struct __attribute__((packed)) master_routing_packet_t
 {
+  uint8_t packet_type;
   uint8_t flow_number; //use as sender in case of neighbor discovery
   uint16_t packet_number;
+  
 #if TSCH_TTL_BASED_RETRANSMISSIONS && defined(MASTER_SCHEDULE)
   uint16_t ttl_slot_number;
   uint16_t earliest_tx_slot;
-  uint32_t dummy;
-  uint32_t dummy1;
 #endif /* TSCH_TTL_BASED_RETRANSMISSIONS && defined(MASTER_SCHEDULE) */
-  uint8_t packet_type;
   uint16_t advertisement_seq;
   float strengthToMaster;
   uint8_t bestNode;
   uint8_t data_len;
-  uint8_t data[MASTER_MSG_LENGTH];
+  uint8_t data[50];
 } master_routing_packet_t;
 
 /* structure used by Master (Python) */
@@ -130,9 +129,9 @@ static uint8_t is_sender = 0;
 
 #ifdef MASTER_SCHEDULE
 // scheduled with Master
-static struct tsch_slotframe *sf[MASTER_NUM_FLOWS + 1]; //1 sf per flow + EB-sf
-static uint8_t receiver_of_flow[MASTER_NUM_FLOWS + 1];
-static uint8_t sender_of_flow[MASTER_NUM_FLOWS + 1];
+static struct tsch_slotframe *sf[MASTER_NUM_FLOWS + 4]; //1 sf per flow + EB-sf
+static uint8_t receiver_of_flow[MASTER_NUM_FLOWS + 4];
+static uint8_t sender_of_flow[MASTER_NUM_FLOWS + 4];
 #else
 // Neighbor Discovery for Master
 static struct tsch_slotframe *sf[4]; //2 sf for ND + EB-sf
@@ -155,7 +154,6 @@ static float max_master_strength = 0;
 static uint8_t history_ad_seq_array[NUM_COOJA_NODES + 1];
 
 static uint8_t flag_to_stop_ad = 0;
-static uint8_t max_slot_frame_used = 3;
 
 /*-------------------------- Routing configuration --------------------------*/
 
@@ -186,19 +184,19 @@ static uint8_t deployment_node_count = 20;
 #elif TESTBED == TESTBED_DESK
 static uint8_t deployment_node_count = 5;
 #endif
-#endif /* MASTER_SCHEDULE */
+#else
 static uint8_t deployment_node_count = NUM_COOJA_NODES;
+#endif /* MASTER_SCHEDULE */
+static uint8_t max_slot_frame_used = 0;
 
 /*Destination*/
-//#ifdef MASTER_SCHEDULE
-//#if (TESTBED == TESTBED_KIEL || TESTBED == TESTBED_DESK) && CONTIKI_TARGET_ZOUL
-//static linkaddr_t destination = {{0x00, 0x12, 0x4B, 0x00, 0x00, 0x00, 0x00, 0x00}};
-//#else
-//static linkaddr_t destination = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};
-//#endif
-//#endif /* MASTER_SCHEDULE */
-
+#ifdef MASTER_SCHEDULE
+#if (TESTBED == TESTBED_KIEL || TESTBED == TESTBED_DESK) && CONTIKI_TARGET_ZOUL
+static linkaddr_t destination = {{0x00, 0x12, 0x4B, 0x00, 0x00, 0x00, 0x00, 0x00}};
+#else
 static linkaddr_t destination = {{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00}};
+#endif
+#endif /* MASTER_SCHEDULE */
 
 
 uint8_t
@@ -252,33 +250,14 @@ static void set_destination_link_addr(uint8_t destination_node_id)
 }
 #endif /* MASTER_SCHEDULE */
 /*---------------------------------------------------------------------------*/
-
-void neighbor_discovery_input(const uint16_t *data, const linkaddr_t *src, const uint16_t *seq_nr){
- uint16_t eb_beacon_seq;
- memcpy(&eb_beacon_seq, data, sizeof(uint16_t));
- //printf("eb_beacon_seq-->%d\n", eb_beacon_seq);
-
- //printf("eb_beacon_from-->%d\n", src->u8[NODE_ID_INDEX]);
-
- //uint16_t seq_num;
- //memcpy(&seq_num, seq_nr, sizeof(uint16_t));
- //printf("eb_beacon_seq_num-->%d\n", seq_num);
-
- Beacon receivedBeacon;
- receivedBeacon.nodeID = src->u8[NODE_ID_INDEX];
- receivedBeacon.seq = eb_beacon_seq;
- receivedBeacon.packet_type = PACKET_TYPE_BEACON;
- onReceivedNewBeacon(node_id, receivedBeacon);
-}
-
-//#ifndef MASTER_SCHEDULE
 static int
 install_discovery_schedule()
 {
   LOG_INFO("install discovery schedule\n");
-  //uint8_t tx_slot;
+  printf("max_slot_frame_used %d\n",max_slot_frame_used);
+  uint8_t tx_slot;
   uint16_t num_discovery_sending_slots;
-  //tx_slot = get_destination_index(node_id);
+  tx_slot = get_destination_index(node_id);
 
   if (deployment_node_count % 2 == 0)
   {
@@ -289,22 +268,19 @@ install_discovery_schedule()
     num_discovery_sending_slots = deployment_node_count;
   }
   /* Create slotframe sf1 */
-  // sf[max_slot_frame_used + 1] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 1);
-  // if (sf[max_slot_frame_used + 1])
-  // {
-  //   tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 1]);
-  // }
-  // sf[max_slot_frame_used + 1] = tsch_schedule_add_slotframe(max_slot_frame_used + 1, num_discovery_sending_slots);
+  sf[max_slot_frame_used + 1] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 1);
+  if (sf[max_slot_frame_used + 1])
+  {
+    tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 1]);
+  }
+  sf[max_slot_frame_used + 1] = tsch_schedule_add_slotframe(max_slot_frame_used + 1, num_discovery_sending_slots);
 
-  // sf[max_slot_frame_used + 2] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 2);
-  // if (sf[max_slot_frame_used + 2])
-  // {
-  //   tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 2]);
-  // }
-  
-  // sf[max_slot_frame_used + 2] = tsch_schedule_add_slotframe(max_slot_frame_used + 2, 1);
-
-
+  sf[max_slot_frame_used + 2] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 2);
+  if (sf[max_slot_frame_used + 2])
+  {
+    tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 2]);
+  }
+  sf[max_slot_frame_used + 2] = tsch_schedule_add_slotframe(max_slot_frame_used + 2, 1);
   //our own
   sf[max_slot_frame_used + 3] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 3);
   if (sf[max_slot_frame_used + 3])
@@ -313,27 +289,22 @@ install_discovery_schedule()
   }
   sf[max_slot_frame_used + 3] = tsch_schedule_add_slotframe(max_slot_frame_used + 3, num_discovery_sending_slots);
 
-  // tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 0, 0);
-  // if (tx_slot < num_discovery_sending_slots)
-  // {
-  //   tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, tx_slot, 0);
-  //   //if(own_transmission_flow == 0){
-  //     //own_transmission_flow = max_slot_frame_used + 1;
-  //     //own_transmission_flow = 1;
-  //   //}
-  //   is_sender = 1;
-  //   //LOG_INFO("sender\n");
-  //   own_receiver = 0;
-  //   return 1;
-  // }
-
-  is_sender = 1;
-  //LOG_INFO("sender\n");
-  own_receiver = 0;
+  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 0, 0);
+  if (tx_slot < num_discovery_sending_slots)
+  {
+    tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, tx_slot, 0);
+    #ifndef MASTER_SCHEDULE
+      own_transmission_flow = 1;
+    #endif
+    is_sender = 1;
+    //LOG_INFO("sender\n");
+    own_receiver = 0;
+    return 1;
+  }
 
   return 0;
 }
-//#endif /* !MASTER_SCHEDULE */
+
 /*---------------------------------------------------------------------------*/
 /**
  * \brief Add links to TSCH slot-frames based on calculated schedule
@@ -369,7 +340,7 @@ master_install_schedule(void *ptr)
 #ifdef MASTER_SCHEDULE
   //tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX | LINK_OPTION_SHARED | LINK_OPTION_TIME_KEEPING, LINK_TYPE_ADVERTISING, &tsch_broadcast_address, 0, 0);
   tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
-#include MASTER_SCHEDULE
+#include MASTER_SCHEDULE  
   install_discovery_schedule();
 #else
   tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
@@ -397,9 +368,6 @@ linkaddr_t getAddressByNodeID(int givenNodeID)
 
 int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t best_node)
 {
-  //LOG_INFO("ND send\n");
-  //if (own_transmission_flow != 0)
- // {
     uint8_t success = 0;
     mrp.packet_type = PACKET_TYPE_ADVERTISEMENT;
     mrp.flow_number = node_id; // for neighbor discovery: send sender instead of flow-number
@@ -411,27 +379,33 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
     //history = mrp;
     history_ad_seq_array[mrp.flow_number] = mrp.advertisement_seq;
 
-    //clock_wait(node_id * 3);
+    clock_wait(node_id * 3);
 
     success = NETSTACK_NETWORK.output(NULL);
     LOG_INFO("master advertisement sent;%u;%u;%u;", mrp.flow_number, mrp.packet_type, mrp.advertisement_seq); //sent;<from>;<number>
     printFLoat(mrp.strengthToMaster);
     printf("\n");
+
+
+    int i = 0;
+    uint8_t data[100];
+
+    memcpy(data, &mrp, masternet_len);
+    printf("advertisement bytes before sent: ");
+    for(i = 0; i<masternet_len; i++){
+      printf("%02X ", data[i]);
+    }
+    printf("\n");
     return success;
- // }
- // else
- // {
- //   LOG_INFO("Node %u is no sender!\n", node_id);
- //   return 0;
- // }
 }
-static int counter_ad = 0;
+//static int counter_ad = 0;
 
 void on_received_advertisement(master_routing_packet_t mrp, const linkaddr_t *src)
 {
 
   if (mrp.bestNode == node_id)
   {
+    printf("mrp.bestNode == node_id so returning\n");
     return;
   }
   float currentStrength = MIN(mrp.strengthToMaster, getStrengthByNodeID(mrp.flow_number));
@@ -456,19 +430,27 @@ void on_received_advertisement(master_routing_packet_t mrp, const linkaddr_t *sr
       bestNode = mrp.flow_number;
       add_link_to_best_node();
     }
+    // memcpy(&bestLink, src, sizeof(linkaddr_t));
   }
+
+  // nullnet_buf = (uint8_t *)&advertisementData;
+  // advertisementData.packet_type = PACKET_TYPE_ADVERTISEMENT;
+  // advertisementData.nodeId = node_id;
+  // advertisementData.strengthToMaster = maxMasterStrength;
+  // advertisementData.seq = maxSeqforStrength;
 
   if (history_ad_seq_array[mrp.flow_number] == mrp.advertisement_seq)
   {
     //skip
-    printf("advertisement history matched\n");
+    printf("history_ad_seq_array[mrp.flow_number] == mrp.advertisement_seq, (%d, %d)\n", history_ad_seq_array[mrp.flow_number], mrp.advertisement_seq);
+
   }
   else
   {
     if (node_id != 1)
     {
-      counter_ad += 1;
-      printf("advertisement resend node_id=%d counter=%d\n",node_id, counter_ad);
+      /*counter_ad += 1;
+      printf("advertisement resend node_id=%d counter=%d\n",node_id, counter_ad);*/
       history_ad_seq_array[mrp.flow_number] = mrp.advertisement_seq;
       master_routing_send_advertisement(max_master_strength, max_advertisement_seq, bestNode);
       //history = mrp;
@@ -501,19 +483,12 @@ void send_data_to_master()
     }
     printf("\n");
 
+
     mrp.data[index] = 1;
     mrp.data[index + 1] = node_id;
     index += 2;
     mrp.data_len = index;
     printf("Checking preparaed data: highestNode: %d, index:%d\n", mrp.data[0], index);
-
-    /*printf("actual data sent array=> ");
-    for (i = 0; i < sizeof(mrp); i += sizeof(uint8_t))
-    {
-      printf("%02x ",((char*)&mrp)[i]);
-    }
-    printf("\n");*/
-
     //sent_packet_configuration.max_tx = 1;
     //masternet_len = minimal_routing_packet_size + index;
     //linkaddr_t bestLink = getAddressByNodeID(bestNode);
@@ -551,7 +526,7 @@ void unicast_send()
 
 void on_received_actual_data(master_routing_packet_t rcvd_mrp)
 {
-  uint8_t actualData[MASTER_MSG_LENGTH];
+  uint8_t actualData[50];
   flag_to_stop_ad = 1;
   if (node_id == 1)
   {
@@ -658,9 +633,13 @@ void on_received_actual_data(master_routing_packet_t rcvd_mrp)
 /*---------------------------------------------------------------------------*/
 void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src, const linkaddr_t *dest)
 {
-  //uint8_t type;
-  //memcpy(&type, data, sizeof(uint8_t));
-  //printf("Got Some Data len = %d, type = %d\n", len, type);
+  uint8_t type;
+  memcpy(&type, data, sizeof(uint8_t));
+  printf("Got Some Data len = %d, type = %d\n", len, type);
+
+  
+
+
   /*if(type == PACKET_TYPE_ACTUAL_DATA){
     memcpy(&mrp, data, len);
     LOG_INFO("rcvd actual data %u;%u;%u\n", mrp.packet_type, mrp.flow_number, mrp.data_len);
@@ -673,57 +652,64 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
   {
     uint8_t forward_to_upper_layer = 0;
 
-    master_routing_packet_t mrpData;
-    memcpy(&mrpData, data, len);
-    printf("Got Some Data len = %d, type = %d\n", len, mrpData.packet_type);
-    uint8_t type = mrpData.packet_type;
+    memcpy(&type, data, sizeof(uint8_t));
+    memcpy(&mrp, data, len);
     if (type == PACKET_TYPE_BEACON)
     {
-      //nothing
+      uint8_t sender = mrp.flow_number;
+      LOG_INFO("rcvd;%u;%u;%u;%u;%d\n", node_id, sender, packetbuf_attr(PACKETBUF_ATTR_CHANNEL), mrp.packet_number, (int16_t)packetbuf_attr(PACKETBUF_ATTR_RSSI)); //rcvd;<to>;<from>;<channel>;<number>;<rssi>
+      forward_to_upper_layer = 1;
+      Beacon receivedBeacon;
+      receivedBeacon.nodeID = mrp.flow_number;
+      receivedBeacon.seq = mrp.packet_number;
+      receivedBeacon.packet_type = PACKET_TYPE_BEACON;
+      onReceivedNewBeacon(node_id, receivedBeacon);
+      leds_off(LEDS_RED);
+      return;
     }
     else if (type == PACKET_TYPE_ADVERTISEMENT /*&& !flag_to_stop_ad*/)
     {
-      LOG_INFO("Received advertisement %u;%u;%u;", mrpData.packet_type, mrpData.flow_number, mrpData.advertisement_seq);
-      printFLoat(mrpData.strengthToMaster);
+      LOG_INFO("Received advertisement %u;%u;%u;", mrp.packet_type, mrp.flow_number, mrp.advertisement_seq);
+      printFLoat(mrp.strengthToMaster);
       printf("\n");
-      on_received_advertisement(mrpData, src);
-      leds_off(LEDS_RED);
+      int i;
+      printf("advertisement bytes after received: ");
+
+      uint8_t received_data[100];
+
+      memcpy(received_data, data, len);
+
+      for(i = 0; i<len; i++){
+        printf("%02X ", received_data[i]);
+      }
+      printf("\n");
+
+      on_received_advertisement(mrp, src);
+
       return;
     }
     else if (type == PACKET_TYPE_ACTUAL_DATA)
     {
-      LOG_INFO("rcvd actual data %u;%u;%u\n", mrpData.packet_type, mrpData.flow_number, mrpData.data_len);
-      on_received_actual_data(mrpData);
-      leds_off(LEDS_RED);
+      memcpy(&mrp, data, len);
+      LOG_INFO("rcvd actual data %u;%u;%u\n", mrp.packet_type, mrp.flow_number, mrp.data_len);
+      on_received_actual_data(mrp);
       return;
+    }
+    else if (type == PACKET_TYPE_UNICAST)
+    {
+      LOG_INFO("rcvd unicast data %u;%u;%u\n", mrp.packet_type, mrp.flow_number, mrp.data_len);
     }
     else
     {
-      memcpy(&mrp, data, len);
       LOG_INFO("PACKET_TYPE_UNKNOWN\n");
-      /*int i = 0;
-      printf("Unknown actual data rcvd array=> ");
-      for (i = 0; i < len; i += sizeof(uint8_t))
-      {
-        printf("%02x ",((char*)&data)[i]);
-      }
-      printf("\n");*/
-        //return;
+      return;
     }
 #ifndef MASTER_SCHEDULE //neighbor discovery
-    uint8_t sender = mrp.flow_number;
-    LOG_INFO("rcvd;%u;%u;%u;%u;%d\n", node_id, sender, packetbuf_attr(PACKETBUF_ATTR_CHANNEL), mrp.packet_number, (int16_t)packetbuf_attr(PACKETBUF_ATTR_RSSI)); //rcvd;<to>;<from>;<channel>;<number>;<rssi>
-    forward_to_upper_layer = 1;
-    Beacon receivedBeacon;
-    receivedBeacon.nodeID = mrp.flow_number;
-    receivedBeacon.seq = mrp.packet_number;
-    receivedBeacon.packet_type = PACKET_TYPE_BEACON;
-    onReceivedNewBeacon(node_id, receivedBeacon);
+    //nothing
 #else //normal operation
     uint16_t received_asn = packetbuf_attr(PACKETBUF_ATTR_RECEIVED_ASN);
 
     // this node is receiver:
-    printf("mrp.flow_number, receiver_of_flow1 %d %d\n", mrp.flow_number, receiver_of_flow[mrp.flow_number]);
     if (node_id == receiver_of_flow[mrp.flow_number])
     {
       if (TSCH_SLOTNUM_LT((uint16_t)hash_map_lookup(&last_received_relayed_packet_of_flow, mrp.flow_number), mrp.packet_number))
@@ -784,15 +770,13 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
       }
     }
 #endif /* !MASTER_SCHEDULE */
-    printf("forward_to_upper_layer, len, minimal_routing_packet_size %d %d %d\n",forward_to_upper_layer, len,minimal_routing_packet_size);
+
     if (forward_to_upper_layer && len > minimal_routing_packet_size)
     {
       //TODO: exchange source by flow-source
       //upper layer input callback (&mrp.data, len-minimal_routing_packet_size)
 #ifdef MASTER_SCHEDULE
-      printf("sender, receiver==>%d %d\n",sender_of_flow[mrp.flow_number], receiver_of_flow[mrp.flow_number]);
       current_callback((void *)&mrp.data, len - minimal_routing_packet_size, sender_of_flow[mrp.flow_number], receiver_of_flow[mrp.flow_number]);
-      //current_callback((void *)&mrp.data, len - minimal_routing_packet_size, src->u8[NODE_ID_INDEX], dest->u8[NODE_ID_INDEX]);
 #else
       current_callback((void *)&mrp.data, len - minimal_routing_packet_size, src->u8[NODE_ID_INDEX], dest->u8[NODE_ID_INDEX]);
 #endif /* MASTER_SCHEDULE */
@@ -825,7 +809,9 @@ int master_routing_configured()
 int neighbor_discovery_send(const void *data, uint16_t datalen)
 {
   //LOG_INFO("ND send\n");
+  #ifndef MASTER_SCHEDULE
   if (own_transmission_flow != 0)
+  #endif
   {
 
     uint8_t success = 0;
@@ -835,16 +821,27 @@ int neighbor_discovery_send(const void *data, uint16_t datalen)
     memcpy(mrp.data, data, datalen);
     sent_packet_configuration.max_tx = 1;
     masternet_len = minimal_routing_packet_size + datalen;
+    printf("size of mrp %d \n", sizeof(mrp));
+
+    // mrp.ttl_slot_number = ;
+    // mrp.earliest_tx_slot = ;
+    // //sent_packet_configuration.ttl_slot_number = node_id;
+    // //sent_packet_configuration.earliest_tx_slot = 1000 + node_id * 10;
+    // //sent_packet_configuration.flow_number = max_slot_frame_used + 1;
+    // printf("configuration ==>%d %d %d\n", sent_packet_configuration.ttl_slot_number , sent_packet_configuration.earliest_tx_slot, sent_packet_configuration.flow_number);
+
     success = NETSTACK_NETWORK.output(NULL);
     LOG_INFO("sent;%u;%u\n", node_id, own_packet_number); //sent;<from>;<number>
     printf("Beacon masterlen=%d\n", masternet_len);
     return success;
   }
+  #ifndef MASTER_SCHEDULE
   else
   {
-    LOG_INFO("Node %u is no sender1!\n", node_id);
+    LOG_INFO("Node %u is no sender!\n", node_id);
     return 0;
   }
+  #endif
 }
 
 void add_link_to_best_node()
@@ -852,7 +849,7 @@ void add_link_to_best_node()
   printf("Now Changing best schedule Link\n");
   if (best_tsch_shedule_link != NULL)
   {
-    tsch_schedule_remove_link(sf[max_slot_frame_used + 3], best_tsch_shedule_link);
+    tsch_schedule_remove_link(sf[ max_slot_frame_used + 3], best_tsch_shedule_link);
     best_tsch_shedule_link = NULL;
   }
 
@@ -873,11 +870,15 @@ int master_routing_send(const void *data, uint16_t datalen)
 #ifndef MASTER_SCHEDULE
   return neighbor_discovery_send(data, datalen);
 #else
+  if(datalen == 0){
+    return neighbor_discovery_send(data, datalen);
+  }
   if (own_transmission_flow != 0)
   {
-    mrp.flow_number = own_transmission_flow; //- max_slot_frame_used;
+    //own_transmission_flow = node_id;
+    mrp.flow_number = own_transmission_flow;
     mrp.packet_number = ++own_packet_number;
-    mrp.packet_type = 0;
+    mrp.packet_type = PACKET_TYPE_UNICAST; 
     memcpy(&(mrp.data), data, datalen);
 
     // get current / next active ASN (tsch_current_asn)
@@ -950,7 +951,7 @@ int master_routing_send(const void *data, uint16_t datalen)
 
       //print sent data
 #if TSCH_TTL_BASED_RETRANSMISSIONS
-      LOG_INFO("sent;%u;%u;%u;%u;%u.\n", mrp.packet_number, mrp.earliest_tx_slot, mrp.ttl_slot_number, mrp.flow_number, sender_of_flow[mrp.flow_number]);
+      LOG_INFO("sent unicast;%u;%u;%u;%u;%u,%u.\n", mrp.packet_number, mrp.earliest_tx_slot, mrp.ttl_slot_number, mrp.flow_number, sender_of_flow[mrp.flow_number], mrp.packet_type);
 #else
       // calculate sending slot based on
       uint8_t tx_slot_idx;
@@ -985,7 +986,7 @@ int master_routing_send(const void *data, uint16_t datalen)
   }
   else
   {
-    LOG_INFO("Node %u is no sender2!\n", node_id);
+    LOG_INFO("Node %u is no sender!\n", node_id);
     return 0;
   }
 #endif /* !MASTER_SCHEDULE */
@@ -1059,7 +1060,7 @@ void init_master_routing(void)
     uint16_t slot_offset = deployment_node_count - node_id; // keeping slot offset as our own Node ID
     uint16_t channel_offset = deployment_node_count - node_id;
     link_options = LINK_OPTION_RX;
-    tsch_schedule_add_link(sf[max_slot_frame_used + 1],
+    tsch_schedule_add_link(sf[max_slot_frame_used + 3],
                            link_options,
                            LINK_TYPE_NORMAL, &addr,
                            slot_offset, channel_offset);
@@ -1073,5 +1074,3 @@ void init_master_routing(void)
   LOG_ERR("can't init master-routing: master-net not configured\n");
 #endif /* NETSTACK_CONF_WITH_MASTER_NET */
 }
-/*---------------------------------------------------------------------------*/
-/** @} */

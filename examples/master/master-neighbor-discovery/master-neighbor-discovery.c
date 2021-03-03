@@ -65,7 +65,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       counter += 1;
       //success =
 
-      if(counter % 2 == 0)
+      if(counter % 1 == 0)
       {
         master_routing_sendto(NULL, 0, 0);
       }
