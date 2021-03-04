@@ -127,7 +127,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       
       //LOG_INFO("Success: %u", success);
 
-    if(counter % 10 == 0){
+    if( counter > 120 && counter % 13 == 0){
       own_receiver = get_node_receiver();
       uint8_t payload_index;
       for (payload_index = 0; payload_index < MASTER_MSG_LENGTH; ++payload_index){

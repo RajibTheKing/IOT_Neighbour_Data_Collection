@@ -370,12 +370,6 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
       if(p == NULL) {
         /* Get neighbor queue associated to the link and get packet from it */
 #       if TSCH_WITH_CENTRAL_SCHEDULING && TSCH_FLOW_BASED_QUEUES
-        if (tsch_queue_get_nbr(&link->addr) == n_broadcast){
-          n = tsch_queue_get_nbr(&link->addr);
-          p = tsch_queue_get_packet_for_nbr(n, link);
-          actual_current_neighbor = NULL;
-          goto done_looking_for_neighbor;
-        }
         flow_addr.u8[1] = (uint8_t) link->slotframe_handle;
         //net_processing_get_flow_addr(&link->addr, &flow_addr);
         n = tsch_queue_get_nbr(&flow_addr);
@@ -438,7 +432,6 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
       }
     }
   }
-  done_looking_for_neighbor:
   /* return nbr (by reference) */
   if(target_neighbor != NULL) {
     *target_neighbor = n;
