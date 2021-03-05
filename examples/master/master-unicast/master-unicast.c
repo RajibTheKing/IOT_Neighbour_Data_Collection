@@ -112,8 +112,8 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
   } while(!master_routing_configured());
 
 
-  if (node_is_sender()){
-    actual_data_sending_interval = 60 + (node_id * 2);
+  
+    actual_data_sending_interval = 60 + node_id;
 
     while(1){
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
@@ -126,15 +126,17 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       }*/
       
       //LOG_INFO("Success: %u", success);
+      if (node_is_sender()){
 
-    if( counter > 120 && counter % 13 == 0){
-      own_receiver = get_node_receiver();
-      uint8_t payload_index;
-      for (payload_index = 0; payload_index < MASTER_MSG_LENGTH; ++payload_index){
-        payload[payload_index] = (uint8_t)(random_rand() >> 8);
+        if( counter > 120){
+          own_receiver = get_node_receiver();
+          uint8_t payload_index;
+          for (payload_index = 0; payload_index < MASTER_MSG_LENGTH; ++payload_index){
+            payload[payload_index] = (uint8_t)(random_rand() >> 8);
+          }
+          master_routing_sendto(&payload, MASTER_MSG_LENGTH, own_receiver);
+        }
       }
-      master_routing_sendto(&payload, MASTER_MSG_LENGTH, own_receiver);
-    }
       
 
      if(counter % 15 ==0 && node_id == 1 && counter% actual_data_sending_interval != 0){
@@ -146,7 +148,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       }
       etimer_reset(&periodic_timer);
     }
-  }
+  
 
   PROCESS_END();
 }

@@ -12,15 +12,13 @@
 #define PACKET_TYPE_ACTUAL_DATA 3
 #define PACKET_TYPE_UNICAST 4
 
-#define MAX_ACTUAL_DATA_LEN 47
-
 typedef struct {
   int packet_type;
   int nodeID;
   int seq;
 } Beacon;
 
-typedef struct {
+typedef struct __attribute__((packed)) {
   uint32_t dummy1, dummy2;
   uint8_t packet_type;
   uint8_t nodeId;
@@ -30,12 +28,12 @@ typedef struct {
 } Advertisement;
 
 
-typedef struct {
+typedef struct __attribute__((packed)) {
   uint32_t dummy1, dummy2;
   uint8_t packet_type;
   uint8_t nodeId;
   uint8_t dataLen;
-  uint8_t data[MAX_ACTUAL_DATA_LEN];
+  uint8_t data[MAX_EXPECTED_SIZE_OF_ACTUAL_DATA];
 } ActualData;
 
 

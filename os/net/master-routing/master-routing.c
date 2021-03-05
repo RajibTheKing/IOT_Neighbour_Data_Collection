@@ -269,18 +269,6 @@ static int
 install_discovery_schedule()
 {
   LOG_INFO("install discovery schedule\n");
-  //uint8_t tx_slot;
-  uint16_t num_discovery_sending_slots;
-  //tx_slot = get_destination_index(node_id);
-
-  if (deployment_node_count % 2 == 0)
-  {
-    num_discovery_sending_slots = deployment_node_count + 1;
-  }
-  else
-  {
-    num_discovery_sending_slots = deployment_node_count;
-  }
   /* Create slotframe sf1 */
   sf[max_slot_frame_used + 1] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 1);
   if (sf[max_slot_frame_used + 1])
@@ -304,7 +292,7 @@ install_discovery_schedule()
   {
     tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 3]);
   }
-  sf[max_slot_frame_used + 3] = tsch_schedule_add_slotframe(max_slot_frame_used + 3, num_discovery_sending_slots);
+  sf[max_slot_frame_used + 3] = tsch_schedule_add_slotframe(max_slot_frame_used + 3, 40);
 
   tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 0, 0);
   tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 1, 0);
@@ -317,7 +305,7 @@ install_discovery_schedule()
   tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 8, 0);
   tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 9, 0);
   
-  tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, node_id-1, 0);
+  tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, node_id + deployment_node_count, 0);
   // if (tx_slot < num_discovery_sending_slots)
   // {
   //   tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, tx_slot, 0);
@@ -331,7 +319,7 @@ install_discovery_schedule()
   //   return 1;
   // }
 
-  is_sender = 1;
+  //is_sender = 1;
   //LOG_INFO("sender\n");
   own_receiver = 0;
 
@@ -429,16 +417,19 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
     // sent_packet_configuration.ttl_slot_number = mrp.ttl_slot_number;
     // sent_packet_configuration.earliest_tx_slot = mrp.earliest_tx_slot;
     //clock_wait(node_id * 3);
-    int i;
-    printf(" mrpData.data SEND array=>  ");
-    for (i = 0; i < masternet_len ; i += sizeof(uint8_t))
-    {
-     printf("%02x ",((char*)&mrp)[i]);
-    }
-    printf("\n");
+
+
+
+    // int i;
+    // printf(" mrpData.data SEND array=>  ");
+    // for (i = 0; i < masternet_len ; i += sizeof(uint8_t))
+    // {
+    //  printf("%02x ",((char*)&mrp)[i]);
+    // }
+    // printf("\n");
   
 
-    success = NETSTACK_NETWORK.output(NULL);
+    success = NETSTACK_NETWORK.output(&tsch_broadcast_address);
     LOG_INFO("master advertisement sent;%u;%u;%u;", advertisementData.nodeId, advertisementData.packet_type, advertisementData.seq); //sent;<from>;<number>
     printFLoat(advertisementData.strengthToMaster);
     printf("\n");
@@ -692,14 +683,14 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     uint8_t type = 0;
     type = mrpData.data[8];
     
-    int i;
-    printf("Got Some Data len = %d, type = %d\n", len, type);
-    printf(" mrpData.data RCVD array=> ");
-    for (i = 0; i <len; i += sizeof(uint8_t))
-    {
-      printf("%02x ",((char*)&mrpData)[i]);
-    }
-    printf("\n");
+    // int i;
+    // printf("Got Some Data len = %d, type = %d\n", len, type);
+    // printf(" mrpData.data RCVD array=> ");
+    // for (i = 0; i <len; i += sizeof(uint8_t))
+    // {
+    //   printf("%02x ",((char*)&mrpData)[i]);
+    // }
+    // printf("\n");
 
     if (type == PACKET_TYPE_BEACON)
     {
@@ -889,8 +880,8 @@ void add_link_to_best_node()
 
   linkaddr_t addr = getAddressByNodeID(bestNode);
   uint8_t link_options;
-  uint16_t slot_offset = deployment_node_count - node_id; // keeping slot offset as our own Node ID
-  uint16_t channel_offset = deployment_node_count - node_id;
+  uint16_t slot_offset = deployment_node_count + node_id + deployment_node_count; // keeping slot offset as our own Node ID
+  uint16_t channel_offset = 0;
   link_options = LINK_OPTION_TX;
   best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 3],
                                                   link_options,
@@ -1086,13 +1077,12 @@ void init_master_routing(void)
 
     linkaddr_t addr = getAddressByNodeID(node_id);
     uint8_t link_options;
-    uint16_t slot_offset = deployment_node_count - node_id; // keeping slot offset as our own Node ID
-    uint16_t channel_offset = deployment_node_count - node_id;
+    uint16_t slot_offset = deployment_node_count + node_id + deployment_node_count + deployment_node_count; // keeping slot offset as our own Node ID
     link_options = LINK_OPTION_RX;
-    tsch_schedule_add_link(sf[max_slot_frame_used + 1],
+    tsch_schedule_add_link(sf[max_slot_frame_used + 3],
                            link_options,
                            LINK_TYPE_NORMAL, &addr,
-                           slot_offset, channel_offset);
+                           slot_offset, 0);
 
     /* wait for end of TSCH initialization phase, timed with MASTER_INIT_PERIOD */
     ctimer_set(&install_schedule_timer, MASTER_INIT_PERIOD, master_install_schedule, NULL);
