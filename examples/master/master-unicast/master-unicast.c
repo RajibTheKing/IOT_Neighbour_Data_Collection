@@ -134,6 +134,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
           for (payload_index = 0; payload_index < MASTER_MSG_LENGTH; ++payload_index){
             payload[payload_index] = (uint8_t)(random_rand() >> 8);
           }
+          payload[8] = 0; //pos 8 is used for packet type
           master_routing_sendto(&payload, MASTER_MSG_LENGTH, own_receiver);
         }
       }

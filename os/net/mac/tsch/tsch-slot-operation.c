@@ -403,7 +403,16 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
               /* Free all unused neighbors */
               tsch_queue_free_unused_neighbors();
               p = tsch_queue_get_packet_for_nbr(n, link);
-              printf("packet timed out %u\n", (uint16_t)(tsch_current_asn.ls4b)); //TODOLIV: uncomment
+
+              // uint8_t link_data[8];
+              // memcpy(link_data, &link->addr, 8);
+              // printf("packet timed out %u, link =  ", (uint16_t)(tsch_current_asn.ls4b));
+              // int i;
+              // for(i = 0; i<8; i++){
+              //   printf("%02X ", link_data[i]);
+              // }
+              // printf("\n");
+              //printf("packet timed out %u\n", (uint16_t)(tsch_current_asn.ls4b)); //TODOLIV: uncomment
             }
           }
           //check if it is too early to send 
