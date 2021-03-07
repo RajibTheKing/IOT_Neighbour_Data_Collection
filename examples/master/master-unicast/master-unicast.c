@@ -96,7 +96,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
   static struct etimer periodic_timer;
   static uint8_t payload[MASTER_MSG_LENGTH];
   static uint8_t own_receiver;
-  //uint8_t success;
+  // uint8_t success;
 
   PROCESS_BEGIN();
 
@@ -113,7 +113,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
 
 
   
-    actual_data_sending_interval = 60 + node_id;
+    actual_data_sending_interval = 60 + (node_id*2);
 
     while(1){
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
@@ -126,7 +126,11 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       }*/
       
       //LOG_INFO("Success: %u", success);
+       if (counter==120){
+          apply_generated_schedule();
+        }
       if (node_is_sender()){
+       
 
         if( counter > 120){
           own_receiver = get_node_receiver();

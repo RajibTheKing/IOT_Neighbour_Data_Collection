@@ -74,7 +74,7 @@ int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, u
 
 int master_routing_send_actual_data();
 
-
+void apply_generated_schedule();
 
 void init_master_routing(void);
 
@@ -84,6 +84,10 @@ void unicast_send();
 linkaddr_t getAddressByNodeID(int givenNodeID);
 
 void add_link_to_best_node();
+
+void copy_used_slot_matrix(const uint8_t used_slot_matrix[]);
+
+void generated_schedule(void);
 
 #endif /* MASTER_ROUTING_H */
 

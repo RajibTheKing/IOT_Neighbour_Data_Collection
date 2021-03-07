@@ -370,12 +370,6 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
       if(p == NULL) {
         /* Get neighbor queue associated to the link and get packet from it */
 #       if TSCH_WITH_CENTRAL_SCHEDULING && TSCH_FLOW_BASED_QUEUES
-        if (tsch_queue_get_nbr(&link->addr) == n_broadcast){
-          n = tsch_queue_get_nbr(&link->addr);
-          p = tsch_queue_get_packet_for_nbr(n, link);
-          actual_current_neighbor = NULL;
-          goto done_looking_for_neighbor;
-        }
         flow_addr.u8[1] = (uint8_t) link->slotframe_handle;
         //net_processing_get_flow_addr(&link->addr, &flow_addr);
         n = tsch_queue_get_nbr(&flow_addr);
@@ -403,16 +397,7 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
               /* Free all unused neighbors */
               tsch_queue_free_unused_neighbors();
               p = tsch_queue_get_packet_for_nbr(n, link);
-
-              // uint8_t link_data[8];
-              // memcpy(link_data, &link->addr, 8);
-              // printf("packet timed out %u, link =  ", (uint16_t)(tsch_current_asn.ls4b));
-              // int i;
-              // for(i = 0; i<8; i++){
-              //   printf("%02X ", link_data[i]);
-              // }
-              // printf("\n");
-              //printf("packet timed out %u\n", (uint16_t)(tsch_current_asn.ls4b)); //TODOLIV: uncomment
+              printf("packet timed out %u\n", (uint16_t)(tsch_current_asn.ls4b)); //TODOLIV: uncomment
             }
           }
           //check if it is too early to send 
@@ -447,7 +432,6 @@ get_packet_and_neighbor_for_link(struct tsch_link *link, struct tsch_neighbor **
       }
     }
   }
-  done_looking_for_neighbor:
   /* return nbr (by reference) */
   if(target_neighbor != NULL) {
     *target_neighbor = n;
@@ -783,9 +767,6 @@ PT_THREAD(tsch_tx_slot(struct pt *pt, struct rtimer *t))
 
     current_packet->transmissions++;
     current_packet->ret = mac_tx_status;
-
-
-    //////TheKing---> Data is sent
 
     /* Post TX: Update neighbor queue state */
     in_queue = tsch_queue_packet_sent(current_neighbor, current_packet, current_link, mac_tx_status);

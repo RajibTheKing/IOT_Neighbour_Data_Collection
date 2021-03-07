@@ -102,6 +102,7 @@ class Contiki_schedule(object):
   def generate(self, output_file_path, flows, minimal_schedule_length=0, with_timesource=False):
 
     # prepared strings
+    str_func                         = 'void generated_schedule(void){\n'
     str_schedule_length               = 'schedule_length = {};\n'
 
     str_create_slotframe              = 'sf[{0}] = tsch_schedule_get_slotframe_by_handle({0});\n'
@@ -153,6 +154,15 @@ class Contiki_schedule(object):
       str_set_timesource              = '  destination.u8[NODE_ID_INDEX] = {};\n' + \
                                         '  tsch_queue_update_time_source(&destination);\n'
     str_max_slot_frame_used           = 'max_slot_frame_used = {};\n'
+    str_max_channel_used              = 'max_channel_used = {};\n'
+
+    str_start_mat                     = 'const uint8_t used_slot_matrix[] = {\n'
+    str_mat                           = '    {}, {}, {}, {},\n'                       # slotframe/flow_number, link_option, timeslot, channel offset
+    str_end_mat                       = '};\n'
+
+    str_func_call                     = 'copy_used_slot_matrix(used_slot_matrix);\n'
+
+    str_end                           = '}\n'
                           
 
     self.node_schedule = self.schedule.get_node_schedule(*self.node_ids)
@@ -191,7 +201,7 @@ class Contiki_schedule(object):
 
     output_file = open(output_file_path, 'w')
     first_node = True
-
+    output_file.write( str_func ) ## start function
     slotframe_length = len(self.schedule.schedule[0])
     add_beacon_slot = False
     if slotframe_length < minimal_schedule_length:
@@ -340,9 +350,35 @@ class Contiki_schedule(object):
     if add_beacon_slot:
       output_file.write( str_beacon_link.format(slotframe_length - 1) ) # last slot
       
-    output_file.write( str_max_slot_frame_used.format(len(self.schedule.flows)))
+    max_slot_used = 0
+    flows = self.schedule.flows.copy()
+    for flow in flows:
+      max_slot_used = flow.flow_number
 
+    output_file.write( str_max_slot_frame_used.format(max_slot_used))
+
+    # rows = []
+    # for link_index, link in enumerate(links):
+    #     if link.neighbor != last_neighbor:
+    #       change_neighbor_on_link_index.append( (link_index, link.neighbor) )
+    #       last_neighbor = link.neighbor
+
+    #     output_file.write( str_link.format(str(link.flow_number).rjust(2), str(link.link_option).rjust(2), str(link.timeslot).rjust(2), str(link.channel).rjust(2)) )
+
+    output_file.write(str_max_channel_used.format(self.schedule.max_used_channel))
+
+    output_file.write(str_start_mat)
+    for index,row in enumerate(self.schedule.used_slot_matrix):
+      output_file.write( str_mat.format(str(row[0]).rjust(2), str(row[1]).rjust(2), str(row[2]).rjust(2), str(row[3]).rjust(2)) )
+    output_file.write(str_end_mat)
+
+    output_file.write(str_func_call)
+    output_file.write(str_end)
     output_file.close()
+
+    # print("TheKing--> ", self.schedule.used_slot_matrix)
+
+
 
     scheduling_macros_h.write("#undef TSCH_SCHEDULE_CONF_MAX_LINKS\n")
     scheduling_macros_h.write("#define TSCH_SCHEDULE_CONF_MAX_LINKS {}\n\n".format(max_number_links_per_node + 2))

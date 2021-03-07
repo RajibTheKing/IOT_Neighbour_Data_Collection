@@ -9,7 +9,9 @@ class Schedule(object):
   def __init__(self, flows): # , graph
     # self.graph = graph  # Dict{sender:Dict{receiver:etx}}
     self.flows = flows  # List[Flow]
-
+    self.used_slot_matrix = None
+    self.available_slots = 0
+    self.max_used_channel= 0
 
   def order_flows_decreasing(self):
     self.flows.sort(key=lambda x: x.length, reverse=True)
@@ -247,6 +249,7 @@ class Schedule(object):
       last_timeslot = shortest_repeating_cycle - 1
 
     # remove unused cells at end
+
     for channel_idx, channel in enumerate(self.schedule):
       self.schedule[channel_idx] = channel[:last_timeslot+1]
       for timeslot in range(len(self.schedule[channel_idx])//2):
@@ -276,6 +279,27 @@ class Schedule(object):
         for infeasible_flow in infeasible_flows:
           if infeasible_flows[0][0].flow_number < infeasible_flow[0].flow_number:
             infeasible_flow[0].flow_number -= 1
+
+    # calculate used_slots and available_slots
+    mat = []
+    self.available_slots = len(self.schedule[0])
+
+    for timeslot in range(len(self.schedule[0])):
+      rows = []
+      for channel in range(len(self.schedule)):
+        cell = self.schedule[channel][timeslot]
+        if isinstance(cell, Cell):
+          rows.append(1)
+        else:
+          rows.append(0)
+      if 1 in rows:
+        self.available_slots -= 1
+      mat.append(rows)
+      
+    self.max_used_channel = len(rows)
+    self.used_slot_matrix = mat
+    print(self.used_slot_matrix)
+    print('available slots: ', self.available_slots)
 
   def get_node_schedule(self, *nodes):
     # returns schedule for each node
@@ -330,6 +354,8 @@ class Schedule(object):
     line_separator = (10 + (cell_character_width + 10) * self.num_channels - 1) * "-" + "\n"
     empty = " " * cell_character_width
 
+
+    
     for timeslot in range(len(self.schedule[0])):
       string += line_separator
       string += str(timeslot).rjust(3) + separator
@@ -339,20 +365,24 @@ class Schedule(object):
           string += empty
           string += (" " * 8) + separator
         else:
+          
           if self.strategy == Scheduling_strategies.sliding_window:
             string += ', '.join(str(participant).rjust(2) for participant in cell.participants)
             string += ' '
             num_participants = len(cell.participants)
             string += empty_participant * (max_num_cell_participants - num_participants)
+            
           else:
             sender = cell.participants[0]
             receiver = cell.participants[-1]
             string += "{} -> {} ".format(str(sender).rjust(2), str(receiver).rjust(2))
+            
           flow = self.get_flow_from_id(cell.flow_number)
           string += "({} -> {}) {}".format(str(flow.source).rjust(2), str(flow.destination).rjust(2), ("", "[CNMID]") [flow.CNMID])
           string += (" " * (0, 7) [not flow.CNMID]) + separator
       string += "\n"
     string += line_separator
+
     return string
 
 

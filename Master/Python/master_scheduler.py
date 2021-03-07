@@ -324,6 +324,9 @@ def main():
   schedule = Schedule(flows) # parser.graph_etx,
   schedule.create(etx_power, num_channels, shortest_repeating_cycle, scheduling_algorithm, scheduling_ignore_NSF, scheduling_strategy, scheduling_window_size_alg, fixed_window_size)
 
+  if (num_cooja_nodes * 2 - 1) > schedule.available_slots:
+    raise ValueError("There is not enough slots for Neighbor Data Collection Protocol")
+      
   if args.print_schedule:
     print(schedule)
 

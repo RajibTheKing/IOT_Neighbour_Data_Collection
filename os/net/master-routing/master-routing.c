@@ -120,7 +120,7 @@ static uint16_t own_packet_number = 0;
 static uint8_t own_receiver; //TODO: check if still needed, or if receiver_of_flow can be used
 static uint8_t own_transmission_flow = 0;
 static uint8_t is_sender = 0;
-
+static uint8_t matrix[MAX_TIMESLOT][MAX_CHANNEL];
 #ifdef MASTER_SCHEDULE
 // scheduled with Master
 static struct tsch_slotframe *sf[MASTER_NUM_FLOWS + 1]; //1 sf per flow + EB-sf
@@ -148,7 +148,10 @@ static float max_master_strength = 0;
 static uint8_t history_ad_seq_array[NUM_COOJA_NODES + 1];
 
 static uint8_t flag_to_stop_ad = 0;
-static uint8_t max_slot_frame_used = 3;
+static uint8_t max_slot_frame_used = 0;
+static uint8_t max_channel_used = 4;
+
+
 
 /*-------------------------- Routing configuration --------------------------*/
 
@@ -269,7 +272,8 @@ static int
 install_discovery_schedule()
 {
   LOG_INFO("install discovery schedule\n");
-  /* Create slotframe sf1 */
+
+  //our own
   sf[max_slot_frame_used + 1] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 1);
   if (sf[max_slot_frame_used + 1])
   {
@@ -277,50 +281,9 @@ install_discovery_schedule()
   }
   sf[max_slot_frame_used + 1] = tsch_schedule_add_slotframe(max_slot_frame_used + 1, deployment_node_count);
 
-  sf[max_slot_frame_used + 2] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 2);
-  if (sf[max_slot_frame_used + 2])
-  {
-    tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 2]);
-  }
-  
-  sf[max_slot_frame_used + 2] = tsch_schedule_add_slotframe(max_slot_frame_used + 2, deployment_node_count);
+  linkaddr_t addr = getAddressByNodeID(node_id);
+  tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_RX, LINK_TYPE_NORMAL, &addr, node_id, 0); //3
 
-
-  //our own
-  sf[max_slot_frame_used + 3] = tsch_schedule_get_slotframe_by_handle(max_slot_frame_used + 3);
-  if (sf[max_slot_frame_used + 3])
-  {
-    tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 3]);
-  }
-  sf[max_slot_frame_used + 3] = tsch_schedule_add_slotframe(max_slot_frame_used + 3, deployment_node_count);
-
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 1, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 2, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 3, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 4, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 5, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 6, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 7, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 8, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 9, 0);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 2], LINK_OPTION_RX, LINK_TYPE_NORMAL, &tsch_broadcast_address, 10, 0);
-  
-  tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, node_id, 1);
-  // if (tx_slot < num_discovery_sending_slots)
-  // {
-  //   tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_TX, LINK_TYPE_NORMAL, &tsch_broadcast_address, tx_slot, 0);
-  //   //if(own_transmission_flow == 0){
-  //     //own_transmission_flow = max_slot_frame_used + 1;
-  //     //own_transmission_flow = 1;
-  //   //}
-  //   is_sender = 1;
-  //   //LOG_INFO("sender\n");
-  //   own_receiver = 0;
-  //   return 1;
-  // }
-
-  //is_sender = 1;
-  //LOG_INFO("sender\n");
   own_receiver = 0;
 
   return 0;
@@ -361,7 +324,6 @@ master_install_schedule(void *ptr)
 #ifdef MASTER_SCHEDULE
   //tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX | LINK_OPTION_SHARED | LINK_OPTION_TIME_KEEPING, LINK_TYPE_ADVERTISING, &tsch_broadcast_address, 0, 0);
   tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
-#include MASTER_SCHEDULE
   install_discovery_schedule();
 #else
   tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
@@ -538,7 +500,8 @@ void send_data_to_master()
     //   printf("%02x ",((char*)&mrp)[i]);
     // }
     // printf("\n");
-    // //sent_packet_configuration.max_tx = 1;
+    // sent_packet_configuration.max_tx = 2;
+    
     //masternet_len = minimal_routing_packet_size + index;
     //linkaddr_t bestLink = getAddressByNodeID(bestNode);
 
@@ -550,10 +513,13 @@ void send_data_to_master()
 void unicast_send()
 {
 
-  sent_packet_configuration.max_tx = 1;
+
+  sent_packet_configuration.max_tx = 2;
+  // sent_packet_configuration.flow_number= node_id;
+
   masternet_len = minimal_routing_packet_size + sizeof(ActualData);
   linkaddr_t bestLink = getAddressByNodeID(bestNode);
-
+  
   NETSTACK_NETWORK.output(&bestLink);
 }
 
@@ -881,19 +847,12 @@ void add_link_to_best_node()
   printf("Now Changing best schedule Link\n");
   if (best_tsch_shedule_link != NULL)
   {
-    tsch_schedule_remove_link(sf[max_slot_frame_used + 3], best_tsch_shedule_link);
+    tsch_schedule_remove_link(sf[max_slot_frame_used + 1], best_tsch_shedule_link);
     best_tsch_shedule_link = NULL;
   }
 
   linkaddr_t addr = getAddressByNodeID(bestNode);
-  uint8_t link_options;
-  uint16_t slot_offset = node_id; // keeping slot offset as our own Node ID
-  uint16_t channel_offset = 2;
-  link_options = LINK_OPTION_TX;
-  best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 3],
-                                                  link_options,
-                                                  LINK_TYPE_NORMAL, &addr,
-                                                  slot_offset, channel_offset);
+  best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 1],  LINK_OPTION_TX,LINK_TYPE_NORMAL, &addr,node_id, 0);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1082,14 +1041,7 @@ void init_master_routing(void)
     sf[0] = tsch_schedule_add_slotframe(0, 1);
     tsch_schedule_add_link(sf[0], LINK_OPTION_TX | LINK_OPTION_RX, LINK_TYPE_ADVERTISING_ONLY, &tsch_broadcast_address, 0, 0);
 
-    linkaddr_t addr = getAddressByNodeID(node_id);
-    uint8_t link_options;
-    uint16_t slot_offset = node_id; // keeping slot offset as our own Node ID
-    link_options = LINK_OPTION_RX;
-    tsch_schedule_add_link(sf[max_slot_frame_used + 3],
-                           link_options,
-                           LINK_TYPE_NORMAL, &addr,
-                           slot_offset, 3);
+    
 
     /* wait for end of TSCH initialization phase, timed with MASTER_INIT_PERIOD */
     ctimer_set(&install_schedule_timer, MASTER_INIT_PERIOD, master_install_schedule, NULL);
@@ -1102,3 +1054,21 @@ void init_master_routing(void)
 }
 /*---------------------------------------------------------------------------*/
 /** @} */
+void copy_used_slot_matrix(const uint8_t used_slot_matrix[]){
+    int index,col,row;
+    for(index =0, row=0;index<schedule_length*max_channel_used;row++)
+    {
+       for(col = 0; col<max_channel_used; col++, index++){
+            matrix[row][col] = used_slot_matrix[index];
+       }
+
+    }
+}
+
+void apply_generated_schedule(){
+  generated_schedule();
+  install_discovery_schedule();
+}
+
+#include MASTER_SCHEDULE
+
