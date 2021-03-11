@@ -1,0 +1,2061 @@
+00:00.354	ID:8	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.357	ID:8	[INFO: Main      ]  Net: masternet
+00:00.359	ID:8	[INFO: Main      ]  MAC: TSCH
+00:00.364	ID:8	tsch_queue_update_time_source
+00:00.365	ID:8	!tsch_is_locked()
+00:00.371	ID:8	[INFO: MASTER-N  ] init
+00:00.376	ID:8	[INFO: Main      ] Link-layer address 0800.0000.0000.0000
+00:00.378	ID:8	[INFO: Sky       ] Node id: 8
+00:00.381	ID:8	[INFO: Sky       ] TSCH, rf channel 26
+00:00.518	ID:2	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.520	ID:2	[INFO: Main      ]  Net: masternet
+00:00.522	ID:2	[INFO: Main      ]  MAC: TSCH
+00:00.527	ID:2	tsch_queue_update_time_source
+00:00.529	ID:2	!tsch_is_locked()
+00:00.532	ID:6	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.534	ID:2	[INFO: MASTER-N  ] init
+00:00.535	ID:6	[INFO: Main      ]  Net: masternet
+00:00.537	ID:6	[INFO: Main      ]  MAC: TSCH
+00:00.539	ID:2	[INFO: Main      ] Link-layer address 0200.0000.0000.0000
+00:00.542	ID:2	[INFO: Sky       ] Node id: 2
+00:00.542	ID:6	tsch_queue_update_time_source
+00:00.543	ID:6	!tsch_is_locked()
+00:00.544	ID:2	[INFO: Sky       ] TSCH, rf channel 26
+00:00.549	ID:6	[INFO: MASTER-N  ] init
+00:00.554	ID:6	[INFO: Main      ] Link-layer address 0600.0000.0000.0000
+00:00.556	ID:6	[INFO: Sky       ] Node id: 6
+00:00.559	ID:6	[INFO: Sky       ] TSCH, rf channel 26
+00:00.630	ID:4	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.632	ID:4	[INFO: Main      ]  Net: masternet
+00:00.634	ID:4	[INFO: Main      ]  MAC: TSCH
+00:00.640	ID:4	tsch_queue_update_time_source
+00:00.641	ID:4	!tsch_is_locked()
+00:00.646	ID:4	[INFO: MASTER-N  ] init
+00:00.651	ID:4	[INFO: Main      ] Link-layer address 0400.0000.0000.0000
+00:00.654	ID:4	[INFO: Sky       ] Node id: 4
+00:00.657	ID:4	[INFO: Sky       ] TSCH, rf channel 26
+00:00.664	ID:1	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.666	ID:1	[INFO: Main      ]  Net: masternet
+00:00.668	ID:1	[INFO: Main      ]  MAC: TSCH
+00:00.673	ID:1	tsch_queue_update_time_source
+00:00.675	ID:1	!tsch_is_locked()
+00:00.680	ID:1	[INFO: MASTER-N  ] init
+00:00.683	ID:7	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.685	ID:1	[INFO: Main      ] Link-layer address 0100.0000.0000.0000
+00:00.686	ID:7	[INFO: Main      ]  Net: masternet
+00:00.688	ID:1	[INFO: Sky       ] Node id: 1
+00:00.688	ID:7	[INFO: Main      ]  MAC: TSCH
+00:00.690	ID:1	[INFO: Sky       ] TSCH, rf channel 26
+00:00.693	ID:7	tsch_queue_update_time_source
+00:00.694	ID:7	!tsch_is_locked()
+00:00.700	ID:7	[INFO: MASTER-N  ] init
+00:00.705	ID:7	[INFO: Main      ] Link-layer address 0700.0000.0000.0000
+00:00.707	ID:7	[INFO: Sky       ] Node id: 7
+00:00.710	ID:7	[INFO: Sky       ] TSCH, rf channel 26
+00:00.810	ID:6	tsch_queue_update_time_source
+00:00.811	ID:2	tsch_queue_update_time_source
+00:00.811	ID:6	!tsch_is_locked()
+00:00.812	ID:2	!tsch_is_locked()
+00:00.838	ID:10	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.840	ID:10	[INFO: Main      ]  Net: masternet
+00:00.842	ID:10	[INFO: Main      ]  MAC: TSCH
+00:00.848	ID:10	tsch_queue_update_time_source
+00:00.849	ID:10	!tsch_is_locked()
+00:00.854	ID:10	[INFO: MASTER-N  ] init
+00:00.860	ID:10	[INFO: Main      ] Link-layer address 0a00.0000.0000.0000
+00:00.862	ID:10	[INFO: Sky       ] Node id: 10
+00:00.865	ID:10	[INFO: Sky       ] TSCH, rf channel 26
+00:00.990	ID:9	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.992	ID:9	[INFO: Main      ]  Net: masternet
+00:00.994	ID:9	[INFO: Main      ]  MAC: TSCH
+00:00.997	ID:5	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:00.999	ID:5	[INFO: Main      ]  Net: masternet
+00:01.000	ID:9	tsch_queue_update_time_source
+00:01.001	ID:9	!tsch_is_locked()
+00:01.001	ID:5	[INFO: Main      ]  MAC: TSCH
+00:01.006	ID:5	tsch_queue_update_time_source
+00:01.006	ID:9	[INFO: MASTER-N  ] init
+00:01.008	ID:5	!tsch_is_locked()
+00:01.012	ID:9	[INFO: Main      ] Link-layer address 0900.0000.0000.0000
+00:01.013	ID:5	[INFO: MASTER-N  ] init
+00:01.014	ID:9	[INFO: Sky       ] Node id: 9
+00:01.017	ID:9	[INFO: Sky       ] TSCH, rf channel 26
+00:01.018	ID:5	[INFO: Main      ] Link-layer address 0500.0000.0000.0000
+00:01.021	ID:5	[INFO: Sky       ] Node id: 5
+00:01.023	ID:5	[INFO: Sky       ] TSCH, rf channel 26
+00:01.031	ID:7	tsch_queue_update_time_source
+00:01.032	ID:7	!tsch_is_locked()
+00:01.181	ID:3	[INFO: Main      ] Starting Contiki-NG-11e80ef-dirty
+00:01.183	ID:3	[INFO: Main      ]  Net: masternet
+00:01.185	ID:3	[INFO: Main      ]  MAC: TSCH
+00:01.191	ID:3	tsch_queue_update_time_source
+00:01.192	ID:3	!tsch_is_locked()
+00:01.197	ID:3	[INFO: MASTER-N  ] init
+00:01.202	ID:3	[INFO: Main      ] Link-layer address 0300.0000.0000.0000
+00:01.205	ID:3	[INFO: Sky       ] Node id: 3
+00:01.208	ID:3	[INFO: Sky       ] TSCH, rf channel 26
+00:01.232	ID:3	tsch_queue_update_time_source
+00:01.233	ID:3	!tsch_is_locked()
+00:01.454	ID:4	tsch_queue_update_time_source
+00:01.455	ID:4	!tsch_is_locked()
+00:02.110	ID:5	tsch_queue_update_time_source
+00:02.111	ID:5	!tsch_is_locked()
+00:02.334	ID:10	tsch_queue_update_time_source
+00:02.335	ID:10	!tsch_is_locked()
+00:02.507	ID:8	tsch_queue_update_time_source
+00:02.508	ID:8	!tsch_is_locked()
+00:03.431	ID:9	tsch_queue_update_time_source
+00:03.433	ID:9	!tsch_is_locked()
+00:04.069	ID:1	strength_vector: 1 1-.000,2-1.000,3-.000,4-.166,5-.166,6-.833,7-.000,8-.333,
+00:05.384	ID:8	[INFO: MASTER-R  ] install schedule
+00:05.388	ID:8	[INFO: MASTER-R  ] install discovery schedule
+00:05.544	ID:2	[INFO: MASTER-R  ] install schedule
+00:05.552	ID:2	[INFO: MASTER-R  ] install discovery schedule
+00:05.558	ID:6	[INFO: MASTER-R  ] install schedule
+00:05.562	ID:6	[INFO: MASTER-R  ] install discovery schedule
+00:05.604	ID:1	strength_vector: 1 1-.000,2-.950,3-.300,4-.150,5-.100,6-.800,7-.250,8-.350,9-.000,10-.100,
+00:05.659	ID:4	[INFO: MASTER-R  ] install schedule
+00:05.663	ID:4	[INFO: MASTER-R  ] install discovery schedule
+00:05.689	ID:1	[INFO: MASTER-R  ] install schedule
+00:05.693	ID:1	[INFO: MASTER-R  ] install discovery schedule
+00:05.709	ID:7	[INFO: MASTER-R  ] install schedule
+00:05.713	ID:7	[INFO: MASTER-R  ] install discovery schedule
+00:05.864	ID:10	[INFO: MASTER-R  ] install schedule
+00:05.867	ID:10	[INFO: MASTER-R  ] install discovery schedule
+00:06.016	ID:9	[INFO: MASTER-R  ] install schedule
+00:06.020	ID:9	[INFO: MASTER-R  ] install discovery schedule
+00:06.025	ID:5	[INFO: MASTER-R  ] install schedule
+00:06.029	ID:5	[INFO: MASTER-R  ] install discovery schedule
+00:06.210	ID:3	[INFO: MASTER-R  ] install schedule
+00:06.214	ID:3	[INFO: MASTER-R  ] install discovery schedule
+00:20.690	ID:1	master advertisement --> modifying mrp structure
+00:20.698	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;1;100.000, Success => 1
+00:26.295	ID:1	strength_vector: 1 1-.000,2-.846,3-.346,4-.230,5-.153,6-.730,7-.423,8-.538,9-.000,10-.192,
+00:35.690	ID:1	master advertisement --> modifying mrp structure
+00:35.698	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;2;100.000, Success => 1
+00:35.904	ID:8	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.904	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.904	ID:10	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.904	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.904	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.904	ID:9	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.905	ID:4	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.905	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;2;100.000
+00:35.906	ID:8	Now Changing best schedule Link
+00:35.906	ID:7	Now Changing best schedule Link
+00:35.906	ID:10	Now Changing best schedule Link
+00:35.906	ID:3	Now Changing best schedule Link
+00:35.906	ID:2	Now Changing best schedule Link
+00:35.906	ID:9	Now Changing best schedule Link
+00:35.907	ID:4	Now Changing best schedule Link
+00:35.908	ID:6	Now Changing best schedule Link
+00:35.910	ID:8	advertisement resend node_id=8 counter=1
+00:35.910	ID:7	advertisement resend node_id=7 counter=1
+00:35.910	ID:3	advertisement resend node_id=3 counter=1
+00:35.910	ID:9	advertisement resend node_id=9 counter=1
+00:35.910	ID:2	advertisement resend node_id=2 counter=1
+00:35.910	ID:10	advertisement resend node_id=10 counter=1
+00:35.911	ID:4	advertisement resend node_id=4 counter=1
+00:35.911	ID:6	advertisement resend node_id=6 counter=1
+00:35.913	ID:8	master advertisement --> modifying mrp structure
+00:35.913	ID:7	master advertisement --> modifying mrp structure
+00:35.913	ID:3	master advertisement --> modifying mrp structure
+00:35.913	ID:2	master advertisement --> modifying mrp structure
+00:35.913	ID:10	master advertisement --> modifying mrp structure
+00:35.914	ID:4	master advertisement --> modifying mrp structure
+00:35.914	ID:6	master advertisement --> modifying mrp structure
+00:35.917	ID:9	master advertisement --> modifying mrp structure
+00:35.921	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;2;.687, Success => 1
+00:35.921	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;2;.625, Success => 1
+00:35.921	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;.689, Success => 1
+00:35.921	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:35.922	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;2;.379, Success => 1
+00:35.922	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;2;.300, Success => 1
+00:35.922	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;2;.843, Success => 1
+00:35.925	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;2;.206, Success => 1
+00:35.931	ID:7	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .687
+00:35.931	ID:8	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .625
+00:35.932	ID:3	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .689
+00:35.932	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .800
+00:35.932	ID:10	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .379
+00:35.932	ID:4	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .300
+00:35.933	ID:6	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .843
+00:35.935	ID:9	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .206
+00:36.179	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:36.179	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;2;.625
+00:36.181	ID:5	Now Changing best schedule Link
+00:36.184	ID:5	advertisement resend node_id=5 counter=1
+00:36.188	ID:5	master advertisement --> modifying mrp structure
+00:36.196	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;2;.629, Success => 1
+00:36.206	ID:5	advertisement Seq: 2, Selected BestNode = 3, Because: His Strength: .689, And MyLink Strength With Him --> .629
+00:36.454	ID:10	[INFO: MASTER-R  ] Received advertisement 2;5;2;.629
+00:36.454	ID:2	[INFO: MASTER-R  ] Received advertisement 2;5;2;.629
+00:36.454	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;2;.629
+00:36.455	ID:4	[INFO: MASTER-R  ] Received advertisement 2;5;2;.629
+00:36.456	ID:10	Now Changing best schedule Link
+00:36.457	ID:2	advertisement resend node_id=2 counter=2
+00:36.457	ID:4	Now Changing best schedule Link
+00:36.460	ID:10	advertisement resend node_id=10 counter=2
+00:36.460	ID:2	master advertisement --> modifying mrp structure
+00:36.461	ID:4	advertisement resend node_id=4 counter=2
+00:36.463	ID:10	master advertisement --> modifying mrp structure
+00:36.464	ID:4	master advertisement --> modifying mrp structure
+00:36.468	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:36.472	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;2;.629, Success => 1
+00:36.472	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;2;.433, Success => 1
+00:36.479	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .629, And MyLink Strength With Him --> .166
+00:36.482	ID:10	advertisement Seq: 2, Selected BestNode = 5, Because: His Strength: .629, And MyLink Strength With Him --> .655
+00:36.483	ID:4	advertisement Seq: 2, Selected BestNode = 5, Because: His Strength: .629, And MyLink Strength With Him --> .433
+00:36.729	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;2;.629
+00:36.732	ID:3	advertisement resend node_id=3 counter=2
+00:36.735	ID:3	master advertisement --> modifying mrp structure
+00:36.743	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;.689, Success => 1
+00:36.754	ID:3	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .629, And MyLink Strength With Him --> .413
+00:37.004	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:37.004	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:37.004	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:37.004	ID:7	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:37.005	ID:6	[INFO: MASTER-R  ] Received advertisement 2;3;2;.689
+00:37.006	ID:5	advertisement history matched
+00:37.007	ID:2	advertisement resend node_id=2 counter=3
+00:37.007	ID:7	advertisement resend node_id=7 counter=2
+00:37.007	ID:10	advertisement resend node_id=10 counter=3
+00:37.008	ID:6	advertisement resend node_id=6 counter=2
+00:37.010	ID:2	master advertisement --> modifying mrp structure
+00:37.010	ID:7	master advertisement --> modifying mrp structure
+00:37.010	ID:10	master advertisement --> modifying mrp structure
+00:37.011	ID:6	master advertisement --> modifying mrp structure
+00:37.018	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:37.018	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;2;.687, Success => 1
+00:37.019	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;2;.629, Success => 1
+00:37.020	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;2;.843, Success => 1
+00:37.028	ID:7	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .689, And MyLink Strength With Him --> .187
+00:37.029	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .689, And MyLink Strength With Him --> .333
+00:37.029	ID:10	advertisement Seq: 2, Selected BestNode = 5, Because: His Strength: .689, And MyLink Strength With Him --> .586
+00:37.030	ID:6	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .689, And MyLink Strength With Him --> .031
+00:37.278	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:37.278	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:37.279	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;2;.629
+00:37.279	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;2;.629
+00:37.280	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:37.281	ID:8	Now Changing best schedule Link
+00:37.281	ID:3	advertisement history matched
+00:37.282	ID:4	Now Changing best schedule Link
+00:37.284	ID:8	advertisement resend node_id=8 counter=2
+00:37.286	ID:4	advertisement resend node_id=4 counter=3
+00:37.288	ID:8	master advertisement --> modifying mrp structure
+00:37.289	ID:4	master advertisement --> modifying mrp structure
+00:37.296	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;2;.687, Success => 1
+00:37.297	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;2;.800, Success => 1
+00:37.306	ID:8	advertisement Seq: 2, Selected BestNode = 6, Because: His Strength: .843, And MyLink Strength With Him --> .687
+00:37.307	ID:4	advertisement Seq: 2, Selected BestNode = 2, Because: His Strength: .800, And MyLink Strength With Him --> .866
+00:37.553	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:37.553	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:37.555	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:37.557	ID:7	advertisement resend node_id=7 counter=3
+00:37.560	ID:7	master advertisement --> modifying mrp structure
+00:37.568	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;2;.687, Success => 1
+00:37.572	ID:2	(N,S) = (1,8000)     (N,S) = (2,0)     (N,S) = (3,3333)     (N,S) = (4,5000)     (N,S) = (5,1666)     (N,S) = (6,5666)     (N,S) = (7,3333)     (N,S) = (8,4666)     (N,S) = (9,0)     (N,S) = (10,3000)     
+00:37.576	ID:2	Checking preparaed data: highestNode: 10, index:33
+00:37.578	ID:7	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .687, And MyLink Strength With Him --> .531
+00:37.828	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:37.828	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:37.828	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:37.830	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:37.831	ID:9	Now Changing best schedule Link
+00:37.832	ID:8	advertisement resend node_id=8 counter=3
+00:37.833	ID:6	advertisement resend node_id=6 counter=3
+00:37.834	ID:9	advertisement resend node_id=9 counter=2
+00:37.836	ID:8	master advertisement --> modifying mrp structure
+00:37.837	ID:6	master advertisement --> modifying mrp structure
+00:37.838	ID:9	master advertisement --> modifying mrp structure
+00:37.844	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;2;.687, Success => 1
+00:37.846	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;2;.517, Success => 1
+00:37.849	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;2;.843, Success => 1
+00:37.854	ID:8	advertisement Seq: 2, Selected BestNode = 6, Because: His Strength: .687, And MyLink Strength With Him --> .250
+00:37.856	ID:9	advertisement Seq: 2, Selected BestNode = 7, Because: His Strength: .687, And MyLink Strength With Him --> .517
+00:37.860	ID:6	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .687, And MyLink Strength With Him --> .312
+00:38.103	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:38.103	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:38.103	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:38.107	ID:2	advertisement resend node_id=2 counter=4
+00:38.107	ID:7	advertisement resend node_id=7 counter=4
+00:38.110	ID:2	master advertisement --> modifying mrp structure
+00:38.110	ID:7	master advertisement --> modifying mrp structure
+00:38.118	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:38.118	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;2;.687, Success => 1
+00:38.128	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .687, And MyLink Strength With Him --> .466
+00:38.128	ID:7	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .843, And MyLink Strength With Him --> .656
+00:38.378	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:38.378	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:38.378	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:38.378	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:38.378	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:38.379	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:38.379	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;2;.687
+00:38.380	ID:8	advertisement history matched
+00:38.380	ID:9	advertisement history matched
+00:38.381	ID:3	Now Changing best schedule Link
+00:38.382	ID:10	advertisement resend node_id=10 counter=4
+00:38.382	ID:4	advertisement history matched
+00:38.382	ID:6	advertisement history matched
+00:38.384	ID:3	advertisement resend node_id=3 counter=3
+00:38.385	ID:10	master advertisement --> modifying mrp structure
+00:38.387	ID:3	master advertisement --> modifying mrp structure
+00:38.393	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;2;.629, Success => 1
+00:38.396	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;.724, Success => 1
+00:38.404	ID:10	advertisement Seq: 2, Selected BestNode = 5, Because: His Strength: .800, And MyLink Strength With Him --> .620
+00:38.406	ID:3	advertisement Seq: 2, Selected BestNode = 2, Because: His Strength: .800, And MyLink Strength With Him --> .724
+00:38.653	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;2;.724
+00:38.654	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;2;.629
+00:38.656	ID:5	advertisement history matched
+00:38.657	ID:4	advertisement resend node_id=4 counter=4
+00:38.661	ID:4	master advertisement --> modifying mrp structure
+00:38.669	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;2;.800, Success => 1
+00:38.679	ID:4	advertisement Seq: 2, Selected BestNode = 2, Because: His Strength: .629, And MyLink Strength With Him --> .200
+00:38.928	ID:1	[INFO: MASTER-R  ] Received advertisement 2;4;2;.800
+00:38.928	ID:5	[INFO: MASTER-R  ] Received advertisement 2;4;2;.800
+00:38.928	ID:2	[INFO: MASTER-R  ] Received advertisement 2;4;2;.800
+00:38.928	ID:10	[INFO: MASTER-R  ] Received advertisement 2;4;2;.800
+00:38.930	ID:10	Now Changing best schedule Link
+00:38.931	ID:5	advertisement resend node_id=5 counter=2
+00:38.934	ID:10	advertisement resend node_id=10 counter=5
+00:38.934	ID:5	master advertisement --> modifying mrp structure
+00:38.941	ID:10	master advertisement --> modifying mrp structure
+00:38.943	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;2;.666, Success => 1
+00:38.950	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;2;.724, Success => 1
+00:38.953	ID:5	advertisement Seq: 2, Selected BestNode = 3, Because: His Strength: .800, And MyLink Strength With Him --> .407
+00:38.960	ID:10	advertisement Seq: 2, Selected BestNode = 4, Because: His Strength: .800, And MyLink Strength With Him --> .724
+00:39.203	ID:1	[INFO: MASTER-R  ] Received advertisement 2;10;2;.724
+00:39.203	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;2;.666
+00:39.203	ID:2	[INFO: MASTER-R  ] Received advertisement 2;10;2;.724
+00:39.204	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;2;.724
+00:39.206	ID:2	advertisement resend node_id=2 counter=5
+00:39.210	ID:2	master advertisement --> modifying mrp structure
+00:39.218	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:39.228	ID:3	(N,S) = (1,6896)     (N,S) = (2,7241)     (N,S) = (3,0)     (N,S) = (4,3793)     (N,S) = (5,6206)     (N,S) = (6,1379)     (N,S) = (7,3103)     (N,S) = (8,2413)     (N,S) = (9,344)     (N,S) = (10,4482)     
+00:39.228	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .724, And MyLink Strength With Him --> .272
+00:39.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+00:39.478	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.478	ID:7	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.478	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.479	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.479	ID:6	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.479	ID:8	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:39.480	ID:10	advertisement history matched
+00:39.481	ID:7	advertisement resend node_id=7 counter=5
+00:39.481	ID:4	advertisement history matched
+00:39.482	ID:6	advertisement resend node_id=6 counter=4
+00:39.482	ID:8	advertisement resend node_id=8 counter=4
+00:39.484	ID:7	master advertisement --> modifying mrp structure
+00:39.486	ID:6	master advertisement --> modifying mrp structure
+00:39.486	ID:8	master advertisement --> modifying mrp structure
+00:39.493	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;2;.687, Success => 1
+00:39.494	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;2;.843, Success => 1
+00:39.494	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;2;.687, Success => 1
+00:39.503	ID:7	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .800, And MyLink Strength With Him --> .424
+00:39.504	ID:6	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .800, And MyLink Strength With Him --> .500
+00:39.504	ID:8	advertisement Seq: 2, Selected BestNode = 6, Because: His Strength: .800, And MyLink Strength With Him --> .393
+00:39.674	ID:4	(N,S) = (1,3000)     (N,S) = (2,8666)     (N,S) = (3,2000)     (N,S) = (4,0)     (N,S) = (5,4333)     (N,S) = (6,0)     (N,S) = (7,0)     (N,S) = (8,333)     (N,S) = (9,0)     (N,S) = (10,2000)     
+00:39.677	ID:4	Checking preparaed data: highestNode: 10, index:33
+00:39.753	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:39.753	ID:3	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:39.753	ID:2	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:39.753	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;2;.843
+00:39.756	ID:3	advertisement resend node_id=3 counter=4
+00:39.756	ID:2	advertisement resend node_id=2 counter=6
+00:39.756	ID:9	advertisement resend node_id=9 counter=3
+00:39.759	ID:3	master advertisement --> modifying mrp structure
+00:39.759	ID:2	master advertisement --> modifying mrp structure
+00:39.759	ID:9	master advertisement --> modifying mrp structure
+00:39.768	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;2;.800, Success => 1
+00:39.768	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;2;.517, Success => 1
+00:39.771	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;2;.724, Success => 1
+00:39.778	ID:2	advertisement Seq: 2, Selected BestNode = 1, Because: His Strength: .843, And MyLink Strength With Him --> .515
+00:39.778	ID:9	advertisement Seq: 2, Selected BestNode = 7, Because: His Strength: .843, And MyLink Strength With Him --> .424
+00:39.782	ID:3	advertisement Seq: 2, Selected BestNode = 2, Because: His Strength: .687, And MyLink Strength With Him --> .241
+00:40.028	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:40.028	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;2;.517
+00:40.028	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:40.028	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;2;.724
+00:40.029	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;2;.800
+00:40.029	ID:8	[INFO: MASTER-R  ] Received advertisement 2;9;2;.517
+00:40.029	ID:6	[INFO: MASTER-R  ] Received advertisement 2;3;2;.724
+00:40.030	ID:10	advertisement history matched
+00:40.030	ID:5	advertisement history matched
+00:40.031	ID:4	advertisement history matched
+00:40.031	ID:6	advertisement history matched
+00:40.032	ID:8	advertisement resend node_id=8 counter=5
+00:40.035	ID:8	master advertisement --> modifying mrp structure
+00:40.044	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;2;.687, Success => 1
+00:40.054	ID:8	advertisement Seq: 2, Selected BestNode = 6, Because: His Strength: .517, And MyLink Strength With Him --> .121
+00:40.303	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:40.303	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:40.303	ID:3	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:40.303	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:40.304	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;2;.687
+00:40.305	ID:7	advertisement history matched
+00:40.305	ID:3	advertisement history matched
+00:40.305	ID:2	advertisement history matched
+00:41.042	ID:5	(N,S) = (1,1851)     (N,S) = (2,3703)     (N,S) = (3,6666)     (N,S) = (4,4074)     (N,S) = (5,0)     (N,S) = (6,370)     (N,S) = (7,370)     (N,S) = (8,370)     (N,S) = (9,0)     (N,S) = (10,4444)     
+00:41.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+00:41.128	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+00:41.130	ID:3	Received actual data from node: 5
+00:41.143	ID:3	modified actual data: 10 1 59 7 2 119 14 3 10 26 4 234 15 5 0 0 6 114 1 7 114 1 8 114 1 9 0 0 10 92 17 2 5 3 
+00:41.147	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+00:41.403	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;5;34
+00:41.405	ID:2	Received actual data from node: 5
+00:41.419	ID:2	modified actual data: 10 1 59 7 2 119 14 3 10 26 4 234 15 5 0 0 6 114 1 7 114 1 8 114 1 9 0 0 10 92 17 3 5 3 2 
+00:41.423	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:41.577	ID:6	(N,S) = (1,8437)     (N,S) = (2,5000)     (N,S) = (3,312)     (N,S) = (4,625)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3437)     (N,S) = (8,6562)     (N,S) = (9,1250)     (N,S) = (10,625)     
+00:41.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+00:42.727	ID:7	(N,S) = (1,7058)     (N,S) = (2,4411)     (N,S) = (3,1764)     (N,S) = (4,294)     (N,S) = (5,0)     (N,S) = (6,6470)     (N,S) = (7,0)     (N,S) = (8,5294)     (N,S) = (9,2352)     
+00:42.731	ID:7	Checking preparaed data: highestNode: 9, index:30
+00:42.777	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;30
+00:42.789	ID:1	on received actual data: 9 1 146 27 2 59 17 3 228 6 4 38 1 5 0 0 6 70 25 7 0 0 8 174 20 9 48 9 1 7 
+00:42.793	ID:1	Got Actual Data --> Route (Size: 2): 7 --> 1
+00:42.812	ID:1	strength_vector: 7 1-.705,2-.441,3-.176,4-.029,5-.000,6-.647,7-.000,8-.529,9-.235,
+00:43.400	ID:8	(N,S) = (1,6363)     (N,S) = (2,3939)     (N,S) = (3,606)     (N,S) = (4,606)     (N,S) = (5,0)     (N,S) = (6,6969)     (N,S) = (7,2727)     (N,S) = (8,0)     (N,S) = (9,1212)     (N,S) = (10,303)     
+00:43.403	ID:8	Checking preparaed data: highestNode: 10, index:33
+00:43.603	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+00:43.606	ID:6	Received actual data from node: 8
+00:43.619	ID:6	modified actual data: 10 1 219 24 2 99 15 3 94 2 4 94 2 5 0 0 6 57 27 7 167 10 8 0 0 9 188 4 10 47 1 2 8 6 
+00:43.623	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+00:43.877	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+00:43.890	ID:1	on received actual data: 10 1 219 24 2 99 15 3 94 2 4 94 2 5 0 0 6 57 27 7 167 10 8 0 0 9 188 4 10 47 1 2 8 6 
+00:43.894	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+00:43.916	ID:1	strength_vector: 8 1-.636,2-.393,3-.060,4-.060,5-.000,6-.696,7-.272,8-.000,9-.121,10-.030,
+00:45.033	ID:9	(N,S) = (1,2121)     (N,S) = (2,0)     (N,S) = (3,0)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4545)     (N,S) = (7,4848)     (N,S) = (8,1212)     (N,S) = (9,0)     (N,S) = (10,303)     
+00:45.037	ID:9	Checking preparaed data: highestNode: 10, index:33
+00:45.883	ID:10	(N,S) = (1,3548)     (N,S) = (2,6451)     (N,S) = (3,6129)     (N,S) = (4,7096)     (N,S) = (5,6451)     (N,S) = (6,967)     (N,S) = (7,645)     (N,S) = (8,967)     (N,S) = (9,0)     (N,S) = (10,0)     
+00:45.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+00:46.078	ID:4	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+00:46.081	ID:4	Received actual data from node: 10
+00:46.094	ID:4	modified actual data: 10 1 220 13 2 51 25 3 241 23 4 184 27 5 51 25 6 199 3 7 133 2 8 199 3 9 0 0 10 0 0 2 10 4 
+00:46.098	ID:4	Forwarding actualData (node) = (4) --> to (node) = (2)
+00:46.352	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+00:46.354	ID:2	Received actual data from node: 10
+00:46.368	ID:2	modified actual data: 10 1 220 13 2 51 25 3 241 23 4 184 27 5 51 25 6 199 3 7 133 2 8 199 3 9 0 0 10 0 0 3 10 4 2 
+00:46.372	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:46.626	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;35
+00:46.641	ID:1	on received actual data: 10 1 220 13 2 51 25 3 241 23 4 184 27 5 51 25 6 199 3 7 133 2 8 199 3 9 0 0 10 0 0 3 10 4 2 
+00:46.645	ID:1	Got Actual Data --> Route (Size: 4): 10 --> 4 --> 2 --> 1
+00:46.667	ID:1	strength_vector: 10 1-.354,2-.645,3-.612,4-.709,5-.645,6-.096,7-.064,8-.096,9-.000,10-.000,
+00:47.563	ID:2	(N,S) = (1,7428)     (N,S) = (2,0)     (N,S) = (3,3142)     (N,S) = (4,4285)     (N,S) = (5,1428)     (N,S) = (6,5428)     (N,S) = (7,2857)     (N,S) = (8,4000)     (N,S) = (9,0)     (N,S) = (10,3142)     
+00:47.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+00:47.726	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+00:47.739	ID:1	on received actual data: 10 1 4 29 2 0 0 3 70 12 4 189 16 5 148 5 6 52 21 7 41 11 8 160 15 9 0 0 10 70 12 1 2 
+00:47.743	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+00:47.765	ID:1	strength_vector: 2 1-.742,2-.000,3-.314,4-.428,5-.142,6-.542,7-.285,8-.400,9-.000,10-.314,
+00:49.227	ID:3	(N,S) = (1,6111)     (N,S) = (2,6388)     (N,S) = (3,0)     (N,S) = (4,3333)     (N,S) = (5,5000)     (N,S) = (6,1111)     (N,S) = (7,2777)     (N,S) = (8,2222)     (N,S) = (9,277)     (N,S) = (10,4444)     
+00:49.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+00:49.376	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+00:49.378	ID:2	Received actual data from node: 3
+00:49.392	ID:2	modified actual data: 10 1 223 23 2 244 24 3 0 0 4 5 13 5 136 19 6 87 4 7 217 10 8 174 8 9 21 1 10 92 17 2 3 2 
+00:49.396	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:49.651	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+00:49.665	ID:1	on received actual data: 10 1 223 23 2 244 24 3 0 0 4 5 13 5 136 19 6 87 4 7 217 10 8 174 8 9 21 1 10 92 17 2 3 2 
+00:49.668	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+00:49.673	ID:4	(N,S) = (1,2812)     (N,S) = (2,9062)     (N,S) = (3,1875)     (N,S) = (4,0)     (N,S) = (5,4375)     (N,S) = (6,0)     (N,S) = (7,0)     (N,S) = (8,625)     (N,S) = (9,0)     (N,S) = (10,2500)     
+00:49.677	ID:4	Checking preparaed data: highestNode: 10, index:33
+00:49.691	ID:1	strength_vector: 3 1-.611,2-.638,3-.000,4-.333,5-.500,6-.111,7-.277,8-.222,9-.027,10-.444,
+00:49.926	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;4;33
+00:49.928	ID:2	Received actual data from node: 4
+00:49.941	ID:2	modified actual data: 10 1 252 10 2 102 35 3 83 7 4 0 0 5 23 17 6 0 0 7 0 0 8 113 2 9 0 0 10 196 9 2 4 2 
+00:49.945	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:50.200	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;4;34
+00:50.214	ID:1	on received actual data: 10 1 252 10 2 102 35 3 83 7 4 0 0 5 23 17 6 0 0 7 0 0 8 113 2 9 0 0 10 196 9 2 4 2 
+00:50.217	ID:1	Got Actual Data --> Route (Size: 3): 4 --> 2 --> 1
+00:50.237	ID:1	strength_vector: 4 1-.281,2-.906,3-.187,4-.000,5-.437,6-.000,7-.000,8-.062,9-.000,10-.250,
+00:50.690	ID:1	master advertisement --> modifying mrp structure
+00:50.698	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;3;100.000, Success => 1
+00:50.752	ID:8	[INFO: MASTER-R  ] Received advertisement 2;1;3;100.000
+00:50.752	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;3;100.000
+00:50.755	ID:8	advertisement resend node_id=8 counter=6
+00:50.755	ID:6	advertisement resend node_id=6 counter=5
+00:50.758	ID:8	master advertisement --> modifying mrp structure
+00:50.758	ID:6	master advertisement --> modifying mrp structure
+00:50.766	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;3;.687, Success => 1
+00:50.766	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;3;.805, Success => 1
+00:50.777	ID:8	advertisement Seq: 3, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .638
+00:50.777	ID:6	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .805
+00:51.025	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;3;.805
+00:51.025	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;3;.805
+00:51.028	ID:9	advertisement resend node_id=9 counter=4
+00:51.028	ID:7	advertisement resend node_id=7 counter=6
+00:51.032	ID:9	master advertisement --> modifying mrp structure
+00:51.032	ID:7	master advertisement --> modifying mrp structure
+00:51.040	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;3;.517, Success => 1
+00:51.040	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;3;.687, Success => 1
+00:51.044	ID:5	(N,S) = (1,1612)     (N,S) = (2,3548)     (N,S) = (3,6774)     (N,S) = (4,3870)     (N,S) = (5,0)     (N,S) = (6,322)     (N,S) = (7,645)     (N,S) = (8,322)     (N,S) = (9,0)     (N,S) = (10,4838)     
+00:51.047	ID:5	Checking preparaed data: highestNode: 10, index:33
+00:51.050	ID:9	advertisement Seq: 3, Selected BestNode = 7, Because: His Strength: .805, And MyLink Strength With Him --> .454
+00:51.050	ID:7	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: .805, And MyLink Strength With Him --> .685
+00:51.300	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;3;.687
+00:51.301	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;3;.687
+00:51.301	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;3;.687
+00:51.301	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+00:51.304	ID:3	Received actual data from node: 5
+00:51.304	ID:8	advertisement resend node_id=8 counter=7
+00:51.304	ID:6	advertisement resend node_id=6 counter=6
+00:51.308	ID:8	master advertisement --> modifying mrp structure
+00:51.308	ID:6	master advertisement --> modifying mrp structure
+00:51.316	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;3;.687, Success => 1
+00:51.316	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;3;.805, Success => 1
+00:51.317	ID:3	modified actual data: 10 1 76 6 2 220 13 3 118 26 4 30 15 5 0 0 6 66 1 7 133 2 8 66 1 9 0 0 10 230 18 2 5 3 
+00:51.321	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+00:51.326	ID:8	advertisement Seq: 3, Selected BestNode = 6, Because: His Strength: .687, And MyLink Strength With Him --> .250
+00:51.326	ID:6	advertisement Seq: 3, Selected BestNode = 1, Because: His Strength: .687, And MyLink Strength With Him --> .333
+00:51.575	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;3;.805
+00:51.575	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;3;.805
+00:51.575	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;5;34
+00:51.577	ID:7	advertisement history matched
+00:51.577	ID:9	advertisement history matched
+00:51.578	ID:2	Received actual data from node: 5
+00:51.583	ID:6	(N,S) = (1,8055)     (N,S) = (2,5000)     (N,S) = (3,277)     (N,S) = (4,555)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3333)     (N,S) = (8,6388)     (N,S) = (9,1111)     (N,S) = (10,555)     
+00:51.586	ID:6	Checking preparaed data: highestNode: 10, index:33
+00:51.591	ID:2	modified actual data: 10 1 76 6 2 220 13 3 118 26 4 30 15 5 0 0 6 66 1 7 133 2 8 66 1 9 0 0 10 230 18 3 5 3 2 
+00:51.595	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:51.850	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;5;35
+00:51.864	ID:1	on received actual data: 10 1 76 6 2 220 13 3 118 26 4 30 15 5 0 0 6 66 1 7 133 2 8 66 1 9 0 0 10 230 18 3 5 3 2 
+00:51.868	ID:1	Got Actual Data --> Route (Size: 4): 5 --> 3 --> 2 --> 1
+00:51.890	ID:1	strength_vector: 5 1-.161,2-.354,3-.677,4-.387,5-.000,6-.032,7-.064,8-.032,9-.000,10-.483,
+00:52.727	ID:7	(N,S) = (1,7027)     (N,S) = (2,4324)     (N,S) = (3,1621)     (N,S) = (4,270)     (N,S) = (5,0)     (N,S) = (6,6486)     (N,S) = (7,0)     (N,S) = (8,5135)     (N,S) = (9,2702)     
+00:52.731	ID:7	Checking preparaed data: highestNode: 9, index:30
+00:52.950	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;30
+00:52.962	ID:1	on received actual data: 9 1 115 27 2 228 16 3 85 6 4 14 1 5 0 0 6 86 25 7 0 0 8 15 20 9 142 10 1 7 
+00:52.965	ID:1	Got Actual Data --> Route (Size: 2): 7 --> 1
+00:52.985	ID:1	strength_vector: 7 1-.702,2-.432,3-.162,4-.027,5-.000,6-.648,7-.000,8-.513,9-.270,
+00:53.400	ID:8	(N,S) = (1,6486)     (N,S) = (2,3783)     (N,S) = (3,540)     (N,S) = (4,540)     (N,S) = (5,0)     (N,S) = (6,6756)     (N,S) = (7,2702)     (N,S) = (8,0)     (N,S) = (9,1621)     (N,S) = (10,270)     
+00:53.403	ID:8	Checking preparaed data: highestNode: 10, index:33
+00:53.501	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+00:53.504	ID:6	Received actual data from node: 8
+00:53.517	ID:6	modified actual data: 10 1 86 25 2 199 14 3 28 2 4 28 2 5 0 0 6 100 26 7 142 10 8 0 0 9 85 6 10 14 1 2 8 6 
+00:53.520	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+00:53.775	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+00:53.788	ID:1	on received actual data: 10 1 86 25 2 199 14 3 28 2 4 28 2 5 0 0 6 100 26 7 142 10 8 0 0 9 85 6 10 14 1 2 8 6 
+00:53.792	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+00:53.813	ID:1	strength_vector: 8 1-.648,2-.378,3-.054,4-.054,5-.000,6-.675,7-.270,8-.000,9-.162,10-.027,
+00:55.033	ID:9	(N,S) = (1,2121)     (N,S) = (2,0)     (N,S) = (3,0)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4848)     (N,S) = (7,5454)     (N,S) = (8,1212)     (N,S) = (9,0)     (N,S) = (10,303)     
+00:55.037	ID:9	Checking preparaed data: highestNode: 10, index:33
+00:55.149	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+00:55.152	ID:7	Received actual data from node: 9
+00:55.164	ID:7	modified actual data: 10 1 73 8 2 0 0 3 0 0 4 0 0 5 0 0 6 240 18 7 78 21 8 188 4 9 0 0 10 47 1 2 9 7 
+00:55.168	ID:7	Forwarding actualData (node) = (7) --> to (node) = (1)
+00:55.424	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+00:55.437	ID:1	on received actual data: 10 1 73 8 2 0 0 3 0 0 4 0 0 5 0 0 6 240 18 7 78 21 8 188 4 9 0 0 10 47 1 2 9 7 
+00:55.441	ID:1	Got Actual Data --> Route (Size: 3): 9 --> 7 --> 1
+00:55.460	ID:1	strength_vector: 9 1-.212,2-.000,3-.000,4-.000,5-.000,6-.484,7-.545,8-.121,9-.000,10-.030,
+00:55.883	ID:10	(N,S) = (1,3243)     (N,S) = (2,6216)     (N,S) = (3,5945)     (N,S) = (4,6486)     (N,S) = (5,5675)     (N,S) = (6,810)     (N,S) = (7,540)     (N,S) = (8,810)     (N,S) = (9,0)     (N,S) = (10,0)     
+00:55.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+00:55.975	ID:4	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+00:55.978	ID:4	Received actual data from node: 10
+00:55.991	ID:4	modified actual data: 10 1 171 12 2 72 24 3 57 23 4 86 25 5 43 22 6 42 3 7 28 2 8 42 3 9 0 0 10 0 0 2 10 4 
+00:55.995	ID:4	Forwarding actualData (node) = (4) --> to (node) = (2)
+00:56.249	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+00:56.252	ID:2	Received actual data from node: 10
+00:56.265	ID:2	modified actual data: 10 1 171 12 2 72 24 3 57 23 4 86 25 5 43 22 6 42 3 7 28 2 8 42 3 9 0 0 10 0 0 3 10 4 2 
+00:56.269	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+00:56.524	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;35
+00:56.538	ID:1	on received actual data: 10 1 171 12 2 72 24 3 57 23 4 86 25 5 43 22 6 42 3 7 28 2 8 42 3 9 0 0 10 0 0 3 10 4 2 
+00:56.542	ID:1	Got Actual Data --> Route (Size: 4): 10 --> 4 --> 2 --> 1
+00:56.564	ID:1	strength_vector: 10 1-.324,2-.621,3-.594,4-.648,5-.567,6-.081,7-.054,8-.081,9-.000,10-.000,
+00:57.563	ID:2	(N,S) = (1,7297)     (N,S) = (2,0)     (N,S) = (3,3783)     (N,S) = (4,4594)     (N,S) = (5,1351)     (N,S) = (6,5135)     (N,S) = (7,2702)     (N,S) = (8,4054)     (N,S) = (9,0)     (N,S) = (10,3243)     
+00:57.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+00:57.624	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+00:57.638	ID:1	on received actual data: 10 1 129 28 2 0 0 3 199 14 4 242 17 5 71 5 6 15 20 7 142 10 8 214 15 9 0 0 10 171 12 1 2 
+00:57.641	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+00:57.663	ID:1	strength_vector: 2 1-.729,2-.000,3-.378,4-.459,5-.135,6-.513,7-.270,8-.405,9-.000,10-.324,
+00:57.913	ID:1	strength_vector: 1 1-.000,2-.806,3-.451,4-.193,5-.129,6-.870,7-.516,8-.612,9-.064,10-.225,
+00:59.227	ID:3	(N,S) = (1,6315)     (N,S) = (2,6315)     (N,S) = (3,0)     (N,S) = (4,3684)     (N,S) = (5,5000)     (N,S) = (6,1052)     (N,S) = (7,2894)     (N,S) = (8,2105)     (N,S) = (9,263)     (N,S) = (10,5000)     
+00:59.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+00:59.674	ID:4	(N,S) = (1,2820)     (N,S) = (2,7948)     (N,S) = (3,2051)     (N,S) = (4,0)     (N,S) = (5,3846)     (N,S) = (6,0)     (N,S) = (7,0)     (N,S) = (8,512)     (N,S) = (9,0)     (N,S) = (10,2564)     
+00:59.677	ID:4	Checking preparaed data: highestNode: 10, index:33
+00:59.823	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;4;33
+00:59.826	ID:2	Received actual data from node: 4
+00:59.837	ID:2	modified actual data: 10 1 4 11 2 12 31 3 3 8 4 0 0 5 6 15 6 0 0 7 0 0 8 0 2 9 0 0 10 4 10 2 4 2 
+00:59.841	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:00.098	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;4;34
+01:00.110	ID:1	on received actual data: 10 1 4 11 2 12 31 3 3 8 4 0 0 5 6 15 6 0 0 7 0 0 8 0 2 9 0 0 10 4 10 2 4 2 
+01:00.114	ID:1	Got Actual Data --> Route (Size: 3): 4 --> 2 --> 1
+01:00.134	ID:1	strength_vector: 4 1-.282,2-.794,3-.205,4-.000,5-.384,6-.000,7-.000,8-.051,9-.000,10-.256,
+01:01.042	ID:5	(N,S) = (1,1578)     (N,S) = (2,3157)     (N,S) = (3,6052)     (N,S) = (4,3157)     (N,S) = (5,0)     (N,S) = (6,263)     (N,S) = (7,526)     (N,S) = (8,263)     (N,S) = (9,0)     (N,S) = (10,4473)     
+01:01.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:01.199	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+01:01.202	ID:3	Received actual data from node: 5
+01:01.214	ID:3	modified actual data: 10 1 42 6 2 85 12 3 164 23 4 85 12 5 0 0 6 7 1 7 14 2 8 7 1 9 0 0 10 121 17 2 5 3 
+01:01.218	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+01:01.473	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;5;34
+01:01.475	ID:2	Received actual data from node: 5
+01:01.488	ID:2	modified actual data: 10 1 42 6 2 85 12 3 164 23 4 85 12 5 0 0 6 7 1 7 14 2 8 7 1 9 0 0 10 121 17 3 5 3 2 
+01:01.492	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:01.577	ID:6	(N,S) = (1,8205)     (N,S) = (2,4615)     (N,S) = (3,256)     (N,S) = (4,512)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3333)     (N,S) = (8,6153)     (N,S) = (9,1538)     (N,S) = (10,769)     
+01:01.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:01.748	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+01:01.759	ID:1	on received actual data: 10 1 13 32 2 7 18 3 0 1 4 0 2 5 0 0 6 0 0 7 5 13 8 9 24 9 2 6 10 1 3 1 6 
+01:01.763	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+01:01.784	ID:1	strength_vector: 6 1-.820,2-.461,3-.025,4-.051,5-.000,6-.000,7-.333,8-.615,9-.153,10-.076,
+01:01.786	ID:1	ALL ACTUAL DATA COLLECTED
+01:01.805	ID:1	strength_vector: 1 1-.000,2-.781,3-.437,4-.187,5-.125,6-.875,7-.500,8-.625,9-.062,10-.218,
+01:02.729	ID:7	(N,S) = (1,7027)     (N,S) = (2,4324)     (N,S) = (3,1621)     (N,S) = (4,270)     (N,S) = (5,0)     (N,S) = (6,7297)     (N,S) = (7,0)     (N,S) = (8,5675)     (N,S) = (9,3243)     (N,S) = (10,270)     
+01:02.732	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:03.405	ID:8	(N,S) = (1,6500)     (N,S) = (2,3750)     (N,S) = (3,500)     (N,S) = (4,500)     (N,S) = (5,250)     (N,S) = (6,7000)     (N,S) = (7,2750)     (N,S) = (8,0)     (N,S) = (9,1750)     (N,S) = (10,500)     
+01:03.409	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:03.674	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+01:03.676	ID:6	Received actual data from node: 8
+01:03.690	ID:6	modified actual data: 10 1 100 25 2 166 14 3 244 1 4 244 1 5 250 0 6 88 27 7 190 10 8 0 0 9 214 6 10 244 1 2 8 6 
+01:03.694	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:03.947	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+01:03.961	ID:1	on received actual data: 10 1 100 25 2 166 14 3 244 1 4 244 1 5 250 0 6 88 27 7 190 10 8 0 0 9 214 6 10 244 1 2 8 6 
+01:03.965	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+01:03.988	ID:1	strength_vector: 8 1-.650,2-.375,3-.050,4-.050,5-.025,6-.700,7-.275,8-.000,9-.175,10-.050,
+01:05.037	ID:9	(N,S) = (1,2000)     (N,S) = (2,285)     (N,S) = (3,0)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,5142)     (N,S) = (7,5714)     (N,S) = (8,1142)     (N,S) = (9,0)     (N,S) = (10,285)     
+01:05.041	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:05.322	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+01:05.324	ID:7	Received actual data from node: 9
+01:05.337	ID:7	modified actual data: 10 1 208 7 2 29 1 3 0 0 4 0 0 5 0 0 6 22 20 7 82 22 8 118 4 9 0 0 10 29 1 2 9 7 
+01:05.340	ID:7	Forwarding actualData (node) = (7) --> to (node) = (1)
+01:05.597	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+01:05.609	ID:1	on received actual data: 10 1 208 7 2 29 1 3 0 0 4 0 0 5 0 0 6 22 20 7 82 22 8 118 4 9 0 0 10 29 1 2 9 7 
+01:05.613	ID:1	Got Actual Data --> Route (Size: 3): 9 --> 7 --> 1
+01:05.633	ID:1	strength_vector: 9 1-.200,2-.028,3-.000,4-.000,5-.000,6-.514,7-.571,8-.114,9-.000,10-.028,
+01:05.690	ID:1	master advertisement --> modifying mrp structure
+01:05.698	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;4;100.000, Success => 1
+01:05.872	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;4;100.000
+01:05.873	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;4;100.000
+01:05.873	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;4;100.000
+01:05.875	ID:2	advertisement resend node_id=2 counter=7
+01:05.876	ID:3	advertisement resend node_id=3 counter=5
+01:05.876	ID:6	advertisement resend node_id=6 counter=7
+01:05.878	ID:2	master advertisement --> modifying mrp structure
+01:05.879	ID:3	master advertisement --> modifying mrp structure
+01:05.879	ID:6	master advertisement --> modifying mrp structure
+01:05.886	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;4;.725, Success => 1
+01:05.887	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;.724, Success => 1
+01:05.888	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;4;.825, Success => 1
+01:05.890	ID:10	(N,S) = (1,3250)     (N,S) = (2,6500)     (N,S) = (3,5750)     (N,S) = (4,6500)     (N,S) = (5,5500)     (N,S) = (6,750)     (N,S) = (7,750)     (N,S) = (8,750)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:05.894	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:05.897	ID:2	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .725
+01:05.898	ID:3	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .625
+01:05.898	ID:6	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .825
+01:06.146	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:06.146	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:06.146	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:06.147	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:06.147	ID:4	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:06.148	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:06.149	ID:7	Now Changing best schedule Link
+01:06.150	ID:5	advertisement resend node_id=5 counter=3
+01:06.150	ID:9	advertisement resend node_id=9 counter=5
+01:06.151	ID:4	advertisement resend node_id=4 counter=5
+01:06.151	ID:8	advertisement resend node_id=8 counter=8
+01:06.152	ID:7	advertisement resend node_id=7 counter=7
+01:06.153	ID:5	master advertisement --> modifying mrp structure
+01:06.153	ID:9	master advertisement --> modifying mrp structure
+01:06.154	ID:4	master advertisement --> modifying mrp structure
+01:06.154	ID:8	master advertisement --> modifying mrp structure
+01:06.155	ID:7	master advertisement --> modifying mrp structure
+01:06.161	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;4;.631, Success => 1
+01:06.161	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;4;.517, Success => 1
+01:06.162	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;4;.800, Success => 1
+01:06.162	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;4;.725, Success => 1
+01:06.164	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;4;.756, Success => 1
+01:06.171	ID:9	advertisement Seq: 4, Selected BestNode = 7, Because: His Strength: .825, And MyLink Strength With Him --> .514
+01:06.171	ID:5	advertisement Seq: 4, Selected BestNode = 3, Because: His Strength: .724, And MyLink Strength With Him --> .631
+01:06.172	ID:4	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: .724, And MyLink Strength With Him --> .205
+01:06.173	ID:8	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .825, And MyLink Strength With Him --> .725
+01:06.174	ID:7	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .825, And MyLink Strength With Him --> .756
+01:06.421	ID:10	[INFO: MASTER-R  ] Received advertisement 2;4;4;.800
+01:06.421	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:06.421	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:06.422	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;4;.631
+01:06.423	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:06.425	ID:2	advertisement resend node_id=2 counter=8
+01:06.425	ID:10	advertisement resend node_id=10 counter=6
+01:06.428	ID:2	master advertisement --> modifying mrp structure
+01:06.428	ID:10	master advertisement --> modifying mrp structure
+01:06.436	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;4;.725, Success => 1
+01:06.436	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;4;.650, Success => 1
+01:06.446	ID:2	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: .725, And MyLink Strength With Him --> .400
+01:06.447	ID:10	advertisement Seq: 4, Selected BestNode = 4, Because: His Strength: .800, And MyLink Strength With Him --> .650
+01:06.696	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:06.696	ID:7	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:06.696	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:06.697	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:06.697	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:06.698	ID:8	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:06.700	ID:7	advertisement resend node_id=7 counter=8
+01:06.700	ID:5	advertisement resend node_id=5 counter=4
+01:06.701	ID:4	advertisement resend node_id=4 counter=6
+01:06.701	ID:3	advertisement resend node_id=3 counter=6
+01:06.701	ID:8	advertisement resend node_id=8 counter=9
+01:06.703	ID:7	master advertisement --> modifying mrp structure
+01:06.703	ID:5	master advertisement --> modifying mrp structure
+01:06.704	ID:4	master advertisement --> modifying mrp structure
+01:06.704	ID:3	master advertisement --> modifying mrp structure
+01:06.704	ID:8	master advertisement --> modifying mrp structure
+01:06.711	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;4;.756, Success => 1
+01:06.711	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;4;.631, Success => 1
+01:06.712	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;4;.800, Success => 1
+01:06.712	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;.724, Success => 1
+01:06.712	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;4;.725, Success => 1
+01:06.721	ID:5	advertisement Seq: 4, Selected BestNode = 3, Because: His Strength: .650, And MyLink Strength With Him --> .447
+01:06.721	ID:7	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .725, And MyLink Strength With Him --> .432
+01:06.722	ID:4	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: .725, And MyLink Strength With Him --> .820
+01:06.722	ID:3	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: .650, And MyLink Strength With Him --> .475
+01:06.723	ID:8	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .725, And MyLink Strength With Him --> .400
+01:06.971	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:06.971	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:06.971	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:06.972	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:06.972	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:06.975	ID:9	advertisement resend node_id=9 counter=6
+01:06.975	ID:10	advertisement resend node_id=10 counter=7
+01:06.978	ID:9	master advertisement --> modifying mrp structure
+01:06.978	ID:10	master advertisement --> modifying mrp structure
+01:06.986	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;4;.600, Success => 1
+01:06.986	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;4;.650, Success => 1
+01:06.996	ID:9	advertisement Seq: 4, Selected BestNode = 7, Because: His Strength: .756, And MyLink Strength With Him --> .600
+01:06.997	ID:10	advertisement Seq: 4, Selected BestNode = 4, Because: His Strength: .724, And MyLink Strength With Him --> .575
+01:07.246	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;4;.600
+01:07.246	ID:1	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:07.246	ID:2	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:07.246	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:07.247	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:07.247	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;4;.650
+01:07.247	ID:6	[INFO: MASTER-R  ] Received advertisement 2;9;4;.600
+01:07.249	ID:5	advertisement history matched
+01:07.249	ID:2	advertisement resend node_id=2 counter=9
+01:07.249	ID:3	advertisement history matched
+01:07.251	ID:6	advertisement resend node_id=6 counter=8
+01:07.253	ID:2	master advertisement --> modifying mrp structure
+01:07.254	ID:6	master advertisement --> modifying mrp structure
+01:07.261	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;4;.725, Success => 1
+01:07.262	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;4;.825, Success => 1
+01:07.271	ID:2	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: .650, And MyLink Strength With Him --> .325
+01:07.272	ID:6	advertisement Seq: 4, Selected BestNode = 1, Because: His Strength: .600, And MyLink Strength With Him --> .150
+01:07.521	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:07.521	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:07.521	ID:5	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:07.521	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:07.521	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:07.522	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:07.522	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;4;.725
+01:07.522	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;4;.825
+01:07.523	ID:7	advertisement history matched
+01:07.523	ID:9	advertisement history matched
+01:07.524	ID:5	advertisement resend node_id=5 counter=5
+01:07.525	ID:4	advertisement history matched
+01:07.525	ID:10	advertisement resend node_id=10 counter=8
+01:07.525	ID:8	advertisement history matched
+01:07.525	ID:3	advertisement resend node_id=3 counter=7
+01:07.528	ID:5	master advertisement --> modifying mrp structure
+01:07.528	ID:10	master advertisement --> modifying mrp structure
+01:07.529	ID:3	master advertisement --> modifying mrp structure
+01:07.536	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;4;.631, Success => 1
+01:07.536	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;4;.650, Success => 1
+01:07.537	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;.724, Success => 1
+01:07.546	ID:5	advertisement Seq: 4, Selected BestNode = 3, Because: His Strength: .725, And MyLink Strength With Him --> .368
+01:07.546	ID:10	advertisement Seq: 4, Selected BestNode = 4, Because: His Strength: .725, And MyLink Strength With Him --> .650
+01:07.547	ID:3	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: .725, And MyLink Strength With Him --> .650
+01:07.563	ID:2	(N,S) = (1,7250)     (N,S) = (2,0)     (N,S) = (3,4000)     (N,S) = (4,4750)     (N,S) = (5,1500)     (N,S) = (6,4750)     (N,S) = (7,2500)     (N,S) = (8,4000)     (N,S) = (9,0)     (N,S) = (10,3250)     
+01:07.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:07.796	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+01:07.796	ID:7	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:07.797	ID:4	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:07.799	ID:7	advertisement resend node_id=7 counter=9
+01:07.799	ID:4	advertisement history matched
+01:07.803	ID:7	master advertisement --> modifying mrp structure
+01:07.810	ID:1	on received actual data: 10 1 82 28 2 0 0 3 160 15 4 142 18 5 220 5 6 142 18 7 196 9 8 160 15 9 0 0 10 178 12 1 2 
+01:07.811	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;4;.756, Success => 1
+01:07.813	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:07.821	ID:7	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .724, And MyLink Strength With Him --> .162
+01:07.835	ID:1	strength_vector: 2 1-.725,2-.000,3-.400,4-.475,5-.150,6-.475,7-.250,8-.400,9-.000,10-.325,
+01:08.071	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.071	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.072	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.072	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.073	ID:9	advertisement history matched
+01:08.076	ID:8	advertisement resend node_id=8 counter=10
+01:08.079	ID:8	master advertisement --> modifying mrp structure
+01:08.087	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;4;.725, Success => 1
+01:08.098	ID:8	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .756, And MyLink Strength With Him --> .275
+01:08.346	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:08.346	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:08.346	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:08.347	ID:3	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:08.347	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;4;.725
+01:08.348	ID:2	advertisement history matched
+01:08.349	ID:7	advertisement resend node_id=7 counter=10
+01:08.350	ID:3	advertisement resend node_id=3 counter=8
+01:08.353	ID:7	master advertisement --> modifying mrp structure
+01:08.353	ID:3	master advertisement --> modifying mrp structure
+01:08.361	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;4;.756, Success => 1
+01:08.362	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;4;.724, Success => 1
+01:08.371	ID:7	advertisement Seq: 4, Selected BestNode = 6, Because: His Strength: .725, And MyLink Strength With Him --> .567
+01:08.372	ID:3	advertisement Seq: 4, Selected BestNode = 2, Because: His Strength: .725, And MyLink Strength With Him --> .200
+01:08.621	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:08.621	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:08.621	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.621	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:08.622	ID:4	[INFO: MASTER-R  ] Received advertisement 2;3;4;.724
+01:08.622	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.622	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;4;.756
+01:08.623	ID:10	advertisement history matched
+01:08.623	ID:9	advertisement history matched
+01:08.623	ID:5	advertisement history matched
+01:08.624	ID:4	advertisement history matched
+01:08.624	ID:8	advertisement history matched
+01:09.227	ID:3	(N,S) = (1,6250)     (N,S) = (2,6500)     (N,S) = (3,0)     (N,S) = (4,3500)     (N,S) = (5,5000)     (N,S) = (6,1000)     (N,S) = (7,3000)     (N,S) = (8,2000)     (N,S) = (9,250)     (N,S) = (10,5000)     
+01:09.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:09.446	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+01:09.449	ID:2	Received actual data from node: 3
+01:09.463	ID:2	modified actual data: 10 1 106 24 2 100 25 3 0 0 4 172 13 5 136 19 6 232 3 7 184 11 8 208 7 9 250 0 10 136 19 2 3 2 
+01:09.467	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:09.674	ID:4	(N,S) = (1,2820)     (N,S) = (2,8205)     (N,S) = (3,2051)     (N,S) = (4,0)     (N,S) = (5,4102)     (N,S) = (6,0)     (N,S) = (7,0)     (N,S) = (8,512)     (N,S) = (9,0)     (N,S) = (10,3333)     
+01:09.677	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:11.042	ID:5	(N,S) = (1,1578)     (N,S) = (2,3684)     (N,S) = (3,6315)     (N,S) = (4,3684)     (N,S) = (5,0)     (N,S) = (6,263)     (N,S) = (7,526)     (N,S) = (8,263)     (N,S) = (9,0)     (N,S) = (10,4736)     
+01:11.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:11.097	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+01:11.099	ID:3	Received actual data from node: 5
+01:11.112	ID:3	modified actual data: 10 1 42 6 2 100 14 3 171 24 4 100 14 5 0 0 6 7 1 7 14 2 8 7 1 9 0 0 10 128 18 2 5 3 
+01:11.116	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+01:11.370	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;5;34
+01:11.373	ID:2	Received actual data from node: 5
+01:11.386	ID:2	modified actual data: 10 1 42 6 2 100 14 3 171 24 4 100 14 5 0 0 6 7 1 7 14 2 8 7 1 9 0 0 10 128 18 3 5 3 2 
+01:11.390	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:11.577	ID:6	(N,S) = (1,8292)     (N,S) = (2,4878)     (N,S) = (3,243)     (N,S) = (4,487)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3658)     (N,S) = (8,6097)     (N,S) = (9,1463)     (N,S) = (10,731)     
+01:11.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:11.645	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+01:11.659	ID:1	on received actual data: 10 1 100 32 2 14 19 3 243 0 4 231 1 5 0 0 6 0 0 7 74 14 8 209 23 9 183 5 10 219 2 1 6 
+01:11.662	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+01:11.684	ID:1	strength_vector: 6 1-.829,2-.487,3-.024,4-.048,5-.000,6-.000,7-.365,8-.609,9-.146,10-.073,
+01:12.734	ID:7	(N,S) = (1,6585)     (N,S) = (2,4146)     (N,S) = (3,1707)     (N,S) = (4,243)     (N,S) = (5,0)     (N,S) = (6,7317)     (N,S) = (7,0)     (N,S) = (8,5121)     (N,S) = (9,2926)     (N,S) = (10,243)     
+01:12.738	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:13.021	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+01:13.024	ID:6	Received actual data from node: 7
+01:13.037	ID:6	modified actual data: 10 1 185 25 2 50 16 3 171 6 4 243 0 5 0 0 6 149 28 7 0 0 8 1 20 9 110 11 10 243 0 2 7 6 
+01:13.041	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:13.400	ID:8	(N,S) = (1,6500)     (N,S) = (2,4250)     (N,S) = (3,500)     (N,S) = (4,500)     (N,S) = (5,250)     (N,S) = (6,7750)     (N,S) = (7,3000)     (N,S) = (8,0)     (N,S) = (9,2000)     (N,S) = (10,500)     
+01:13.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:13.571	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+01:13.574	ID:6	Received actual data from node: 8
+01:13.588	ID:6	modified actual data: 10 1 100 25 2 154 16 3 244 1 4 244 1 5 250 0 6 70 30 7 184 11 8 0 0 9 208 7 10 244 1 2 8 6 
+01:13.592	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:13.845	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+01:13.859	ID:1	on received actual data: 10 1 100 25 2 154 16 3 244 1 4 244 1 5 250 0 6 70 30 7 184 11 8 0 0 9 208 7 10 244 1 2 8 6 
+01:13.863	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+01:13.885	ID:1	strength_vector: 8 1-.650,2-.425,3-.050,4-.050,5-.025,6-.775,7-.300,8-.000,9-.200,10-.050,
+01:15.034	ID:9	(N,S) = (1,1951)     (N,S) = (2,243)     (N,S) = (3,0)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4634)     (N,S) = (7,5609)     (N,S) = (8,975)     (N,S) = (9,0)     (N,S) = (10,243)     
+01:15.037	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:15.219	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+01:15.222	ID:7	Received actual data from node: 9
+01:15.235	ID:7	modified actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 26 18 7 233 21 8 207 3 9 0 0 10 243 0 2 9 7 
+01:15.239	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+01:15.496	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+01:15.498	ID:6	Received actual data from node: 9
+01:15.511	ID:6	modified actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 26 18 7 233 21 8 207 3 9 0 0 10 243 0 3 9 7 6 
+01:15.515	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:15.769	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;9;35
+01:15.783	ID:1	on received actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 26 18 7 233 21 8 207 3 9 0 0 10 243 0 3 9 7 6 
+01:15.787	ID:1	Got Actual Data --> Route (Size: 4): 9 --> 7 --> 6 --> 1
+01:15.807	ID:1	strength_vector: 9 1-.195,2-.024,3-.000,4-.000,5-.000,6-.463,7-.560,8-.097,9-.000,10-.024,
+01:15.883	ID:10	(N,S) = (1,3333)     (N,S) = (2,6666)     (N,S) = (3,5476)     (N,S) = (4,6428)     (N,S) = (5,5476)     (N,S) = (6,714)     (N,S) = (7,714)     (N,S) = (8,714)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:15.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:17.563	ID:2	(N,S) = (1,7209)     (N,S) = (2,0)     (N,S) = (3,4186)     (N,S) = (4,5116)     (N,S) = (5,1395)     (N,S) = (6,4651)     (N,S) = (7,2325)     (N,S) = (8,3720)     (N,S) = (9,0)     (N,S) = (10,3255)     
+01:17.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:17.694	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+01:17.711	ID:1	on received actual data: 10 1 41 28 2 0 0 3 90 16 4 252 19 5 115 5 6 43 18 7 21 9 8 136 14 9 0 0 10 183 12 1 2 
+01:17.714	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:17.736	ID:1	strength_vector: 2 1-.720,2-.000,3-.418,4-.511,5-.139,6-.465,7-.232,8-.372,9-.000,10-.325,
+01:19.227	ID:3	(N,S) = (1,6511)     (N,S) = (2,6279)     (N,S) = (3,0)     (N,S) = (4,3255)     (N,S) = (5,5116)     (N,S) = (6,1162)     (N,S) = (7,3023)     (N,S) = (8,1860)     (N,S) = (9,232)     (N,S) = (10,4651)     
+01:19.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:19.674	ID:4	(N,S) = (1,2857)     (N,S) = (2,8333)     (N,S) = (3,1904)     (N,S) = (4,0)     (N,S) = (5,3809)     (N,S) = (6,238)     (N,S) = (7,0)     (N,S) = (8,476)     (N,S) = (9,0)     (N,S) = (10,3571)     
+01:19.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:20.690	ID:1	master advertisement --> modifying mrp structure
+01:20.698	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;5;100.000, Success => 1
+01:20.718	ID:9	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+01:20.718	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+01:20.718	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+01:20.719	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+01:20.719	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;5;100.000
+01:20.721	ID:9	advertisement resend node_id=9 counter=7
+01:20.721	ID:2	advertisement resend node_id=2 counter=10
+01:20.721	ID:7	advertisement resend node_id=7 counter=11
+01:20.723	ID:3	advertisement resend node_id=3 counter=9
+01:20.723	ID:6	advertisement resend node_id=6 counter=9
+01:20.725	ID:9	master advertisement --> modifying mrp structure
+01:20.725	ID:7	master advertisement --> modifying mrp structure
+01:20.725	ID:2	master advertisement --> modifying mrp structure
+01:20.726	ID:6	master advertisement --> modifying mrp structure
+01:20.728	ID:3	master advertisement --> modifying mrp structure
+01:20.733	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;5;.600, Success => 1
+01:20.733	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;5;.756, Success => 1
+01:20.734	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;5;.813, Success => 1
+01:20.736	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;5;.724, Success => 1
+01:20.737	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;5;.720, Success => 1
+01:20.743	ID:9	advertisement Seq: 5, Selected BestNode = 7, Because: His Strength: 100.000, And MyLink Strength With Him --> .195
+01:20.743	ID:7	advertisement Seq: 5, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .651
+01:20.744	ID:6	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .813
+01:20.747	ID:3	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .651
+01:20.747	ID:2	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .720
+01:20.993	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;5;.724
+01:20.993	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;5;.720
+01:20.994	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;5;.813
+01:20.994	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;5;.720
+01:20.995	ID:10	Now Changing best schedule Link
+01:20.996	ID:5	advertisement resend node_id=5 counter=6
+01:20.997	ID:4	advertisement resend node_id=4 counter=7
+01:20.997	ID:8	advertisement resend node_id=8 counter=11
+01:20.999	ID:10	advertisement resend node_id=10 counter=9
+01:20.999	ID:5	master advertisement --> modifying mrp structure
+01:21.001	ID:4	master advertisement --> modifying mrp structure
+01:21.001	ID:8	master advertisement --> modifying mrp structure
+01:21.002	ID:10	master advertisement --> modifying mrp structure
+01:21.008	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;5;.650, Success => 1
+01:21.009	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;5;.720, Success => 1
+01:21.009	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;5;.780, Success => 1
+01:21.011	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;5;.674, Success => 1
+01:21.018	ID:5	advertisement Seq: 5, Selected BestNode = 3, Because: His Strength: .724, And MyLink Strength With Him --> .650
+01:21.019	ID:4	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .720, And MyLink Strength With Him --> .833
+01:21.019	ID:8	advertisement Seq: 5, Selected BestNode = 6, Because: His Strength: .813, And MyLink Strength With Him --> .780
+01:21.021	ID:10	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .720, And MyLink Strength With Him --> .674
+01:21.042	ID:5	(N,S) = (1,1500)     (N,S) = (2,3750)     (N,S) = (3,6500)     (N,S) = (4,4000)     (N,S) = (5,0)     (N,S) = (6,250)     (N,S) = (7,500)     (N,S) = (8,250)     (N,S) = (9,0)     (N,S) = (10,4750)     
+01:21.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:21.268	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;5;.780
+01:21.268	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;5;.780
+01:21.268	ID:2	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:21.269	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;5;.780
+01:21.269	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:21.271	ID:7	advertisement resend node_id=7 counter=12
+01:21.272	ID:3	advertisement resend node_id=3 counter=10
+01:21.274	ID:7	master advertisement --> modifying mrp structure
+01:21.276	ID:3	master advertisement --> modifying mrp structure
+01:21.283	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;5;.756, Success => 1
+01:21.284	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;5;.724, Success => 1
+01:21.293	ID:7	advertisement Seq: 5, Selected BestNode = 6, Because: His Strength: .780, And MyLink Strength With Him --> .488
+01:21.294	ID:3	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .674, And MyLink Strength With Him --> .488
+01:21.543	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:21.543	ID:2	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:21.543	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;5;.724
+01:21.543	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:21.544	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:21.544	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:21.546	ID:9	advertisement resend node_id=9 counter=8
+01:21.546	ID:2	advertisement resend node_id=2 counter=11
+01:21.546	ID:10	advertisement resend node_id=10 counter=10
+01:21.547	ID:8	advertisement resend node_id=8 counter=12
+01:21.549	ID:9	master advertisement --> modifying mrp structure
+01:21.549	ID:2	master advertisement --> modifying mrp structure
+01:21.549	ID:10	master advertisement --> modifying mrp structure
+01:21.551	ID:8	master advertisement --> modifying mrp structure
+01:21.558	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;5;.609, Success => 1
+01:21.558	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;5;.720, Success => 1
+01:21.558	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;5;.674, Success => 1
+01:21.559	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;5;.780, Success => 1
+01:21.568	ID:9	advertisement Seq: 5, Selected BestNode = 7, Because: His Strength: .756, And MyLink Strength With Him --> .609
+01:21.568	ID:2	advertisement Seq: 5, Selected BestNode = 1, Because: His Strength: .756, And MyLink Strength With Him --> .232
+01:21.568	ID:10	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .724, And MyLink Strength With Him --> .534
+01:21.569	ID:8	advertisement Seq: 5, Selected BestNode = 6, Because: His Strength: .756, And MyLink Strength With Him --> .317
+01:21.577	ID:6	(N,S) = (1,8139)     (N,S) = (2,5116)     (N,S) = (3,465)     (N,S) = (4,465)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3953)     (N,S) = (8,5813)     (N,S) = (9,1860)     (N,S) = (10,697)     
+01:21.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:21.818	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;5;.780
+01:21.818	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:21.819	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:21.819	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;5;.720
+01:21.821	ID:5	advertisement resend node_id=5 counter=7
+01:21.821	ID:3	advertisement history matched
+01:21.821	ID:4	advertisement history matched
+01:21.824	ID:5	master advertisement --> modifying mrp structure
+01:21.832	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;5;.650, Success => 1
+01:21.843	ID:5	advertisement Seq: 5, Selected BestNode = 3, Because: His Strength: .674, And MyLink Strength With Him --> .475
+01:22.093	ID:10	[INFO: MASTER-R  ] Received advertisement 2;5;5;.650
+01:22.094	ID:4	[INFO: MASTER-R  ] Received advertisement 2;5;5;.650
+01:22.094	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;5;.650
+01:22.096	ID:10	advertisement resend node_id=10 counter=11
+01:22.097	ID:4	advertisement resend node_id=4 counter=8
+01:22.099	ID:10	master advertisement --> modifying mrp structure
+01:22.100	ID:4	master advertisement --> modifying mrp structure
+01:22.108	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;5;.674, Success => 1
+01:22.108	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;5;.720, Success => 1
+01:22.118	ID:10	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .650, And MyLink Strength With Him --> .534
+01:22.119	ID:4	advertisement Seq: 5, Selected BestNode = 2, Because: His Strength: .650, And MyLink Strength With Him --> .380
+01:22.368	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:22.368	ID:2	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:22.368	ID:7	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:22.369	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;5;.674
+01:22.370	ID:5	advertisement history matched
+01:22.371	ID:7	advertisement resend node_id=7 counter=13
+01:22.371	ID:3	advertisement history matched
+01:22.374	ID:7	master advertisement --> modifying mrp structure
+01:22.382	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;5;.756, Success => 1
+01:22.393	ID:7	advertisement Seq: 5, Selected BestNode = 6, Because: His Strength: .674, And MyLink Strength With Him --> .046
+01:22.642	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:22.644	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:22.644	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;5;.756
+01:22.646	ID:8	advertisement history matched
+01:22.729	ID:7	(N,S) = (1,6511)     (N,S) = (2,3953)     (N,S) = (3,1627)     (N,S) = (4,232)     (N,S) = (5,0)     (N,S) = (6,7209)     (N,S) = (7,0)     (N,S) = (8,4883)     (N,S) = (9,3488)     (N,S) = (10,465)     
+01:22.732	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:23.400	ID:8	(N,S) = (1,6341)     (N,S) = (2,4390)     (N,S) = (3,487)     (N,S) = (4,487)     (N,S) = (5,243)     (N,S) = (6,8048)     (N,S) = (7,3170)     (N,S) = (8,0)     (N,S) = (9,1951)     (N,S) = (10,487)     
+01:23.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:23.469	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+01:23.471	ID:6	Received actual data from node: 8
+01:23.485	ID:6	modified actual data: 10 1 197 24 2 38 17 3 231 1 4 231 1 5 243 0 6 112 31 7 98 12 8 0 0 9 159 7 10 231 1 2 8 6 
+01:23.489	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:23.742	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+01:23.756	ID:1	on received actual data: 10 1 197 24 2 38 17 3 231 1 4 231 1 5 243 0 6 112 31 7 98 12 8 0 0 9 159 7 10 231 1 2 8 6 
+01:23.760	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+01:23.783	ID:1	strength_vector: 8 1-.634,2-.439,3-.048,4-.048,5-.024,6-.804,7-.317,8-.000,9-.195,10-.048,
+01:25.034	ID:9	(N,S) = (1,1951)     (N,S) = (2,243)     (N,S) = (3,0)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4878)     (N,S) = (7,6341)     (N,S) = (8,975)     (N,S) = (9,0)     (N,S) = (10,243)     
+01:25.037	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:25.117	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+01:25.120	ID:7	Received actual data from node: 9
+01:25.132	ID:7	modified actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 14 19 7 197 24 8 207 3 9 0 0 10 243 0 2 9 7 
+01:25.136	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+01:25.393	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+01:25.396	ID:6	Received actual data from node: 9
+01:25.409	ID:6	modified actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 14 19 7 197 24 8 207 3 9 0 0 10 243 0 3 9 7 6 
+01:25.413	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:25.667	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;9;35
+01:25.680	ID:1	on received actual data: 10 1 159 7 2 243 0 3 0 0 4 0 0 5 0 0 6 14 19 7 197 24 8 207 3 9 0 0 10 243 0 3 9 7 6 
+01:25.685	ID:1	Got Actual Data --> Route (Size: 4): 9 --> 7 --> 6 --> 1
+01:25.708	ID:1	strength_vector: 9 1-.195,2-.024,3-.000,4-.000,5-.000,6-.487,7-.634,8-.097,9-.000,10-.024,
+01:25.883	ID:10	(N,S) = (1,3555)     (N,S) = (2,6666)     (N,S) = (3,5333)     (N,S) = (4,6666)     (N,S) = (5,5555)     (N,S) = (6,888)     (N,S) = (7,666)     (N,S) = (8,666)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:25.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:25.942	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+01:25.945	ID:2	Received actual data from node: 10
+01:25.958	ID:2	modified actual data: 10 1 227 13 2 10 26 3 213 20 4 10 26 5 179 21 6 120 3 7 154 2 8 154 2 9 0 0 10 0 0 2 10 2 
+01:25.962	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:26.217	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+01:26.231	ID:1	on received actual data: 10 1 227 13 2 10 26 3 213 20 4 10 26 5 179 21 6 120 3 7 154 2 8 154 2 9 0 0 10 0 0 2 10 2 
+01:26.235	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+01:26.257	ID:1	strength_vector: 10 1-.355,2-.666,3-.533,4-.666,5-.555,6-.088,7-.066,8-.066,9-.000,10-.000,
+01:27.563	ID:2	(N,S) = (1,7111)     (N,S) = (2,0)     (N,S) = (3,4222)     (N,S) = (4,5111)     (N,S) = (5,1333)     (N,S) = (6,4666)     (N,S) = (7,2222)     (N,S) = (8,3777)     (N,S) = (9,0)     (N,S) = (10,3777)     
+01:27.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:27.591	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+01:27.605	ID:1	on received actual data: 10 1 199 27 2 0 0 3 126 16 4 247 19 5 53 5 6 58 18 7 174 8 8 193 14 9 0 0 10 193 14 1 2 
+01:27.609	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:27.630	ID:1	strength_vector: 2 1-.711,2-.000,3-.422,4-.511,5-.133,6-.466,7-.222,8-.377,9-.000,10-.377,
+01:29.233	ID:3	(N,S) = (1,6444)     (N,S) = (2,6222)     (N,S) = (3,0)     (N,S) = (4,3111)     (N,S) = (5,5333)     (N,S) = (6,1111)     (N,S) = (7,3111)     (N,S) = (8,2000)     (N,S) = (9,222)     (N,S) = (10,5111)     
+01:29.237	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:29.516	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+01:29.519	ID:2	Received actual data from node: 3
+01:29.532	ID:2	modified actual data: 10 1 44 25 2 78 24 3 0 0 4 39 12 5 213 20 6 87 4 7 39 12 8 208 7 9 222 0 10 247 19 2 3 2 
+01:29.536	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:29.674	ID:4	(N,S) = (1,2888)     (N,S) = (2,8222)     (N,S) = (3,2222)     (N,S) = (4,0)     (N,S) = (5,3777)     (N,S) = (6,222)     (N,S) = (7,0)     (N,S) = (8,444)     (N,S) = (9,0)     (N,S) = (10,3555)     
+01:29.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:31.042	ID:5	(N,S) = (1,1428)     (N,S) = (2,3809)     (N,S) = (3,6904)     (N,S) = (4,3809)     (N,S) = (5,0)     (N,S) = (6,238)     (N,S) = (7,476)     (N,S) = (8,238)     (N,S) = (9,0)     (N,S) = (10,5238)     
+01:31.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:31.167	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+01:31.169	ID:3	Received actual data from node: 5
+01:31.183	ID:3	modified actual data: 10 1 148 5 2 225 14 3 248 26 4 225 14 5 0 0 6 238 0 7 220 1 8 238 0 9 0 0 10 118 20 2 5 3 
+01:31.187	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+01:31.577	ID:6	(N,S) = (1,8085)     (N,S) = (2,4893)     (N,S) = (3,638)     (N,S) = (4,425)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,3829)     (N,S) = (8,5744)     (N,S) = (9,1914)     (N,S) = (10,638)     
+01:31.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:31.715	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+01:31.729	ID:1	on received actual data: 10 1 149 31 2 29 19 3 126 2 4 169 1 5 0 0 6 0 0 7 245 14 8 112 22 9 122 7 10 126 2 1 6 
+01:31.732	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+01:31.754	ID:1	strength_vector: 6 1-.808,2-.489,3-.063,4-.042,5-.000,6-.000,7-.382,8-.574,9-.191,10-.063,
+01:32.729	ID:7	(N,S) = (1,6595)     (N,S) = (2,3829)     (N,S) = (3,1702)     (N,S) = (4,212)     (N,S) = (5,0)     (N,S) = (6,7021)     (N,S) = (7,0)     (N,S) = (8,4468)     (N,S) = (9,3829)     (N,S) = (10,425)     
+01:32.732	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:32.816	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+01:32.819	ID:6	Received actual data from node: 7
+01:32.838	ID:6	modified actual data: 10 1 195 25 2 245 14 3 166 6 4 212 0 5 0 0 6 109 27 7 0 0 8 116 17 9 245 14 10 169 1 2 7 6 
+01:32.842	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:33.090	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;34
+01:33.104	ID:1	on received actual data: 10 1 195 25 2 245 14 3 166 6 4 212 0 5 0 0 6 109 27 7 0 0 8 116 17 9 245 14 10 169 1 2 7 6 
+01:33.108	ID:1	Got Actual Data --> Route (Size: 3): 7 --> 6 --> 1
+01:33.130	ID:1	strength_vector: 7 1-.659,2-.382,3-.170,4-.021,5-.000,6-.702,7-.000,8-.446,9-.382,10-.042,
+01:33.400	ID:8	(N,S) = (1,6170)     (N,S) = (2,4042)     (N,S) = (3,638)     (N,S) = (4,425)     (N,S) = (5,212)     (N,S) = (6,7446)     (N,S) = (7,2765)     (N,S) = (8,0)     (N,S) = (9,1702)     (N,S) = (10,425)     
+01:33.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:35.034	ID:9	(N,S) = (1,2291)     (N,S) = (2,208)     (N,S) = (3,208)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4791)     (N,S) = (7,6041)     (N,S) = (8,1041)     (N,S) = (9,0)     (N,S) = (10,208)     
+01:35.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:35.289	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+01:35.292	ID:7	Received actual data from node: 9
+01:35.305	ID:7	modified actual data: 10 1 243 8 2 208 0 3 208 0 4 0 0 5 0 0 6 183 18 7 153 23 8 17 4 9 0 0 10 208 0 2 9 7 
+01:35.309	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+01:35.566	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+01:35.568	ID:6	Received actual data from node: 9
+01:35.582	ID:6	modified actual data: 10 1 243 8 2 208 0 3 208 0 4 0 0 5 0 0 6 183 18 7 153 23 8 17 4 9 0 0 10 208 0 3 9 7 6 
+01:35.586	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:35.690	ID:1	master advertisement --> modifying mrp structure
+01:35.702	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;6;100.000, Success => 1
+01:35.839	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;6;100.000
+01:35.839	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;6;100.000
+01:35.843	ID:2	advertisement resend node_id=2 counter=12
+01:35.843	ID:7	advertisement resend node_id=7 counter=14
+01:35.846	ID:2	master advertisement --> modifying mrp structure
+01:35.847	ID:7	master advertisement --> modifying mrp structure
+01:35.854	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;6;.729, Success => 1
+01:35.858	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;6;.756, Success => 1
+01:35.865	ID:2	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .729
+01:35.868	ID:7	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .666
+01:35.883	ID:10	(N,S) = (1,3750)     (N,S) = (2,6458)     (N,S) = (3,5416)     (N,S) = (4,6458)     (N,S) = (5,5833)     (N,S) = (6,1041)     (N,S) = (7,625)     (N,S) = (8,625)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:35.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:36.114	ID:1	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.115	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;6;.729
+01:36.115	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.115	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.118	ID:4	advertisement resend node_id=4 counter=9
+01:36.119	ID:8	advertisement resend node_id=8 counter=13
+01:36.122	ID:4	master advertisement --> modifying mrp structure
+01:36.122	ID:8	master advertisement --> modifying mrp structure
+01:36.130	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;6;.729, Success => 1
+01:36.130	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;6;.780, Success => 1
+01:36.140	ID:4	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .791
+01:36.140	ID:8	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: .756, And MyLink Strength With Him --> .291
+01:36.389	ID:7	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:36.389	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;6;.780
+01:36.389	ID:10	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:36.389	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;6;.780
+01:36.390	ID:3	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:36.390	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;6;.780
+01:36.392	ID:7	advertisement resend node_id=7 counter=15
+01:36.392	ID:2	advertisement resend node_id=2 counter=13
+01:36.393	ID:10	advertisement resend node_id=10 counter=12
+01:36.394	ID:3	advertisement resend node_id=3 counter=11
+01:36.396	ID:7	master advertisement --> modifying mrp structure
+01:36.396	ID:2	master advertisement --> modifying mrp structure
+01:36.396	ID:10	master advertisement --> modifying mrp structure
+01:36.397	ID:3	master advertisement --> modifying mrp structure
+01:36.404	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;6;.756, Success => 1
+01:36.404	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;6;.729, Success => 1
+01:36.404	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;6;.674, Success => 1
+01:36.405	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;6;.724, Success => 1
+01:36.414	ID:7	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: .729, And MyLink Strength With Him --> .020
+01:36.414	ID:2	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: .780, And MyLink Strength With Him --> .375
+01:36.414	ID:10	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .645
+01:36.415	ID:3	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .312
+01:36.664	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;6;.724
+01:36.664	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;6;.729
+01:36.664	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.665	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;6;.729
+01:36.665	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.665	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:36.667	ID:9	advertisement resend node_id=9 counter=9
+01:36.667	ID:5	advertisement resend node_id=5 counter=8
+01:36.667	ID:4	advertisement history matched
+01:36.668	ID:8	advertisement history matched
+01:36.671	ID:9	master advertisement --> modifying mrp structure
+01:36.671	ID:5	master advertisement --> modifying mrp structure
+01:36.679	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;6;.714, Success => 1
+01:36.679	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;6;.604, Success => 1
+01:36.689	ID:5	advertisement Seq: 6, Selected BestNode = 3, Because: His Strength: .724, And MyLink Strength With Him --> .714
+01:36.689	ID:9	advertisement Seq: 6, Selected BestNode = 7, Because: His Strength: .756, And MyLink Strength With Him --> .604
+01:36.939	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;6;.604
+01:36.940	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;6;.714
+01:36.940	ID:6	[INFO: MASTER-R  ] Received advertisement 2;9;6;.604
+01:36.944	ID:6	advertisement resend node_id=6 counter=10
+01:36.947	ID:6	master advertisement --> modifying mrp structure
+01:36.955	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;6;.813, Success => 1
+01:36.966	ID:6	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: .604, And MyLink Strength With Him --> .208
+01:37.214	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;6;.813
+01:37.214	ID:2	[INFO: MASTER-R  ] Received advertisement 2;6;6;.813
+01:37.214	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;6;.813
+01:37.214	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;6;.813
+01:37.215	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;6;.813
+01:37.217	ID:2	advertisement resend node_id=2 counter=14
+01:37.217	ID:9	advertisement resend node_id=9 counter=10
+01:37.217	ID:7	advertisement resend node_id=7 counter=16
+01:37.218	ID:8	advertisement resend node_id=8 counter=14
+01:37.220	ID:2	master advertisement --> modifying mrp structure
+01:37.221	ID:9	master advertisement --> modifying mrp structure
+01:37.221	ID:7	master advertisement --> modifying mrp structure
+01:37.222	ID:8	master advertisement --> modifying mrp structure
+01:37.229	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;6;.729, Success => 1
+01:37.229	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;6;.604, Success => 1
+01:37.229	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;6;.756, Success => 1
+01:37.230	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;6;.780, Success => 1
+01:37.239	ID:2	advertisement Seq: 6, Selected BestNode = 1, Because: His Strength: .813, And MyLink Strength With Him --> .437
+01:37.239	ID:9	advertisement Seq: 6, Selected BestNode = 7, Because: His Strength: .813, And MyLink Strength With Him --> .479
+01:37.239	ID:7	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: .813, And MyLink Strength With Him --> .708
+01:37.240	ID:8	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: .813, And MyLink Strength With Him --> .729
+01:37.489	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;6;.729
+01:37.490	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;6;.729
+01:37.492	ID:4	advertisement history matched
+01:37.492	ID:10	advertisement resend node_id=10 counter=13
+01:37.496	ID:10	master advertisement --> modifying mrp structure
+01:37.503	ID:1	strength_vector: 1 1-.000,2-.711,3-.377,4-.133,5-.111,6-.777,7-.444,8-.533,9-.044,10-.200,
+01:37.504	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;6;.674, Success => 1
+01:37.514	ID:10	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .645
+01:37.563	ID:2	(N,S) = (1,7291)     (N,S) = (2,0)     (N,S) = (3,4166)     (N,S) = (4,4791)     (N,S) = (5,1458)     (N,S) = (6,4375)     (N,S) = (7,2083)     (N,S) = (8,3750)     (N,S) = (9,0)     (N,S) = (10,3750)     
+01:37.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:37.764	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:37.764	ID:7	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:37.764	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+01:37.765	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:37.767	ID:5	advertisement resend node_id=5 counter=9
+01:37.767	ID:7	advertisement resend node_id=7 counter=17
+01:37.768	ID:3	advertisement resend node_id=3 counter=12
+01:37.770	ID:5	master advertisement --> modifying mrp structure
+01:37.770	ID:7	master advertisement --> modifying mrp structure
+01:37.772	ID:3	master advertisement --> modifying mrp structure
+01:37.778	ID:1	on received actual data: 10 1 123 28 2 0 0 3 70 16 4 183 18 5 178 5 6 23 17 7 35 8 8 166 14 9 0 0 10 166 14 1 2 
+01:37.779	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;6;.714, Success => 1
+01:37.779	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;6;.756, Success => 1
+01:37.780	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;6;.724, Success => 1
+01:37.781	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:37.789	ID:7	advertisement Seq: 6, Selected BestNode = 6, Because: His Strength: .674, And MyLink Strength With Him --> .041
+01:37.789	ID:5	advertisement Seq: 6, Selected BestNode = 3, Because: His Strength: .674, And MyLink Strength With Him --> .523
+01:37.790	ID:3	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .674, And MyLink Strength With Him --> .500
+01:37.803	ID:1	strength_vector: 2 1-.729,2-.000,3-.416,4-.479,5-.145,6-.437,7-.208,8-.375,9-.000,10-.375,
+01:38.039	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;6;.756
+01:38.039	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;6;.724
+01:38.041	ID:9	advertisement history matched
+01:38.042	ID:10	advertisement resend node_id=10 counter=14
+01:38.046	ID:10	master advertisement --> modifying mrp structure
+01:38.054	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;6;.674, Success => 1
+01:38.064	ID:10	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .724, And MyLink Strength With Him --> .562
+01:38.314	ID:1	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:38.314	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:38.314	ID:2	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:38.315	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:38.315	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;6;.674
+01:38.316	ID:5	advertisement history matched
+01:38.317	ID:3	advertisement history matched
+01:38.318	ID:4	advertisement resend node_id=4 counter=10
+01:38.321	ID:4	master advertisement --> modifying mrp structure
+01:38.330	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;6;.729, Success => 1
+01:38.340	ID:4	advertisement Seq: 6, Selected BestNode = 2, Because: His Strength: .674, And MyLink Strength With Him --> .354
+01:38.589	ID:2	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:38.589	ID:10	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:38.590	ID:3	[INFO: MASTER-R  ] Received advertisement 2;4;6;.729
+01:38.591	ID:10	advertisement history matched
+01:38.592	ID:3	advertisement history matched
+01:39.227	ID:3	(N,S) = (1,6250)     (N,S) = (2,5833)     (N,S) = (3,0)     (N,S) = (4,3125)     (N,S) = (5,5416)     (N,S) = (6,1250)     (N,S) = (7,3125)     (N,S) = (8,1875)     (N,S) = (9,208)     (N,S) = (10,5000)     
+01:39.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:39.414	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+01:39.416	ID:2	Received actual data from node: 3
+01:39.430	ID:2	modified actual data: 10 1 106 24 2 201 22 3 0 0 4 53 12 5 40 21 6 226 4 7 53 12 8 83 7 9 208 0 10 136 19 2 3 2 
+01:39.434	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:39.683	ID:4	(N,S) = (1,2916)     (N,S) = (2,7916)     (N,S) = (3,2500)     (N,S) = (4,0)     (N,S) = (5,3750)     (N,S) = (6,208)     (N,S) = (7,0)     (N,S) = (8,416)     (N,S) = (9,0)     (N,S) = (10,3541)     
+01:39.687	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:39.688	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+01:39.706	ID:1	on received actual data: 10 1 106 24 2 201 22 3 0 0 4 53 12 5 40 21 6 226 4 7 53 12 8 83 7 9 208 0 10 136 19 2 3 2 
+01:39.710	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+01:39.732	ID:1	strength_vector: 3 1-.625,2-.583,3-.000,4-.312,5-.541,6-.125,7-.312,8-.187,9-.020,10-.500,
+01:41.042	ID:5	(N,S) = (1,1304)     (N,S) = (2,3695)     (N,S) = (3,6956)     (N,S) = (4,3695)     (N,S) = (5,0)     (N,S) = (6,217)     (N,S) = (7,434)     (N,S) = (8,217)     (N,S) = (9,0)     (N,S) = (10,5000)     
+01:41.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:41.339	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+01:41.342	ID:3	Received actual data from node: 5
+01:41.355	ID:3	modified actual data: 10 1 24 5 2 111 14 3 44 27 4 111 14 5 0 0 6 217 0 7 178 1 8 217 0 9 0 0 10 136 19 2 5 3 
+01:41.359	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+01:41.577	ID:6	(N,S) = (1,8163)     (N,S) = (2,4897)     (N,S) = (3,612)     (N,S) = (4,408)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4081)     (N,S) = (8,5918)     (N,S) = (9,2244)     (N,S) = (10,612)     
+01:41.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:42.729	ID:7	(N,S) = (1,6666)     (N,S) = (2,3958)     (N,S) = (3,1875)     (N,S) = (4,208)     (N,S) = (5,208)     (N,S) = (6,7291)     (N,S) = (7,0)     (N,S) = (8,4791)     (N,S) = (9,3958)     (N,S) = (10,416)     
+01:42.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:42.989	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+01:42.992	ID:6	Received actual data from node: 7
+01:43.005	ID:6	modified actual data: 10 1 10 26 2 118 15 3 83 7 4 208 0 5 208 0 6 123 28 7 0 0 8 183 18 9 118 15 10 160 1 2 7 6 
+01:43.009	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:43.262	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;34
+01:43.277	ID:1	on received actual data: 10 1 10 26 2 118 15 3 83 7 4 208 0 5 208 0 6 123 28 7 0 0 8 183 18 9 118 15 10 160 1 2 7 6 
+01:43.281	ID:1	Got Actual Data --> Route (Size: 3): 7 --> 6 --> 1
+01:43.303	ID:1	strength_vector: 7 1-.666,2-.395,3-.187,4-.020,5-.020,6-.729,7-.000,8-.479,9-.395,10-.041,
+01:43.400	ID:8	(N,S) = (1,6250)     (N,S) = (2,4375)     (N,S) = (3,625)     (N,S) = (4,416)     (N,S) = (5,208)     (N,S) = (6,7500)     (N,S) = (7,3125)     (N,S) = (8,0)     (N,S) = (9,1666)     (N,S) = (10,416)     
+01:43.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:43.539	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+01:43.541	ID:6	Received actual data from node: 8
+01:43.555	ID:6	modified actual data: 10 1 106 24 2 23 17 3 113 2 4 160 1 5 208 0 6 76 29 7 53 12 8 0 0 9 130 6 10 160 1 2 8 6 
+01:43.559	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:43.812	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+01:43.826	ID:1	on received actual data: 10 1 106 24 2 23 17 3 113 2 4 160 1 5 208 0 6 76 29 7 53 12 8 0 0 9 130 6 10 160 1 2 8 6 
+01:43.830	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+01:43.852	ID:1	strength_vector: 8 1-.625,2-.437,3-.062,4-.041,5-.020,6-.750,7-.312,8-.000,9-.166,10-.041,
+01:45.034	ID:9	(N,S) = (1,2291)     (N,S) = (2,208)     (N,S) = (3,208)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,5208)     (N,S) = (7,6458)     (N,S) = (8,1041)     (N,S) = (9,0)     (N,S) = (10,208)     
+01:45.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:45.883	ID:10	(N,S) = (1,3750)     (N,S) = (2,6875)     (N,S) = (3,6041)     (N,S) = (4,6875)     (N,S) = (5,6041)     (N,S) = (6,1041)     (N,S) = (7,833)     (N,S) = (8,833)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:45.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:46.012	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+01:46.015	ID:2	Received actual data from node: 10
+01:46.028	ID:2	modified actual data: 10 1 166 14 2 219 26 3 153 23 4 219 26 5 153 23 6 17 4 7 65 3 8 65 3 9 0 0 10 0 0 2 10 2 
+01:46.032	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:46.287	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+01:46.301	ID:1	on received actual data: 10 1 166 14 2 219 26 3 153 23 4 219 26 5 153 23 6 17 4 7 65 3 8 65 3 9 0 0 10 0 0 2 10 2 
+01:46.305	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+01:46.326	ID:1	strength_vector: 10 1-.375,2-.687,3-.604,4-.687,5-.604,6-.104,7-.083,8-.083,9-.000,10-.000,
+01:47.563	ID:2	(N,S) = (1,7254)     (N,S) = (2,0)     (N,S) = (3,4509)     (N,S) = (4,4901)     (N,S) = (5,1764)     (N,S) = (6,4313)     (N,S) = (7,2156)     (N,S) = (8,3921)     (N,S) = (9,0)     (N,S) = (10,3921)     
+01:47.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:47.661	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+01:47.675	ID:1	on received actual data: 10 1 86 28 2 0 0 3 157 17 4 37 19 5 228 6 6 217 16 7 108 8 8 81 15 9 0 0 10 81 15 1 2 
+01:47.678	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+01:47.704	ID:1	strength_vector: 2 1-.725,2-.000,3-.450,4-.490,5-.176,6-.431,7-.215,8-.392,9-.000,10-.392,
+01:49.227	ID:3	(N,S) = (1,6153)     (N,S) = (2,5961)     (N,S) = (3,0)     (N,S) = (4,3269)     (N,S) = (5,5384)     (N,S) = (6,1346)     (N,S) = (7,3269)     (N,S) = (8,1730)     (N,S) = (9,192)     (N,S) = (10,5192)     
+01:49.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:49.311	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+01:49.314	ID:2	Received actual data from node: 3
+01:49.327	ID:2	modified actual data: 10 1 9 24 2 73 23 3 0 0 4 197 12 5 8 21 6 66 5 7 197 12 8 194 6 9 192 0 10 72 20 2 3 2 
+01:49.331	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:49.586	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+01:49.600	ID:1	on received actual data: 10 1 9 24 2 73 23 3 0 0 4 197 12 5 8 21 6 66 5 7 197 12 8 194 6 9 192 0 10 72 20 2 3 2 
+01:49.603	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+01:49.626	ID:1	strength_vector: 3 1-.615,2-.596,3-.000,4-.326,5-.538,6-.134,7-.326,8-.173,9-.019,10-.519,
+01:49.674	ID:4	(N,S) = (1,2916)     (N,S) = (2,8541)     (N,S) = (3,3125)     (N,S) = (4,0)     (N,S) = (5,4166)     (N,S) = (6,208)     (N,S) = (7,0)     (N,S) = (8,416)     (N,S) = (9,0)     (N,S) = (10,3958)     
+01:49.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:50.690	ID:1	master advertisement --> modifying mrp structure
+01:50.702	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;7;100.000, Success => 1
+01:50.961	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;7;100.000
+01:50.962	ID:8	[INFO: MASTER-R  ] Received advertisement 2;1;7;100.000
+01:50.962	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;7;100.000
+01:50.964	ID:7	advertisement resend node_id=7 counter=18
+01:50.965	ID:6	advertisement resend node_id=6 counter=11
+01:50.965	ID:8	advertisement resend node_id=8 counter=15
+01:50.967	ID:7	master advertisement --> modifying mrp structure
+01:50.969	ID:6	master advertisement --> modifying mrp structure
+01:50.969	ID:8	master advertisement --> modifying mrp structure
+01:50.976	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;7;.756, Success => 1
+01:50.977	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;7;.788, Success => 1
+01:50.977	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;7;.780, Success => 1
+01:50.986	ID:7	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .634
+01:50.987	ID:6	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .788
+01:50.987	ID:8	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .596
+01:51.042	ID:5	(N,S) = (1,1346)     (N,S) = (2,3269)     (N,S) = (3,6730)     (N,S) = (4,3461)     (N,S) = (5,0)     (N,S) = (6,384)     (N,S) = (7,384)     (N,S) = (8,192)     (N,S) = (9,0)     (N,S) = (10,5000)     
+01:51.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+01:51.235	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:51.239	ID:9	advertisement resend node_id=9 counter=11
+01:51.242	ID:9	master advertisement --> modifying mrp structure
+01:51.250	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;7;.604, Success => 1
+01:51.261	ID:9	advertisement Seq: 7, Selected BestNode = 7, Because: His Strength: .788, And MyLink Strength With Him --> .541
+01:51.510	ID:1	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:51.510	ID:2	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:51.510	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:51.512	ID:8	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:51.514	ID:2	advertisement resend node_id=2 counter=15
+01:51.515	ID:8	advertisement resend node_id=8 counter=16
+01:51.517	ID:2	master advertisement --> modifying mrp structure
+01:51.518	ID:8	master advertisement --> modifying mrp structure
+01:51.525	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;7;.729, Success => 1
+01:51.527	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;7;.780, Success => 1
+01:51.535	ID:2	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: .604, And MyLink Strength With Him --> .000
+01:51.537	ID:8	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .604, And MyLink Strength With Him --> .173
+01:51.577	ID:6	(N,S) = (1,7884)     (N,S) = (2,4615)     (N,S) = (3,961)     (N,S) = (4,384)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4230)     (N,S) = (8,5961)     (N,S) = (9,2115)     (N,S) = (10,576)     
+01:51.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+01:51.785	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:51.785	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+01:51.785	ID:5	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:51.787	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:51.787	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:51.789	ID:5	advertisement resend node_id=5 counter=10
+01:51.789	ID:10	advertisement resend node_id=10 counter=15
+01:51.790	ID:3	advertisement resend node_id=3 counter=13
+01:51.790	ID:4	advertisement resend node_id=4 counter=11
+01:51.792	ID:10	master advertisement --> modifying mrp structure
+01:51.793	ID:5	master advertisement --> modifying mrp structure
+01:51.793	ID:3	master advertisement --> modifying mrp structure
+01:51.793	ID:4	master advertisement --> modifying mrp structure
+01:51.799	ID:1	on received actual data: 10 1 204 30 2 7 18 3 193 3 4 128 1 5 0 0 6 0 0 7 134 16 8 73 23 9 67 8 10 64 2 1 6 
+01:51.801	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;7;.714, Success => 1
+01:51.801	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;7;.615, Success => 1
+01:51.802	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;7;.729, Success => 1
+01:51.802	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+01:51.804	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;7;.714, Success => 1
+01:51.811	ID:10	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .714
+01:51.812	ID:3	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .615
+01:51.812	ID:4	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .857
+01:51.814	ID:5	advertisement Seq: 7, Selected BestNode = 3, Because: His Strength: .729, And MyLink Strength With Him --> .326
+01:51.823	ID:1	strength_vector: 6 1-.788,2-.461,3-.096,4-.038,5-.000,6-.000,7-.423,8-.596,9-.211,10-.057,
+01:52.060	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:52.060	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:52.062	ID:8	[INFO: MASTER-R  ] Received advertisement 2;10;7;.714
+01:52.065	ID:8	advertisement resend node_id=8 counter=17
+01:52.068	ID:8	master advertisement --> modifying mrp structure
+01:52.076	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;7;.780, Success => 1
+01:52.087	ID:8	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .714, And MyLink Strength With Him --> .038
+01:52.335	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.335	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.337	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.339	ID:2	advertisement resend node_id=2 counter=16
+01:52.342	ID:2	master advertisement --> modifying mrp structure
+01:52.350	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;7;.729, Success => 1
+01:52.360	ID:2	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: .780, And MyLink Strength With Him --> .377
+01:52.610	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:52.610	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:52.611	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:52.611	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:52.611	ID:8	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:52.613	ID:10	advertisement history matched
+01:52.614	ID:3	advertisement history matched
+01:52.614	ID:4	advertisement history matched
+01:52.615	ID:8	advertisement resend node_id=8 counter=18
+01:52.618	ID:8	master advertisement --> modifying mrp structure
+01:52.626	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;7;.780, Success => 1
+01:52.637	ID:8	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .729, And MyLink Strength With Him --> .423
+01:52.729	ID:7	(N,S) = (1,6346)     (N,S) = (2,3846)     (N,S) = (3,2115)     (N,S) = (4,384)     (N,S) = (5,192)     (N,S) = (6,7307)     (N,S) = (7,0)     (N,S) = (8,4807)     (N,S) = (9,4038)     (N,S) = (10,384)     
+01:52.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+01:52.885	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.885	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.886	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.886	ID:3	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:52.887	ID:2	advertisement history matched
+01:52.890	ID:3	advertisement resend node_id=3 counter=14
+01:52.893	ID:3	master advertisement --> modifying mrp structure
+01:52.901	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;7;.615, Success => 1
+01:52.911	ID:3	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .780, And MyLink Strength With Him --> .173
+01:53.160	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.160	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.160	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.160	ID:7	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.160	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.161	ID:6	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.161	ID:4	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:53.163	ID:7	advertisement resend node_id=7 counter=19
+01:53.163	ID:5	advertisement resend node_id=5 counter=11
+01:53.163	ID:10	advertisement resend node_id=10 counter=16
+01:53.165	ID:6	advertisement resend node_id=6 counter=12
+01:53.165	ID:4	advertisement resend node_id=4 counter=12
+01:53.167	ID:7	master advertisement --> modifying mrp structure
+01:53.167	ID:5	master advertisement --> modifying mrp structure
+01:53.167	ID:10	master advertisement --> modifying mrp structure
+01:53.168	ID:6	master advertisement --> modifying mrp structure
+01:53.168	ID:4	master advertisement --> modifying mrp structure
+01:53.175	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;7;.756, Success => 1
+01:53.175	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;7;.714, Success => 1
+01:53.175	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;7;.714, Success => 1
+01:53.176	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;7;.788, Success => 1
+01:53.176	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;7;.729, Success => 1
+01:53.185	ID:7	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .615, And MyLink Strength With Him --> .211
+01:53.185	ID:5	advertisement Seq: 7, Selected BestNode = 3, Because: His Strength: .615, And MyLink Strength With Him --> .673
+01:53.185	ID:10	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .615, And MyLink Strength With Him --> .632
+01:53.186	ID:6	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: .615, And MyLink Strength With Him --> .096
+01:53.186	ID:4	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .615, And MyLink Strength With Him --> .326
+01:53.400	ID:8	(N,S) = (1,5961)     (N,S) = (2,4230)     (N,S) = (3,769)     (N,S) = (4,576)     (N,S) = (5,192)     (N,S) = (6,7500)     (N,S) = (7,3269)     (N,S) = (8,0)     (N,S) = (9,1730)     (N,S) = (10,384)     
+01:53.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+01:53.435	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.435	ID:2	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.436	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;7;.714
+01:53.438	ID:2	advertisement resend node_id=2 counter=17
+01:53.442	ID:2	master advertisement --> modifying mrp structure
+01:53.450	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;7;.729, Success => 1
+01:53.460	ID:2	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: .788, And MyLink Strength With Him --> .415
+01:53.710	ID:5	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.710	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.710	ID:10	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.711	ID:8	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.711	ID:4	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.711	ID:6	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.711	ID:3	[INFO: MASTER-R  ] Received advertisement 2;2;7;.729
+01:53.712	ID:5	advertisement history matched
+01:53.712	ID:10	advertisement history matched
+01:53.713	ID:8	advertisement history matched
+01:53.713	ID:4	advertisement history matched
+01:53.713	ID:3	advertisement history matched
+01:53.714	ID:6	advertisement resend node_id=6 counter=13
+01:53.718	ID:6	master advertisement --> modifying mrp structure
+01:53.726	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;7;.788, Success => 1
+01:53.736	ID:6	advertisement Seq: 7, Selected BestNode = 1, Because: His Strength: .729, And MyLink Strength With Him --> .461
+01:53.985	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.985	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.985	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.986	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;7;.788
+01:53.987	ID:9	advertisement history matched
+01:53.988	ID:7	advertisement resend node_id=7 counter=20
+01:53.989	ID:8	advertisement resend node_id=8 counter=19
+01:53.991	ID:7	master advertisement --> modifying mrp structure
+01:53.993	ID:8	master advertisement --> modifying mrp structure
+01:54.000	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;7;.756, Success => 1
+01:54.001	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;7;.780, Success => 1
+01:54.010	ID:7	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .788, And MyLink Strength With Him --> .730
+01:54.011	ID:8	advertisement Seq: 7, Selected BestNode = 6, Because: His Strength: .788, And MyLink Strength With Him --> .750
+01:54.260	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:54.261	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;7;.780
+01:54.261	ID:3	[INFO: MASTER-R  ] Received advertisement 2;7;7;.756
+01:54.264	ID:3	advertisement resend node_id=3 counter=15
+01:54.268	ID:3	master advertisement --> modifying mrp structure
+01:54.276	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;7;.615, Success => 1
+01:54.286	ID:3	advertisement Seq: 7, Selected BestNode = 2, Because: His Strength: .756, And MyLink Strength With Him --> .346
+01:54.535	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:54.535	ID:9	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:54.535	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;7;.615
+01:54.537	ID:10	advertisement history matched
+01:54.537	ID:5	advertisement history matched
+01:54.538	ID:9	advertisement resend node_id=9 counter=12
+01:54.541	ID:9	master advertisement --> modifying mrp structure
+01:54.550	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;7;.604, Success => 1
+01:54.560	ID:9	advertisement Seq: 7, Selected BestNode = 7, Because: His Strength: .615, And MyLink Strength With Him --> .020
+01:54.809	ID:1	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:54.809	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;7;.604
+01:55.034	ID:9	(N,S) = (1,2291)     (N,S) = (2,208)     (N,S) = (3,208)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,5416)     (N,S) = (7,6875)     (N,S) = (8,1041)     (N,S) = (9,0)     (N,S) = (10,208)     
+01:55.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+01:55.085	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+01:55.087	ID:7	Received actual data from node: 9
+01:55.100	ID:7	modified actual data: 10 1 243 8 2 208 0 3 208 0 4 0 0 5 0 0 6 40 21 7 219 26 8 17 4 9 0 0 10 208 0 2 9 7 
+01:55.104	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+01:55.361	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+01:55.363	ID:6	Received actual data from node: 9
+01:55.377	ID:6	modified actual data: 10 1 243 8 2 208 0 3 208 0 4 0 0 5 0 0 6 40 21 7 219 26 8 17 4 9 0 0 10 208 0 3 9 7 6 
+01:55.381	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+01:55.883	ID:10	(N,S) = (1,3600)     (N,S) = (2,7200)     (N,S) = (3,6400)     (N,S) = (4,7200)     (N,S) = (5,6200)     (N,S) = (6,1000)     (N,S) = (7,800)     (N,S) = (8,800)     (N,S) = (9,0)     (N,S) = (10,0)     
+01:55.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+01:55.910	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+01:55.912	ID:2	Received actual data from node: 10
+01:55.925	ID:2	modified actual data: 10 1 16 14 2 32 28 3 0 25 4 32 28 5 56 24 6 232 3 7 32 3 8 32 3 9 0 0 10 0 0 2 10 2 
+01:55.929	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:56.184	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+01:56.198	ID:1	on received actual data: 10 1 16 14 2 32 28 3 0 25 4 32 28 5 56 24 6 232 3 7 32 3 8 32 3 9 0 0 10 0 0 2 10 2 
+01:56.202	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+01:56.223	ID:1	strength_vector: 10 1-.360,2-.720,3-.640,4-.720,5-.620,6-.100,7-.080,8-.080,9-.000,10-.000,
+01:57.567	ID:2	(N,S) = (1,7407)     (N,S) = (2,0)     (N,S) = (3,4629)     (N,S) = (4,5000)     (N,S) = (5,1851)     (N,S) = (6,4074)     (N,S) = (7,2222)     (N,S) = (8,3703)     (N,S) = (9,0)     (N,S) = (10,3888)     
+01:57.571	ID:2	Checking preparaed data: highestNode: 10, index:33
+01:59.227	ID:3	(N,S) = (1,6153)     (N,S) = (2,6346)     (N,S) = (3,0)     (N,S) = (4,3461)     (N,S) = (5,5576)     (N,S) = (6,1538)     (N,S) = (7,3846)     (N,S) = (8,1730)     (N,S) = (9,192)     (N,S) = (10,5769)     
+01:59.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+01:59.484	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+01:59.486	ID:2	Received actual data from node: 3
+01:59.500	ID:2	modified actual data: 10 1 9 24 2 202 24 3 0 0 4 133 13 5 200 21 6 2 6 7 6 15 8 194 6 9 192 0 10 137 22 2 3 2 
+01:59.503	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+01:59.674	ID:4	(N,S) = (1,2909)     (N,S) = (2,8000)     (N,S) = (3,2909)     (N,S) = (4,0)     (N,S) = (5,3636)     (N,S) = (6,181)     (N,S) = (7,0)     (N,S) = (8,363)     (N,S) = (9,0)     (N,S) = (10,4000)     
+01:59.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+01:59.758	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+01:59.772	ID:1	on received actual data: 10 1 9 24 2 202 24 3 0 0 4 133 13 5 200 21 6 2 6 7 6 15 8 194 6 9 192 0 10 137 22 2 3 2 
+01:59.776	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+01:59.799	ID:1	strength_vector: 3 1-.615,2-.634,3-.000,4-.346,5-.557,6-.153,7-.384,8-.173,9-.019,10-.576,
+02:00.382	ID:8	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.387	ID:8	[INFO: Energest  ] Total time  :    3932030
+02:00.396	ID:8	[INFO: Energest  ] CPU         :     241815/   3932030 (61 permil)
+02:00.406	ID:8	[INFO: Energest  ] LPM         :    3690215/   3932030 (938 permil)
+02:00.413	ID:8	[INFO: Energest  ] Deep LPM    :          0/   3932030 (0 permil)
+02:00.421	ID:8	[INFO: Energest  ] Radio Tx    :       4173/   3932030 (1 permil)
+02:00.430	ID:8	[INFO: Energest  ] Radio Rx    :     119060/   3932030 (30 permil)
+02:00.439	ID:8	[INFO: Energest  ] Radio total :     123233/   3932030 (31 permil)
+02:00.545	ID:2	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.550	ID:2	[INFO: Energest  ] Total time  :    3932030
+02:00.559	ID:2	[INFO: Energest  ] CPU         :     264874/   3932030 (67 permil)
+02:00.560	ID:6	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.565	ID:6	[INFO: Energest  ] Total time  :    3932030
+02:00.573	ID:2	[INFO: Energest  ] LPM         :    3667156/   3932030 (932 permil)
+02:00.579	ID:6	[INFO: Energest  ] CPU         :     251091/   3932030 (63 permil)
+02:00.580	ID:2	[INFO: Energest  ] Deep LPM    :          0/   3932030 (0 permil)
+02:00.588	ID:2	[INFO: Energest  ] Radio Tx    :       6759/   3932030 (1 permil)
+02:00.589	ID:6	[INFO: Energest  ] LPM         :    3680939/   3932030 (936 permil)
+02:00.596	ID:6	[INFO: Energest  ] Deep LPM    :          0/   3932030 (0 permil)
+02:00.597	ID:2	[INFO: Energest  ] Radio Rx    :      61069/   3932030 (15 permil)
+02:00.604	ID:6	[INFO: Energest  ] Radio Tx    :       5794/   3932030 (1 permil)
+02:00.606	ID:2	[INFO: Energest  ] Radio total :      67828/   3932030 (17 permil)
+02:00.613	ID:6	[INFO: Energest  ] Radio Rx    :      62194/   3932030 (15 permil)
+02:00.622	ID:6	[INFO: Energest  ] Radio total :      67988/   3932030 (17 permil)
+02:00.658	ID:4	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.663	ID:4	[INFO: Energest  ] Total time  :    3932030
+02:00.672	ID:4	[INFO: Energest  ] CPU         :     233973/   3932030 (59 permil)
+02:00.681	ID:4	[INFO: Energest  ] LPM         :    3698057/   3932030 (940 permil)
+02:00.689	ID:4	[INFO: Energest  ] Deep LPM    :          0/   3932030 (0 permil)
+02:00.692	ID:1	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.697	ID:4	[INFO: Energest  ] Radio Tx    :       4435/   3932030 (1 permil)
+02:00.700	ID:1	[INFO: Energest  ] Total time  :    3932026
+02:00.705	ID:4	[INFO: Energest  ] Radio Rx    :      78967/   3932030 (20 permil)
+02:00.709	ID:1	[INFO: Energest  ] CPU         :     273828/   3932026 (69 permil)
+02:00.711	ID:7	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.714	ID:4	[INFO: Energest  ] Radio total :      83402/   3932030 (21 permil)
+02:00.716	ID:7	[INFO: Energest  ] Total time  :    3932030
+02:00.719	ID:1	[INFO: Energest  ] LPM         :    3658198/   3932026 (930 permil)
+02:00.725	ID:7	[INFO: Energest  ] CPU         :     248829/   3932030 (63 permil)
+02:00.726	ID:1	[INFO: Energest  ] Deep LPM    :          0/   3932026 (0 permil)
+02:00.734	ID:1	[INFO: Energest  ] Radio Tx    :       4435/   3932026 (1 permil)
+02:00.735	ID:7	[INFO: Energest  ] LPM         :    3683201/   3932030 (936 permil)
+02:00.742	ID:7	[INFO: Energest  ] Deep LPM    :          0/   3932030 (0 permil)
+02:00.743	ID:1	[INFO: Energest  ] Radio Rx    :      58107/   3932026 (14 permil)
+02:00.750	ID:7	[INFO: Energest  ] Radio Tx    :       4861/   3932030 (1 permil)
+02:00.752	ID:1	[INFO: Energest  ] Radio total :      62542/   3932026 (15 permil)
+02:00.759	ID:7	[INFO: Energest  ] Radio Rx    :      64642/   3932030 (16 permil)
+02:00.767	ID:7	[INFO: Energest  ] Radio total :      69503/   3932030 (17 permil)
+02:00.866	ID:10	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:00.871	ID:10	[INFO: Energest  ] Total time  :    3932026
+02:00.880	ID:10	[INFO: Energest  ] CPU         :     245822/   3932026 (62 permil)
+02:00.890	ID:10	[INFO: Energest  ] LPM         :    3686204/   3932026 (937 permil)
+02:00.897	ID:10	[INFO: Energest  ] Deep LPM    :          0/   3932026 (0 permil)
+02:00.905	ID:10	[INFO: Energest  ] Radio Tx    :       3759/   3932026 (0 permil)
+02:00.914	ID:10	[INFO: Energest  ] Radio Rx    :     100737/   3932026 (25 permil)
+02:00.927	ID:10	[INFO: Energest  ] Radio total :     104496/   3932026 (26 permil)
+02:01.018	ID:9	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:01.023	ID:9	[INFO: Energest  ] Total time  :    3932027
+02:01.032	ID:9	[INFO: Energest  ] CPU         :     211214/   3932027 (53 permil)
+02:01.041	ID:9	[INFO: Energest  ] LPM         :    3720813/   3932027 (946 permil)
+02:01.042	ID:5	(N,S) = (1,1346)     (N,S) = (2,3461)     (N,S) = (3,7115)     (N,S) = (4,3846)     (N,S) = (5,0)     (N,S) = (6,384)     (N,S) = (7,384)     (N,S) = (8,192)     (N,S) = (9,0)     (N,S) = (10,5384)     
+02:01.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+02:01.049	ID:9	[INFO: Energest  ] Deep LPM    :          0/   3932027 (0 permil)
+02:01.053	ID:5	[INFO: Energest  ] --- Period summary #0 (120 seconds)
+02:01.057	ID:9	[INFO: Energest  ] Radio Tx    :       3778/   3932027 (0 permil)
+02:01.058	ID:5	[INFO: Energest  ] Total time  :    3932976
+02:01.066	ID:9	[INFO: Energest  ] Radio Rx    :     126641/   3932027 (32 permil)
+02:01.067	ID:5	[INFO: Energest  ] CPU         :     226578/   3932976 (57 permil)
+02:01.075	ID:9	[INFO: Energest  ] Radio total :     130419/   3932027 (33 permil)
+02:01.077	ID:5	[INFO: Energest  ] LPM         :    3706398/   3932976 (942 permil)
+02:01.084	ID:5	[INFO: Energest  ] Deep LPM    :          0/   3932976 (0 permil)
+02:01.092	ID:5	[INFO: Energest  ] Radio Tx    :       3989/   3932976 (1 permil)
+02:01.101	ID:5	[INFO: Energest  ] Radio Rx    :      87271/   3932976 (22 permil)
+02:01.110	ID:5	[INFO: Energest  ] Radio total :      91260/   3932976 (23 permil)
+02:01.209	ID:3	[INFO: Energest  ] --- Period summary #0 (119 seconds)
+02:01.214	ID:3	[INFO: Energest  ] Total time  :    3932031
+02:01.223	ID:3	[INFO: Energest  ] CPU         :     249130/   3932031 (63 permil)
+02:01.232	ID:3	[INFO: Energest  ] LPM         :    3682901/   3932031 (936 permil)
+02:01.240	ID:3	[INFO: Energest  ] Deep LPM    :          0/   3932031 (0 permil)
+02:01.248	ID:3	[INFO: Energest  ] Radio Tx    :       4884/   3932031 (1 permil)
+02:01.256	ID:3	[INFO: Energest  ] Radio Rx    :      55752/   3932031 (14 permil)
+02:01.265	ID:3	[INFO: Energest  ] Radio total :      60636/   3932031 (15 permil)
+02:01.577	ID:6	(N,S) = (1,7857)     (N,S) = (2,4285)     (N,S) = (3,892)     (N,S) = (4,357)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4107)     (N,S) = (8,5892)     (N,S) = (9,1964)     (N,S) = (10,714)     
+02:01.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+02:01.683	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+02:01.700	ID:1	on received actual data: 10 1 177 30 2 189 16 3 124 3 4 101 1 5 0 0 6 0 0 7 11 16 8 4 23 9 172 7 10 202 2 1 6 
+02:01.704	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+02:01.725	ID:1	strength_vector: 6 1-.785,2-.428,3-.089,4-.035,5-.000,6-.000,7-.410,8-.589,9-.196,10-.071,
+02:02.729	ID:7	(N,S) = (1,6363)     (N,S) = (2,3818)     (N,S) = (3,2000)     (N,S) = (4,363)     (N,S) = (5,181)     (N,S) = (6,7272)     (N,S) = (7,0)     (N,S) = (8,4909)     (N,S) = (9,3818)     (N,S) = (10,363)     
+02:02.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+02:02.784	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+02:02.787	ID:6	Received actual data from node: 7
+02:02.801	ID:6	modified actual data: 10 1 219 24 2 234 14 3 208 7 4 107 1 5 181 0 6 104 28 7 0 0 8 45 19 9 234 14 10 107 1 2 7 6 
+02:02.805	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:03.058	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;34
+02:03.072	ID:1	on received actual data: 10 1 219 24 2 234 14 3 208 7 4 107 1 5 181 0 6 104 28 7 0 0 8 45 19 9 234 14 10 107 1 2 7 6 
+02:03.076	ID:1	Got Actual Data --> Route (Size: 3): 7 --> 6 --> 1
+02:03.099	ID:1	strength_vector: 7 1-.636,2-.381,3-.200,4-.036,5-.018,6-.727,7-.000,8-.490,9-.381,10-.036,
+02:03.400	ID:8	(N,S) = (1,6071)     (N,S) = (2,4107)     (N,S) = (3,714)     (N,S) = (4,535)     (N,S) = (5,178)     (N,S) = (6,7321)     (N,S) = (7,3214)     (N,S) = (8,0)     (N,S) = (9,1607)     (N,S) = (10,535)     
+02:03.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+02:03.609	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+02:03.611	ID:6	Received actual data from node: 8
+02:03.625	ID:6	modified actual data: 10 1 183 23 2 11 16 3 202 2 4 23 2 5 178 0 6 153 28 7 142 12 8 0 0 9 71 6 10 23 2 2 8 6 
+02:03.629	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:03.882	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+02:03.896	ID:1	on received actual data: 10 1 183 23 2 11 16 3 202 2 4 23 2 5 178 0 6 153 28 7 142 12 8 0 0 9 71 6 10 23 2 2 8 6 
+02:03.900	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+02:03.922	ID:1	strength_vector: 8 1-.607,2-.410,3-.071,4-.053,5-.017,6-.732,7-.321,8-.000,9-.160,10-.053,
+02:05.034	ID:9	(N,S) = (1,2181)     (N,S) = (2,181)     (N,S) = (3,181)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4909)     (N,S) = (7,6545)     (N,S) = (8,1272)     (N,S) = (9,0)     (N,S) = (10,363)     
+02:05.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+02:05.257	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+02:05.260	ID:7	Received actual data from node: 9
+02:05.273	ID:7	modified actual data: 10 1 133 8 2 181 0 3 181 0 4 0 0 5 0 0 6 45 19 7 145 25 8 248 4 9 0 0 10 107 1 2 9 7 
+02:05.277	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+02:05.546	ID:1	strength_vector: 1 1-.000,2-.705,3-.392,4-.137,5-.117,6-.784,7-.490,8-.607,9-.039,10-.254,
+02:05.690	ID:1	master advertisement --> modifying mrp structure
+02:05.702	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;8;100.000, Success => 1
+02:05.807	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;8;100.000
+02:05.808	ID:8	[INFO: MASTER-R  ] Received advertisement 2;1;8;100.000
+02:05.808	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;8;100.000
+02:05.810	ID:7	advertisement resend node_id=7 counter=21
+02:05.811	ID:8	advertisement resend node_id=8 counter=20
+02:05.812	ID:6	advertisement resend node_id=6 counter=14
+02:05.815	ID:7	master advertisement --> modifying mrp structure
+02:05.815	ID:6	master advertisement --> modifying mrp structure
+02:05.817	ID:8	master advertisement --> modifying mrp structure
+02:05.823	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;8;.756, Success => 1
+02:05.825	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;8;.780, Success => 1
+02:05.828	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;8;.785, Success => 1
+02:05.833	ID:7	advertisement Seq: 8, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .631
+02:05.835	ID:8	advertisement Seq: 8, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .607
+02:05.838	ID:6	advertisement Seq: 8, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .785
+02:05.883	ID:10	(N,S) = (1,3529)     (N,S) = (2,7254)     (N,S) = (3,6862)     (N,S) = (4,7647)     (N,S) = (5,6274)     (N,S) = (6,1176)     (N,S) = (7,980)     (N,S) = (8,784)     (N,S) = (9,0)     (N,S) = (10,0)     
+02:05.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+02:06.082	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;8;.785
+02:06.082	ID:9	[INFO: MASTER-R  ] Received advertisement 2;7;8;.756
+02:06.082	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+02:06.085	ID:2	Received actual data from node: 10
+02:06.085	ID:9	advertisement resend node_id=9 counter=13
+02:06.089	ID:9	master advertisement --> modifying mrp structure
+02:06.097	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;8;.654, Success => 1
+02:06.099	ID:2	modified actual data: 10 1 201 13 2 86 28 3 206 26 4 223 29 5 130 24 6 152 4 7 212 3 8 16 3 9 0 0 10 0 0 2 10 2 
+02:06.102	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:06.107	ID:9	advertisement Seq: 8, Selected BestNode = 7, Because: His Strength: .756, And MyLink Strength With Him --> .654
+02:06.357	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;8;.654
+02:06.357	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+02:06.371	ID:1	on received actual data: 10 1 201 13 2 86 28 3 206 26 4 223 29 5 130 24 6 152 4 7 212 3 8 16 3 9 0 0 10 0 0 2 10 2 
+02:06.375	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+02:06.397	ID:1	strength_vector: 10 1-.352,2-.725,3-.686,4-.764,5-.627,6-.117,7-.098,8-.078,9-.000,10-.000,
+02:07.563	ID:2	(N,S) = (1,7407)     (N,S) = (2,0)     (N,S) = (3,5000)     (N,S) = (4,5000)     (N,S) = (5,1851)     (N,S) = (6,4074)     (N,S) = (7,2222)     (N,S) = (8,4259)     (N,S) = (9,0)     (N,S) = (10,4259)     
+02:07.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+02:09.227	ID:3	(N,S) = (1,5689)     (N,S) = (2,5689)     (N,S) = (3,0)     (N,S) = (4,3103)     (N,S) = (5,5344)     (N,S) = (6,1379)     (N,S) = (7,3793)     (N,S) = (8,1551)     (N,S) = (9,172)     (N,S) = (10,5689)     
+02:09.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+02:09.381	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+02:09.384	ID:2	Received actual data from node: 3
+02:09.397	ID:2	modified actual data: 10 1 57 22 2 57 22 3 0 0 4 31 12 5 224 20 6 99 5 7 209 14 8 15 6 9 172 0 10 57 22 2 3 2 
+02:09.401	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:09.656	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+02:09.670	ID:1	on received actual data: 10 1 57 22 2 57 22 3 0 0 4 31 12 5 224 20 6 99 5 7 209 14 8 15 6 9 172 0 10 57 22 2 3 2 
+02:09.673	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+02:09.674	ID:4	(N,S) = (1,2909)     (N,S) = (2,8363)     (N,S) = (3,3272)     (N,S) = (4,0)     (N,S) = (5,3818)     (N,S) = (6,181)     (N,S) = (7,0)     (N,S) = (8,363)     (N,S) = (9,0)     (N,S) = (10,4363)     
+02:09.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+02:09.700	ID:1	strength_vector: 3 1-.568,2-.568,3-.000,4-.310,5-.534,6-.137,7-.379,8-.155,9-.017,10-.568,
+02:09.931	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;4;33
+02:09.934	ID:2	Received actual data from node: 4
+02:09.947	ID:2	modified actual data: 10 1 93 11 2 171 32 3 200 12 4 0 0 5 234 14 6 181 0 7 0 0 8 107 1 9 0 0 10 11 17 2 4 2 
+02:09.951	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:10.206	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;4;34
+02:10.220	ID:1	on received actual data: 10 1 93 11 2 171 32 3 200 12 4 0 0 5 234 14 6 181 0 7 0 0 8 107 1 9 0 0 10 11 17 2 4 2 
+02:10.223	ID:1	Got Actual Data --> Route (Size: 3): 4 --> 2 --> 1
+02:10.244	ID:1	strength_vector: 4 1-.290,2-.836,3-.327,4-.000,5-.381,6-.018,7-.000,8-.036,9-.000,10-.436,
+02:11.051	ID:5	(N,S) = (1,1272)     (N,S) = (2,3454)     (N,S) = (3,7090)     (N,S) = (4,4181)     (N,S) = (5,0)     (N,S) = (6,363)     (N,S) = (7,363)     (N,S) = (8,181)     (N,S) = (9,0)     (N,S) = (10,5636)     
+02:11.055	ID:5	Checking preparaed data: highestNode: 10, index:33
+02:11.582	ID:6	(N,S) = (1,7758)     (N,S) = (2,4310)     (N,S) = (3,862)     (N,S) = (4,344)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4137)     (N,S) = (8,6206)     (N,S) = (9,2413)     (N,S) = (10,689)     
+02:11.586	ID:6	Checking preparaed data: highestNode: 10, index:33
+02:12.729	ID:7	(N,S) = (1,6440)     (N,S) = (2,3559)     (N,S) = (3,1864)     (N,S) = (4,508)     (N,S) = (5,338)     (N,S) = (6,6949)     (N,S) = (7,0)     (N,S) = (8,4745)     (N,S) = (9,4067)     (N,S) = (10,508)     
+02:12.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+02:12.957	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+02:12.959	ID:6	Received actual data from node: 7
+02:12.973	ID:6	modified actual data: 10 1 40 25 2 231 13 3 72 7 4 252 1 5 82 1 6 37 27 7 0 0 8 137 18 9 227 15 10 252 1 2 7 6 
+02:12.977	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:13.230	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;34
+02:13.244	ID:1	on received actual data: 10 1 40 25 2 231 13 3 72 7 4 252 1 5 82 1 6 37 27 7 0 0 8 137 18 9 227 15 10 252 1 2 7 6 
+02:13.248	ID:1	Got Actual Data --> Route (Size: 3): 7 --> 6 --> 1
+02:13.271	ID:1	strength_vector: 7 1-.644,2-.355,3-.186,4-.050,5-.033,6-.694,7-.000,8-.474,9-.406,10-.050,
+02:13.400	ID:8	(N,S) = (1,6034)     (N,S) = (2,4137)     (N,S) = (3,862)     (N,S) = (4,517)     (N,S) = (5,172)     (N,S) = (6,7586)     (N,S) = (7,3448)     (N,S) = (8,0)     (N,S) = (9,1551)     (N,S) = (10,517)     
+02:13.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+02:13.506	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;8;33
+02:13.509	ID:6	Received actual data from node: 8
+02:13.522	ID:6	modified actual data: 10 1 146 23 2 41 16 3 94 3 4 5 2 5 172 0 6 162 29 7 120 13 8 0 0 9 15 6 10 5 2 2 8 6 
+02:13.526	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:13.780	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;8;34
+02:13.793	ID:1	on received actual data: 10 1 146 23 2 41 16 3 94 3 4 5 2 5 172 0 6 162 29 7 120 13 8 0 0 9 15 6 10 5 2 2 8 6 
+02:13.797	ID:1	Got Actual Data --> Route (Size: 3): 8 --> 6 --> 1
+02:13.820	ID:1	strength_vector: 8 1-.603,2-.413,3-.086,4-.051,5-.017,6-.758,7-.344,8-.000,9-.155,10-.051,
+02:15.034	ID:9	(N,S) = (1,2500)     (N,S) = (2,166)     (N,S) = (3,333)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,4666)     (N,S) = (7,6333)     (N,S) = (8,1500)     (N,S) = (9,0)     (N,S) = (10,333)     
+02:15.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+02:15.155	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+02:15.157	ID:7	Received actual data from node: 9
+02:15.170	ID:7	modified actual data: 10 1 196 9 2 166 0 3 77 1 4 0 0 5 0 0 6 58 18 7 189 24 8 220 5 9 0 0 10 77 1 2 9 7 
+02:15.174	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+02:15.884	ID:10	(N,S) = (1,3214)     (N,S) = (2,7142)     (N,S) = (3,6785)     (N,S) = (4,7321)     (N,S) = (5,6071)     (N,S) = (6,1071)     (N,S) = (7,1071)     (N,S) = (8,714)     (N,S) = (9,0)     (N,S) = (10,0)     
+02:15.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+02:15.980	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+02:15.982	ID:2	Received actual data from node: 10
+02:15.996	ID:2	modified actual data: 10 1 142 12 2 230 27 3 129 26 4 153 28 5 183 23 6 47 4 7 47 4 8 202 2 9 0 0 10 0 0 2 10 2 
+02:16.000	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:16.255	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+02:16.269	ID:1	on received actual data: 10 1 142 12 2 230 27 3 129 26 4 153 28 5 183 23 6 47 4 7 47 4 8 202 2 9 0 0 10 0 0 2 10 2 
+02:16.273	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+02:16.295	ID:1	strength_vector: 10 1-.321,2-.714,3-.678,4-.732,5-.607,6-.107,7-.107,8-.071,9-.000,10-.000,
+02:17.563	ID:2	(N,S) = (1,7407)     (N,S) = (2,0)     (N,S) = (3,5370)     (N,S) = (4,5185)     (N,S) = (5,1851)     (N,S) = (6,4074)     (N,S) = (7,2407)     (N,S) = (8,4444)     (N,S) = (9,0)     (N,S) = (10,4444)     
+02:17.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+02:17.629	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+02:17.643	ID:1	on received actual data: 10 1 239 28 2 0 0 3 250 20 4 65 20 5 59 7 6 234 15 7 103 9 8 92 17 9 0 0 10 92 17 1 2 
+02:17.646	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+02:17.668	ID:1	strength_vector: 2 1-.740,2-.000,3-.537,4-.518,5-.185,6-.407,7-.240,8-.444,9-.000,10-.444,
+02:19.227	ID:3	(N,S) = (1,5573)     (N,S) = (2,5901)     (N,S) = (3,0)     (N,S) = (4,2950)     (N,S) = (5,5409)     (N,S) = (6,1475)     (N,S) = (7,3770)     (N,S) = (8,1803)     (N,S) = (9,163)     (N,S) = (10,5573)     
+02:19.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+02:19.279	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+02:19.281	ID:2	Received actual data from node: 3
+02:19.295	ID:2	modified actual data: 10 1 197 21 2 13 23 3 0 0 4 134 11 5 33 21 6 195 5 7 186 14 8 11 7 9 163 0 10 197 21 2 3 2 
+02:19.299	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:19.674	ID:4	(N,S) = (1,2786)     (N,S) = (2,8032)     (N,S) = (3,3278)     (N,S) = (4,0)     (N,S) = (5,3770)     (N,S) = (6,163)     (N,S) = (7,0)     (N,S) = (8,327)     (N,S) = (9,0)     (N,S) = (10,4426)     
+02:19.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+02:19.829	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;4;33
+02:19.831	ID:2	Received actual data from node: 4
+02:19.844	ID:2	modified actual data: 10 1 226 10 2 96 31 3 206 12 4 0 0 5 186 14 6 163 0 7 0 0 8 71 1 9 0 0 10 74 17 2 4 2 
+02:19.848	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:20.103	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;4;34
+02:20.117	ID:1	on received actual data: 10 1 226 10 2 96 31 3 206 12 4 0 0 5 186 14 6 163 0 7 0 0 8 71 1 9 0 0 10 74 17 2 4 2 
+02:20.121	ID:1	Got Actual Data --> Route (Size: 3): 4 --> 2 --> 1
+02:20.142	ID:1	strength_vector: 4 1-.278,2-.803,3-.327,4-.000,5-.377,6-.016,7-.000,8-.032,9-.000,10-.442,
+02:20.693	ID:1	master advertisement --> modifying mrp structure
+02:20.701	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;9;100.000, Success => 1
+02:20.928	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;9;100.000
+02:20.929	ID:6	[INFO: MASTER-R  ] Received advertisement 2;1;9;100.000
+02:20.929	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;9;100.000
+02:20.930	ID:8	[INFO: MASTER-R  ] Received advertisement 2;1;9;100.000
+02:20.932	ID:7	advertisement resend node_id=7 counter=22
+02:20.933	ID:6	advertisement resend node_id=6 counter=15
+02:20.933	ID:3	advertisement resend node_id=3 counter=16
+02:20.933	ID:8	advertisement resend node_id=8 counter=21
+02:20.935	ID:7	master advertisement --> modifying mrp structure
+02:20.936	ID:6	master advertisement --> modifying mrp structure
+02:20.936	ID:3	master advertisement --> modifying mrp structure
+02:20.936	ID:8	master advertisement --> modifying mrp structure
+02:20.943	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;9;.756, Success => 1
+02:20.944	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;9;.770, Success => 1
+02:20.944	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;9;.615, Success => 1
+02:20.945	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;9;.780, Success => 1
+02:20.953	ID:7	advertisement Seq: 9, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .655
+02:20.954	ID:6	advertisement Seq: 9, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .770
+02:20.955	ID:3	advertisement Seq: 9, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .557
+02:20.955	ID:8	advertisement Seq: 9, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .606
+02:21.042	ID:5	(N,S) = (1,1228)     (N,S) = (2,3684)     (N,S) = (3,7192)     (N,S) = (4,4035)     (N,S) = (5,0)     (N,S) = (6,350)     (N,S) = (7,350)     (N,S) = (8,175)     (N,S) = (9,0)     (N,S) = (10,5614)     
+02:21.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+02:21.203	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;9;.770
+02:21.203	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;9;.615
+02:21.577	ID:6	(N,S) = (1,7704)     (N,S) = (2,4426)     (N,S) = (3,983)     (N,S) = (4,327)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4262)     (N,S) = (8,6229)     (N,S) = (9,2459)     (N,S) = (10,655)     
+02:21.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+02:21.753	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;6;33
+02:21.766	ID:1	on received actual data: 10 1 24 30 2 74 17 3 215 3 4 71 1 5 0 0 6 0 0 7 166 16 8 85 24 9 155 9 10 143 2 1 6 
+02:21.770	ID:1	Got Actual Data --> Route (Size: 2): 6 --> 1
+02:21.791	ID:1	strength_vector: 6 1-.770,2-.442,3-.098,4-.032,5-.000,6-.000,7-.426,8-.622,9-.245,10-.065,
+02:22.729	ID:7	(N,S) = (1,6612)     (N,S) = (2,3548)     (N,S) = (3,2096)     (N,S) = (4,483)     (N,S) = (5,322)     (N,S) = (6,6935)     (N,S) = (7,0)     (N,S) = (8,4516)     (N,S) = (9,4193)     (N,S) = (10,483)     
+02:22.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+02:22.854	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;7;33
+02:22.857	ID:6	Received actual data from node: 7
+02:22.870	ID:6	modified actual data: 10 1 212 25 2 220 13 3 48 8 4 227 1 5 66 1 6 23 27 7 0 0 8 164 17 9 97 16 10 227 1 2 7 6 
+02:22.874	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:23.128	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;7;34
+02:23.142	ID:1	on received actual data: 10 1 212 25 2 220 13 3 48 8 4 227 1 5 66 1 6 23 27 7 0 0 8 164 17 9 97 16 10 227 1 2 7 6 
+02:23.146	ID:1	Got Actual Data --> Route (Size: 3): 7 --> 6 --> 1
+02:23.168	ID:1	strength_vector: 7 1-.661,2-.354,3-.209,4-.048,5-.032,6-.693,7-.000,8-.451,9-.419,10-.048,
+02:23.405	ID:8	(N,S) = (1,6129)     (N,S) = (2,4193)     (N,S) = (3,967)     (N,S) = (4,483)     (N,S) = (5,161)     (N,S) = (6,7580)     (N,S) = (7,3225)     (N,S) = (8,0)     (N,S) = (9,1451)     (N,S) = (10,483)     
+02:23.409	ID:8	Checking preparaed data: highestNode: 10, index:33
+02:25.035	ID:9	(N,S) = (1,2500)     (N,S) = (2,166)     (N,S) = (3,500)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,5166)     (N,S) = (7,6833)     (N,S) = (8,1500)     (N,S) = (9,0)     (N,S) = (10,333)     
+02:25.042	ID:9	Checking preparaed data: highestNode: 10, index:33
+02:25.887	ID:10	(N,S) = (1,3333)     (N,S) = (2,6825)     (N,S) = (3,6190)     (N,S) = (4,6666)     (N,S) = (5,5873)     (N,S) = (6,1111)     (N,S) = (7,1111)     (N,S) = (8,634)     (N,S) = (9,0)     (N,S) = (10,0)     
+02:25.891	ID:10	Checking preparaed data: highestNode: 10, index:33
+02:26.152	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;10;33
+02:26.155	ID:2	Received actual data from node: 10
+02:26.168	ID:2	modified actual data: 10 1 5 13 2 169 26 3 46 24 4 10 26 5 241 22 6 87 4 7 87 4 8 122 2 9 0 0 10 0 0 2 10 2 
+02:26.172	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:26.427	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;10;34
+02:26.441	ID:1	on received actual data: 10 1 5 13 2 169 26 3 46 24 4 10 26 5 241 22 6 87 4 7 87 4 8 122 2 9 0 0 10 0 0 2 10 2 
+02:26.445	ID:1	Got Actual Data --> Route (Size: 3): 10 --> 2 --> 1
+02:26.467	ID:1	strength_vector: 10 1-.333,2-.682,3-.619,4-.666,5-.587,6-.111,7-.111,8-.063,9-.000,10-.000,
+02:27.563	ID:2	(N,S) = (1,6825)     (N,S) = (2,0)     (N,S) = (3,4920)     (N,S) = (4,4444)     (N,S) = (5,1904)     (N,S) = (6,3968)     (N,S) = (7,2222)     (N,S) = (8,4126)     (N,S) = (9,0)     (N,S) = (10,3968)     
+02:27.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+02:27.802	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;2;33
+02:27.815	ID:1	on received actual data: 10 1 169 26 2 0 0 3 56 19 4 92 17 5 112 7 6 128 15 7 174 8 8 30 16 9 0 0 10 128 15 1 2 
+02:27.819	ID:1	Got Actual Data --> Route (Size: 2): 2 --> 1
+02:27.841	ID:1	strength_vector: 2 1-.682,2-.000,3-.492,4-.444,5-.190,6-.396,7-.222,8-.412,9-.000,10-.396,
+02:29.227	ID:3	(N,S) = (1,5781)     (N,S) = (2,5781)     (N,S) = (3,0)     (N,S) = (4,2812)     (N,S) = (5,5625)     (N,S) = (6,1562)     (N,S) = (7,4062)     (N,S) = (8,1718)     (N,S) = (9,156)     (N,S) = (10,5625)     
+02:29.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+02:29.451	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+02:29.454	ID:2	Received actual data from node: 3
+02:29.468	ID:2	modified actual data: 10 1 149 22 2 149 22 3 0 0 4 252 10 5 249 21 6 26 6 7 222 15 8 182 6 9 156 0 10 249 21 2 3 2 
+02:29.472	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:29.674	ID:4	(N,S) = (1,2968)     (N,S) = (2,7968)     (N,S) = (3,3281)     (N,S) = (4,0)     (N,S) = (5,3906)     (N,S) = (6,156)     (N,S) = (7,0)     (N,S) = (8,312)     (N,S) = (9,0)     (N,S) = (10,4687)     
+02:29.678	ID:4	Checking preparaed data: highestNode: 10, index:33
+02:29.726	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+02:29.741	ID:1	on received actual data: 10 1 149 22 2 149 22 3 0 0 4 252 10 5 249 21 6 26 6 7 222 15 8 182 6 9 156 0 10 249 21 2 3 2 
+02:29.744	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+02:29.767	ID:1	strength_vector: 3 1-.578,2-.578,3-.000,4-.281,5-.562,6-.156,7-.406,8-.171,9-.015,10-.562,
+02:30.565	ID:1	strength_vector: 1 1-.000,2-.677,3-.406,4-.118,5-.152,6-.762,7-.508,8-.610,9-.050,10-.271,
+02:31.042	ID:5	(N,S) = (1,1269)     (N,S) = (2,3492)     (N,S) = (3,6825)     (N,S) = (4,3968)     (N,S) = (5,0)     (N,S) = (6,317)     (N,S) = (7,317)     (N,S) = (8,158)     (N,S) = (9,0)     (N,S) = (10,5396)     
+02:31.046	ID:5	Checking preparaed data: highestNode: 10, index:33
+02:31.102	ID:3	[INFO: MASTER-R  ] rcvd actual data 3;5;33
+02:31.105	ID:3	Received actual data from node: 5
+02:31.118	ID:3	modified actual data: 10 1 245 4 2 164 13 3 169 26 4 128 15 5 0 0 6 61 1 7 61 1 8 158 0 9 0 0 10 20 21 2 5 3 
+02:31.122	ID:3	Forwarding actualData (node) = (3) --> to (node) = (2)
+02:31.376	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;5;34
+02:31.378	ID:2	Received actual data from node: 5
+02:31.392	ID:2	modified actual data: 10 1 245 4 2 164 13 3 169 26 4 128 15 5 0 0 6 61 1 7 61 1 8 158 0 9 0 0 10 20 21 3 5 3 2 
+02:31.396	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:31.577	ID:6	(N,S) = (1,7812)     (N,S) = (2,4375)     (N,S) = (3,1093)     (N,S) = (4,312)     (N,S) = (5,0)     (N,S) = (6,0)     (N,S) = (7,4375)     (N,S) = (8,6406)     (N,S) = (9,2656)     (N,S) = (10,625)     
+02:31.581	ID:6	Checking preparaed data: highestNode: 10, index:33
+02:31.651	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;5;35
+02:31.665	ID:1	on received actual data: 10 1 245 4 2 164 13 3 169 26 4 128 15 5 0 0 6 61 1 7 61 1 8 158 0 9 0 0 10 20 21 3 5 3 2 
+02:31.669	ID:1	Got Actual Data --> Route (Size: 4): 5 --> 3 --> 2 --> 1
+02:31.695	ID:1	strength_vector: 5 1-.126,2-.349,3-.682,4-.396,5-.000,6-.031,7-.031,8-.015,9-.000,10-.539,
+02:31.696	ID:1	ALL ACTUAL DATA COLLECTED
+02:31.715	ID:1	strength_vector: 1 1-.000,2-.677,3-.406,4-.118,5-.152,6-.762,7-.508,8-.627,9-.050,10-.271,
+02:32.729	ID:7	(N,S) = (1,6718)     (N,S) = (2,3750)     (N,S) = (3,2500)     (N,S) = (4,468)     (N,S) = (5,468)     (N,S) = (6,7031)     (N,S) = (7,0)     (N,S) = (8,4375)     (N,S) = (9,4531)     (N,S) = (10,468)     
+02:32.733	ID:7	Checking preparaed data: highestNode: 10, index:33
+02:33.400	ID:8	(N,S) = (1,6307)     (N,S) = (2,4307)     (N,S) = (3,923)     (N,S) = (4,461)     (N,S) = (5,153)     (N,S) = (6,7538)     (N,S) = (7,3384)     (N,S) = (8,0)     (N,S) = (9,1384)     (N,S) = (10,615)     
+02:33.404	ID:8	Checking preparaed data: highestNode: 10, index:33
+02:35.034	ID:9	(N,S) = (1,2500)     (N,S) = (2,156)     (N,S) = (3,625)     (N,S) = (4,0)     (N,S) = (5,0)     (N,S) = (6,5312)     (N,S) = (7,6875)     (N,S) = (8,1562)     (N,S) = (9,0)     (N,S) = (10,312)     
+02:35.038	ID:9	Checking preparaed data: highestNode: 10, index:33
+02:35.225	ID:7	[INFO: MASTER-R  ] rcvd actual data 3;9;33
+02:35.227	ID:7	Received actual data from node: 9
+02:35.240	ID:7	modified actual data: 10 1 196 9 2 156 0 3 113 2 4 0 0 5 0 0 6 192 20 7 219 26 8 26 6 9 0 0 10 56 1 2 9 7 
+02:35.244	ID:7	Forwarding actualData (node) = (7) --> to (node) = (6)
+02:35.501	ID:6	[INFO: MASTER-R  ] rcvd actual data 3;9;34
+02:35.504	ID:6	Received actual data from node: 9
+02:35.517	ID:6	modified actual data: 10 1 196 9 2 156 0 3 113 2 4 0 0 5 0 0 6 192 20 7 219 26 8 26 6 9 0 0 10 56 1 3 9 7 6 
+02:35.521	ID:6	Forwarding actualData (node) = (6) --> to (node) = (1)
+02:35.691	ID:1	master advertisement --> modifying mrp structure
+02:35.699	ID:1	[INFO: MASTER-R  ] master advertisement sent;1;2;10;100.000, Success => 1
+02:35.775	ID:7	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.775	ID:9	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.775	ID:2	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.775	ID:10	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.776	ID:3	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.776	ID:4	[INFO: MASTER-R  ] Received advertisement 2;1;10;100.000
+02:35.778	ID:7	advertisement resend node_id=7 counter=23
+02:35.778	ID:9	advertisement resend node_id=9 counter=14
+02:35.778	ID:2	advertisement resend node_id=2 counter=18
+02:35.778	ID:10	advertisement resend node_id=10 counter=17
+02:35.779	ID:3	advertisement resend node_id=3 counter=17
+02:35.779	ID:4	advertisement resend node_id=4 counter=13
+02:35.782	ID:7	master advertisement --> modifying mrp structure
+02:35.782	ID:9	master advertisement --> modifying mrp structure
+02:35.782	ID:2	master advertisement --> modifying mrp structure
+02:35.782	ID:10	master advertisement --> modifying mrp structure
+02:35.783	ID:3	master advertisement --> modifying mrp structure
+02:35.783	ID:4	master advertisement --> modifying mrp structure
+02:35.790	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;10;.654, Success => 1
+02:35.790	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;10;.756, Success => 1
+02:35.790	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;10;.692, Success => 1
+02:35.790	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;10;.714, Success => 1
+02:35.791	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;10;.615, Success => 1
+02:35.791	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;10;.729, Success => 1
+02:35.800	ID:9	advertisement Seq: 10, Selected BestNode = 7, Because: His Strength: 100.000, And MyLink Strength With Him --> .250
+02:35.800	ID:7	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: 100.000, And MyLink Strength With Him --> .671
+02:35.800	ID:2	advertisement Seq: 10, Selected BestNode = 1, Because: His Strength: 100.000, And MyLink Strength With Him --> .692
+02:35.801	ID:10	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .338
+02:35.802	ID:3	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .578
+02:35.802	ID:4	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: 100.000, And MyLink Strength With Him --> .296
+02:35.883	ID:10	(N,S) = (1,3384)     (N,S) = (2,6923)     (N,S) = (3,6461)     (N,S) = (4,6769)     (N,S) = (5,6000)     (N,S) = (6,1076)     (N,S) = (7,1384)     (N,S) = (8,923)     (N,S) = (9,0)     (N,S) = (10,0)     
+02:35.887	ID:10	Checking preparaed data: highestNode: 10, index:33
+02:36.050	ID:1	[INFO: MASTER-R  ] Received advertisement 2;2;10;.692
+02:36.050	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:36.050	ID:8	[INFO: MASTER-R  ] Received advertisement 2;2;10;.692
+02:36.051	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;10;.756
+02:36.053	ID:8	advertisement resend node_id=8 counter=22
+02:36.053	ID:5	advertisement resend node_id=5 counter=12
+02:36.056	ID:8	master advertisement --> modifying mrp structure
+02:36.056	ID:5	master advertisement --> modifying mrp structure
+02:36.065	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;10;.780, Success => 1
+02:36.065	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;10;.615, Success => 1
+02:36.075	ID:8	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .692, And MyLink Strength With Him --> .430
+02:36.075	ID:5	advertisement Seq: 10, Selected BestNode = 3, Because: His Strength: .615, And MyLink Strength With Him --> .714
+02:36.324	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:36.325	ID:9	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:36.326	ID:3	[INFO: MASTER-R  ] Received advertisement 2;5;10;.615
+02:36.326	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:36.328	ID:9	advertisement resend node_id=9 counter=15
+02:36.331	ID:9	master advertisement --> modifying mrp structure
+02:36.340	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;10;.654, Success => 1
+02:36.350	ID:9	advertisement Seq: 10, Selected BestNode = 7, Because: His Strength: .780, And MyLink Strength With Him --> .156
+02:36.599	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;10;.654
+02:36.601	ID:6	[INFO: MASTER-R  ] Received advertisement 2;9;10;.654
+02:36.601	ID:3	[INFO: MASTER-R  ] Received advertisement 2;9;10;.654
+02:36.604	ID:3	advertisement resend node_id=3 counter=18
+02:36.604	ID:6	advertisement resend node_id=6 counter=16
+02:36.607	ID:3	master advertisement --> modifying mrp structure
+02:36.607	ID:6	master advertisement --> modifying mrp structure
+02:36.616	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;10;.615, Success => 1
+02:36.616	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;10;.770, Success => 1
+02:36.626	ID:3	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .654, And MyLink Strength With Him --> .015
+02:36.626	ID:6	advertisement Seq: 10, Selected BestNode = 1, Because: His Strength: .654, And MyLink Strength With Him --> .276
+02:36.874	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:36.874	ID:9	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:36.874	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:36.874	ID:7	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:36.874	ID:8	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:36.874	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:36.875	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:36.877	ID:5	advertisement history matched
+02:36.878	ID:9	advertisement resend node_id=9 counter=16
+02:36.878	ID:7	advertisement resend node_id=7 counter=24
+02:36.878	ID:8	advertisement resend node_id=8 counter=23
+02:36.878	ID:10	advertisement resend node_id=10 counter=18
+02:36.881	ID:7	master advertisement --> modifying mrp structure
+02:36.881	ID:8	master advertisement --> modifying mrp structure
+02:36.881	ID:10	master advertisement --> modifying mrp structure
+02:36.881	ID:9	master advertisement --> modifying mrp structure
+02:36.889	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;10;.756, Success => 1
+02:36.889	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;10;.780, Success => 1
+02:36.890	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;10;.714, Success => 1
+02:36.893	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;10;.654, Success => 1
+02:36.900	ID:8	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .770, And MyLink Strength With Him --> .753
+02:36.900	ID:7	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .770, And MyLink Strength With Him --> .718
+02:36.900	ID:10	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .615, And MyLink Strength With Him --> .646
+02:36.903	ID:9	advertisement Seq: 10, Selected BestNode = 7, Because: His Strength: .615, And MyLink Strength With Him --> .062
+02:37.149	ID:5	[INFO: MASTER-R  ] Received advertisement 2;10;10;.714
+02:37.151	ID:3	[INFO: MASTER-R  ] Received advertisement 2;10;10;.714
+02:37.151	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;10;.714
+02:37.153	ID:5	advertisement resend node_id=5 counter=13
+02:37.154	ID:3	advertisement resend node_id=3 counter=19
+02:37.154	ID:4	advertisement resend node_id=4 counter=14
+02:37.156	ID:5	master advertisement --> modifying mrp structure
+02:37.157	ID:3	master advertisement --> modifying mrp structure
+02:37.157	ID:4	master advertisement --> modifying mrp structure
+02:37.164	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;10;.615, Success => 1
+02:37.166	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;10;.729, Success => 1
+02:37.166	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;10;.615, Success => 1
+02:37.175	ID:5	advertisement Seq: 10, Selected BestNode = 3, Because: His Strength: .714, And MyLink Strength With Him --> .539
+02:37.176	ID:4	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .714, And MyLink Strength With Him --> .484
+02:37.176	ID:3	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .714, And MyLink Strength With Him --> .562
+02:37.424	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.424	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.424	ID:8	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.424	ID:7	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.424	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.426	ID:6	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.427	ID:10	advertisement history matched
+02:37.428	ID:8	advertisement resend node_id=8 counter=24
+02:37.428	ID:7	advertisement resend node_id=7 counter=25
+02:37.429	ID:6	advertisement resend node_id=6 counter=17
+02:37.431	ID:8	master advertisement --> modifying mrp structure
+02:37.431	ID:7	master advertisement --> modifying mrp structure
+02:37.432	ID:6	master advertisement --> modifying mrp structure
+02:37.439	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;10;.780, Success => 1
+02:37.439	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;10;.756, Success => 1
+02:37.441	ID:6	[INFO: MASTER-R  ] master advertisement sent;6;2;10;.770, Success => 1
+02:37.450	ID:8	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .615, And MyLink Strength With Him --> .092
+02:37.450	ID:7	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .615, And MyLink Strength With Him --> .250
+02:37.451	ID:6	advertisement Seq: 10, Selected BestNode = 1, Because: His Strength: .615, And MyLink Strength With Him --> .107
+02:37.563	ID:2	(N,S) = (1,6923)     (N,S) = (2,0)     (N,S) = (3,5076)     (N,S) = (4,4615)     (N,S) = (5,2000)     (N,S) = (6,4000)     (N,S) = (7,2307)     (N,S) = (8,4153)     (N,S) = (9,0)     (N,S) = (10,4153)     
+02:37.567	ID:2	Checking preparaed data: highestNode: 10, index:33
+02:37.699	ID:1	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:37.699	ID:9	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:37.701	ID:3	[INFO: MASTER-R  ] Received advertisement 2;6;10;.770
+02:37.703	ID:9	advertisement resend node_id=9 counter=17
+02:37.704	ID:3	advertisement resend node_id=3 counter=20
+02:37.706	ID:9	master advertisement --> modifying mrp structure
+02:37.709	ID:3	master advertisement --> modifying mrp structure
+02:37.714	ID:9	[INFO: MASTER-R  ] master advertisement sent;9;2;10;.654, Success => 1
+02:37.718	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;10;.615, Success => 1
+02:37.725	ID:9	advertisement Seq: 10, Selected BestNode = 7, Because: His Strength: .770, And MyLink Strength With Him --> .531
+02:37.728	ID:3	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .770, And MyLink Strength With Him --> .171
+02:37.974	ID:7	[INFO: MASTER-R  ] Received advertisement 2;9;10;.654
+02:37.974	ID:8	[INFO: MASTER-R  ] Received advertisement 2;9;10;.654
+02:37.974	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.974	ID:5	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.974	ID:2	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.974	ID:10	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.975	ID:6	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.976	ID:4	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:37.976	ID:5	advertisement history matched
+02:37.976	ID:10	advertisement history matched
+02:37.977	ID:8	advertisement resend node_id=8 counter=25
+02:37.978	ID:6	advertisement history matched
+02:37.979	ID:4	advertisement resend node_id=4 counter=15
+02:37.981	ID:8	master advertisement --> modifying mrp structure
+02:37.982	ID:4	master advertisement --> modifying mrp structure
+02:37.989	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;10;.780, Success => 1
+02:37.991	ID:4	[INFO: MASTER-R  ] master advertisement sent;4;2;10;.729, Success => 1
+02:37.999	ID:8	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .654, And MyLink Strength With Him --> .138
+02:38.001	ID:4	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .615, And MyLink Strength With Him --> .343
+02:38.249	ID:5	[INFO: MASTER-R  ] Received advertisement 2;4;10;.729
+02:38.249	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.249	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.249	ID:10	[INFO: MASTER-R  ] Received advertisement 2;4;10;.729
+02:38.249	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.250	ID:3	[INFO: MASTER-R  ] Received advertisement 2;4;10;.729
+02:38.250	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.252	ID:5	advertisement resend node_id=5 counter=14
+02:38.252	ID:2	advertisement resend node_id=2 counter=19
+02:38.252	ID:7	advertisement resend node_id=7 counter=26
+02:38.253	ID:10	advertisement resend node_id=10 counter=19
+02:38.254	ID:3	advertisement resend node_id=3 counter=21
+02:38.256	ID:5	master advertisement --> modifying mrp structure
+02:38.256	ID:2	master advertisement --> modifying mrp structure
+02:38.256	ID:7	master advertisement --> modifying mrp structure
+02:38.256	ID:10	master advertisement --> modifying mrp structure
+02:38.257	ID:3	master advertisement --> modifying mrp structure
+02:38.264	ID:5	[INFO: MASTER-R  ] master advertisement sent;5;2;10;.615, Success => 1
+02:38.264	ID:2	[INFO: MASTER-R  ] master advertisement sent;2;2;10;.692, Success => 1
+02:38.264	ID:7	[INFO: MASTER-R  ] master advertisement sent;7;2;10;.756, Success => 1
+02:38.264	ID:10	[INFO: MASTER-R  ] master advertisement sent;10;2;10;.714, Success => 1
+02:38.265	ID:3	[INFO: MASTER-R  ] master advertisement sent;3;2;10;.615, Success => 1
+02:38.274	ID:5	advertisement Seq: 10, Selected BestNode = 3, Because: His Strength: .729, And MyLink Strength With Him --> .428
+02:38.274	ID:7	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .780, And MyLink Strength With Him --> .453
+02:38.275	ID:2	advertisement Seq: 10, Selected BestNode = 1, Because: His Strength: .780, And MyLink Strength With Him --> .415
+02:38.275	ID:10	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .692
+02:38.276	ID:3	advertisement Seq: 10, Selected BestNode = 2, Because: His Strength: .729, And MyLink Strength With Him --> .296
+02:38.524	ID:1	[INFO: MASTER-R  ] Received advertisement 2;3;10;.615
+02:38.524	ID:8	[INFO: MASTER-R  ] Received advertisement 2;7;10;.756
+02:38.525	ID:6	[INFO: MASTER-R  ] Received advertisement 2;7;10;.756
+02:38.525	ID:4	[INFO: MASTER-R  ] Received advertisement 2;10;10;.714
+02:38.527	ID:8	advertisement resend node_id=8 counter=26
+02:38.528	ID:4	advertisement history matched
+02:38.531	ID:8	master advertisement --> modifying mrp structure
+02:38.539	ID:8	[INFO: MASTER-R  ] master advertisement sent;8;2;10;.780, Success => 1
+02:38.550	ID:8	advertisement Seq: 10, Selected BestNode = 6, Because: His Strength: .756, And MyLink Strength With Him --> .353
+02:38.799	ID:1	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.799	ID:9	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.799	ID:7	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.799	ID:2	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.800	ID:6	[INFO: MASTER-R  ] Received advertisement 2;8;10;.780
+02:38.801	ID:9	advertisement history matched
+02:38.801	ID:7	advertisement history matched
+02:38.801	ID:2	advertisement history matched
+02:39.227	ID:3	(N,S) = (1,5781)     (N,S) = (2,6093)     (N,S) = (3,0)     (N,S) = (4,2968)     (N,S) = (5,6093)     (N,S) = (6,1718)     (N,S) = (7,4218)     (N,S) = (8,1718)     (N,S) = (9,156)     (N,S) = (10,5625)     
+02:39.231	ID:3	Checking preparaed data: highestNode: 10, index:33
+02:39.349	ID:2	[INFO: MASTER-R  ] rcvd actual data 3;3;33
+02:39.352	ID:2	Received actual data from node: 3
+02:39.366	ID:2	modified actual data: 10 1 149 22 2 205 23 3 0 0 4 152 11 5 205 23 6 182 6 7 122 16 8 182 6 9 156 0 10 249 21 2 3 2 
+02:39.370	ID:2	Forwarding actualData (node) = (2) --> to (node) = (1)
+02:39.624	ID:1	[INFO: MASTER-R  ] rcvd actual data 3;3;34
+02:39.638	ID:1	on received actual data: 10 1 149 22 2 205 23 3 0 0 4 152 11 5 205 23 6 182 6 7 122 16 8 182 6 9 156 0 10 249 21 2 3 2 
+02:39.642	ID:1	Got Actual Data --> Route (Size: 3): 3 --> 2 --> 1
+02:39.665	ID:1	strength_vector: 3 1-.578,2-.609,3-.000,4-.296,5-.609,6-.171,7-.421,8-.171,9-.015,10-.562,
+02:39.674	ID:4	(N,S) = (1,2968)     (N,S) = (2,8125)     (N,S) = (3,3437)     (N,S) = (4,0)     (N,S) = (5,4062)     (N,S) = (6,156)     (N,S) = (7,0)     (N,S) = (8,312)     (N,S) = (9,0)     (N,S) = (10,4843)     
+02:39.678	ID:4	Checking preparaed data: highestNode: 10, index:33

@@ -154,13 +154,12 @@ class Contiki_schedule(object):
       str_set_timesource              = '  destination.u8[NODE_ID_INDEX] = {};\n' + \
                                         '  tsch_queue_update_time_source(&destination);\n'
     str_max_slot_frame_used           = 'max_slot_frame_used = {};\n'
-    str_max_channel_used              = 'max_channel_used = {};\n'
 
-    str_start_mat                     = 'const uint8_t used_slot_matrix[] = {\n'
-    str_mat                           = '    {}, {}, {}, {},\n'                       # slotframe/flow_number, link_option, timeslot, channel offset
+    str_start_mat                     = 'const uint8_t available_slot_matrix[] = {\n'
+    str_mat                           = '    {}, {}, {}, {}, {}, \n'                       # node_id , TX_slot, TX_channel, RX_slot, RX_channel
     str_end_mat                       = '};\n'
 
-    str_func_call                     = 'copy_used_slot_matrix(used_slot_matrix);\n'
+    str_func_call                     = 'copy_available_slot_matrix(available_slot_matrix);\n'
 
     str_end                           = '}\n'
                           
@@ -365,11 +364,9 @@ class Contiki_schedule(object):
 
     #     output_file.write( str_link.format(str(link.flow_number).rjust(2), str(link.link_option).rjust(2), str(link.timeslot).rjust(2), str(link.channel).rjust(2)) )
 
-    output_file.write(str_max_channel_used.format(self.schedule.max_used_channel))
-
     output_file.write(str_start_mat)
-    for index,row in enumerate(self.schedule.used_slot_matrix):
-      output_file.write( str_mat.format(str(row[0]).rjust(2), str(row[1]).rjust(2), str(row[2]).rjust(2), str(row[3]).rjust(2)) )
+    for index,row in enumerate(self.schedule.available_slot_matrix):
+      output_file.write( str_mat.format(str(row[0]).rjust(2), str(row[1]).rjust(2), str(row[2]).rjust(2), str(row[3]).rjust(2), str(row[4]).rjust(2)) )
     output_file.write(str_end_mat)
 
     output_file.write(str_func_call)

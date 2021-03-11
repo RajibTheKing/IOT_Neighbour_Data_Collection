@@ -2,18 +2,20 @@
 #define PROJECT_CONF_H_
 
 #undef MASTER_MSG_LENGTH
-#define MASTER_MSG_LENGTH 60
+#define MASTER_MSG_LENGTH 68
 
 #undef  TESTBED
 #define TESTBED TESTBED_COOJA // default: TESTBED_COOJA OR TESTBED_KIEL
 
 #undef MASTER_CONF_SCHEDULE
-#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/loglistener_03.03.2021.c"
+#define MASTER_CONF_SCHEDULE "../../../Master/Schedules/loglistener_11.03.2021.c"
 
-#define NUM_COOJA_NODES 10
+#define NUM_COOJA_NODES 11
 
 #undef NBR_TABLE_CONF_MAX_NEIGHBORS
 #define NBR_TABLE_CONF_MAX_NEIGHBORS 10
+
+#define TSCH_CONF_EB_PERIOD (4 * CLOCK_SECOND)
 
 // #undef TSCH_SCHEDULE_CONF_MAX_LINKS //use output of Scheduler
 // #define TSCH_SCHEDULE_CONF_MAX_LINKS 12

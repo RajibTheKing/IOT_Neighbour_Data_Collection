@@ -210,7 +210,8 @@ class Parser(object):
           if receiver in receiver_ids:
             output += entry_format_string.format(graph[sender][receiver])
           else:
-            output += '        '
+            # output += '        '
+            output += '   0.000'
       output += '\n'
     print(output)
 

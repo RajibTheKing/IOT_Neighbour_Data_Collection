@@ -12,6 +12,7 @@ class Schedule(object):
     self.used_slot_matrix = None
     self.available_slots = 0
     self.max_used_channel= 0
+    self.available_slot_matrix = None
 
   def order_flows_decreasing(self):
     self.flows.sort(key=lambda x: x.length, reverse=True)
@@ -67,7 +68,7 @@ class Schedule(object):
     if not critical_window == []:
       cell_c_llf.laxity = min(critical_window)
 
-  def create(self, etx_power, num_channels, shortest_repeating_cycle, algorithm, ignore_NSF, strategy, window_size_algorithm=None, fixed_window_size=None):
+  def create(self, etx_power, num_channels, shortest_repeating_cycle, algorithm, ignore_NSF, strategy, num_cooja_nodes, window_size_algorithm=None, fixed_window_size=None):
     self.num_channels = num_channels
     self.strategy = strategy
 
@@ -300,6 +301,40 @@ class Schedule(object):
     self.used_slot_matrix = mat
     print(self.used_slot_matrix)
     print('available slots: ', self.available_slots)
+
+    # calculate available slot matrix for all nodes
+    mat = []
+    mat.append([0,0,0,0,0])
+
+    reversedList = list(range(1, len(self.schedule[0])))
+    reversedList.reverse()
+
+
+    for i in range(1,num_cooja_nodes + 1):
+      rows = []
+
+      #searching for TX slot
+      for timeslot in range(1,len(self.schedule[0])):
+        if self.used_slot_matrix[timeslot][0] == 0:
+          rows.append(i) #node_id
+          rows.append(timeslot) #time_slot
+          rows.append(0) #channel
+          self.used_slot_matrix[timeslot][0] = 1
+          break
+      
+      #searching for RX slot
+      for timeslot in reversedList:
+        if self.used_slot_matrix[timeslot][0] == 0:
+          rows.append(timeslot) #time_slot
+          rows.append(0) #channel
+          self.used_slot_matrix[timeslot][0] = 1
+          break
+
+      mat.append(rows)
+    self.available_slot_matrix = mat
+    print("Available_Slot Matrix: ", self.available_slot_matrix)
+
+
 
   def get_node_schedule(self, *nodes):
     # returns schedule for each node

@@ -149,7 +149,6 @@ static uint8_t history_ad_seq_array[NUM_COOJA_NODES + 1];
 
 static uint8_t flag_to_stop_ad = 0;
 static uint8_t max_slot_frame_used = 0;
-static uint8_t max_channel_used = 4;
 
 
 
@@ -183,7 +182,7 @@ static uint8_t deployment_node_count = 20;
 static uint8_t deployment_node_count = 5;
 #endif
 #endif /* MASTER_SCHEDULE */
-static uint8_t deployment_node_count = NUM_COOJA_NODES;
+//static uint8_t deployment_node_count = NUM_COOJA_NODES;
 
 /*Destination*/
 //#ifdef MASTER_SCHEDULE
@@ -279,11 +278,15 @@ install_discovery_schedule()
   {
     tsch_schedule_remove_slotframe(sf[max_slot_frame_used + 1]);
   }
-  sf[max_slot_frame_used + 1] = tsch_schedule_add_slotframe(max_slot_frame_used + 1, deployment_node_count);
+  sf[max_slot_frame_used + 1] = tsch_schedule_add_slotframe(max_slot_frame_used + 1, 40);
 
   linkaddr_t addr = getAddressByNodeID(node_id);
-  tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_RX, LINK_TYPE_NORMAL, &addr, node_id, 0); //3
-
+  if (matrix[node_id][3] != 0){
+    //tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_RX, LINK_TYPE_NORMAL, &addr, matrix[node_id][1], matrix[node_id][2]);
+    tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_RX, LINK_TYPE_NORMAL, &addr, matrix[node_id][3], matrix[node_id][4]);
+  }else{
+    tsch_schedule_add_link(sf[max_slot_frame_used + 1], LINK_OPTION_RX, LINK_TYPE_NORMAL, &addr, node_id, 0);
+  }
   own_receiver = 0;
 
   return 0;
@@ -364,11 +367,10 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
   //LOG_INFO("ND send\n");
   //if (own_transmission_flow != 0)
  // {
-    printf("master advertisement --> modifying mrp structure\n");
     uint8_t success = 0;
     mrp.earliest_tx_slot = (uint16_t)current_asn.ls4b;
     mrp.ttl_slot_number = (mrp.earliest_tx_slot + 30) % 0xFFFF;
-    mrp.flow_number = max_slot_frame_used +  1;
+    //mrp.flow_number = max_slot_frame_used +  1;
     masternet_len = minimal_routing_packet_size + sizeof(Advertisement);
     memcpy(mrp.data, &advertisementData, sizeof(Advertisement));
     history_ad_seq_array[advertisementData.nodeId] = advertisementData.seq;
@@ -447,7 +449,7 @@ void on_received_advertisement(Advertisement adv, const linkaddr_t *src)
   if (history_ad_seq_array[adv.nodeId] == adv.seq)
   {
     //skip
-    printf("advertisement history matched\n");
+    // printf("advertisement history matched\n");
   }
   else
   {
@@ -484,15 +486,15 @@ void send_data_to_master()
     {
       uint16_t value;
       memcpy(&value, actualData.data + i + 1, sizeof(uint16_t));
-      printf("(N,S) = (%d,%d)     ", actualData.data[i], value);
+     // printf("(N,S) = (%d,%d)     ", actualData.data[i], value);
     }
-    printf("\n");
+    //printf("\n");
 
     actualData.data[index] = 1;
     actualData.data[index + 1] = node_id;
     index += 2;
     actualData.dataLen = index;
-    printf("Checking preparaed data: highestNode: %d, index:%d\n", actualData.data[0], index);
+    //printf("Checking preparaed data: highestNode: %d, index:%d\n", actualData.data[0], index);
 
     // printf("actual data sent array=> ");
     // for (i = 0; i < sizeof(mrp); i += sizeof(uint8_t))
@@ -512,9 +514,14 @@ void send_data_to_master()
 
 void unicast_send()
 {
+  struct tsch_asn_t current_asn = tsch_current_asn;
+
+  mrp.earliest_tx_slot = (uint16_t)current_asn.ls4b;
+  mrp.ttl_slot_number = (mrp.earliest_tx_slot + 30) % 0xFFFF;
+  mrp.flow_number = max_slot_frame_used +  1;
 
 
-  sent_packet_configuration.max_tx = 2;
+  sent_packet_configuration.max_tx = 1;
   // sent_packet_configuration.flow_number= node_id;
 
   masternet_len = minimal_routing_packet_size + sizeof(ActualData);
@@ -522,6 +529,7 @@ void unicast_send()
   
   NETSTACK_NETWORK.output(&bestLink);
 }
+static uint8_t node_rcvd_tracker[NUM_COOJA_NODES+1];
 
 void on_received_actual_data(ActualData rcvd_acdt)
 {
@@ -530,15 +538,15 @@ void on_received_actual_data(ActualData rcvd_acdt)
   flag_to_stop_ad = 1;
   if (node_id == 1)
   {
-    rcvd_actual_data_counter += 1;
-    printf("on received actual data: ");
     int i;
-    for (i = 0; i < rcvd_acdt.dataLen; i++)
-    {
-      uint8_t value = rcvd_acdt.data[i];
-      printf("%d ", value);
-    }
-    printf("\n");
+    // printf("on received actual data: ");
+    
+    // for (i = 0; i < rcvd_acdt.dataLen; i++)
+    // {
+    //   uint8_t value = rcvd_acdt.data[i];
+    //   printf("%d ", value);
+    // }
+    // printf("\n");
     //numberofnodes --> n1..n2..n -> datalen--> data
     memcpy(actualData, rcvd_acdt.data, rcvd_acdt.dataLen);
     int pos = rcvd_acdt.data[0] * 3 + 1;
@@ -581,7 +589,28 @@ void on_received_actual_data(ActualData rcvd_acdt)
     }
     printf("\n");
 
-    if (rcvd_actual_data_counter % (highestNodeID -1) == 0)
+    if(node_rcvd_tracker[rcvd_from] == 0){
+      rcvd_actual_data_counter += 1;
+      node_rcvd_tracker[rcvd_from] = 1;
+      if(rcvd_actual_data_counter == NUM_COOJA_NODES -1){
+        printf("ALL ACTUAL DATA COLLECTED\n");
+        printf("strength_vector: %d ", node_id);
+        for (i = 1; i <= highestNodeID; i++)
+        {
+          printf("%d-", i);
+          printFLoat(strength_vector[i]);
+          printf(",");
+        }
+          printf("\n");
+
+        for(i=0; i<NUM_COOJA_NODES+1; i++){
+          node_rcvd_tracker[i] = 0;
+          rcvd_actual_data_counter = 0;
+        }
+      }
+    }
+
+    /*if (rcvd_actual_data_counter % (highestNodeID -1) == 0)
     {
       //own strength
       printf("strength_vector: %d ", node_id);
@@ -592,12 +621,12 @@ void on_received_actual_data(ActualData rcvd_acdt)
         printf(",");
       }
       printf("\n");
-    }
+    }*/
   }
   else
   {
     //Forwarding
-    int i;
+    //int i;
     printf("Received actual data from node: %d\n", rcvd_acdt.nodeId);
     //memcpy(actualData, mrp.data, mrp.data_len);
 
@@ -615,13 +644,13 @@ void on_received_actual_data(ActualData rcvd_acdt)
     memcpy(rcvd_acdt.data + pos, &node_id, sizeof(uint8_t));
     rcvd_acdt.dataLen = rcvd_acdt.dataLen + sizeof(uint8_t);
 
-    printf("modified actual data: ");
-    for (i = 0; i < rcvd_acdt.dataLen; i++)
-    {
-      uint8_t value = rcvd_acdt.data[i];
-      printf("%d ", value);
-    }
-    printf("\n");
+    // printf("modified actual data: ");
+    // for (i = 0; i < rcvd_acdt.dataLen; i++)
+    // {
+    //   uint8_t value = rcvd_acdt.data[i];
+    //   printf("%d ", value);
+    // }
+    // printf("\n");
     printf("Forwarding actualData (node) = (%d) --> to (node) = (%d)\n", node_id, bestNode);
 
     //memcpy(&mrp, &rcvd_mrp, sizeof(rcvd_mrp) - MASTER_MSG_LENGTH + rcvd_mrp.data_len);
@@ -687,7 +716,7 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     {
       ActualData actualData;
       memcpy(&actualData, mrpData.data, sizeof(ActualData));
-      LOG_INFO("rcvd actual data %u;%u;%u\n", actualData.packet_type, actualData.nodeId, actualData.dataLen);
+      // LOG_INFO("rcvd actual data %u;%u;%u\n", actualData.packet_type, actualData.nodeId, actualData.dataLen);
       on_received_actual_data(actualData);
       leds_off(LEDS_RED);
       return;
@@ -844,7 +873,6 @@ int neighbor_discovery_send(const void *data, uint16_t datalen)
 
 void add_link_to_best_node()
 {
-  printf("Now Changing best schedule Link\n");
   if (best_tsch_shedule_link != NULL)
   {
     tsch_schedule_remove_link(sf[max_slot_frame_used + 1], best_tsch_shedule_link);
@@ -852,7 +880,12 @@ void add_link_to_best_node()
   }
 
   linkaddr_t addr = getAddressByNodeID(bestNode);
-  best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 1],  LINK_OPTION_TX,LINK_TYPE_NORMAL, &addr,node_id, 0);
+  if (matrix[node_id][1] != 0){
+    //best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 1],  LINK_OPTION_TX,LINK_TYPE_NORMAL, &addr,matrix[bestNode][1], matrix[bestNode][2]);
+    best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 1],  LINK_OPTION_TX,LINK_TYPE_NORMAL, &addr,matrix[node_id][1], matrix[node_id][2]);
+  }else{
+    best_tsch_shedule_link = tsch_schedule_add_link(sf[max_slot_frame_used + 1],  LINK_OPTION_TX,LINK_TYPE_NORMAL, &addr, bestNode, 0);
+  }
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1054,20 +1087,22 @@ void init_master_routing(void)
 }
 /*---------------------------------------------------------------------------*/
 /** @} */
-void copy_used_slot_matrix(const uint8_t used_slot_matrix[]){
+void copy_available_slot_matrix(const uint8_t available_slot_matrix[]){
     int index,col,row;
-    for(index =0, row=0;index<schedule_length*max_channel_used;row++)
+    for(index = 5, row=1;index<(NUM_COOJA_NODES + 1) * 5;row++)
     {
-       for(col = 0; col<max_channel_used; col++, index++){
-            matrix[row][col] = used_slot_matrix[index];
+       for(col = 0; col<5; col++, index++){
+            matrix[row][col] = available_slot_matrix[index];
        }
 
     }
 }
 
+
 void apply_generated_schedule(){
   generated_schedule();
   install_discovery_schedule();
+  add_link_to_best_node();
 }
 
 #include MASTER_SCHEDULE

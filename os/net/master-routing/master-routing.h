@@ -85,7 +85,7 @@ linkaddr_t getAddressByNodeID(int givenNodeID);
 
 void add_link_to_best_node();
 
-void copy_used_slot_matrix(const uint8_t used_slot_matrix[]);
+void copy_available_slot_matrix(const uint8_t available_slot_matrix[]);
 
 void generated_schedule(void);
 

@@ -89,7 +89,7 @@ PROCESS_THREAD(master_unicast_process, ev, data)
 
 static int counter = 1;
 static uint16_t adv_counter = 0;
-static uint8_t actual_data_sending_interval = 0;
+static int actual_data_sending_interval = 0;
 
 PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
 {
@@ -113,7 +113,7 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
 
 
   
-    actual_data_sending_interval = 60 + (node_id*2);
+    actual_data_sending_interval = node_id; //60 + (node_id*2);
 
     while(1){
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
@@ -126,13 +126,13 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       }*/
       
       //LOG_INFO("Success: %u", success);
-       if (counter==120){
-          apply_generated_schedule();
+       if (counter==240){
+           apply_generated_schedule();
         }
       if (node_is_sender()){
        
 
-        if( counter > 120){
+        if( counter > 240){
           own_receiver = get_node_receiver();
           uint8_t payload_index;
           for (payload_index = 0; payload_index < MASTER_MSG_LENGTH; ++payload_index){
@@ -144,12 +144,13 @@ PROCESS_THREAD(master_neighbor_discovery_process, ev, data)
       }
       
 
-     if(counter % 15 ==0 && node_id == 1 && counter% actual_data_sending_interval != 0){
+     if(counter % 15 ==0 && node_id == 1 ){ //&& counter% actual_data_sending_interval != 0
         master_routing_send_advertisement_sendto( 100, ++adv_counter, node_id);
       }
 
-      if(counter % actual_data_sending_interval == 0 && node_id != 1){
+      if(counter == actual_data_sending_interval && node_id != 1){
         master_routing_send_actual_data();
+        actual_data_sending_interval += NUM_COOJA_NODES;
       }
       etimer_reset(&periodic_timer);
     }
