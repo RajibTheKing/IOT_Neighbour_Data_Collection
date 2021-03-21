@@ -210,8 +210,7 @@ class Parser(object):
           if receiver in receiver_ids:
             output += entry_format_string.format(graph[sender][receiver])
           else:
-            # output += '        '
-            output += '   0.000'
+            output += '        '
       output += '\n'
     print(output)
 
@@ -234,10 +233,8 @@ class Parser(object):
       self.print_parsed_data_table(Data_table.strength_vector_etx)
       self.graph_prr = self.strength_vector_prr
       self.graph_etx = self.strength_vector_etx
-    print("asdasd4")
 
   def create_DGRM_configuration(self):
-    print("asdasd5")
     dgrm_conf = open(str(dirname(dirname(abspath(__file__)))) + "/DGRM_configurations/dgrm.conf", 'w')
     dgrm_conf.write("# [source] [destination] [prr] [prr_ci] [num_tx] [num_rx] [rssi] [rssi_min] [rssi_max]\n")
     to_exclude = [11]
