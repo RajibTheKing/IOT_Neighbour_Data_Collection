@@ -20,6 +20,7 @@
   #define LOG_LEVEL LOG_LEVEL_INFO
 
 
+/*initialize  variables */
 static int counter = 1;
 static uint16_t adv_counter = 0;
 static int actual_data_sending_interval = 0;
@@ -52,6 +53,7 @@ PROCESS_THREAD(master_neighbor_discovery_and_unicast_process, ev, data)
 
   etimer_set(&periodic_timer, CLOCK_SECOND);
 
+
   do {
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
       etimer_reset(&periodic_timer);
@@ -63,14 +65,14 @@ PROCESS_THREAD(master_neighbor_discovery_and_unicast_process, ev, data)
 
     while(1){
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
-      counter += 1;
+      counter += 1; // counter  increases in each clock second
 
-      if (counter==240){
+      // after 4 * 60  = 240 seconds  generated schedule for unicast operation will be initialized
+      if (counter==240){               
           apply_generated_schedule();
       }
+      // if the node is sender and after 240 seconds unicast flow will start  sending  data
       if (node_is_sender()){
-       
-
         if( counter > 240){
           own_receiver = get_node_receiver();
           uint8_t payload_index;
@@ -82,11 +84,12 @@ PROCESS_THREAD(master_neighbor_discovery_and_unicast_process, ev, data)
         }
       }
       
-
+      // if node is coordinator every 15 seconds it will send advertisement also this initiates advertisement  
       if(counter % 15 ==0 && node_id == 1 ) { 
         master_routing_send_advertisement_sendto( 100, ++adv_counter, node_id);
       }
 
+      // every node except corrdinator will send strength vector to the best node   
       if(counter == actual_data_sending_interval && node_id != 1){
         master_routing_send_actual_data();
         actual_data_sending_interval += NUM_COOJA_NODES;

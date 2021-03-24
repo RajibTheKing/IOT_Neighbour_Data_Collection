@@ -1,12 +1,19 @@
 #include "strength-vector.h"
 #include <stdio.h>
+
+
+
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief this fucntion is called when a beacon is resceived
+ *        it calcultes network strength based on extended beacon sequence number    
+ *  
+ * */
 void onReceivedNewBeacon(int own_node_id, Beacon receivedBeacon)
 {
     int i;
     int currentSequence = receivedBeacon.seq;
     int nodeID = receivedBeacon.nodeID;
-
-    printf("TheKing--> NodeID, currentSeq  = %d, %d\n", nodeID, currentSequence);
 
     if(highestSequence < currentSequence){
         highestSequence = currentSequence;
@@ -125,6 +132,12 @@ float getStrengthByNodeID(int nodeID)
     return strength_vector[nodeID];
 }
 
+
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief prepare network strenth as byte array for sending      
+ *  
+ * */
 uint8_t prepareStrengthVectorToSend(uint8_t data[])
 {
     int i;

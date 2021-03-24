@@ -254,6 +254,11 @@ static void set_destination_link_addr(uint8_t destination_node_id)
   destination.u8[NODE_ID_INDEX] = destination_node_id;
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief Resceives extended beacon  as byte array and create Beacon structure 
+ *  
+ * */
 void neighbor_discovery_input(const uint16_t *data, const linkaddr_t *src, const uint16_t *seq_nr){
  uint16_t eb_beacon_seq;
  memcpy(&eb_beacon_seq, data, sizeof(uint16_t));
@@ -287,6 +292,10 @@ add_links(const scheduled_link_t *links, uint8_t number_links, const uint8_t *ch
   }
 }
 /*---------------------------------------------------------------------------*/
+/**
+ * \brief calls master_routing_send_advertisement  
+ *  
+ * */
 int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, uint8_t best_node)
 {
 
@@ -297,7 +306,12 @@ int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, u
 }
 
 
-
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief Prepare Advertisement structure, manage history and broadcast advertisement 
+ *  
+ *  
+ * */
 int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t best_node)
 {
   struct tsch_asn_t current_asn = tsch_current_asn;
@@ -319,18 +333,6 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
   sent_packet_configuration.max_tx = 1; // we must set this value
   
   sent_packet_configuration.flow_number = 0; //we must set this value as zero for Broadcast
-
-
-
-  // int i;
-  // printf(" mrpData.data SEND array=>  ");
-  // for (i = 0; i < masternet_len ; i += sizeof(uint8_t))
-  // {
-  //  printf("%02x ",((char*)&mrp)[i]);
-  // }
-  // printf("\n");
-
-
   
   success = NETSTACK_NETWORK.output(&tsch_broadcast_address);
 
@@ -338,11 +340,17 @@ int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t 
   printFLoat(advertisementData.strengthToMaster);
   printf(", Success => %d\n", success);
   
-  
-  
   return success;
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief 1. select best node upon resceiving advertisement packet 
+ *        2. create link to the best node
+ *        3. skips  if same adverisement seq resceived 
+ *        4. rebroadcast its own strength to its best node to others  
+ *  
+ * */
 void on_received_advertisement(Advertisement adv, const linkaddr_t *src)
 {
 
@@ -399,6 +407,12 @@ void on_received_advertisement(Advertisement adv, const linkaddr_t *src)
   }
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief Prepare Actualdata structure and send to the selected best node   
+ *  
+ *  
+ * */
 int master_routing_send_actual_data()
 {
   if (bestNode > 0)
@@ -415,27 +429,12 @@ int master_routing_send_actual_data()
     {
       uint16_t value;
       memcpy(&value, actualData.data + i + 1, sizeof(uint16_t));
-     // printf("(N,S) = (%d,%d)     ", actualData.data[i], value);
     }
-    //printf("\n");
 
     actualData.data[index] = 1;
     actualData.data[index + 1] = node_id;
     index += 2;
     actualData.dataLen = index;
-    //printf("Checking preparaed data: highestNode: %d, index:%d\n", actualData.data[0], index);
-
-    // printf("actual data sent array=> ");
-    // for (i = 0; i < sizeof(mrp); i += sizeof(uint8_t))
-    // {
-    //   printf("%02x ",((char*)&mrp)[i]);
-    // }
-    // printf("\n");
-    // sent_packet_configuration.max_tx = 2;
-    
-    //masternet_len = minimal_routing_packet_size + index;
-    //linkaddr_t bestLink = getAddressByNodeID(bestNode);
-
     memcpy(mrp.data, &actualData, sizeof(ActualData));
     unicast_send();
 
@@ -444,6 +443,14 @@ int master_routing_send_actual_data()
   return 0;
 }
 
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief Resceived actual data 
+ *        
+ *        if coordinator === > prints  resceived strength vector      
+ *        else ===> forwards resceived data to its best node 
+ *  
+ * */
 void on_received_actual_data(ActualData rcvd_acdt)
 {
   //stop
@@ -515,12 +522,9 @@ void on_received_actual_data(ActualData rcvd_acdt)
   else
   {
     //Forwarding
-    //int i;
     printf("Received actual data from node: %d\n", rcvd_acdt.nodeId);
-    //memcpy(actualData, mrp.data, mrp.data_len);
 
     ///calculating position
-
     int pos = rcvd_acdt.data[0] * 3 + 1;
     uint8_t numberOfNodes;
     memcpy(&numberOfNodes, rcvd_acdt.data + pos, sizeof(uint8_t));
@@ -532,25 +536,12 @@ void on_received_actual_data(ActualData rcvd_acdt)
 
     memcpy(rcvd_acdt.data + pos, &node_id, sizeof(uint8_t));
     rcvd_acdt.dataLen = rcvd_acdt.dataLen + sizeof(uint8_t);
-
-    // printf("modified actual data: ");
-    // for (i = 0; i < rcvd_acdt.dataLen; i++)
-    // {
-    //   uint8_t value = rcvd_acdt.data[i];
-    //   printf("%d ", value);
-    // }
-    // printf("\n");
     printf("Forwarding actualData (node) = (%d) --> to (node) = (%d)\n", node_id, bestNode);
-
-    //memcpy(&mrp, &rcvd_mrp, sizeof(rcvd_mrp) - MASTER_MSG_LENGTH + rcvd_mrp.data_len);
-
-    
     memcpy(mrp.data, &rcvd_acdt, sizeof(ActualData));
-
-
     unicast_send();
   }
 }
+
 
 void unicast_send()
 {
@@ -562,8 +553,6 @@ void unicast_send()
 
 
   sent_packet_configuration.max_tx = 1;
-  // sent_packet_configuration.flow_number= node_id;
-
   masternet_len = minimal_routing_packet_size + sizeof(ActualData);
   linkaddr_t bestLink = getAddressByNodeID(bestNode);
   
@@ -589,6 +578,12 @@ void add_link_to_best_node()
   }
 }
 
+
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief copy data from 1D array to 2D array 
+ *  
+ * */
 void copy_available_slot_matrix(const uint8_t available_slot_matrix[]){
     int index,col,row;
     for(index = 5, row=1;index<(deployment_node_count + 1) * 5;row++)
@@ -600,7 +595,12 @@ void copy_available_slot_matrix(const uint8_t available_slot_matrix[]){
     }
 }
 
-
+/*---------------------------------------------------------------------------*/
+/**
+ * \brief upon call initialize schedule generated by Master(python) project
+ *        re install discovery schedule with new slotframe  
+ *        change the link with best node based on available slots 
+ * */
 void apply_generated_schedule(){
   generated_schedule();
   install_discovery_schedule();
@@ -707,12 +707,6 @@ void master_routing_input(const void *data, uint16_t len, const linkaddr_t *src,
     LOG_INFO("rcvd;%u;%u;%u;%u;%d\n", node_id, sender, packetbuf_attr(PACKETBUF_ATTR_CHANNEL), mrp.packet_number, (int16_t)packetbuf_attr(PACKETBUF_ATTR_RSSI)); //rcvd;<to>;<from>;<channel>;<number>;<rssi>
     forward_to_upper_layer = 1;
     
-    /*Beacon receivedBeacon;
-    receivedBeacon.nodeID = mrp.flow_number;
-    receivedBeacon.seq = mrp.packet_number;
-    receivedBeacon.packet_type = PACKET_TYPE_BEACON;
-    onReceivedNewBeacon(node_id, receivedBeacon);*/
-
 #else //normal operation
     master_routing_packet_t mrpData;
     memcpy(&mrpData, data, len);
