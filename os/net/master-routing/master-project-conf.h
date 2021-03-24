@@ -68,10 +68,6 @@
     #endif
 #endif
 
-// neighbor discovery during runtime:
-#undef  TSCH_CONF_PACKET_EB_WITH_NEIGHBOR_DISCOVERY
-#define TSCH_CONF_PACKET_EB_WITH_NEIGHBOR_DISCOVERY 1
-
 #ifndef MASTER_NUM_FLOWS
 #define MASTER_NUM_FLOWS 3
 #endif

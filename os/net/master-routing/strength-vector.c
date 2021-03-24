@@ -6,6 +6,8 @@ void onReceivedNewBeacon(int own_node_id, Beacon receivedBeacon)
     int currentSequence = receivedBeacon.seq;
     int nodeID = receivedBeacon.nodeID;
 
+    printf("TheKing--> NodeID, currentSeq  = %d, %d\n", nodeID, currentSequence);
+
     if(highestSequence < currentSequence){
         highestSequence = currentSequence;
     }

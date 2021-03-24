@@ -68,10 +68,8 @@ int master_routing_send(const void *data, uint16_t datalen);
 
 
 int master_routing_sendto(const void *data, uint16_t datalen, uint8_t flow);
-
 int master_routing_send_advertisement_sendto(float strength, uint16_t adv_seq, uint8_t best_node);
-
-
+int master_routing_send_advertisement(float strength, uint16_t adv_seq, uint8_t best_node);
 int master_routing_send_actual_data();
 
 void apply_generated_schedule();
